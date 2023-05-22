@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Counter from "./Counter";
 
+
 const Header = () => {
   return (
     <div className="flex py-4 px-4 w-full border justify-between ">
@@ -17,6 +18,7 @@ const Header = () => {
         <h2 className="ml-10 text-[17px] flex font-semibold ">
           UPSC Civil Services<span className="block md:hidden">....</span><span className="hidden md:block">Prelims CSAT Full Test 4</span>{" "}
         </h2>
+      
       </div>
 
       <div>
