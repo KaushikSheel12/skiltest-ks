@@ -15,7 +15,7 @@ const Header = () => {
           className="object-contain"
         />
 
-        <h2 className="ml-10 text-[17px] flex font-semibold ">
+        <h2 className="ml-10 text-[15px] flex font-semibold ">
           UPSC Civil Services<span className="block md:hidden">....</span><span className="hidden md:block">Prelims CSAT Full Test 4</span>{" "}
         </h2>
       

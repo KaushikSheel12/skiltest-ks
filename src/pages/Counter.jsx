@@ -27,14 +27,14 @@ const Counter = () => {
         {play ? (
           <AiOutlinePauseCircle
             onClick={() => setPlay(false)}
-            color='blue'
+            color='teal'
             size={24}
             cursor='pointer'
           />
         ) : (
           <AiOutlinePlayCircle
             onClick={() => setPlay(true)}
-            color='blue'
+            color='teal'
             size={24}
             cursor='pointer'
           />
