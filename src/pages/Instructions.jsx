@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from './Sidebar'
-import { trusted } from 'mongoose'
+
 
 const Instructions = () => {
+     const [isDisabled, setIsDisabled] = useState(false);
+
+
+     function onCheck(e) {
+          const checked = e.target.checked;
+          if (checked) {
+             setIsDisabled(true)
+          }
+          if (!checked) {
+             setIsDisabled(false)   
+          }
+        }
+
+        console.log("ckeck" ,  isDisabled)
+        
+     function NextButtonActive(){
+alert("OK we are now in next page")
+     }
+
   return (
     <div className='w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4'>
 
@@ -83,50 +102,50 @@ const Instructions = () => {
 <p className='py-1 px-4  font-semibold text-[15px]'> 10: After clicking the Next button for the last question in a Section, you will automatically be taken to the first question of the next section in sequence.</p>
 
 
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-[80%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto mt-4">
-        <thead class="text-xs text-white uppercase bg-blue-500  dark:bg-gray-700 dark:text-gray-400">
+<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table className="w-[80%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto mt-4">
+        <thead className="text-xs text-white uppercase bg-blue-500  dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                 SI No.1
                 </th>
           
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                 Section Name
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                 No. of Question
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                 Maximum Marks
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                 Negative Marks
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" className="px-6 py-3">
                 Positive Marks
                 </th>
             </tr>
         </thead>
         <tbody >
-            <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr className="bg-white  dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
              1
                 </th>
-                <td class="px-6 py-4">
+                <td className="px-6 py-4">
                 Test
                 </td>
-                <td class="px-6 py-4">
+                <td className="px-6 py-4">
                 50
                 </td>
-                <td class="px-6 py-4">
+                <td className="px-6 py-4">
                 100
                 </td>
-                <td class="px-6 py-4">
+                <td className="px-6 py-4">
                 0.66
                 </td>
 
-                <td class="px-6 py-4">
+                <td className="px-6 py-4">
                 2
                 </td>
           
@@ -145,14 +164,15 @@ const Instructions = () => {
 <p className='py-1 px-4  font-semibold text-[15px]'>3. There will, however, be sectional timing for this exam. You will have to complete each section within the specified time limit. Before moving on to the next section, you must complete the current one within the time limits.</p>
 
 <div className="flex items-center border mt-10">
-     <input className='scale-[1.2] ml-6' type="checkbox" />
+     <input className='scale-[1.2] ml-6' type="checkbox"  onChange={onCheck} />
+
      <label className='py-1 px-4  font-normal leading-1 text-[15px]' >
 I have read all the instructions carefully and have understood them. I agree not to chat or use unfair means in examinations. I understood that using unfair means of any sort for my own or someone else’s advantage will lead to my immediate disqualification. The decision of Prepp.in will be final in these matters & cannot be appealed.</label>
 </div>
 
 <div className='justify-center  flex gap-5 py-2 px-4 ml-10 border'>
      <button  className='border  w-36 px-2 py-2 rounded bg-amber-400' >Back to test</button>
-     <button  className='border w-36 px-6 py-2 rounded bg-amber-400'>Next</button>
+     <button disabled={!isDisabled}  onClick={NextButtonActive} className='border w-36 px-6 py-2 rounded bg-amber-400'>Next</button>
 </div>
 
 
