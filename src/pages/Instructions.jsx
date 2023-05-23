@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Sidebar from './Sidebar'
 
 
-const Instructions = () => {
+const Instructions = ({setIsActive}) => {
      const [isDisabled, setIsDisabled] = useState(false);
 
 
@@ -18,12 +18,13 @@ const Instructions = () => {
 
         console.log("ckeck" ,  isDisabled)
         
-     function NextButtonActive(){
-alert("OK we are now in next page")
+     const NextButtonActive=()=>{
+setIsActive(true)
+
      }
 
   return (
-    <div className='w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4'>
+    <div className='w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4 mt-10'>
 
 
       <div className='border col-span-4 md:col-span-3 '>

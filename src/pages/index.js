@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Test from './Test'
+import Quiz from './Quiz'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,6 +17,7 @@ export default function Home() {
     </main>
 
 <Test/>
+
     </>
 
 

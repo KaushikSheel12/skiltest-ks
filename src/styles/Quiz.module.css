@@ -1,0 +1,21 @@
+/* styles/Quiz.module.css */
+.quizContainer {
+
+}
+
+.questionContainer {
+  margin-bottom: 20px;
+}
+
+.option {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.highlighted {
+background-color: rgb(57, 198, 198);
+ color: white;
+}

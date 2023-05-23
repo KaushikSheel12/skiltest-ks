@@ -5,7 +5,7 @@ import Counter from "./Counter";
 
 const Header = () => {
   return (
-    <div className="flex py-4 px-4 w-full border justify-between">
+    <div className="flex py-4 fixed  px-4 w-full border justify-between overflow-hidden bg-white">
       <div className="flex">
         <Image
           width={80}
