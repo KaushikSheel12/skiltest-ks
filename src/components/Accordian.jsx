@@ -1,5 +1,5 @@
 import React from 'react'
-import {IoIosArrowDown} from "react-icons/io"
+import {IoIosArrowDown ,IoIosArrowUp} from "react-icons/io"
 import { useState } from 'react'
 import { Dot } from './Dot'
 
@@ -10,8 +10,15 @@ export const Accordian = ({children}) => {
     <div>
         <div className="flex items-center w-full justify-between border-b-2">
             <p>Testing</p>
-            <IoIosArrowDown cursor="pointer" size={20} onClick={()=>setIsActive
-            (prev=>!isActive)}/>
+
+
+            
+
+         {isActive ? <IoIosArrowUp  cursor="pointer" size={20} onClick={()=>setIsActive
+            (prev=>!isActive)} /> : <IoIosArrowDown cursor="pointer" size={20} onClick={()=>setIsActive
+            (prev=>!isActive)}/> }
+
+
         </div>
         <div className="flex items-center space-x-6">
             <div className="flex space-x-2 items-center">
