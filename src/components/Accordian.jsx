@@ -8,15 +8,29 @@ export const Accordian = ({children}) => {
     const[isActive,setIsActive]=useState(false)
   return (
     <div>
-        <div className="flex items-center w-full justify-between border-b-2">
-            <p>Testing</p>
 
+      <div className='flex gap-4 mt-[-2px] '>
+      <h2  className='font-semibold py-1 px-0 text-[19px]'>Question Palette</h2> 
+     <button className=' rounded py-2 px-4  w-36 h-8 text-[white] bg-blue-500 text-center grid place-content-center  '>Grid View</button>
+      </div>
+              
+
+
+       
+        <div className="flex items-center w-full justify-between border-b-2 ">
 
             
 
-         {isActive ? <IoIosArrowUp  cursor="pointer" size={20} onClick={()=>setIsActive
+            <p className='mb-1'>Testing</p>
+
+
+            
+<div className='mr-3'>
+{isActive ? <IoIosArrowUp  cursor="pointer" size={20} onClick={()=>setIsActive
             (prev=>!isActive)} /> : <IoIosArrowDown cursor="pointer" size={20} onClick={()=>setIsActive
             (prev=>!isActive)}/> }
+</div>
+   
 
 
         </div>
