@@ -4,13 +4,13 @@ import { useState } from "react";
 import { Dot } from "./Dot";
 
 export const Accordian = ({ children }) => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   return (
     <div>
-      <div className="flex items-center w-full justify-between border-b-2 mt-3 ">
-        <p className="mb-1">Testing</p>
+      <div className="flex items-center w-full justify-between border-b-2 mt-2 ">
+        <p className="mb-1 ml-2 font-normal">Testing</p>
 
-        <div className="mr-3">
+        <div className="mr-3 " >
           {isActive ? (
             <IoIosArrowUp
               cursor="pointer"
@@ -26,7 +26,7 @@ export const Accordian = ({ children }) => {
           )}
         </div>
       </div>
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center space-x-6  ">
         <div className="flex space-x-2 items-center">
           <Dot color={"green"} />
           <span>0</span>
@@ -45,6 +45,19 @@ export const Accordian = ({ children }) => {
         </div>
       </div>
       {isActive && <div className="">{children}</div>}
+ 
+
+ <div className=" border border-[red] ">
+  <div className="flex gap-5 justify-center">
+
+    <button className="px-2 mt-4 py-2 w-32 h-auto border border-black text-black bg-white">Instructions</button>
+    <button className="px-2 mt-4 py-2 w-32 h-auto border border-black text-black bg-white">Questions</button>
+  </div>
+  
+  <button>Submit</button>
+ </div>
+
+
     </div>
   );
 };
