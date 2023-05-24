@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { AiOutlinePauseCircle, AiOutlinePlayCircle } from 'react-icons/ai';
+import React, { useState, useEffect } from "react";
+import { AiOutlinePauseCircle, AiOutlinePlayCircle } from "react-icons/ai";
 
 const Counter = () => {
   const [time, setTime] = useState(150); // Initial time value of 30 seconds
@@ -22,28 +22,27 @@ const Counter = () => {
   }, [play, time]);
 
   return (
-    <div className='md:flex hidden md:block'>
-      <div className='py-0 px-2 mt-[2px]'>
+    <div className="md:flex hidden md:block">
+      <div className="py-0 px-2 mt-[2px]">
         {play ? (
           <AiOutlinePauseCircle
             onClick={() => setPlay(false)}
-            color='teal'
+            color="teal"
             size={24}
-            cursor='pointer'
+            cursor="pointer"
           />
         ) : (
           <AiOutlinePlayCircle
             onClick={() => setPlay(true)}
-            color='teal'
+            color="teal"
             size={24}
-            cursor='pointer'
+            cursor="pointer"
           />
         )}
       </div>
-      <h1 className='font-bold'>Time: 00:{time >= 0 ? time : 0}</h1>
+      <h1 className="font-bold">Time: 00:{time >= 0 ? time : 0}</h1>
     </div>
   );
 };
 
 export default Counter;
-
