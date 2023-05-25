@@ -158,7 +158,7 @@ const Quiz = () => {
             </div>
           )}
 
-          <div className="flex gap-5 w-[70%] h-auto justify-center mx-auto mt-32 fixed ">
+          <div className="flex gap-5 w-[100%] md:w-[70%] h-auto justify-center mx-auto mt-32 fixed ">
             <button
               className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 h-auto w-44 hover:bg-black hover:text-white"
               onClick={handlePrevPage}
