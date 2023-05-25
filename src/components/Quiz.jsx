@@ -61,7 +61,7 @@ const Quiz = () => {
   return (
     <>
       <div className="w-full grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 py-6 px-4 mt-12 ">
-        <div className="border col-span-3 p-2">
+        <div className=" col-span-3 p-2">
           <div className="flex justify-between">
             <div className="flex items-center space-x-3">
               <h2 className="font-semibold text-[16px]">

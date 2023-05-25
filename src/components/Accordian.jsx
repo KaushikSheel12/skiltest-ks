@@ -40,7 +40,7 @@ export const Accordian = ({ children }) => {
           <span>47</span>
         </div>
         <div className="flex space-x-2 items-center">
-          <Dot color={"yellow"} />
+          <Dot color={"orange"} />
           <span>0</span>
         </div>
       </div>

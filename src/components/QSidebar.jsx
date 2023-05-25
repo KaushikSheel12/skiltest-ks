@@ -38,8 +38,8 @@ const QSidebar = () => {
         <p  className='text-[14px] font-medium text-[gray] px-1 py-1'>Unseen</p>
       </div>
       <div className="flex items-center mt-[-4px]">
-        <Dot color={"yellow"}/>
-        <p  className='text-[14px] font-medium text-[gray] px-1 py-1'>Marked</p>
+        <Dot color={"orange"}/>
+        <p  className='text-[14px] font-medium text-[gray] px-1 py-1'>Pending</p>
       </div>
     </div>
     <Accordian>

@@ -3,17 +3,19 @@ import Header from '../components/Header'
 import Instructions from '../components/Instructions'
 import Quiz from '../components/Quiz'
 import { useState } from 'react'
+import QInstruction from '@/components/QInstruction'
 
 const Test = () => {
   const[isActive,setIsActive]=useState(false)
   return (
   <>
   <Header/>
-  {isActive ?
+  {/* {isActive ?
    <Quiz/> :
 
   <Instructions setIsActive={setIsActive}/>
-  }
+  } */}
+  <QInstruction/>
   </>
   )
 }
