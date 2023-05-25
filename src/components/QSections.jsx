@@ -10,8 +10,9 @@ const  QSections = () => {
 <div className='mt-[-20px] flex gap-5  px-2 py-2 items-center fixed bg-white w-full h-auto'> <h2 className='font-bold'>Sections :</h2> <button className='py-2 px-3 border rounded-full border-blue-600 text-blue-600'>Quiz</button> </div>
 
  <div>
+  <h2 className='mt-[30px] px-2 py-2 font-semibold text-[18px] '>Question Paper</h2>
   {questions.map((el)=>{
-    return <div key={el.id} className=' mt-9 py-2 px-2 mb-5'>
+    return <div key={el.id} className=' mt-[-7px] py-2 px-2 mb-5'>
       <h2 >{el.question}</h2>
 <hr className='mt-5'/>
       <div className='grid grid-cols-5 gap-2'>{el.options.map((el)=>{

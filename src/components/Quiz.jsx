@@ -173,7 +173,7 @@ const Quiz = () => {
             </button>
 
             <button
-              className="bg-yellow-400 text-black  rounded-md px-3 py-2 h-auto w-48  "
+              className="bg-yellow-400 hover:bg-amber-300 text-black  rounded-md px-3 py-2 h-auto w-48  "
               onClick={handleNextPage}
               disabled={currentPage === totalPages}
             >

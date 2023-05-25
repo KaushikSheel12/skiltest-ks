@@ -21,7 +21,7 @@ const QSidebar = () => {
 
 
      
-     <button className=' rounded py-0 px-0  w-36 mr-2 h-8 text-[white] bg-blue-500 text-center grid place-content-center mt-2  '>Grid View</button>
+     <button className=' rounded py-0 px-0  w-36 mr-2 h-8 text-[white]  bg-blue-500 text-center grid place-content-center mt-2  '>Grid View</button>
       </div>
 
     <div className="w-full grid grid-cols-3  ">
@@ -43,7 +43,7 @@ const QSidebar = () => {
       </div>
     </div>
     <Accordian>
-      <div className='grid grid-cols-4 gap-2 p-2 overflow-y-scroll h-[200px]'>
+      <div className='grid grid-cols-4 gap-2 p-2 overflow-y-scroll  border border-red-700 h-[200px]'>
       {questions.map((el)=>{
  return   <div key={el.id} >
      <button className='border bg-gray-500 px-2 py-2 w-14 h-9  grid place-content-center rounded text-[white]'>{el.id}</button>
