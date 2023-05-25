@@ -26,7 +26,7 @@ export const Accordian = ({ children }) => {
           )}
         </div>
       </div>
-      <div className="flex items-center space-x-6  ">
+      <div className="flex items-center space-x-6  px-2 ">
         <div className="flex space-x-2 items-center">
           <Dot color={"green"} />
           <span>0</span>

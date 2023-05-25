@@ -14,6 +14,8 @@ const Quiz = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const questionsPerPage = 1; // Display one question per page
 
+
+
   useEffect(() => {
     // Retrieve the selected answers from session storage
     const storedAnswers = sessionStorage.getItem("selectedAnswers");
@@ -43,6 +45,7 @@ const Quiz = () => {
   const handleNextPage = () => {
     if (currentPage < questions.length) {
       setCurrentPage(currentPage + 1);
+    
     }
   };
 
@@ -169,7 +172,7 @@ const Quiz = () => {
               onClick={handlePrevPage}
               disabled={currentPage === 1}
             >
-              Mark for Review & Next
+              Mark for Review later
             </button>
 
             <button
@@ -182,7 +185,7 @@ const Quiz = () => {
           </div>
         </div>
 
-        <div className="w-full border sticky top-10 hidden md:block h-fit">
+        <div className="w-full  sticky top-10 hidden md:block h-fit">
           <QSidebar />
         </div>
       </div>

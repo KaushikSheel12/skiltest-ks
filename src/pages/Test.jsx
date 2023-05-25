@@ -11,13 +11,13 @@ const Test = () => {
   return (
   <>
   <Header/>
-  {/* {isActive ?
+  {isActive ?
    <Quiz/> :
 
   <Instructions setIsActive={setIsActive}/>
-  } */}
+  }
   {/* <QInstruction/> */}
-  <QSections/>
+  {/* <QSections/> */}
   </>
   )
 }

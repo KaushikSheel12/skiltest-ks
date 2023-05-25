@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 
-const Instructions = ({ setIsActive }) => {
+const Instructions = ({ setIsActive  }) => {
   const [isDisabled, setIsDisabled] = useState(false);
 
   function onCheck(e) {
@@ -19,9 +19,9 @@ const Instructions = ({ setIsActive }) => {
   };
 
   return (
-    <div className="w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4 mt-10">
-      <div className="border col-span-4 md:col-span-3 ">
-        <h2 className="py-2 px-4 font-semibold text-[17px]">
+    <div className="w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4 mt-12">
+      <div className=" col-span-4 md:col-span-3 ">
+        <h2 className="py-2 px-4 font-semibold text-[20px]">
           General Instructions
         </h2>
         <p className="py-1 px-4  font-semibold text-[15px]">
@@ -181,7 +181,7 @@ const Instructions = ({ setIsActive }) => {
           section in sequence.
         </p>
 
-        <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div className="relative overflow-x-auto  sm:rounded-lg">
           <table className="w-[80%] text-sm text-left text-gray-500 dark:text-gray-400 mx-auto mt-4">
             <thead className="text-xs text-white uppercase bg-blue-500  dark:bg-gray-700 dark:text-gray-400">
               <tr>
@@ -244,7 +244,7 @@ const Instructions = ({ setIsActive }) => {
           within the time limits.
         </p>
 
-        <div className="flex items-center border mt-10">
+        <div className="flex items-center  mt-10">
           <input
             className="scale-[1.2] ml-6"
             type="checkbox"
@@ -261,7 +261,7 @@ const Instructions = ({ setIsActive }) => {
           </label>
         </div>
 
-        <div className="justify-center  flex gap-5 py-2 px-4 ml-10 border">
+        <div className="justify-center  flex gap-5 py-2 px-4 ml-10 ">
           <button className="border  w-36 px-2 py-2 rounded hover:bg-amber-300 bg-amber-400">
             Back to test
           </button>
@@ -275,7 +275,7 @@ const Instructions = ({ setIsActive }) => {
         </div>
       </div>
 
-      <div className="w-full border h-28 hidden md:block ">
+      <div className="w-full  h-28 hidden md:block ">
         <Sidebar />
       </div>
     </div>
