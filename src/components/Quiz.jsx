@@ -3,7 +3,7 @@ import questions from "../data/questions";
 import styles from "../styles/Quiz.module.css";
 import Sidebar from "./Sidebar";
 import { AiOutlineStar, AiFillStar } from "react-icons/Ai";
-import { MdTimer } from "react-icons/Md";
+import { MdOutlineTimer } from "react-icons/Md";
 import Counter from "./Counter";
 import QuestionTimer from "./QuestionTimer";
 import QSidebar from "./QSidebar";
@@ -99,7 +99,7 @@ const Quiz = () => {
 
             <div className="flex gap-2">
               <div>
-                <MdTimer color="teal" size={24} cursor="pointer" />
+                <MdOutlineTimer color="black" size={24} cursor="pointer" />
               </div>
 
               <QuestionTimer />

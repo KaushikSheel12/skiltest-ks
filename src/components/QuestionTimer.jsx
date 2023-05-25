@@ -22,8 +22,8 @@ const QuestionTimer = () => {
 
   return (
     <div className="md:flex hidden md:block">
-      <div className="py-0 px-2 mt-[2px]"></div>
-      <h1 className="font-semibold text-[15px]">
+      <div className="py-0 px-0 mt-[2px]"></div>
+      <h1 className="font-semibold text-[black] text-[15px]">
         Time: 00:{time >= 0 ? (time < 10 ? `0${time}` : time) : "00"}
       </h1>
     </div>

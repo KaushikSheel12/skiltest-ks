@@ -16,7 +16,7 @@ const QSidebar = () => {
       <div className='px-4'> <h2 className='text-center from-neutral-800 text-[16px] font-semibold'>Shivam Dubey</h2></div>
       </div>
 
-      <div className='flex gap-4 mt-[-2px] py-2 px-0   '>
+      <div className='flex gap-4 mt-[-14px] py-2 px-0   '>
       <h2  className='font-semibold py-1 px-0 text-[19px]'>Question Palette</h2> 
 
 
@@ -43,10 +43,10 @@ const QSidebar = () => {
       </div>
     </div>
     <Accordian>
-      <div className='grid grid-cols-4 gap-3 p-2 overflow-y-scroll h-[200px]'>
+      <div className='grid grid-cols-4 gap-2 p-2 overflow-y-scroll h-[200px]'>
       {questions.map((el)=>{
  return   <div key={el.id} >
-     <button className='border bg-gray-500 px-2 py-2 w-16 h-9 rounded text-[white]'>{el.id}</button>
+     <button className='border bg-gray-500 px-2 py-2 w-14 h-9  grid place-content-center rounded text-[white]'>{el.id}</button>
   </div>
 })}
       </div>
