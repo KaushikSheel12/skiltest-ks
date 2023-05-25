@@ -4,6 +4,7 @@ import Instructions from '../components/Instructions'
 import Quiz from '../components/Quiz'
 import { useState } from 'react'
 import QInstruction from '@/components/QInstruction'
+import QSections from '@/components/QSections'
 
 const Test = () => {
   const[isActive,setIsActive]=useState(false)
@@ -15,7 +16,8 @@ const Test = () => {
 
   <Instructions setIsActive={setIsActive}/>
   } */}
-  <QInstruction/>
+  {/* <QInstruction/> */}
+  <QSections/>
   </>
   )
 }

@@ -15,8 +15,10 @@ const QInstruction = () => {
     <p className='py-0 px-2 font-semibold  text-[#565151] text-[15px]'>1. Test will auto submit when the Time is up.</p>
     <p className='py-0 px-2 font-semibold  text-[#565151] text-[15px]'>2. The Test comprises of multiple choice questions (MCQ) with one or more correct answers.</p>
     <p className='py-0 px-2 font-semibold  text-[#565151] text-[15px]'>3. The clock in the top right corner will display the remaining time available for you to complete the examination.</p>
-   
-   <button className="px-2  mb-2 mt-72 py-2 w-[110px] h-9  grid place-content-center mx-auto  content-center  border rounded  text-black border-black bg-white">Back to Test</button>
+
+
+   <div className='border py-2 px-2 h-12 w-[70%] mx-auto  mt-72   grid place-content-center items-center overflow-hidden bg-white fixed'> <button className="px-2  mb-0 py-2 w-[110px] h-9  grid place-content-center mx-auto  content-center  border rounded  text-black border-black bg-white">Back to Test</button></div>
+  
 </div>
 <div className="w-full border sticky top-10 hidden md:block h-fit">
           <QSidebar />
