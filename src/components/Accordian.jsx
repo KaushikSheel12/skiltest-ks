@@ -51,7 +51,7 @@ export const Accordian = ({ children }) => {
   <div className="flex gap-5 justify-center">
 
     <button className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">Instructions</button>
-    <button className="px-2 py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white border rounded border-black text-black bg-white">Questions</button>
+    <button className="px-2 py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white border rounded border-black text-black bg-white">All Questions</button>
   </div>
   
   <button className="px-2  mb-2 mt-2 py-2 w-[278px] h-9  grid place-content-center mx-auto  content-center  border rounded  text-black hover:bg-amber-300 bg-amber-400">Submit</button>

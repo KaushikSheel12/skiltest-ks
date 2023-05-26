@@ -14,8 +14,6 @@ const Quiz = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const questionsPerPage = 1; // Display one question per page
 
-
-
   useEffect(() => {
     // Retrieve the selected answers from session storage
     const storedAnswers = sessionStorage.getItem("selectedAnswers");
@@ -45,8 +43,26 @@ const Quiz = () => {
   const handleNextPage = () => {
     if (currentPage < questions.length) {
       setCurrentPage(currentPage + 1);
-    
     }
+  };
+
+ 
+    //for clearing the selected answer to be unselected
+  const handleClearResponse = () => {
+    // Find the index of the selected answer for the current question
+    const currentIndex = selectedAnswers.findIndex(
+      (selectedAnswer) => selectedAnswer.questionId === question.id
+    );
+
+    // Remove the selected answer from the selectedAnswers array
+    if (currentIndex !== -1) {
+      const updatedAnswers = [...selectedAnswers];
+      updatedAnswers.splice(currentIndex, 1);
+      setSelectedAnswers(updatedAnswers);
+    }
+
+    // Save the updated selected answers in session storage
+    sessionStorage.setItem("selectedAnswers", JSON.stringify(selectedAnswers));
   };
 
   const handlePrevPage = () => {
@@ -161,7 +177,7 @@ const Quiz = () => {
           <div className="flex gap-5 w-[100%] md:w-[70%] h-auto justify-center mx-auto mt-32 fixed ">
             <button
               className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 h-auto w-44 hover:bg-black hover:text-white"
-              onClick={handlePrevPage}
+              onClick={handleClearResponse}
               disabled={currentPage === 1}
             >
               Clear Response

@@ -6,10 +6,18 @@ import { Accordian } from './Accordian'
 import questions from '@/data/questions'
 
 const QSidebar = () => {
-  return (
-    <div className='  border-l-2 px-1 fixed  h-fit  left-auto top-[61px]  mt-0  '>
 
-      <div className='   flex py-2 px-2 items-center' > 
+  let i = 1;
+
+  const GetTheQution=(el)=>{
+    console.log("Qution", el)
+  }
+
+
+  return (
+    <div className='  border-l-2 px-1 fixed  py-3 h-fit  left-auto top-[60px]  mt-0  '>
+
+      <div className='   flex py-2 px-2 items-center ' > 
       <div>
       <Image width={65} height={65} alt="user-profile" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/800px-Default_pfp.svg.png"/>
       </div>
@@ -44,9 +52,10 @@ const QSidebar = () => {
     </div>
     <Accordian>
       <div className='grid grid-cols-5   mx-auto  gap-2 p-2  overflow-y-scroll  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px]'>
-      {questions.map((el)=>{
- return   <div key={el.id} className='mt-[4px]  grid  place-content-center mx-auto' >
-     <button className='border  bg-gray-500 px-2 py-0 w-11 h-7  grid place-content-center rounded text-[white]'>{el.id}</button>
+      {questions.map((el,index)=>{
+ return   <div key={index} className='mt-[4px]  grid  place-content-center mx-auto' >
+     <button onClick={()=>GetTheQution(el)} className='border  bg-gray-500 px-2 py-0 w-11 h-7  grid place-content-center rounded text-[white]'>
+      {el.id}</button>
   </div>
 })}
       </div>
