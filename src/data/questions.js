@@ -5,6 +5,12 @@ const questions = [
         question: '1. What is the capital of France?',
         options: [1, 2, 3, 4,5],
         correctAnswer: 0,
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
+
+
       },
       
       {
@@ -12,30 +18,56 @@ const questions = [
         question: '2. who are you',
         options:[1, 2, 3, 4,5],
         correctAnswer: 1,
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
       {
         id: 3,
         question: '3. Who painted the Mona Lisa?',
         options: [1, 2, 3, 4,5],
         correctAnswer: 1,
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
     {
         id: 4,
         question: '4. What is the currency of Brazil?',
         options:  [1, 2, 3, 4,5],
         correctAnswer: 0,
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
       {
         id: 5,
         question: '5. What is the largest planet in our solar system?',
         options:  [1, 2, 3, 4,5],
         correctAnswer: 2,
+
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
       {
         id: 6,
         question: '6. Who wrote the novel "Pride and Prejudice"?',
         options:  [1, 2, 3, 4,5],
         correctAnswer: 0,
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
       {
         id: 7,
@@ -48,12 +80,22 @@ const questions = [
         question: '8. Which artist painted "Starry Night"?',
         options: [1, 2, 3, 4,5],
         correctAnswer: 2,
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
       {
         id: 9,
         question: '9. What is the largest ocean in the world?',
         options:  [1, 2, 3, 4,5],
         correctAnswer: 3,
+
+        unseen :true,
+        attempted : false,
+        pending : true,
+        time : 0,
       },
       {
         id: 10,

@@ -10,6 +10,7 @@ import QSidebar from "./QSidebar";
 
 const Quiz = () => {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
+
   const [star, showStar] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const questionsPerPage = 1; // Display one question per page
@@ -22,12 +23,13 @@ const Quiz = () => {
     }
   }, []);
 
-  const starClick = () => {
+  const starClick = (el) => {
     showStar(!star);
   };
 
   const handleAnswerSelect = (questionId, optionIndex) => {
     // Remove previously selected answer for the same question
+
     const updatedAnswers = selectedAnswers.filter(
       (selectedAnswer) => selectedAnswer.questionId !== questionId
     );
@@ -46,8 +48,7 @@ const Quiz = () => {
     }
   };
 
- 
-    //for clearing the selected answer to be unselected
+  //for clearing the selected answer to be unselected
   const handleClearResponse = () => {
     // Find the index of the selected answer for the current question
     const currentIndex = selectedAnswers.findIndex(
@@ -125,14 +126,14 @@ const Quiz = () => {
 
               {star ? (
                 <AiOutlineStar
-                  onClick={starClick}
+                  onClick={() => starClick()}
                   color="black"
                   size={24}
                   cursor="pointer"
                 />
               ) : (
                 <AiFillStar
-                  onClick={starClick}
+                  onClick={() => starClick()}
                   color="teal"
                   size={24}
                   cursor="pointer"
@@ -202,7 +203,7 @@ const Quiz = () => {
         </div>
 
         <div className="w-full  sticky top-10 hidden md:block h-fit">
-          <QSidebar />
+          <QSidebar props={"data"} />
         </div>
       </div>
     </>

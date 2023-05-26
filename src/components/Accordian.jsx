@@ -29,11 +29,11 @@ export const Accordian = ({ children }) => {
       <div className="flex items-center space-x-6  px-2 ">
         <div className="flex space-x-2 items-center">
           <Dot color={"green"} />
-          <span>0</span>
+          <span>3</span>
         </div>
         <div className="flex space-x-2 items-center">
           <Dot color={"black"} />
-          <span>3</span>
+          <span>33</span>
         </div>
         <div className="flex space-x-2 items-center">
           <Dot color={"gray"} />
@@ -41,7 +41,7 @@ export const Accordian = ({ children }) => {
         </div>
         <div className="flex space-x-2 items-center">
           <Dot color={"orange"} />
-          <span>0</span>
+          <span>13</span>
         </div>
       </div>
       {isActive && <div className="">{children}</div>}

@@ -5,8 +5,11 @@ import { Dot } from './Dot'
 import { Accordian } from './Accordian'
 import questions from '@/data/questions'
 
-const QSidebar = () => {
+const QSidebar = (props) => {
 
+  console.log("props" , props.props)
+
+  
   let i = 1;
 
   const GetTheQution=(el)=>{
