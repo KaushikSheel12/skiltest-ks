@@ -18,7 +18,7 @@ const QSidebar = (props) => {
 
 
   return (
-    <div className=' border-l-2 fixed  py-0 h-full  left-auto top-[60px]  mt-0  '>
+    <div className=' border-l-[2px] ml- p-2 fixed  py-0 h-full   left-auto top-[60px]  mt-0  '>
 
       <div className='flex py-2 px-2 items-center ' > 
       <div>

@@ -7,7 +7,7 @@ export const Accordian = ({ children }) => {
   const [isActive, setIsActive] = useState(true);
   return (
     <div>
-      <div className="flex items-center w-full justify-between border-b-2  mt-3 ">
+      <div className="flex items-center  justify-between border-b-2  mt-3 ">
         <p className="mb-1 ml-2 font-normal">Testing</p>
 
         <div className="mr-30 " >
