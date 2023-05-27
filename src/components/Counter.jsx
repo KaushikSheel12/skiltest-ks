@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlinePauseCircle, AiOutlinePlayCircle } from "react-icons/ai";
 
 const Counter = () => {
-  const [time, setTime] = useState(150); // Initial time value of 30 seconds
+  const [time, setTime] = useState(150); 
   const [play, setPlay] = useState(true);
 
   useEffect(() => {
