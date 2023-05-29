@@ -203,7 +203,7 @@ const Quiz = () => {
         </div>
 
         <div className="w-full  sticky top-10 hidden md:block h-fit">
-          <QSidebar props={"data"} />
+          <QSidebar />
         </div>
       </div>
     </>

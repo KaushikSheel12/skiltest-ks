@@ -4,6 +4,8 @@ import Test from './Test'
 import Quiz from '../components/Quiz'
 
 
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,8 +17,12 @@ export default function Home() {
 
 
       </main>
+ 
+
 
       <Test />
+
+    
 
     </>
 

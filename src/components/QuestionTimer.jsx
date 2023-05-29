@@ -27,7 +27,6 @@ const QuestionTimer = () => {
       <h1 className="font-semibold text-[black] text-[15px]">
         Time: 00:{time >= 0 ? (time < 10 ? `0${time}` : time) : "00"}
       </h1>
-    
     </div>
   );
 };
