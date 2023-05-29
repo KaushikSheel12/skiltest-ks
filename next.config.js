@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
   unoptimized: true,
-    domains: ['https://upload.wikimedia ,https://w7.pngwing.com']
+    domains: ['https://upload.wikimedia']
   },
 }
 
