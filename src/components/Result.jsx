@@ -33,6 +33,7 @@ const Result = () => {
   <p className=  'font-semibold  text-red-600 text-lg '>0/30</p>
 
   <div className='flex justify-center gap-1 items-center'>
+    
   <RxCrossCircled size={15}/>
   <p className='font-semibold text-gray-600 py-2 text-[14px]'>Wrong</p> </div>
 
