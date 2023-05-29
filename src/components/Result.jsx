@@ -4,16 +4,23 @@ import { SiSimpleanalytics } from "react-icons/si";
 import { RiCheckDoubleLine, RiTimerLine } from "react-icons/Ri";
 import { GiChart } from "react-icons/gi";
 import { BsListStars, BsPercent } from "react-icons/Bs";
+import {FaRegTimesCircle} from 'react-icons/Fa'
+import {FiFlag} from 'react-icons/Fi'
+import PieChart from "./PieChart";
+import { AiTwotoneStar } from "react-icons/ai";
+
 
 const Result = () => {
   return (
     <>
       <div className="w-[90%] mx-auto grid  py-6 px-4 mt-12  ">
-        <h1 className="font-semibold text-start text-[20px] ">
+        <h1 className="font-semibold text-start text-[19px] ">
           Overall Performance Analysis
         </h1>
 
         <div className="flex col-span-8  justify-between h-auto mt-5 flex-wrap border">
+
+
           <div className="border-l-2  text-center px-2  h-16 w-32">
             <p className="font-semibold  text-green-600  text-lg ">0/30</p>
 
@@ -24,6 +31,7 @@ const Result = () => {
               </div>
               <p className="font-semibold text-gray-600 text-[14px]">Right</p>{" "}
             </div>
+
           </div>
 
           <div className="border-l-2 text-center px-2  h-16 w-32">
@@ -89,7 +97,7 @@ const Result = () => {
                 {" "}
                 <RiCheckDoubleLine size={18} />
               </div>
-              <p className="font-semibold text-gray-600 text-[14px]">Right</p>{" "}
+              <p className="font-semibold text-gray-600 text-[14px]">Attempted</p>{" "}
             </div>
           </div>
 
@@ -162,7 +170,7 @@ const Result = () => {
               </div>
 
               <p className="font-semibold text-gray-600  text-[14px]">
-                Accuracy
+              Accuracy
               </p>
             </div>
           </div>
@@ -244,8 +252,96 @@ const Result = () => {
           <div className="  py-2 px-6 h-14 w-24">
             <p>45</p>
           </div>
+
+        
         </div>
+
       </div>
+
+
+<div className="flex">
+
+<div className="h-48 w-52 py-2 px-2 mx-auto  border">
+  <div className='flex gap-2 justify-center'>
+  <div className="flex items-center  text-[green]">
+                {" "}
+                <RiCheckDoubleLine size={18} />
+              </div>
+  <p className=" font-semibold ">Correct </p>
+  </div>
+   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+
+<div className="flex gap-2 text-[15px] justify-center font-semibold" >
+  <p>83.00% </p>
+  <p ><span className="text-[green]">164</span>/200</p>
+</div>
+  </div>
+
+
+  <div className="h-48 w-52 py-2 px-2 mx-auto  border">
+  <div className='flex gap-2 justify-center'>
+  <div className="flex items-center  text-[red]">
+                {" "}
+                <FaRegTimesCircle size={18} />
+              </div>
+  <p className=" font-semibold ">Incorrect </p>
+  </div>
+   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+
+<div className="flex gap-2 text-[15px] justify-center font-semibold" >
+  <p>53.00% </p>
+  <p ><span className="text-[red]">12</span>/200</p>
+</div>
+  </div>
+
+
+
+<div className="h-48 w-52 py-2 px-2 mx-auto  border">
+  <div className='flex gap-2 justify-center'>
+  <div className="flex items-center  text-[#ff9900]">
+                {" "}
+                <FiFlag size={18} />
+              </div>
+  <p className=" font-semibold ">Left</p>
+  </div>
+   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+
+<div className="flex gap-2 text-[15px] justify-center font-semibold" >
+  <p>63.00% </p>
+  <p ><span className="text-[#ff9900]">46</span>/200</p>
+</div>
+  </div>
+
+
+
+
+
+
+  <div className="h-48 w-52 py-2 px-2 mx-auto  border">
+  <div className='flex gap-2 justify-center'>
+  <div className="flex items-center  text-[#0077ff]">
+                {" "}
+                <AiTwotoneStar size={18} />
+              </div>
+  <p className=" font-semibold ">Accuracy </p>
+  </div>
+   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+
+<div className="flex gap-2 text-[15px] justify-center font-semibold" >
+  <p>23.00% </p>
+  <p ><span className="text-[#0077ff]">75</span>/200</p>
+</div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+    
     </>
   );
 };

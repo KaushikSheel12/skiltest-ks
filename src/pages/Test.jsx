@@ -7,6 +7,7 @@ import QInstruction from '@/components/QInstruction'
 import QSections from '@/components/QSections'
 import Result from '@/components/Result'
 
+
 const Test = () => {
   const[isActive,setIsActive]=useState(false)
   return (
