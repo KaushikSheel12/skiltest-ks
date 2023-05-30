@@ -6,8 +6,9 @@ import { GiChart } from "react-icons/gi";
 import { BsListStars, BsPercent } from "react-icons/Bs";
 import {FaRegTimesCircle} from 'react-icons/Fa'
 import {FiFlag} from 'react-icons/Fi'
-import PieChart from "./PieChart";
+
 import { AiTwotoneStar } from "react-icons/ai";
+import PieChart from "./piechart/PieChart";
 
 
 const Result = () => {
@@ -325,11 +326,12 @@ const Result = () => {
               </div>
   <p className=" font-semibold ">Accuracy </p>
   </div>
-   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+   <div className="h-32 w-32 mx-auto mt-1 "><PieChart /></div>
 
 <div className="flex gap-2 text-[15px] justify-center font-semibold" >
   <p>23.00% </p>
   <p ><span className="text-[#0077ff]">75</span>/200</p>
+ 
 </div>
   </div>
 
@@ -341,7 +343,7 @@ const Result = () => {
 
 
 </div>
-    
+
     </>
   );
 };
