@@ -1,7 +1,7 @@
 import React from 'react'
-import QSidebar from './QSidebar'
+import QSidebar from '../components/QSidebar'
 import questions from "../data/questions";
-import Link from 'next/link';
+
 
 
 const  QSections = () => {
@@ -12,6 +12,7 @@ let i = 1;
 
   return (
 <>
+
 <div  className="w-full grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 py-6 px-4 ">
 <div className=" col-span-3 p-2   ">
 
@@ -30,7 +31,9 @@ let i = 1;
   })}
 
 
-<div className='border w-full  py-2 sticky bottom-0 bg-white h-fit'> <button  
+
+<div className='border w-full  py-2 sticky bottom-0 bg-white h-fit'> 
+<button  
  className="px-2  mb-0 py-2 w-[110px] h-9  grid place-content-center mx-auto  content-center  border rounded  text-black border-black bg-white">Back to Test</button></div>
 
 

@@ -21,7 +21,7 @@ const Result = () => {
           Overall Performance Analysis
         </h1>
 
-        <div className="flex col-span-8  justify-between h-auto mt-5 flex-wrap border">
+        <div className="flex   justify-between h-auto mt-5 flex-wrap border">
 
 
           <div className="border-l-2  text-center px-2  h-16 w-32">
@@ -126,19 +126,19 @@ const Result = () => {
             <p className="py-2 px-2">Section Name</p>
           </div>
 
-          <div className="  py-2 px-2  h-14 w-24">
-            <div className="flex items-center mt-2">
-              <div className="flex items-center gap-2 ">
+          <div className="  py-2 px-0 h-14 w-24">
+            <div className="flex items-center gap-1 mt-2">
+              <div className="flex items-center">
                 {" "}
                 <RiCheckDoubleLine size={18} />
               </div>
-              <p className="font-semibold text-gray-600  text-[14px] ml-2">
+              <p className="font-semibold text-gray-600  text-[14px]   ">
                 Right
               </p>{" "}
             </div>
           </div>
 
-          <div className="  py-2 px-2 h-14 w-24">
+          <div className="  py-2 px-0 h-14 w-24">
             <div className="flex justify-center gap-1 items-center">
               <RxCrossCircled size={15} />
               <p className="font-semibold text-gray-600 py-2 text-[14px]">
@@ -147,7 +147,7 @@ const Result = () => {
             </div>
           </div>
 
-          <div className="  py-2 px-2 h-14 w-24">
+          <div className="   py-2 px-2 h-14 w-24">
             <div className="flex justify-center gap-1 items-center">
               <SiSimpleanalytics size={12} />
               <p className="font-semibold text-gray-600 py-2 text-[14px]">
@@ -156,7 +156,7 @@ const Result = () => {
             </div>
           </div>
 
-          <div className="  py-2 px-2 h-14 w-24">
+          <div className=" mr-2 py-2 px-2 h-14 w-24">
             <div className="flex justify-center gap-1 items-center">
               <RiTimerLine size={18} />
               <p className="font-semibold text-gray-600 py-2 text-[14px]">

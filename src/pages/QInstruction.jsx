@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import QSidebar from './QSidebar'
+import QSidebar from '../components/QSidebar'
+
 
 const QInstruction = () => {
 
@@ -8,7 +9,8 @@ const QInstruction = () => {
  
   return (
 <>
-<div  className="w-full grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 py-6 px-4 mt-10 ">
+
+<div  className="w-full grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 mt-10 ">
 <div className=" col-span-3 p-2">
 
     <p className='py-0 px-2 font-semibold  text-[#565151] text-[15px]'>1. Test will auto submit when the Time is up.</p>

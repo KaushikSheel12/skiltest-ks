@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import questions from "../data/questions";
 import styles from "../styles/Quiz.module.css";
-import Sidebar from "./Sidebar";
+import Sidebar from "../components/Sidebar";
 import { AiOutlineStar, AiFillStar } from "react-icons/Ai";
 import { MdOutlineTimer } from "react-icons/Md";
-import Counter from "./Counter";
-import QuestionTimer from "./QuestionTimer";
-import QSidebar from "./QSidebar";
+import Counter from "../components/Counter";
+import QuestionTimer from "../components/QuestionTimer";
+import QSidebar from "../components/QSidebar";
 
 const Quiz = () => {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
