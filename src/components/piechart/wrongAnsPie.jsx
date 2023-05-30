@@ -4,15 +4,15 @@ import {Chart, ArcElement} from 'chart.js'
 Chart.register(ArcElement);
 
 
-const PieChart = () => {
+const WrongAnsPie = () => {
   // Define your chart data
   const data = {
-    labels: ['Green', 'gray', ],
+    labels: ['gray', 'red'],
     datasets: [
       {
-        data: [700, 300, ],
-        backgroundColor: ['#008000', '#EEEEEE'],
-        hoverBackgroundColor: ['#008000', '#EEEEEE'],
+        data: [910, 90],
+        backgroundColor: ['#EEEEEE', '#FF0000'],
+        hoverBackgroundColor: ['#EEEEEE', '#FF0000'],
       },
     ],
   };
@@ -20,4 +20,4 @@ const PieChart = () => {
   return <Pie data={data} />;
 };
 
-export default PieChart;
+export default WrongAnsPie;

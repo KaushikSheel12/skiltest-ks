@@ -6,9 +6,11 @@ import { GiChart } from "react-icons/gi";
 import { BsListStars, BsPercent } from "react-icons/Bs";
 import {FaRegTimesCircle} from 'react-icons/Fa'
 import {FiFlag} from 'react-icons/Fi'
-
 import { AiTwotoneStar } from "react-icons/ai";
 import PieChart from "./piechart/PieChart";
+import WrongAnsPie from "./piechart/wrongAnsPie";
+import LeftAnsPie from "./piechart/LeftPie";
+import AccuracyChart from "./piechart/AccuChart";
 
 
 const Result = () => {
@@ -262,7 +264,7 @@ const Result = () => {
 
 <div className="flex">
 
-<div className="h-48 w-52 py-2 px-2 mx-auto  border">
+<div className="h-48 w-52 py-2 px-2 mx-auto  border rounded-md">
   <div className='flex gap-2 justify-center'>
   <div className="flex items-center  text-[green]">
                 {" "}
@@ -279,7 +281,7 @@ const Result = () => {
   </div>
 
 
-  <div className="h-48 w-52 py-2 px-2 mx-auto  border">
+  <div className="h-48 w-52 py-2 px-2 mx-auto  border rounded-md ">
   <div className='flex gap-2 justify-center'>
   <div className="flex items-center  text-[red]">
                 {" "}
@@ -287,7 +289,7 @@ const Result = () => {
               </div>
   <p className=" font-semibold ">Incorrect </p>
   </div>
-   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+   <div className="h-32 w-32 mx-auto mt-1  "><WrongAnsPie/></div>
 
 <div className="flex gap-2 text-[15px] justify-center font-semibold" >
   <p>53.00% </p>
@@ -297,7 +299,7 @@ const Result = () => {
 
 
 
-<div className="h-48 w-52 py-2 px-2 mx-auto  border">
+<div className="h-48 w-52 py-2 px-2 mx-auto  border rounded-md">
   <div className='flex gap-2 justify-center'>
   <div className="flex items-center  text-[#ff9900]">
                 {" "}
@@ -305,7 +307,7 @@ const Result = () => {
               </div>
   <p className=" font-semibold ">Left</p>
   </div>
-   <div className="h-32 w-32 mx-auto mt-1 "><PieChart/></div>
+   <div className="h-32 w-32 mx-auto mt-1 "><LeftAnsPie/></div>
 
 <div className="flex gap-2 text-[15px] justify-center font-semibold" >
   <p>63.00% </p>
@@ -318,7 +320,7 @@ const Result = () => {
 
 
 
-  <div className="h-48 w-52 py-2 px-2 mx-auto  border">
+  <div className="h-48 w-52 py-2 px-2 mx-auto  border rounded-md">
   <div className='flex gap-2 justify-center'>
   <div className="flex items-center  text-[#0077ff]">
                 {" "}
@@ -326,7 +328,7 @@ const Result = () => {
               </div>
   <p className=" font-semibold ">Accuracy </p>
   </div>
-   <div className="h-32 w-32 mx-auto mt-1 "><PieChart /></div>
+   <div className="h-32 w-32 mx-auto mt-1 "><AccuracyChart /></div>
 
 <div className="flex gap-2 text-[15px] justify-center font-semibold" >
   <p>23.00% </p>
