@@ -10,7 +10,7 @@ const Counter = () => {
       if (play && time > 0) {
         setTime((prevTime) => prevTime - 1);
       }
-    }, 1000);
+    },  1000);
 
     if (time === 0) {
       clearInterval(timer);

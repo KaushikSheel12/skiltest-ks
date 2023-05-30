@@ -5,9 +5,9 @@ import { Dot } from './Dot'
 import { Accordian } from './Accordian'
 import questions from '@/data/questions'
 
-const QSidebar = (props) => {
+const QSidebar = ({SetqActive}) => {
 
-  console.log("props" , props.props)
+  console.log("propsssssss" , SetqActive)
 
   
   let i = 1;

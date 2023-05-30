@@ -16,7 +16,7 @@ import AccuracyChart from "./piechart/AccuChart";
 const Result = () => {
   return (
     <>
-      <div className="w-[90%] mx-auto grid  py-6 px-4 mt-12  ">
+      <div className="w-[90%] mx-auto grid   mt-20  ">
         <h1 className="font-semibold text-start text-[19px] ">
           Overall Performance Analysis
         </h1>
@@ -115,12 +115,12 @@ const Result = () => {
             </div>
           </div>
         </div>
-
+        </div>
         {/* Blow */}
 
         <div
-          className="flex col-span-7 w-[1150px] border 
- justify-between h-auto mt-7 flex-wrap "
+          className="flex col-span-7 w-[90%] border 
+ justify-between h-auto mt-7 flex-wrap mx-auto "
         >
           <div className="  font-semibold h-14 w-32">
             <p className="py-2 px-2">Section Name</p>
@@ -191,7 +191,7 @@ const Result = () => {
         {/* Quiz */}
         <div
           className="flex col-span-7 
- justify-between h-auto  flex-wrap border   w-[1150px]"
+ justify-between h-auto  flex-wrap border  w-[90%] mx-auto mt-2 "
         >
           <div className="  font-semibold h-14 w-32">
             <p className="py-2 px-2">Quiz</p>
@@ -226,7 +226,7 @@ const Result = () => {
 
         <div
           className="flex col-span-7 
- justify-between h-auto  flex-wrap border   w-[1150px]"
+ justify-between h-auto  flex-wrap border  w-[90%] mx-auto mt-2 "
         >
           <div className="  font-semibold h-14 w-32">
             <p className="py-2 px-2">Total</p>
@@ -259,10 +259,10 @@ const Result = () => {
         
         </div>
 
-      </div>
+ 
 
 
-<div className="flex">
+<div className="flex mt-4">
 
 <div className="h-48 w-52 py-2 px-2 mx-auto  border rounded-md">
   <div className='flex gap-2 justify-center'>
