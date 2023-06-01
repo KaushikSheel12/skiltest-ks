@@ -210,8 +210,8 @@ const Result = () => {
         </div>
       </div>
       {/* Blow */}
-      {/* font-semibold text-gray-600  text-[14px]  */}
-      {/* font-semibold  */}
+   
+  
       <div
         className="grid grid-cols-4 lg:grid-cols-7  border 
  mt-7 flex-wrap  px-3 place-items-center "
