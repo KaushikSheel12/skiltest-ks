@@ -22,7 +22,7 @@ const Counter = () => {
   }, [play, time]);
 
   return (
-    <div className=" hidden md:block">
+    <div className="md:flex hidden md:block">
       <div className="py-0 px-2 mt-[2px]">
         {play ? (
           <AiOutlinePauseCircle

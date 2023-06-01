@@ -49,10 +49,10 @@ const QSidebar = ({ onQuestionClick }) => {
       </div>
     </div>
     <Accordian>
-      <div className='grid grid-cols-5 fixed border border-red  gap-5 py-2 px-2 overflow-y-scroll  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px]'>
+      <div className='grid grid-cols-5 fixed  gap-5 py-2 px-2 overflow-y-scroll  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px]'>
       {questions.map((el,index)=>{
  return   <div key={index} className='py-0 grid  border ' >
-     <button  onClick={() => onQuestionClick(el.id)} className='border  bg-gray-500 px-0 py-0 w-11 h-7  grid place-content-center rounded text-[white]'>
+     <button  onClick={() => onQuestionClick(el.id)} className='bg-gray-500 px-0 py-0 w-11 h-7  grid place-content-center rounded text-[white]'>
       {el.id}</button>
 
 
