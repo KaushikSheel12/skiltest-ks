@@ -10,10 +10,39 @@ const Quiz = () => {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [star, showStar] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+ //reset timer
+  const [time, setTime] = useState(0);
+  const [running, setRunning] = useState(true);
+
+
+  //reset timer
+  useEffect(() => {
+    let timer = null;
+
+    if (running) {
+      timer = setInterval(() => {
+        setTime((prevTime) => prevTime + 1);
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [running]);
+
+  const handleRestart = () => {
+    setTime(0);
+    setRunning(true);
+  };
+// reset timer end
+
+
 
   
   const handleQuestionClick = (questionId) => {
     // Find the index of the clicked question
+
+    handleRestart()
     const questionIndex = questions.findIndex((question) => question.id === questionId);
 
     // Set the current page to the index + 1 to render the selected question
@@ -48,6 +77,8 @@ const Quiz = () => {
   };
 
   const handleNextPage = () => {
+    handleRestart()
+
     if (currentPage < questions.length) {
       setCurrentPage(currentPage + 1);
     }
@@ -127,7 +158,19 @@ const Quiz = () => {
                 <MdOutlineTimer color="black" size={24} cursor="pointer" />
               </div>
 
-              <QuestionTimer />
+              {/* <QuestionTimer /> */}
+
+      {/* timer */}
+
+      <div className="hidden md:block">
+      <div className="py-0 px-0 mt-[2px]"></div>
+      <h1 className="font-semibold text-[black] text-[15px]">
+        Time: 00:{time < 10 ? `0${time}` : time}
+      </h1>
+    </div>
+
+
+
 
               {star ? (
                 <AiOutlineStar
