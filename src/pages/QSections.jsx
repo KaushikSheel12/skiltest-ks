@@ -2,17 +2,10 @@ import React from 'react'
 import QSidebar from '../components/QSidebar'
 import questions from "../data/questions";
 
-
-
 const  QSections = () => {
-
-let i = 1;
-
-
 
   return (
 <>
-
 <div  className="w-full grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 py-6 px-4 ">
 <div className=" col-span-3 p-2   ">
 
@@ -39,15 +32,8 @@ let i = 1;
 
 
 
- </div>
-
-
-
-  
+ </div> 
 </div>
-
-
-
 
 <div className="w-full sticky  hidden md:block h-fit">
           <QSidebar />

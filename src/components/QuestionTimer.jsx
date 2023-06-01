@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Quiz from "./Quiz";
 
-const QuestionTimer = () => {
+const QuestionTimer = ({ resetTimer }) => {
   const [time, setTime] = useState(1);
-
   useEffect(() => {
    const timer = setInterval(() => {
       setTime((prevTime) => {
@@ -22,7 +20,7 @@ const QuestionTimer = () => {
   }, []);
 
   return (
-    <div className="md:flex hidden md:block">
+    <div className="hidden md:block">
       <div className="py-0 px-0 mt-[2px]"></div>
       <h1 className="font-semibold text-[black] text-[15px]">
         Time: 00:{time >= 0 ? (time < 10 ? `0${time}` : time) : "00"}
@@ -32,3 +30,4 @@ const QuestionTimer = () => {
 };
 
 export default QuestionTimer;
+

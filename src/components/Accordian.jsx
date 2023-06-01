@@ -3,24 +3,9 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 import { Dot } from "./Dot";
 import Link from "next/link";
-import QSections from "@/pages/QSections";
-import { MyContext } from "@/context/AppContext";
-
 
 export const Accordian = ({ children }) => {
   const [isActive, setIsActive] = useState(true);
-  const { instructionPage, setinstructionPage} = useContext(MyContext);
-
-
-const handlePageChange=()=>{
-  setinstructionPage(false)
-
-  console.log("Ramm" , instructionPage )
-}
-
-
-
-
 
   return (
     <div>
@@ -67,7 +52,7 @@ const handlePageChange=()=>{
  <div className="  px-4 py-2 mt-[260px]  h-24  fixed  overflow-hidden mx-auto" >
   <div className="flex gap-5 h-10 w-full   ">
 
-  <button onClick={handlePageChange} className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">Instructions</button>
+  <button  className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">Instructions</button>
 
  
   <Link href="/QSections">
@@ -75,13 +60,8 @@ const handlePageChange=()=>{
   </Link>
     
   </div>
-
-
-
   <button className="px-2    py-2 w-full h-9  grid  mt-2  border rounded  text-black hover:bg-amber-300 bg-amber-400">Submit</button>
  </div>
-
-
     </div>
   );
 };

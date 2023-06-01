@@ -1,22 +1,17 @@
 import React, { useState, useEffect } from "react";
 import questions from "../data/questions";
 import styles from "../styles/Quiz.module.css";
-import Sidebar from "../components/Sidebar";
 import { AiOutlineStar, AiFillStar } from "react-icons/Ai";
 import { MdOutlineTimer } from "react-icons/Md";
-import Counter from "../components/Counter";
 import QuestionTimer from "../components/QuestionTimer";
 import QSidebar from "../components/QSidebar";
 
 const Quiz = () => {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
-
   const [star, showStar] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const questionsPerPage = 1; // Display one question per page
 
-
-
+  
   const handleQuestionClick = (questionId) => {
     // Find the index of the clicked question
     const questionIndex = questions.findIndex((question) => question.id === questionId);
@@ -24,11 +19,6 @@ const Quiz = () => {
     // Set the current page to the index + 1 to render the selected question
     setCurrentPage(questionIndex + 1);
   };
-
-
-
-
-
 
   useEffect(() => {
     // Retrieve the selected answers from session storage
@@ -189,8 +179,6 @@ const Quiz = () => {
               </div>
             </div>
           )}
-
-          
 
           <div className="flex gap-5 w-[100%] md:w-[70%] h-auto justify-center mx-auto mt-[175px] fixed ">
             <button

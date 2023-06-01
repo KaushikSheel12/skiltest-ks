@@ -8,10 +8,6 @@ import questions from '@/data/questions'
 
 const QSidebar = ({ onQuestionClick }) => {
 
-  
-
-  
-  let i = 1;
 
   const GetTheQution=(el)=>{
     console.log("Qution", el)
