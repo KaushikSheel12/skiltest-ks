@@ -1,11 +1,12 @@
-import AppContextProvider from '@/context/AppContext'
+import { MyContext } from '@/context/AppContext'
 import '@/styles/globals.css'
+import { useState } from 'react';
 
 export default function App({ Component, pageProps }) {
-
+  const [instructionPage, setinstructionPage] = useState(true);
   return  (
-    <AppContextProvider>
+    <MyContext.Provider value={{ instructionPage, setinstructionPage}}>
     <Component {...pageProps} />
-    </AppContextProvider>
+    </MyContext.Provider >
   ) 
 }

@@ -15,6 +15,21 @@ const Quiz = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const questionsPerPage = 1; // Display one question per page
 
+
+
+  const handleQuestionClick = (questionId) => {
+    // Find the index of the clicked question
+    const questionIndex = questions.findIndex((question) => question.id === questionId);
+
+    // Set the current page to the index + 1 to render the selected question
+    setCurrentPage(questionIndex + 1);
+  };
+
+
+
+
+
+
   useEffect(() => {
     // Retrieve the selected answers from session storage
     const storedAnswers = sessionStorage.getItem("selectedAnswers");
@@ -175,6 +190,8 @@ const Quiz = () => {
             </div>
           )}
 
+          
+
           <div className="flex gap-5 w-[100%] md:w-[70%] h-auto justify-center mx-auto mt-[175px] fixed ">
             <button
               className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 h-auto w-44 hover:bg-black hover:text-white"
@@ -203,11 +220,42 @@ const Quiz = () => {
         </div>
 
         <div className="w-full  sticky top-10 hidden md:block h-fit">
-          <QSidebar />
-        </div>
+        <QSidebar onQuestionClick={handleQuestionClick} />
+      </div>
       </div>
     </>
   );
 };
 
 export default Quiz;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
