@@ -204,6 +204,10 @@ const Quiz = () => {
                       selectedAnswer.optionIndex === index
                   );
 
+
+
+              
+
                   return (
                     <div key={index}>
                       <div

@@ -25,87 +25,6 @@ const Result = () => {
         </h1>
 
 
-        <div className="mt-4 grid grid-cols-2 gap-y-4 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div className="w-full py-2 px-2 mx-auto  border rounded-md">
-          <div className="flex gap-2 justify-center ">
-            <div className="flex items-center  text-[green]">
-              {" "}
-              <RiCheckDoubleLine size={18} />
-            </div>
-            <p className=" font-semibold ">Correct </p>
-          </div>
-          <div className="h-32 w-32 mx-auto mt-1 ">
-            <PieChart />
-          </div>
-
-          <div className="flex gap-2 text-[15px] justify-center font-semibold">
-            <p>83.00% </p>
-            <p>
-              <span className="text-[green]">164</span>/200
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full py-2 px-2 mx-auto  border rounded-md ">
-          <div className="flex gap-2 justify-center">
-            <div className="flex items-center  text-[red]">
-              {" "}
-              <FaRegTimesCircle size={18} />
-            </div>
-            <p className=" font-semibold ">Incorrect </p>
-          </div>
-          <div className="h-32 w-32 mx-auto mt-1  ">
-            <WrongAnsPie />
-          </div>
-
-          <div className="flex gap-2 text-[15px] justify-center font-semibold">
-            <p>53.00% </p>
-            <p>
-              <span className="text-[red]">12</span>/200
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full py-2 px-2 mx-auto  border rounded-md">
-          <div className="flex gap-2 justify-center">
-            <div className="flex items-center  text-[#ff9900]">
-              {" "}
-              <FiFlag size={18} />
-            </div>
-            <p className=" font-semibold ">Left</p>
-          </div>
-          <div className="h-32 w-32 mx-auto mt-1 ">
-            <LeftAnsPie />
-          </div>
-
-          <div className="flex gap-2 text-[15px] justify-center font-semibold">
-            <p>63.00% </p>
-            <p>
-              <span className="text-[#ff9900]">46</span>/200
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full py-2 px-2 mx-auto  border rounded-md">
-          <div className="flex gap-2 justify-center">
-            <div className="flex items-center  text-[#0077ff]">
-              {" "}
-              <AiTwotoneStar size={18} />
-            </div>
-            <p className=" font-semibold ">Accuracy </p>
-          </div>
-          <div className="h-32 w-32 mx-auto mt-1 ">
-            <AccuracyChart />
-          </div>
-
-          <div className="flex gap-2 text-[15px] justify-center font-semibold">
-            <p>23.00% </p>
-            <p>
-              <span className="text-[#0077ff]">75</span>/200
-            </p>
-          </div>
-        </div>
-      </div>
 
 
 
@@ -295,7 +214,101 @@ const Result = () => {
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p>45</p>
         </div>
+
+
+
+
+
+
+
       </div>
+
+
+
+
+
+      <div className="mt-4 grid grid-cols-2 gap-y-4 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="w-full py-2 px-2 mx-auto  border rounded-md">
+          <div className="flex gap-2 justify-center ">
+            <div className="flex items-center  text-[green]">
+              {" "}
+              <RiCheckDoubleLine size={18} />
+            </div>
+            <p className=" font-semibold ">Correct </p>
+          </div>
+          <div className="h-32 w-32 mx-auto mt-1 ">
+            <PieChart />
+          </div>
+
+          <div className="flex gap-2 text-[15px] justify-center font-semibold">
+            <p>83.00% </p>
+            <p>
+              <span className="text-[green]">164</span>/200
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full py-2 px-2 mx-auto  border rounded-md ">
+          <div className="flex gap-2 justify-center">
+            <div className="flex items-center  text-[red]">
+              {" "}
+              <FaRegTimesCircle size={18} />
+            </div>
+            <p className=" font-semibold ">Incorrect </p>
+          </div>
+          <div className="h-32 w-32 mx-auto mt-1  ">
+            <WrongAnsPie />
+          </div>
+
+          <div className="flex gap-2 text-[15px] justify-center font-semibold">
+            <p>53.00% </p>
+            <p>
+              <span className="text-[red]">12</span>/200
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full py-2 px-2 mx-auto  border rounded-md">
+          <div className="flex gap-2 justify-center">
+            <div className="flex items-center  text-[#ff9900]">
+              {" "}
+              <FiFlag size={18} />
+            </div>
+            <p className=" font-semibold ">Left</p>
+          </div>
+          <div className="h-32 w-32 mx-auto mt-1 ">
+            <LeftAnsPie />
+          </div>
+
+          <div className="flex gap-2 text-[15px] justify-center font-semibold">
+            <p>63.00% </p>
+            <p>
+              <span className="text-[#ff9900]">46</span>/200
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full py-2 px-2 mx-auto  border rounded-md">
+          <div className="flex gap-2 justify-center">
+            <div className="flex items-center  text-[#0077ff]">
+              {" "}
+              <AiTwotoneStar size={18} />
+            </div>
+            <p className=" font-semibold ">Accuracy </p>
+          </div>
+          <div className="h-32 w-32 mx-auto mt-1 ">
+            <AccuracyChart />
+          </div>
+
+          <div className="flex gap-2 text-[15px] justify-center font-semibold">
+            <p>23.00% </p>
+            <p>
+              <span className="text-[#0077ff]">75</span>/200
+            </p>
+          </div>
+        </div>
+      </div>
+
 
    
    </Container>
