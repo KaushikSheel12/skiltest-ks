@@ -90,16 +90,16 @@ const Quiz = () => {
     const currentIndex = selectedAnswers.findIndex(
       (selectedAnswer) => selectedAnswer.questionId === question.id
     );
-
+  
     // Remove the selected answer from the selectedAnswers array
     if (currentIndex !== -1) {
       const updatedAnswers = [...selectedAnswers];
       updatedAnswers.splice(currentIndex, 1);
       setSelectedAnswers(updatedAnswers);
+  
+      // Save the updated selected answers in session storage
+      sessionStorage.setItem("selectedAnswers", JSON.stringify(updatedAnswers));
     }
-
-    // Save the updated selected answers in session storage
-    sessionStorage.setItem("selectedAnswers", JSON.stringify(selectedAnswers));
   };
 
   const handlePrevPage = () => {
@@ -263,34 +263,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
