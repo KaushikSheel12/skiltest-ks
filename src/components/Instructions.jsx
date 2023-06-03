@@ -35,7 +35,10 @@ const Instructions = ({ setIsActive }) => {
           </p>
           {generalInstructions.instruction2.options.map((option, index) => (
             <div key={index} className="flex gap-6 py- px-4 mt-2">
-              <div className={`w-8 h-8 ${option.bg}  rounded`}></div>
+              <div
+                style={{ background: option.bg }}
+                className={`w-8 h-8   rounded`}
+              ></div>
               <p className="text-[#4a4242]">{option.text}</p>
             </div>
           ))}
