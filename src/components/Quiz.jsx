@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react";
 import questions from "../data/questions";
 import styles from "../styles/Quiz.module.css";
-import { AiOutlineStar, AiFillStar } from "react-icons/Ai";
+import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { MdOutlineTimer } from "react-icons/Md";
-import QuestionTimer from "../components/QuestionTimer";
 import QSidebar from "../components/QSidebar";
 
 const Quiz = () => {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [star, showStar] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
- //reset timer
+  //reset timer
   const [time, setTime] = useState(0);
   const [running, setRunning] = useState(true);
-
 
   //reset timer
   useEffect(() => {
@@ -34,16 +32,15 @@ const Quiz = () => {
     setTime(0);
     setRunning(true);
   };
-// reset timer end
+  // reset timer end
 
-
-
-  
   const handleQuestionClick = (questionId) => {
     // Find the index of the clicked question
 
-    handleRestart()
-    const questionIndex = questions.findIndex((question) => question.id === questionId);
+    handleRestart();
+    const questionIndex = questions.findIndex(
+      (question) => question.id === questionId
+    );
 
     // Set the current page to the index + 1 to render the selected question
     setCurrentPage(questionIndex + 1);
@@ -77,7 +74,7 @@ const Quiz = () => {
   };
 
   const handleNextPage = () => {
-    handleRestart()
+    handleRestart();
 
     if (currentPage < questions.length) {
       setCurrentPage(currentPage + 1);
@@ -90,13 +87,13 @@ const Quiz = () => {
     const currentIndex = selectedAnswers.findIndex(
       (selectedAnswer) => selectedAnswer.questionId === question.id
     );
-  
+
     // Remove the selected answer from the selectedAnswers array
     if (currentIndex !== -1) {
       const updatedAnswers = [...selectedAnswers];
       updatedAnswers.splice(currentIndex, 1);
       setSelectedAnswers(updatedAnswers);
-  
+
       // Save the updated selected answers in session storage
       sessionStorage.setItem("selectedAnswers", JSON.stringify(updatedAnswers));
     }
@@ -160,17 +157,14 @@ const Quiz = () => {
 
               {/* <QuestionTimer /> */}
 
-      {/* timer */}
+              {/* timer */}
 
-      <div className="hidden md:block">
-      <div className="py-0 px-0 mt-[2px]"></div>
-      <h1 className="font-semibold text-[black] text-[15px]">
-        Time: 00:{time < 10 ? `0${time}` : time}
-      </h1>
-    </div>
-
-
-
+              <div className="hidden md:block">
+                <div className="py-0 px-0 mt-[2px]"></div>
+                <h1 className="font-semibold text-[black] text-[15px]">
+                  Time: 00:{time < 10 ? `0${time}` : time}
+                </h1>
+              </div>
 
               {star ? (
                 <AiOutlineStar
@@ -204,10 +198,6 @@ const Quiz = () => {
                       selectedAnswer.optionIndex === index
                   );
 
-
-
-              
-
                   return (
                     <div key={index}>
                       <div
@@ -227,9 +217,9 @@ const Quiz = () => {
             </div>
           )}
 
-          <div className="flex gap-5 w-[100%] md:w-[70%] h-auto justify-center mx-auto mt-[175px] fixed ">
+          <div className="flex gap-5 w-full md:w-[60%] h-auto md:justify-center justify-between mx-auto mt-[175px] fixed pr-10 md:pr-0">
             <button
-              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 h-auto w-44 hover:bg-black hover:text-white"
+              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 h-auto w-44 hover:bg-black hover:text-white hidden md:block whitespace-nowrap"
               onClick={handleClearResponse}
               disabled={currentPage === 1}
             >
@@ -237,7 +227,14 @@ const Quiz = () => {
             </button>
 
             <button
-              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 hover:bg-black hover:text-white"
+              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 hover:bg-black hover:text-white md:hidden w-full"
+              onClick={handlePrevPage}
+              disabled={currentPage === 1}
+            >
+              Previous
+            </button>
+            <button
+              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 hover:bg-black hover:text-white hidden md:block whitespace-nowrap"
               onClick={handlePrevPage}
               disabled={currentPage === 1}
             >
@@ -245,7 +242,7 @@ const Quiz = () => {
             </button>
 
             <button
-              className="bg-yellow-400 hover:bg-amber-300 text-black  rounded-md px-3 py-2 h-auto w-48  "
+              className="bg-yellow-400 hover:bg-amber-300 text-black  rounded-md px-3 py-2 h-auto md:w-48  w-full"
               onClick={handleNextPage}
               disabled={currentPage === totalPages}
             >
@@ -255,8 +252,8 @@ const Quiz = () => {
         </div>
 
         <div className="w-full  sticky top-10 hidden md:block h-fit">
-        <QSidebar onQuestionClick={handleQuestionClick} />
-      </div>
+          <QSidebar onQuestionClick={handleQuestionClick} />
+        </div>
       </div>
     </>
   );

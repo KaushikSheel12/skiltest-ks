@@ -8,16 +8,15 @@ const QSidebar = ({ onQuestionClick }) => {
   const [answers, setAnswers] = useState([]);
   const [selectedId, setSelectedId] = useState();
 
-  useEffect(() => {
-    const answers = JSON.parse(sessionStorage.getItem("selectedAnswers"));
-    setAnswers(answers);
-  });
-
   const isClicked = (item) => {
     return answers?.find((a) => a.questionId === item);
   };
 
-  console.log(sessionStorage.getItem("selectedAnswers"));
+  useEffect(() => {
+    const answers = JSON.parse(sessionStorage.getItem("selectedAnswers"));
+    setAnswers(answers);
+  }, [onQuestionClick]);
+
   return (
     <div className=" border-l-[2px] ml- p-2 fixed  py-0 h-full   left-auto top-[60px]  mt-0  ">
       <div className="flex py-2 px-2 items-center ">
@@ -88,10 +87,4 @@ const QSidebar = ({ onQuestionClick }) => {
   );
 };
 
-export default QSidebar
-
-
-
-
-
-
+export default QSidebar;
