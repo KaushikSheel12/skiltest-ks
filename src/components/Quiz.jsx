@@ -3,7 +3,12 @@ import questions from "../data/questions";
 import styles from "../styles/Quiz.module.css";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { MdOutlineTimer } from "react-icons/Md";
-import QSidebar from "../components/QSidebar";
+
+import Image from "next/image";
+import { QuizHeader } from "./QuizHeader";
+import { QuestionBox } from "./QuestionBox";
+import { QuestionActions } from "./QuestionActions";
+import QSidebar from "./QSidebar/index";
 
 const Quiz = () => {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
@@ -116,139 +121,29 @@ const Quiz = () => {
       <div className="w-full grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 py-6 px-4 mt-12 ">
         <div className=" col-span-3 p-2">
           <div className="flex justify-between">
-            <div className="flex items-center space-x-3">
-              <h2 className="font-semibold text-[16px]">
-                Question {currentPage}
-              </h2>
-              <div className="flex space-x-1 items-center">
-                <svg
-                  fill="#3acc78"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 19 19"
-                >
-                  <path
-                    id="Union_6"
-                    d="M0,9.5A9.5,9.5,0,1,1,9.5,19,9.5,9.5,0,0,1,0,9.5Zm1.4,0A8.1,8.1,0,1,0,9.5,1.4,8.109,8.109,0,0,0,1.4,9.5Zm6.764,3.316a.763.763,0,0,1-.539-.223L5.29,10.256A.763.763,0,0,1,6.37,9.178l1.8,1.8,4.418-4.419a.764.764,0,0,1,1.08,1.08L8.7,12.594a.761.761,0,0,1-.539.222Z"
-                  ></path>
-                </svg>
-                <p className="text-[green] text-[14px]">+2</p>
-                <svg
-                  fill="#fd4a43"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 19 19"
-                >
-                  <path
-                    id="Union_5"
-                    d="M0,9.5A9.5,9.5,0,1,1,9.5,19,9.5,9.5,0,0,1,0,9.5Zm1.4,0A8.1,8.1,0,1,0,9.5,1.4,8.109,8.109,0,0,0,1.4,9.5Zm10.522,3.433L9.5,10.511,7.078,12.934a.735.735,0,0,1-1.04-1.039L8.459,9.471,6.037,7.048a.735.735,0,0,1,1.04-1.04L9.5,8.43l2.423-2.421a.735.735,0,1,1,1.04,1.039L10.54,9.47l2.423,2.424a.736.736,0,1,1-1.041,1.039Z"
-                  ></path>
-                </svg>
-                <p className="text-[red] text-[14px]  ">-0.66</p>
-              </div>
-            </div>
-
-            <div className="flex gap-2">
-              <div>
-                <MdOutlineTimer color="black" size={24} cursor="pointer" />
-              </div>
-
-              {/* <QuestionTimer /> */}
-
-              {/* timer */}
-
-              <div className="hidden md:block">
-                <div className="py-0 px-0 mt-[2px]"></div>
-                <h1 className="font-semibold text-[black] text-[15px]">
-                  Time: 00:{time < 10 ? `0${time}` : time}
-                </h1>
-              </div>
-
-              {star ? (
-                <AiOutlineStar
-                  onClick={() => starClick()}
-                  color="black"
-                  size={24}
-                  cursor="pointer"
-                />
-              ) : (
-                <AiFillStar
-                  onClick={() => starClick()}
-                  color="teal"
-                  size={24}
-                  cursor="pointer"
-                />
-              )}
-            </div>
+            <QuizHeader
+              currentPage={currentPage}
+              star={star}
+              time={time}
+              starClick={starClick}
+            />
           </div>
 
           {question && (
-            <div key={question.id} className="mt-4 w-full">
-              <p className="font-normal text-gray-700 mb-3">
-                {question.question}
-              </p>
-
-              <div className="w-full">
-                {question.options.map((option, index) => {
-                  const isSelected = selectedAnswers.some(
-                    (selectedAnswer) =>
-                      selectedAnswer.questionId === question.id &&
-                      selectedAnswer.optionIndex === index
-                  );
-
-                  return (
-                    <div key={index}>
-                      <div
-                        id="btn-style"
-                        key={index}
-                        className={`${styles.option} ${
-                          isSelected ? styles.highlighted : ""
-                        }`}
-                        onClick={() => handleAnswerSelect(question.id, index)}
-                      >
-                        <p>{option}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+            <QuestionBox
+              question={question}
+              handleAnswerSelect={handleAnswerSelect}
+              selectedAnswers={selectedAnswers}
+            />
           )}
 
-          <div className="flex gap-5 w-full md:w-[60%] h-auto md:justify-center justify-between mx-auto mt-[175px] fixed pr-10 md:pr-0">
-            <button
-              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 h-auto w-44 hover:bg-black hover:text-white hidden md:block whitespace-nowrap"
-              onClick={handleClearResponse}
-              disabled={currentPage === 1}
-            >
-              Clear Response
-            </button>
-
-            <button
-              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 hover:bg-black hover:text-white md:hidden w-full"
-              onClick={handlePrevPage}
-              disabled={currentPage === 1}
-            >
-              Previous
-            </button>
-            <button
-              className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 hover:bg-black hover:text-white hidden md:block whitespace-nowrap"
-              onClick={handlePrevPage}
-              disabled={currentPage === 1}
-            >
-              Mark for Review later
-            </button>
-
-            <button
-              className="bg-yellow-400 hover:bg-amber-300 text-black  rounded-md px-3 py-2 h-auto md:w-48  w-full"
-              onClick={handleNextPage}
-              disabled={currentPage === totalPages}
-            >
-              Next
-            </button>
-          </div>
+          <QuestionActions
+            handleClearResponse={handleClearResponse}
+            currentPage={currentPage}
+            handlePrevPage={handlePrevPage}
+            totalPages={totalPages}
+            handleNextPage={handleNextPage}
+          />
         </div>
 
         <div className="w-full  sticky top-10 hidden md:block h-fit">
