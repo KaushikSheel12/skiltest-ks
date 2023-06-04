@@ -4,7 +4,7 @@ import React from "react";
 export const Actions = () => {
   return (
     <div className="  px-4 py-2 mt-[260px]  h-24  fixed  overflow-hidden mx-auto">
-      <div className="flex gap-5 h-10 w-full   ">
+      <div className="flex gap-5 h-10 w-full  flex-wrap ">
         <button className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">
           Instructions
         </button>

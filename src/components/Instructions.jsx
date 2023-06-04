@@ -34,12 +34,15 @@ const Instructions = ({ setIsActive }) => {
             {generalInstructions.instruction2.text}
           </p>
           {generalInstructions.instruction2.options.map((option, index) => (
-            <div key={index} className="flex gap-6 py- px-4 mt-2">
+            <div
+              key={index}
+              className="flex gap-6 py- px-4 mt-2 md:text-[16px] text-[12px]"
+            >
               <div
                 style={{ background: option.bg }}
-                className={`w-8 h-8   rounded`}
+                className="md:w-8 md:h-8 rounded w-6 h-6"
               ></div>
-              <p className="text-[#4a4242]">{option.text}</p>
+              <p className="text-[#4a4242] ">{option.text}</p>
             </div>
           ))}
 
