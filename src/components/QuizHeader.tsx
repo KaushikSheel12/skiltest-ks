@@ -34,7 +34,7 @@ export const QuizHeader = ({ currentPage, star, starClick, time }) => {
 
         {/* timer */}
 
-        <div className="hidden md:block">
+        <div className=" md:block">
           <div className="py-0 px-0 mt-[2px]"></div>
           <h1 className="font-semibold text-[black] text-[15px]">
             Time: 00:{time < 10 ? `0${time}` : time}

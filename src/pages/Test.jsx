@@ -9,6 +9,8 @@ import Result from '@/components/Result'
 import { MyContext } from '@/context/AppContext'
 
 
+
+
 const Test = () => {
   const[isActive,setIsActive]=useState(false)
 
@@ -23,6 +25,7 @@ const Test = () => {
   <Instructions setIsActive={setIsActive}/>
   }
 
+  {/* <HomeP/> */}
 {/* <Result/> */}
 
   {/* <QInstruction/> */}

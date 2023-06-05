@@ -24,16 +24,6 @@ const Result = () => {
           Overall Performance Analysis
         </h1>
 
-
-
-
-
-
-
-
-
-
-
         <div className="grid md:grid-cols-5 lg:grid-cols-8 grid-cols-4 mt-5 border ">
           <div className="border-l-2  text-left px-2  full h-16">
             <p className="font-semibold md:text-center text-left text-green-600 text-sm md:text-lg ">0/30</p>
@@ -91,10 +81,10 @@ const Result = () => {
             </div>
           </div>
 
-          <div className="border-l-2  text-left px-2  full h-16">
+          <div className=" border-l-2  text-left px-2  full h-16">
             <p className="font-semibold md:text-center text-left  text-sm md:text-lg  ">10%</p>
 
-            <div className="flex md:justify-center gap-1 items-center">
+            <div className="flex  md:justify-center gap-1 items-center">
               <BsPercent />
               <p className="font-semibold md:text-center text-lefttext-gray-600 py-2 text-xs md:text-lg lg:text-[14px]">
                 Percentile
@@ -102,10 +92,10 @@ const Result = () => {
             </div>
           </div>
 
-          <div className="border-l-2  text-left px-2  full h-16">
+          <div className="  border-l-2  text-left px-2  full h-16">
             <p className="font-semibold md:text-center text-left text-green-600  text-sm md:text-lg  ">0/30</p>
 
-            <div className="flex md:justify-center gap-1 py-2">
+            <div className="flex md:justify-center gap-1 py-2 "> 
               <div className="flex items-center ">
                 {" "}
                 <RiCheckDoubleLine size={18} />
@@ -133,10 +123,10 @@ const Result = () => {
   
       <div
         className="grid grid-cols-4 lg:grid-cols-7  border 
- mt-7 flex-wrap  px-3 place-items-center "
+ mt-7 flex-wrap  px-3 r font-semibold "
       >
      
-          <p className="py-2 px-2 whitespace-nowrap">Section Name</p>
+          <p className="py-3 px-2 whitespace-nowrap">Section Name</p>
    
 
 {header.map(({icon,id,title})=>
@@ -148,7 +138,7 @@ const Result = () => {
       </div>
 
       {/* Quiz */}
-      <div
+      {/* <div
         className="grid grid-cols-4 lg:grid-cols-7
  border  w-full  mt-2 px-3 "
       >
@@ -179,7 +169,7 @@ const Result = () => {
         <div className="   px-6 py-3  w-full grid place-items-center">
           <p>45</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Total */}
 
@@ -307,6 +297,42 @@ const Result = () => {
             </p>
           </div>
         </div>
+
+      </div>
+
+
+      <div
+        className="grid grid-cols-4 lg:grid-cols-7
+        border  w-full  mt-2 px-3 "
+      >
+        <div className="  font-semibold ">
+          <p className="py-2 px-3">Total</p>
+        </div>
+
+        <div className="   px-4 py-3  w-full grid place-items-center">
+          <p className="text-green-600">0/30</p>
+        </div>
+
+        <div className=" px-4 py-3  w-full grid place-items-center">
+          <p className="text-red-600">0/30</p>
+        </div>
+
+        <div className=" px-4 py-3  w-full grid place-items-center">
+          <p>0/30</p>
+        </div>
+
+        <div className=" px-4 py-3  w-full grid place-items-center">
+          <p className="whitespace-nowrap">00m 05s</p>
+        </div>
+
+        <div className="  py-3 px-4 grid place-items-center">
+          <p>0%</p>
+        </div>
+
+        <div className=" px-4 py-3  w-full grid place-items-center">
+          <p>45</p>
+        </div>
+
       </div>
 
 
