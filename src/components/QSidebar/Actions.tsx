@@ -9,12 +9,10 @@ export const Actions = () => {
   };
 
   return (
-    <div className="  px-4 py-2 mt-[260px]  h-24  fixed  overflow-hidden mx-auto">
-      <div className="flex gap-5 h-10 w-full  flex-wrap ">
-        <button className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">
-          Instructions
-        </button>
-        {showPopup && (
+    <div className="  px-4 py-2 mt-[260px] border border-red-800  h-24  fixed  overflow-hidden mx-auto">
+ 
+ {/* popup */}
+ {showPopup && (
           <div className="fixed inset-0 flex items-center justify-center z-10">
             <div className="absolute bg-white p-4 rounded shadow">
               <h2 className="text-[27px] font-semibold mb-2 w-80 h-auto">
@@ -89,7 +87,13 @@ export const Actions = () => {
             </div>
           </div>
         )}
+ {/* popup end */}
 
+      <div className="flex gap-5 h-10 w-full  flex-wrap ">
+        <button className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">
+          Instructions
+        </button>
+    
 
 
         <Link href="/QSections">
