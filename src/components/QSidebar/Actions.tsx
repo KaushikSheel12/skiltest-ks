@@ -52,7 +52,7 @@ export const Actions = () => {
                         Quiz
                       </th>
                       <td className="px-6 py-4 text-[black] border">
-                        30
+                       17
                       </td>
                       <td className="px-6 py-4 text-[black] border">
                         0

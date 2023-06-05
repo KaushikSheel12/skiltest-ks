@@ -146,6 +146,16 @@ const questions = [
         correctAnswer: 1,
       },
     // Add more questions here
+
+
+
+
+
+
+
+
+
+    
     
   ];
   

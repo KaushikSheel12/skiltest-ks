@@ -3,10 +3,10 @@ import React from "react";
 
 export const QuestionTabs = ({ onQuestionClick, isClicked }) => {
   return (
-    <div className="grid grid-cols-5 fixed  gap-5 py-2  overflow-y-auto  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px]">
+    <div className="grid grid-cols-5 fixed  gap-5 py-2  overflow-y-auto  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px] px-5">
       {questions.map((el, index) => {
         return (
-          <div key={index} className="py-0 grid  border ">
+          <div key={index} className="py-0 relative  ">
             <button
               onClick={() => {
                 onQuestionClick(el.id);
@@ -19,6 +19,7 @@ export const QuestionTabs = ({ onQuestionClick, isClicked }) => {
             >
               {el.id}
             </button>
+            <div className="w-2 h-2 bg-green-500 rounded-2xl absolute -top-1 right-0  box-content"></div>
           </div>
         );
       })}
