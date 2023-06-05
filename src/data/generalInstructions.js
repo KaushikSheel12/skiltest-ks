@@ -7,16 +7,13 @@ export const generalInstructions={
         options:[
             {
                 text:"You have not visited the question yet.",
-                bg:"#1E88E5"
+                bg:"#000000"
             },
             {
                 text:"You have answered the question.",
-                bg:"#111"
-            },
-            {
-                text:" You have not visited the question yet.",
                 bg:"#1E88E5"
             },
+          
             {
                 text:"You have NOT answered the question, but have marked the question for review.",
                 bg:"#FFEE58"

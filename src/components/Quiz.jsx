@@ -4,7 +4,6 @@ import styles from "../styles/Quiz.module.css";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { MdOutlineTimer } from "react-icons/Md";
 
-import Image from "next/image";
 import { QuizHeader } from "./QuizHeader";
 import { QuestionBox } from "./QuestionBox";
 import { QuestionActions } from "./QuestionActions";

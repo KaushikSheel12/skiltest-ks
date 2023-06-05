@@ -19,7 +19,7 @@ const QSidebar = ({ onQuestionClick }) => {
   }, [onQuestionClick]);
 
   return (
-    <div className=" border-l-[2px] ml- p-2 fixed  py-0 h-full   left-auto top-[60px]  mt-0">
+    <div className=" border-l-[2px] ml- p-2 fixed  py-0 h-full   left-auto top-[74px]  mt-0">
       <Header />
       <QuestionPalette />
       <Accordian title="testing">

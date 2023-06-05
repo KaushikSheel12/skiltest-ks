@@ -7,7 +7,7 @@ export const Accordian = ({ children, title }) => {
 
   return (
     <div>
-      <div className="flex items-center  justify-between border-b-2  mt-3 ">
+      <div className="flex items-center   justify-between border-b-2  mt-3 ">
         <p className="mb-1 ml-2 font-normal">{title}</p>
 
         <div className="mr-30 ">

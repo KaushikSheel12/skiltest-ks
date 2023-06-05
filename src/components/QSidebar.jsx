@@ -18,8 +18,8 @@ const QSidebar = ({ onQuestionClick }) => {
   }, [onQuestionClick]);
 
   return (
-    <div className=" border-l-[2px] ml- p-2 fixed  py-0 h-full   left-auto top-[60px]  mt-0  ">
-      <div className="flex py-2 px-2 items-center ">
+    <div className=" border-l-[2px] ml- p-2 fixed  py-0 h-full   left-auto top-[60px]  mt-0 ">
+      <div className="flex py-2 px-2 items-center  ">
         <div>
           <Image
             width={65}
@@ -64,7 +64,7 @@ const QSidebar = ({ onQuestionClick }) => {
         <div className="grid grid-cols-5 fixed  gap-5 py-2 px-2 overflow-y-scroll  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px]">
           {questions.map((el, index) => {
             return (
-              <div key={index} className="py-0 grid  border ">
+              <div   key={index} className="py-0 grid ">
                 <button
                   onClick={() => {
                     onQuestionClick(el.id);
