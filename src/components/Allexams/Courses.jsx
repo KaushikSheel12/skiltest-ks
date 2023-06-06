@@ -14,6 +14,8 @@ const Courses = () => {
 <div  className='w-[400px] h-36  bg-orange-600 text-white px-2  rounded'>
  <h2 className='px-2 py-2 font-bold text-xl '>Online Classroom Program</h2>
  <p className='px-2'>Live & Recorded courses by Top <br /> Faculty</p>
+
+
 <div className='px-2 mt-5 text-black font-semibold flex gap-2 items-center'><Link  href="">Explore Course </Link>
 <IoIosArrowForward/>
 </div>
@@ -46,7 +48,6 @@ const Courses = () => {
 <IoIosArrowForward/>
 </div>
 </div>
-
 
 </div>
 </div>
