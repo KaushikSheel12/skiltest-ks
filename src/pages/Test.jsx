@@ -7,6 +7,7 @@ import QInstruction from '@/components/QInstruction'
 import QSections from '@/pages/QSections'
 import Result from '@/components/Result'
 import { MyContext } from '@/context/AppContext'
+import Allexams from '@/components/Allexams/Allexams'
 
 
 
@@ -19,11 +20,14 @@ const Test = () => {
   return (
   <>
   <Header/>
-  {isActive  ?
+  {/* {isActive  ?
    <Quiz/> :
 
   <Instructions setIsActive={setIsActive}/>
-  }
+  } */}
+
+< Allexams/>
+
 
   {/* <HomeP/> */}
 {/* <Result/> */}
