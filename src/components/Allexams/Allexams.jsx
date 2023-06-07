@@ -4,6 +4,7 @@ import Chooseclg from './Chooseclg'
 import Courses from './Courses'
 import Weoffer from './Weoffer'
 import SpeakForUs from './SpeakForUs'
+import Updates from './Updates '
 
 const Allexams = () => {
   return (
@@ -27,7 +28,7 @@ const Allexams = () => {
      <Courses/>
      <Weoffer/>
      <SpeakForUs/>
- 
+ <Updates/>
    </>
   )
 }
