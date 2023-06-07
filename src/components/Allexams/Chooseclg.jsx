@@ -5,7 +5,7 @@ const Chooseclg = () => {
   return (
  <>
     <div className='mt-5'>
-    <h2 className='text-center px-2 py-2 font-semibold text-2xl'>Why Choose Collage mentor's Exam Prep?</h2>
+    <h2 className='text-center px-2 py-2 font-semibold text-2xl'>Why Choose College mentor's Exam Prep?</h2>
 
    <div className="flex flex-wrap items-center gap-5 w-full h-full  justify-center">
        

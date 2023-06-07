@@ -49,7 +49,7 @@ let i=1
 
 
 
-    <div className='border  w-80 h-fi rounded px-2 py-2'>
+    <div className='border  w-80 h-[470px] rounded px-2 py-2'>
 <h2 className='px-1 font-semibold text-[19px] py-2'>Admit Cards</h2>
 <hr className="w-full h-0.5  mx-auto  bg-gray-100 border-0 rounded  dark:bg-gray-600 top-0 mt-1"/>
 <div className='mt-2'>{updates.map((el)=>el.AdmitCards.map((admitelemet , admitindex)=> {
