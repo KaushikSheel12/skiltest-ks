@@ -5,9 +5,10 @@ import Quiz from '../components/Quiz'
 import { useState } from 'react'
 import QInstruction from '@/components/QInstruction'
 import QSections from '@/pages/QSections'
-import Result from '@/components/Result'
+import Result from '@/components/Rersult/Result'
 import { MyContext } from '@/context/AppContext'
 import Allexams from '@/components/Allexams/Allexams'
+import Pepars from '@/components/Allexams/EXAM_WISE_PAPERS/Pepars'
 
 
 
@@ -27,11 +28,11 @@ const Test = () => {
   <Instructions setIsActive={setIsActive}/>
   } */}
 
-< Allexams/>
+{/* < Allexams/> */}
 
-
+{/* <Pepars/> */}
   {/* <HomeP/> */}
-{/* <Result/> */}
+<Result/>
 
   {/* <QInstruction/> */}
   {/* <QSections/> */}

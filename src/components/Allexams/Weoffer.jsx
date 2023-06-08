@@ -8,7 +8,7 @@ import TestSeries from './Courses/TestSeries'
 
 
 const Weoffer = () => {
-  const [activeComponent, setActiveComponent] = useState(null);
+  const [activeComponent, setActiveComponent] = useState(<Quizzes/>);
   const [active, setActive] = useState(false)
 
   const handleClick = (component) => {
@@ -19,9 +19,9 @@ const Weoffer = () => {
   return (
     <>
     <div>
-      <h1 className='text-center md:py-6 py-4 font-semibold md:text-[24px] text-[20px]'>Content we offer </h1>
+      <h1 className='text-center md:py-6 py-2 font-semibold md:text-[24px] text-[18px]'>Content we offer </h1>
 
-      <div className='w-full md:w-[90%]  flex flex-col md:flex-row px-2 py-2 mx-auto'>
+      <div className='w-full md:w-[90%] border border-blue-500  h-auto  flex flex-col md:flex-row px-2 py-2 mx-auto'>
 
         <div className='md:w-80 h-full px-2 flex flex-row md:block overflow-x-scroll justify-between md:justify-normal'>
 
@@ -65,7 +65,7 @@ const Weoffer = () => {
         </div>
 
 
-        <div className='border border-red-500 w-full '>{activeComponent}</div>
+        <div className=' px-2 py-2 rounded bg-slate-100 w-full '>{activeComponent}</div>
 
       </div>
       </div>
