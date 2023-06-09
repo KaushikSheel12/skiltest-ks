@@ -13,13 +13,14 @@ import LeftAnsPie from "../piechart/LeftPie";
 import AccuracyChart from "../piechart/AccuChart";
 import { header } from "@/data/header";
 import { Container } from "../Container";
+import Mobileview from "./Mobileview";
 
 
 
 const Result = () => {
   return (
    <Container>
-      <div className="w-full   mt-20  ">
+      <div className="w-full   md:mt-20  mt-[65px] ">
         <h1 className="font-semibold text-start text-[19px] ">
           Overall Performance Analysis
         </h1>
@@ -117,79 +118,10 @@ const Result = () => {
             </div>
           </div>
         </div>
+
+        
         {/* mobile view */}
-        <div className="grid grid-cols-3 mt-5 md:hidden   ">
-          <div className="border-r border-b  place-items-center px-2  full h-16 grid place-content-center">
-            <p className="font-semibold md:text-center text-left text-green-600 text-sm md:text-lg ">0/30</p>
-
-            <div className="flex md:justify-center gap-1 py-2">
-              <div className="flex items-center ">
-                {" "}
-                <RiCheckDoubleLine size={18} />
-              </div>
-              <p className="font-semibold md:text-center text-lefttext-gray-600 text-xs md:text-lg lg:text-[14px]">Right</p>{" "}
-            </div>
-          </div>
-
-          <div className="border-r place-items-center border-b  text-left px-2  full h-16 place-content-center grid">
-            <p className="font-semibold md:text-center text-left text-red-600 text-sm md:text-lg  ">0/30</p>
-
-            <div className="flex md:justify-center gap-1 py-2 items-center">
-              <RxCrossCircled size={15} />
-              <p className="font-semibold md:text-center text-lefttext-gray-600  text-xs md:text-lg lg:text-[14px]">
-                Wrong
-              </p>{" "}
-            </div>
-          </div>
-
-          <div className="border-b place-items-center   text-left px-2  full h-16 place-content-center grid">
-            <p className="font-semibold md:text-center text-left  text-sm md:text-lg  ">0/30</p>
-
-            <div className="flex md:justify-center gap-1 items-center">
-              <SiSimpleanalytics size={12} />
-              <p className="font-semibold md:text-center text-lefttext-gray-600 py-2 text-xs md:text-lg lg:text-[14px]">
-                Score
-              </p>{" "}
-            </div>
-          </div>
-
-          <div className="border-r place-items-center    text-left px-2 full h-16 place-content-center grid">
-            <p className="font-semibold md:text-center text-left  text-sm md:text-lg  ">00:00:05</p>
-
-            <div className="flex md:justify-center gap-1 items-center">
-              <RiTimerLine size={18} />
-              <p className="font-semibold md:text-center text-lefttext-gray-600 py-2 text-xs md:text-lg lg:text-[14px]">
-                Time
-              </p>{" "}
-            </div>
-          </div>
-
-          <div className="border-r place-items-center  text-left px-2  full h-16 place-content-center grid">
-            <p className="font-semibold md:text-center text-left  text-sm md:text-lg  ">0%</p>
-
-            <div className="flex md:justify-center gap-2 items-center">
-              <GiChart size={14} />
-              <p className="font-semibold md:text-center text-lefttext-gray-600 py-2 text-xs md:text-lg lg:text-[14px]">
-                Accuracy
-              </p>{" "}
-            </div>
-          </div>
-
-      
-
-       
-
-          <div className=" place-items-center text-left px-2  full h-16 place-content-center grid">
-            <p className="font-semibold md:text-center text-left  text-sm md:text-lg  ">45/9252</p>
-
-            <div className="flex md:justify-center gap-1 items-center">
-              <BsListStars size={18} />
-              <p className="font-semibold text-gray-600 py-2 text-xs md:text-lg lg:text-[14px]">
-                Rank
-              </p>{" "}
-            </div>
-          </div>
-        </div>
+     <Mobileview/>
       </div>
       {/* Blow */}
    
@@ -344,7 +276,9 @@ const Result = () => {
     {/* chapter section  */}
 
 
-    <h1 className="font-semibold py-2 mt-2 text-start text-[19px] ">
+    <div className="hidden md:block">
+   
+    <h1 className="font-semibold py-2 hidden md:block mt-2 text-start text-[19px] ">
          Chapter's  Performance Analysis
         </h1>
 
@@ -355,11 +289,6 @@ const Result = () => {
       <div className="px-2 py-2 border-r-2  text-rose-600">Incorrect : 04</div>
       <div className="px-2 py-2   text-blue-600"> Accuracy : 35%</div>
     </div>
-
-
-    
-
-
         <div
         className="grid grid-cols-4 lg:grid-cols-7
        w-full  mt-2 px-3 "
@@ -387,12 +316,7 @@ const Result = () => {
         <div className="  py-3 px-4 grid place-items-center">
           <p>0%</p>
         </div>
-
-   
-
-      </div>
-
-   
+      </div> 
       <div
         className="grid grid-cols-4 lg:grid-cols-7
         w-full  mt-2 px-3 bg-gray-100"
@@ -400,32 +324,22 @@ const Result = () => {
         <div className="  font-semibold ">
           <p className="py-2 px-3">Chapter 2</p>
         </div>
-
         <div className="   px-4 py-3  w-full grid place-items-center">
           <p className="text-green-600">0/30</p>
         </div>
-
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p className="text-red-600">0/30</p>
         </div>
-
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p>0/30</p>
         </div>
-
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p className="whitespace-nowrap">00m 05s</p>
         </div>
-
         <div className="  py-3 px-4 grid place-items-center">
           <p>0%</p>
         </div>
-
-      
-
-      </div>
-
-
+          </div>
       <div
         className="grid grid-cols-4 lg:grid-cols-7
          w-full mt-2  px-3 md:mx-aut"
@@ -433,31 +347,90 @@ const Result = () => {
         <div className="  font-semibold ">
           <p className="py-2 px-3">Chapter 3</p>
         </div>
-
         <div className="   px-4 py-3  w-full grid place-items-center">
           <p className="text-green-600">0/30</p>
         </div>
-
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p className="text-red-600">0/30</p>
         </div>
-
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p>0/30</p>
         </div>
-
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p className="whitespace-nowrap">00m 05s</p>
         </div>
-
         <div className="  py-3 px-4 grid place-items-center">
           <p>0%</p>
-        </div>
-
-       
-
+        </div>      
+      </div>
       </div>
 
+
+{/* 
+      Chapter mobile view */}
+
+<div className="md:hidden block">
+   
+   <h1 className="font-semibold py-2  mt-2 text-start text-[19px] ">
+        Chapter's  Performance Analysis
+       </h1>
+
+   <div className="flex flex-wrap border  gap-4 py-0 mt-4 justify-between font-semibold">
+     <div className=" px-2 py-2 border-r-2 ">Section : 1</div>
+     <div className="px-2 py-2 border-r-2  text-green-500">Correct : 30</div>
+     <div className="px-2 py-2 border-r-2  text-rose-600">Incorrect : 04</div>
+ 
+   </div>
+       <div
+       className="grid grid-cols-3 lg:grid-cols-7
+      w-full   px-3 "
+     >
+       <div className="border-b-2 border-r-2 font-semibold ">
+         <p className="py-2 px-0">Chapter 1</p>
+       </div>
+
+       <div className="   px-2 py-0 border-b-2 border-r-2  w-full grid place-items-center">
+         <p className="text-green-600">0/30</p>
+       </div>
+
+       <div className=" border-b-2 px-4 py-3  w-full grid place-items-center">
+         <p className="text-red-600">0/30</p>
+       </div>
+
+
+      
+
+     </div> 
+     <div
+       className="grid grid-cols-3 lg:grid-cols-7
+       w-full   px-3 bg-gray-100"
+     >
+       <div className="border-b-2 border-r-2 font-semibold ">
+         <p className="py-2 px-0">Chapter 2</p>
+       </div>
+       <div className="   px-2 py-0 border-b-2  border-r-2 w-full grid place-items-center">
+         <p className="text-green-600">0/30</p>
+       </div>
+       <div className=" border-b-2 px-4 py-3  w-full grid place-items-center">
+         <p className="text-red-600">0/30</p>
+       </div>
+  
+         </div>
+     <div
+       className="grid grid-cols-3 lg:grid-cols-7
+        w-full   px-3 md:mx-aut"
+     >
+       <div className="border-b-2 border-r-2 font-semibold ">
+         <p className="py-2 px-0">Chapter 3</p>
+       </div>
+       <div className=" px-2 py-0 border-r-2 border-b-2 w-full grid place-items-center">
+         <p className="text-green-600">0/30</p>
+       </div>
+       <div className=" px-4 py-3  w-full grid place-items-center">
+         <p className="text-red-600">0/30</p>
+       </div>    
+     </div>
+     </div>
    </Container>
   );
 };
