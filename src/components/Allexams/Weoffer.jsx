@@ -21,7 +21,7 @@ const Weoffer = () => {
     <div>
       <h1 className='text-center md:py-6 py-2 font-semibold md:text-[24px] text-[18px]'>Content we offer </h1>
 
-      <div className='w-full md:w-[90%] border border-blue-500  h-auto  flex flex-col md:flex-row px-2 py-2 mx-auto'>
+      <div className='w-full md:w-[90%]   h-auto  flex flex-col md:flex-row px-2 py-2 mx-auto'>
 
         <div className='md:w-80 h-full px-2 flex flex-row md:block overflow-x-scroll justify-between md:justify-normal'>
 
