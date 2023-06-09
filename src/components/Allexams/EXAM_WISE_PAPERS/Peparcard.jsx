@@ -4,9 +4,9 @@ import { BsBookHalf } from 'react-icons/Bs'
 const Peparcard = () => {
   return (
   <>
-        <div className='md:w-56 md:h-[270px] group cursor-pointer border border-gray-200 md:px-1 px-0 md:py-2  py-1 rounded-md md:mt-4 mt-2 justify-center text-center hover:shadow-xl transition-all md:block flex content-center h-16'>
+        <div className='md:w-56  md:h-[270px] group cursor-pointer border border-gray-200 md:px-1 px-0 md:py-2  py-1 rounded-md md:mt-4 mt-3 justify-center text-center hover:shadow-xl transition-all md:block flex content-center h-16'>
 
-<div className='bg-gray-200   mx-auto md:mt-3 md:w-9 md:h-9 h-12 w-12 flex justify-center items-center rounded-full'><BsBookHalf   size={20}/>
+<div className='bg-gray-200  mt-1  mx-auto md:mt-3 md:w-9 md:h-9 h-12 w-12 flex justify-center items-center rounded-full'><BsBookHalf   size={20}/>
 </div>
 
 <div className='mt-1'>
@@ -41,7 +41,7 @@ rounded-full inline-flex mb-[4px] mr-1'></span>Max marks</p>
 </div>
 
 
-<div className='border text-white font-semibold mx-auto border-orange-500 md:w-48 w-16 md:text-[16px] text-[10px] flex justify-center rounded-md items-center md:mt-3 md:h-9 mt-2 h-6 text-center group-hover:bg-orange-500 group-hover:text-white md:bg-white bg-orange-600 md:text-orange-600 '>
+<div className='border text-white font-semibold mx-auto border-orange-500 md:w-48 w-20 md:text-[16px] text-[11px] flex justify-center md:rounded-md rounded items-center md:mt-3 md:h-9 mt-3 h-7 text-center group-hover:bg-orange-500 group-hover:text-white md:bg-white bg-orange-600 md:text-orange-600 '>
 START <span className='hidden ml-2 md:inline-block'> TEST </span>
 </div>
 
