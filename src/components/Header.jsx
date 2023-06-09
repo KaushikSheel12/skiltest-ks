@@ -52,7 +52,7 @@ const Header = () => {
       
       </div>
 
-      <div className="border md:flex hidden  px-2 py-0 gap-1 items-center h-10 bg-slate-100 ml-[645px] cursor-pointer "
+      <div className="border md:flex hidden  px-2 py-0 gap-1 items-center h-10 bg-slate-100 ml-[645px] cursor-pointer whitespace-nowrap"
         onClick={handleFullScreen}
       >
     

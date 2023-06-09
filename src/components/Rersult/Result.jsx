@@ -281,14 +281,37 @@ const Result = () => {
     <h1 className="font-semibold py-2 hidden md:block mt-2 text-start text-[19px] ">
          Chapter's  Performance Analysis
         </h1>
+<div
+        className="grid grid-cols-4 lg:grid-cols-7
+       w-full  mt-2 px-3 border  border-gray-200"
+      >
+        <div className="  font-semibold ">
+          <p className="py-2 px-3">Section 1</p>
+        </div>
 
-    <div className="flex flex-wrap border  gap-4 py-0 mt-4 justify-between font-semibold">
-      <div className=" px-2 py-2 border-r-2 ">Section : 1</div>
-      <div className=" px-2 py-2 border-r-2 ">Total questions : 23</div>
-      <div className="px-2 py-2 border-r-2  text-green-500">Correct : 30</div>
-      <div className="px-2 py-2 border-r-2  text-rose-600">Incorrect : 04</div>
-      <div className="px-2 py-2   text-blue-600"> Accuracy : 35%</div>
-    </div>
+        <div className="   px-4 py-3  w-full grid place-items-center">
+          <p className="text-green-600">Correct 7</p>
+        </div>
+
+        <div className=" px-4 py-3  w-full grid place-items-center">
+          <p className="text-red-600">Incorrect 2</p>
+        </div>
+
+        <div className=" px-4 py-3  w-full grid place-items-center">
+          <p>Score 24</p>
+        </div>
+
+    
+
+        <div className="  py-3 px-4 grid place-items-center">
+          <p>Accuracy 34%</p>
+        </div>
+
+        <div className="whitespace-nowrap  py-3 px-4 grid place-items-center">
+          <p>Total questions 55</p>
+        </div>
+      </div> 
+
         <div
         className="grid grid-cols-4 lg:grid-cols-7
        w-full  mt-2 px-3 "
@@ -309,9 +332,7 @@ const Result = () => {
           <p>0/30</p>
         </div>
 
-        <div className=" px-4 py-3  w-full grid place-items-center">
-          <p className="whitespace-nowrap">00m 05s</p>
-        </div>
+    
 
         <div className="  py-3 px-4 grid place-items-center">
           <p>0%</p>
@@ -333,9 +354,7 @@ const Result = () => {
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p>0/30</p>
         </div>
-        <div className=" px-4 py-3  w-full grid place-items-center">
-          <p className="whitespace-nowrap">00m 05s</p>
-        </div>
+      
         <div className="  py-3 px-4 grid place-items-center">
           <p>0%</p>
         </div>
@@ -345,7 +364,7 @@ const Result = () => {
          w-full mt-2  px-3 md:mx-aut"
       >
         <div className="  font-semibold ">
-          <p className="py-2 px-3">Chapter 3</p>
+          <p className="py-2 px-3 ">Chapter 3</p>
         </div>
         <div className="   px-4 py-3  w-full grid place-items-center">
           <p className="text-green-600">0/30</p>
@@ -356,9 +375,7 @@ const Result = () => {
         <div className=" px-4 py-3  w-full grid place-items-center">
           <p>0/30</p>
         </div>
-        <div className=" px-4 py-3  w-full grid place-items-center">
-          <p className="whitespace-nowrap">00m 05s</p>
-        </div>
+    
         <div className="  py-3 px-4 grid place-items-center">
           <p>0%</p>
         </div>      
@@ -375,12 +392,27 @@ const Result = () => {
         Chapter's  Performance Analysis
        </h1>
 
-   <div className="flex flex-wrap border  gap-4 py-0 mt-4 justify-between font-semibold">
-     <div className=" px-2 py-2 border-r-2 ">Section : 1</div>
-     <div className="px-2 py-2 border-r-2  text-green-500">Correct : 30</div>
-     <div className="px-2 py-2 border-r-2  text-rose-600">Incorrect : 04</div>
- 
-   </div>
+
+
+
+
+<div
+       className="grid grid-cols-3 lg:grid-cols-7
+      w-full   px-3 "
+     >
+       <div className="border-b-2 border-r-2 font-semibold ">
+         <p className="py-2 px-0">Section 1</p>
+       </div>
+
+       <div className="   px-2 py-0 border-b-2 border-r-2  w-full grid place-items-center">
+         <p className="text-green-600">Correct 7</p>
+       </div>
+
+       <div className=" border-b-2 px-4 py-3  w-full grid place-items-center">
+         <p className="text-red-600">Incrrect 12</p>
+       </div>
+     </div> 
+
        <div
        className="grid grid-cols-3 lg:grid-cols-7
       w-full   px-3 "
@@ -396,11 +428,9 @@ const Result = () => {
        <div className=" border-b-2 px-4 py-3  w-full grid place-items-center">
          <p className="text-red-600">0/30</p>
        </div>
-
-
-      
-
      </div> 
+
+
      <div
        className="grid grid-cols-3 lg:grid-cols-7
        w-full   px-3 bg-gray-100"

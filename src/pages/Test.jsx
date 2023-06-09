@@ -30,9 +30,9 @@ const Test = () => {
 
 {/* < Allexams/> */}
 
-<Pepars/>
+{/* <Pepars/> */}
   {/* <HomeP/> */}
-{/* <Result/> */}
+<Result/>
 
   {/* <QInstruction/> */}
   {/* <QSections/> */}
