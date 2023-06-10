@@ -9,7 +9,7 @@ export const Actions = () => {
   };
 
   return (
-    <div className="  px-4 py-2 mt-[260px] border border-red-800  h-24  fixed  overflow-hidden mx-auto">
+    <div className="  px-4 py-2 mt-[270px] border border-red-600  h-24 sticky top-0 bottom-0 left-0 right-0  overflow-hidden mx-auto">
  
  {/* popup */}
  {showPopup && (
@@ -89,7 +89,7 @@ export const Actions = () => {
         )}
  {/* popup end */}
 
-      <div className="flex gap-5 h-10 w-full  flex-wrap ">
+      <div className="flex gap-5 h-10 w-full  flex-wrap  ">
         <button className="px-1  py-2 w-32 h-9  grid place-content-center hover:bg-black hover:text-white  border rounded border-black text-black bg-white">
           Instructions
         </button>

@@ -22,17 +22,17 @@ const Test = () => {
   return (
   <>
   <Header/>
-  {/* {isActive  ?
+  {isActive  ?
    <Quiz/> :
 
   <Instructions setIsActive={setIsActive}/>
-  } */}
+  }
 
 {/* < Allexams/> */}
 
 {/* <Pepars/> */}
   {/* <HomeP/> */}
-<Result/>
+{/* <Result/> */}
 
   {/* <QInstruction/> */}
   {/* <QSections/> */}
