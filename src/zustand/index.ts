@@ -5,7 +5,7 @@ export const useZustand=create((set)=>({
     setShowInstructions:((showInstructions: unknown)=>set({showInstructions})),
     showAllQuestions:false,
     setShowAllQuestions:(showAllQuestions:unknown)=>set({showAllQuestions}),
-    showQuiz:false,
+    showQuiz:true,
     setShowQuiz:((showQuiz:unknown)=>set({showQuiz}))
 
 }))

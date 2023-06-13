@@ -5,7 +5,7 @@ import Quiz from '../components/Quiz'
 import { useState } from 'react'
 import QInstruction from '@/components/QInstruction'
 import QSections from '@/components/QSections'
-import Result from '@/components/Rersult/Result'
+import Result from '@/components/result/Result'
 import { MyContext } from '@/context/AppContext'
 import Allexams from '@/components/Allexams/Allexams'
 import Pepars from '@/components/Allexams/EXAM_WISE_PAPERS/Pepars'
@@ -23,11 +23,11 @@ const Test = () => {
   return (
   <>
   <Header/>
-  {/* {isActive  ?
-   <Quiz/> :
+  {isActive  ?
+   <QuizHome/>:
 
   <Instructions setIsActive={setIsActive}/>
-  } */}
+  }
 
   {/* <QuizHome/> */}
 
