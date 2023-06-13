@@ -7,20 +7,24 @@ import { BsListStars, BsPercent } from "react-icons/Bs";
 import { FaRegTimesCircle } from "react-icons/Fa";
 import { FiFlag } from "react-icons/Fi";
 import { AiTwotoneStar } from "react-icons/ai";
-import PieChart from "../piechart/PieChart";
-import WrongAnsPie from "../piechart/wrongAnsPie";
-import LeftAnsPie from "../piechart/LeftPie";
-import AccuracyChart from "../piechart/AccuChart";
+import PieChart from "../components/piechart/PieChart";
+import WrongAnsPie from "../components/piechart/wrongAnsPie";
+import LeftAnsPie from "../components/piechart/LeftPie";
+import AccuracyChart from "../components/piechart/AccuChart";
 import { header } from "@/data/header";
-import { Container } from "../Container";
-import Mobileview from "./Mobileview";
+import { Container } from "../components/Container";
+import Mobileview from "../components/result/Mobileview";
+import ResultHeader from "@/components/result/ResultHeader";
 
 
 
 const Result = () => {
   return (
+    <>
+    <ResultHeader/>
    <Container>
-      <div className="w-full   md:mt-20  mt-[65px] ">
+   
+      <div className="w-full   md:mt-20  mt-[5px] ">
         <h1 className="font-semibold text-start text-[19px] ">
           Overall Performance Analysis
         </h1>
@@ -462,6 +466,7 @@ const Result = () => {
      </div>
      </div>
    </Container>
+   </>
   );
 };
 

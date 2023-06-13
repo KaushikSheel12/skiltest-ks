@@ -12,10 +12,10 @@ const setShowAllQuestions=useZustand(state=>state.setShowAllQuestions)
 <div  className="w-full   py-2 px-2 ">
 <div className=" col-span-3 p-2   ">
 
-<div className=' top-20 flex gap-5  px-2 py-0 items-center fixed bg-white w-full h-auto'> <h2 className='font-bold'>Sections :</h2> <button className='py-2 px-3  rounded-full border-blue-600 text-blue-600'>Quiz</button> </div>
+<div className=' top-20 flex gap-5  px-2 md:-mt-2 items-center fixed bg-white w-full h-auto'> <h2 className='font-bold'>Sections :</h2> <button className='py-2 px-3  rounded-full border-blue-600 text-blue-600'>Quiz</button> </div>
 
  <div>
-  <h2 className='mt-[85px] px-2 py-2 font-semibold text-[18px] '>Question Paper</h2>
+  <h2 className='mt-[25px] px-2 py-2 font-semibold text-[18px] '>Question Paper</h2>
   {questions.map((el)=>{
     return <div key={el.id} className=' mt-[-7px] py-2 px-2 mb-5'> 
       <h2  className='font-semibold'>{el.question}</h2>

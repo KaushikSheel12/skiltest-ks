@@ -89,7 +89,9 @@ export const Actions = () => {
                   Cancel
                 </button>
 
+               <Link href='/Result'>
                 <button className=" border  py-2 px-4 rounded mt-4 hover:bg-amber-300 bg-amber-400" >Submit</button>
+                </Link>
               </div>
 
             </div>
