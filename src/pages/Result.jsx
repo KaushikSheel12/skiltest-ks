@@ -460,7 +460,7 @@ const Result = () => {
        <div className=" px-2 py-0 border-r-2 border-b-2 w-full grid place-items-center">
          <p className="text-green-600">0/30</p>
        </div>
-       <div className=" px-4 py-3  w-full grid place-items-center">
+       <div className=" px-4 py-3 border-b-2 w-full grid place-items-center">
          <p className="text-red-600">0/30</p>
        </div>    
      </div>

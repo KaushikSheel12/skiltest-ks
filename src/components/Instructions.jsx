@@ -21,9 +21,9 @@ const Instructions = ({ setIsActive }) => {
 
   return (
     <>
-      <div className="w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4 mt-16">
+      <div className="w-full  h-28 grid grid-cols-4 gap-x-3 py-2 px-4 md:mt-16 mt-14">
         <div className=" col-span-4 md:col-span-3 ">
-          <h2 className="py-2 px-4 font-semibold text-[20px]">
+          <h2 className="md:py-2 py-0 md:px-4 px-2 font-semibold text-[20px]">
             General Instructions
           </h2>
           <p className="py-1 px-4  font-semibold text-[15px]">
@@ -36,13 +36,13 @@ const Instructions = ({ setIsActive }) => {
           {generalInstructions.instruction2.options.map((option, index) => (
             <div
               key={index}
-              className="flex gap-6 py- px-4 mt-2 md:text-[16px] text-[12px]"
+              className="flex gap-6 py-0 px-4 mt-2 md:text-[16px] text-[12px]"
             >
               <div
                 style={{ background: option.bg }}
-                className="md:w-8 md:h-8 rounded w-6 h-6"
+                className="md:w-8 md:h-8   rounded w-6 h-6"
               ></div>
-              <p className="text-[#4a4242] ">{option.text}</p>
+              <p  className="px-0 py-0 text-[#4a4242]   md:text-[16px] text-[14px]">{option.text}</p>
             </div>
           ))}
 
@@ -54,7 +54,7 @@ const Instructions = ({ setIsActive }) => {
             status is modified by the candidate.
           </p>
 
-          <p className="py-2 px-4 font-semibold text-[16px]">
+          <p className="md:py-2 py-0 px-4 font-semibold text-[16px]">
             Navigating to a Question :
           </p>
 
@@ -71,7 +71,7 @@ const Instructions = ({ setIsActive }) => {
             </p>
           ))}
 
-          <p className="py-2 px-4 font-semibold text-[16px]">
+          <p className="md:py-2 py-0 px-4 font-semibold text-[16px]">
             Answering a Question :
           </p>
           <p className="py-1 px-4  font-semibold text-[15px]">
@@ -98,7 +98,7 @@ const Instructions = ({ setIsActive }) => {
             </p>
           ))}
 
-          <p className="py-1 px-4  font-semibold text-[15px]">
+          <p className="py-1 px-4   font-semibold text-[15px]">
             {generalInstructions.instruction6.text}
           </p>
 
@@ -168,7 +168,7 @@ const Instructions = ({ setIsActive }) => {
             </p>
           ))}
 
-          <div className="flex items-center  mt-10">
+          <div className="flex  items-center  md:mt-10 mt-0 shadow-xl md:shadow-none rounded-md">
             <input
               className="scale-[1.2] ml-6"
               type="checkbox"

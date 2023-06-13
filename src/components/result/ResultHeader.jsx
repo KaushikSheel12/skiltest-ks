@@ -5,7 +5,7 @@ import React from 'react'
 const ResultHeader = () => {
   return (
    <>
-     <div className="md:flex hidden top-0 py-2 fixed  px-2   w-full border justify-between overflow-hidden bg-white items-center">
+     <div className="md:flex hidden top-0 py-2 fixed  px-3   w-full border justify-between overflow-hidden bg-white items-center">
       <div className="flex gap-10">
       <Link
 
@@ -20,7 +20,7 @@ className="w-[160px] md:w-[250px] h-[52px] relative inline-block -translate-x-4 
     className="object-contain w-full h-full absolute left-3"
 />
 </Link>
-        <h2 className=" text-[15px] flex font-semibold ">
+        <h2 className="mt-3 text-[15px] flex font-semibold ">
           UPSC Civil Services<span className="block md:hidden">....</span><span className="hidden md:block">Prelims CSAT Full Test 4</span>{" "}
         </h2>
       
