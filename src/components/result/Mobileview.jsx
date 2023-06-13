@@ -80,6 +80,7 @@ const Mobileview = () => {
             </div>
           </div>
         </div>
+        
  </>
   )
 }

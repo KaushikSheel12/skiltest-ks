@@ -1,20 +1,26 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ResultHeader = () => {
   return (
    <>
      <div className="md:flex hidden top-0 py-2 fixed  px-2   w-full border justify-between overflow-hidden bg-white items-center">
-      <div className="flex">
-        <Image
-          width={80}
-          height={35}
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Google_2011_logo.png"
-          alt="google"
-          className="object-contain"
-        />
+      <div className="flex gap-10">
+      <Link
 
-        <h2 className="ml-10 text-[15px] flex font-semibold ">
+href="#"
+className="w-[160px] md:w-[250px] h-[52px] relative inline-block -translate-x-4 cursor-pointer "
+>
+<Image
+    width={250}
+    height={50}
+    src="https://dev.collegementor.com/logo.svg?width=640&quality=75&format=webp"
+    alt="logo"
+    className="object-contain w-full h-full absolute left-3"
+/>
+</Link>
+        <h2 className=" text-[15px] flex font-semibold ">
           UPSC Civil Services<span className="block md:hidden">....</span><span className="hidden md:block">Prelims CSAT Full Test 4</span>{" "}
         </h2>
       

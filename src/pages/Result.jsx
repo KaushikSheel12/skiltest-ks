@@ -466,6 +466,13 @@ const Result = () => {
      </div>
      </div>
    </Container>
+
+
+
+  <button className="flex md:hidden justify-center mx-auto w-[90%] h-9 px-4 py-2 mb-7  mt-2 rounded-md bg-yellow-400 hover:bg-yellow-300">Reattempt Test</button>
+
+
+
    </>
   );
 };

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Counter from "./Counter";
+import Link from "next/link";
 
 
 const Header = () => {
@@ -36,23 +37,32 @@ const Header = () => {
 
 
   return (
-    <div className="flex py-4 fixed  px-4 w-full border justify-between overflow-hidden bg-white items-center">
-      <div className="flex">
-        <Image
-          width={80}
-          height={35}
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Google_2011_logo.png"
-          alt="google"
-          className="object-contain"
-        />
+    <div className="flex md:py-[10px] md:px-5 py-2 fixed  px-2 w-full border justify-between overflow-hidden bg-white items-center">
+        <div className="flex gap-10  ">
 
-        <h2 className="ml-10 text-[15px] flex font-semibold ">
+
+<Link
+
+					href="#"
+					className="w-[160px] md:w-[250px] h-[52px] relative inline-block -translate-x-4 cursor-pointer "
+				>
+					<Image
+						width={250}
+						height={50}
+						src="https://dev.collegementor.com/logo.svg?width=640&quality=75&format=webp"
+						alt="logo"
+						className="object-contain w-full h-full absolute left-3"
+					/>
+				</Link>
+
+<h2 className="mt-3 text-[15px] flex font-semibold ">
           UPSC Civil Services<span className="block md:hidden">....</span><span className="hidden md:block">Prelims CSAT Full Test 4</span>{" "}
         </h2>
-      
+
+
       </div>
 
-      <div className="border md:flex hidden  px-2 py-0 gap-1 items-center h-10 bg-slate-100 ml-[645px] cursor-pointer whitespace-nowrap"
+      <div className="border md:ml-96  md:flex hidden right-0 px-2 py-0 gap-1 items-center h-10 bg-slate-100  cursor-pointer whitespace-nowrap"
         onClick={handleFullScreen}
       >
     
