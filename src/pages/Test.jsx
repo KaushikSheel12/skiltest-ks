@@ -29,10 +29,10 @@ const Test = () => {
   <Instructions setIsActive={setIsActive}/>
   } */}
 
-
-< Allexams/>
+<Allexams/>
 
 {/* <Pepars/> */}
+{/* <Result/> */}
 
   </>
   )

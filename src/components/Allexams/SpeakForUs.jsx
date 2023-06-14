@@ -1,9 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 
 const SpeakForUs = () => {
   return (
   <>
-  <div className='w-full text-center h-full bg-teal-500 px-2 py-4 mt-10'>
+  <div>
+    <div className='md:flex hidden md:mt-4 mt-0'>
+    <Image src='https://mindlerimages.imgix.net/tinyimg/desktop.svg' alt='members' width={900} height={450} className='mx-auto'/>
+    </div>
+
+  <div className='w-full text-center h-full bg-teal-500 px-2 py-2 mt-0'>
     <h2 className='font-semibold text-white text-[26px]'>Our Numbers Speak For Us</h2>
 
     <div className='flex flex-col md:flex-row justify-center py-2   px-2 gap-6 mt-2 text-white font-semibold '>
@@ -34,6 +40,7 @@ const SpeakForUs = () => {
 
 
     </div>
+  </div>
   </div>
   </>
   )
