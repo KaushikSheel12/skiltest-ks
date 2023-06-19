@@ -8,18 +8,18 @@ function CarouselBox(){
 
         <div>
 
-            <div className=' md:mx-auto mx-0 md:mt-5 mt-0  md:w-80 w-80 md:h-16 rounded-md border border-gray-400  '>
+            <div className='bg-gray-gradient md:mx-auto mx-0 md:mt-5 mt-0  md:w-80 w-80 md:h-16 rounded-md border border-gray-400  '>
          <h1 className='px-2 py-1 font-semibold md:text-[25px]'>JEE(A) 2025</h1>
             </div>
 
-        <div className='w-80 md:mx-auto mx-0 h-80 border border-gray-400  md:rounded-md mt-4 '>
+        <div className='w-80 md:mx-auto mx-0 md:h-80  h-64 border border-gray-400 rounded md:rounded-md mt-4 '>
 
-<div className='w-full md:h-28   border  md:rounded-md bg-gray-gradient p-2'>
+<div className='w-full md:h-28  rounded-t-md border  bg-gray-gradient p-2'>
     
     <h2 className='md:text-[22px]'>Test Series For JEE Main</h2>
    
 
-    <h3 className='text-gray-700 font-extralight md:text[10px] md:mt-10  mx:py-2'>3 Year Course</h3>
+    <h3 className='text-gray-700 font-normal md:text[10px] md:mt-10  mx:py-2'>3 Year Course</h3>
 </div>
 
 

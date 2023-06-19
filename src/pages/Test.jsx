@@ -23,7 +23,7 @@ const Test = () => {
 
   return (
   <>
-  {/* <Header/> */}
+  <Header/>
   
   {/* {isActive  ?
    <QuizHome/>:
@@ -31,7 +31,7 @@ const Test = () => {
   <Instructions setIsActive={setIsActive}/>
   } */}
 
-{/* <Allexams/> */}
+<Allexams/>
 
 <Pepars/>
 
