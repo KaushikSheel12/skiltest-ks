@@ -2,11 +2,54 @@ import React from 'react'
 import { BsBookHalf } from 'react-icons/Bs'
 import { RiGovernmentLine } from 'react-icons/Ri'
 import Peparcard from './Peparcard'
+import { Carousel } from '../testcarousel/Carousel'
+import CarouselBox from '../testcarousel/CarouselBox'
 
 const Pepars = () => {
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  
+  };
+  
+
+
+
   return (
    <>
-   <div className='md:w-[90%] md:mx-auto md:mt-20 mt-16 w-full h-full px-2 py-2'>
+   <div className='md:w-[90%] md:mx-auto md:mt-20 mt-0 w-full h-full px-2 py-2'>
     <h1 className='md:text-[27px] font-bold'>UP State Exams Practice Set Papers, Model Sample Papers</h1>
     <p className='text-gray-600 md:text-[14px] text-[12px]'> Start practicing with UP State  practice set papers free at College menter's Exam Prep. The UP State exams previous  year solved papers 2020/2019/2018/2017/2016 are available online with the  solutions and answers.</p>
    </div>
@@ -41,8 +84,21 @@ const Pepars = () => {
 
 
        {/* Card */}
-  <Peparcard/>
+  {/* <Peparcard/> */}
      </div>
+
+
+
+
+     <div className=' mx-auto md:w-[1100px] w-[340px] mt-28'>
+<Carousel settings={settings}> 
+  <CarouselBox/>
+  <CarouselBox/>
+  <CarouselBox/>
+  <CarouselBox/> 
+</Carousel>
+
+</div>
   
    </div>
    </>

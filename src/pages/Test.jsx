@@ -10,7 +10,8 @@ import { MyContext } from '@/context/AppContext'
 import Allexams from '@/components/Allexams/Allexams'
 import Pepars from '@/components/Allexams/EXAM_WISE_PAPERS/Pepars'
 import QuizHome from '@/components/QuizHome'
-
+import CarouselBox from '@/components/Allexams/testcarousel/CarouselBox'
+import { Carousel } from '@/components/Allexams/testcarousel/Carousel'
 
 
 
@@ -22,7 +23,7 @@ const Test = () => {
 
   return (
   <>
-  <Header/>
+  {/* <Header/> */}
   
   {/* {isActive  ?
    <QuizHome/>:
@@ -30,9 +31,17 @@ const Test = () => {
   <Instructions setIsActive={setIsActive}/>
   } */}
 
-<Allexams/>
+{/* <Allexams/> */}
 
-{/* <Pepars/> */}
+<Pepars/>
+
+
+
+
+
+
+
+
 {/* <Result/> */}
 
   </>
