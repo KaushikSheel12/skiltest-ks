@@ -31,7 +31,7 @@ const setShowAllQuestions=useZustand(state=>state.setShowAllQuestions)
 <div className='border w-full  py-2 sticky bottom-0 bg-white h-fit'> 
 <button  
 onClick={()=>{setShowQuiz(true)
-  setShowInstructions(false) 
+
   setShowAllQuestions(false)
    }}
  className="px-2  mb-0 py-2 w-[110px] h-9  grid place-content-center mx-auto  content-center  border rounded  text-black border-black hover:bg-black hover:text-white bg-white">Back to Test</button></div>

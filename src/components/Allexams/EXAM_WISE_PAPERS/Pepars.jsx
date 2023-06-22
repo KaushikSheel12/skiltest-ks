@@ -90,7 +90,7 @@ const Pepars = () => {
 
 
 
-     <div className=' mx-auto md:w-[1100px] w-[340px] mt-28 mb-7' >
+     <div className=' mx-auto md:w-[1100px] w-[340px] mt-28 mb-7 borde' >
 <Carousel settings={settings}> 
   <CarouselBox/>
   <CarouselBox/>

@@ -25,15 +25,15 @@ const Test = () => {
   <>
   <Header/>
   
-  {/* {isActive  ?
+  {isActive  ?
    <QuizHome/>:
 
   <Instructions setIsActive={setIsActive}/>
-  } */}
+  }
 
-<Allexams/>
-
-<Pepars/>
+{/* <Allexams/> */}
+{/* 
+<Pepars/> */}
 
 
 

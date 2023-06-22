@@ -3,7 +3,12 @@ import React from "react";
 
 export const QuestionTabs = ({ onQuestionClick, isClicked }) => {
   return (
-    <div className="grid grid-cols-5 fixed  gap-5 py-2  overflow-y-auto  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px] px-5 ">
+
+    <div>
+
+   
+
+    <div className="grid grid-cols-5 fixed   gap-5 py-2  overflow-y-auto  scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-white  h-[200px] px-5 ">
       {questions.map((el, index) => {
         return (
           <div key={index} className="py-0 relative  ">
@@ -23,6 +28,8 @@ export const QuestionTabs = ({ onQuestionClick, isClicked }) => {
           </div>
         );
       })}
+    </div>
+
     </div>
   );
 };

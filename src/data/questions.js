@@ -1,5 +1,7 @@
 // data/questions.js
 const questions = [
+
+
     {
         id: 1,
         question: '1. What is the capital of France?',
@@ -145,7 +147,56 @@ const questions = [
         options: [1, 2, 3, 4,5],
         correctAnswer: 1,
       },
+
     // Add more questions here
+    {
+      id: 18,
+      question: '18. What is the capital of Canada?',
+      options:  [1, 2, 3, 4,5],
+      correctAnswer: 2,
+    },
+    {
+      id: 19,
+      question: '19. Who painted the "Last Supper"?',
+      options: [1, 2, 3, 4,5],
+      correctAnswer: 1,
+    },
+    {
+      id: 20,
+      question: '20. What is the capital of Canada?',
+      options:  [1, 2, 3, 4,5],
+      correctAnswer: 2,
+    },
+    {
+      id: 21,
+      question: '21. Who painted the "Last Supper"?',
+      options: [1, 2, 3, 4,5],
+      correctAnswer: 1,
+    },
+    {
+      id: 22,
+      question: '22. What is the capital of Canada?',
+      options:  [1, 2, 3, 4,5],
+      correctAnswer: 2,
+    },
+    {
+      id: 23,
+      question: '23. Who painted the "Last Supper"?',
+      options: [1, 2, 3, 4,5],
+      correctAnswer: 1,
+    },
+    {
+      id: 24,
+      question: '24. What is the capital of Canada?',
+      options:  [1, 2, 3, 4,5],
+      correctAnswer: 2,
+    },
+    {
+      id: 25,
+      question: '25. Who painted the "Last Supper"?',
+      options: [1, 2, 3, 4,5],
+      correctAnswer: 1,
+    },
 
 
 

@@ -27,6 +27,18 @@ export const QuestionPalette = () => {
           <Dot color={"orange"} />
           <p className="text-[14px]  text-[gray] px-1 py-1">Pending</p>
         </div>
+
+      </div>
+
+
+      <div  className="w-full h-auto  px-2 py-1 mt-1">
+
+       <select  className=" md:w-full   md:h-8  border-none text-center  bg-yellow-400 rounded-md  hover:bg-black hover:text-white  ">
+        <option value="maths">Question Section</option>
+        <option value="english">English</option>
+        <option value="upsc">UPSC</option>
+        <option value="iit">IIT</option>
+       </select>
       </div>
     </>
   );

@@ -99,7 +99,7 @@ export const Actions = () => {
         )}
  {/* popup end */}
 
-    <div className="  px-6 py-2 mt-[270px]  h-24 y   overflow-hidden mx-auto fixed top-80 right-3 ">
+    <div className="  px-6 py-2 mt-[270px]  h-24    overflow-hidden mx-auto fixed top-80 right-3 ">
 
       <div className="flex gap-5 h-10 w-full  flex-wrap  ">
         <button onClick={()=>{setShowInstructions(true) 

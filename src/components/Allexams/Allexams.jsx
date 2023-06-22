@@ -8,7 +8,8 @@ import Updates from './Updates '
 
 const Allexams = () => {
   return (
-   <>
+ 
+   <div>
    <div className=' w-full bg-orange-600  md:mt-[70px] mt-[60px] flex gap-0 
    border md:h-[326px] h-[270px] md:text-left text-center justify-around'>
 
@@ -30,7 +31,8 @@ const Allexams = () => {
      <Weoffer/>
      <SpeakForUs/>
  <Updates/>
-   </>
+ </div>
+
   )
 }
 
