@@ -1,5 +1,6 @@
 import React from "react";
 import { Dot } from "../Dot";
+import Qfilter from "../Qfilter";
 
 export const QuestionPalette = () => {
   return (
@@ -31,15 +32,7 @@ export const QuestionPalette = () => {
       </div>
 
 
-      <div  className="w-full h-auto  px-2 py-1 mt-1">
-
-       <select  className=" md:w-full   md:h-8  border-none text-center  bg-yellow-400 rounded-md  hover:bg-black hover:text-white  ">
-        <option value="maths">Question Section</option>
-        <option value="english">English</option>
-        <option value="upsc">UPSC</option>
-        <option value="iit">IIT</option>
-       </select>
-      </div>
+    <Qfilter/>
     </>
   );
 };
