@@ -33,7 +33,7 @@ export const QuestionActions = ({
       </button>
 
       <button
-        className="bg-yellow-400 hover:bg-amber-300 text-black  rounded-md px-3 py-2 h-auto md:w-48  w-full"
+        className="bg-[#2FD5C8] hover:bg-black text-black hover:text-white  rounded-md px-3 py-2 h-auto md:w-48  w-full"
         onClick={handleNextPage}
         disabled={currentPage === totalPages}
       >

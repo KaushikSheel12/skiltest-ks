@@ -34,11 +34,11 @@ function Qfilter() {
     <>
       <div className="w-full h-auto px-2 py-1 mt-1">
         <select
-          className="md:w-[60%] md:h-8 border-none text-center bg-lightgreen rounded-md hover:bg-black hover:text-white"
+          className= " custom-select  md:w-[60%] md:h-8   border-none text-center bg-[#2FD5C8] rounded-md hover:bg-black hover:text-white"
           value={selectedOption}
           onChange={handleFilterChange}
         >
-          <option value="maths">Question Section</option>
+          <option value="maths">Sections</option>
           <option value="english">English</option>
           <option value="upsc">UPSC</option>
           <option value="iit">IIT</option>

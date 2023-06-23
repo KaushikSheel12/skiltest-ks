@@ -121,7 +121,7 @@ export const Actions = () => {
           </button>
   
       </div>
-      <button onClick={togglePopup} className="px-2    py-2 w-full h-9  grid  mt-2  border rounded  text-black hover:bg-amber-300 bg-amber-400">
+      <button onClick={togglePopup} className="px-1 pb-4    py-2 w-full h-9  grid  mt-2  border rounded  text-black  hover:text-white  hover:bg-black bg-[#2FD5C8] ">
         Submit
       </button>
 
