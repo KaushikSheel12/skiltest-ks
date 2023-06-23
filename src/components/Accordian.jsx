@@ -10,21 +10,21 @@ export const Accordian = ({ children, title }) => {
       <div className="flex items-center    justify-between border-b-2  mt-2">
         <p className="mb-1 ml-2 font-normal">{title}</p>
 
-        <div className="mr-30 ">
+        {/* <div className="mr-30 ">
           {isActive ? (
             <IoIosArrowUp
               cursor="pointer"
               size={20}
-              onClick={() => setIsActive((prev) => !isActive)}
+              onClick={() => setIsActive((prev) => isActive)}
             />
           ) : (
             <IoIosArrowDown
               cursor="pointer"
               size={20}
-              onClick={() => setIsActive((prev) => !isActive)}
+              onClick={() => setIsActive((prev) => isActive)}
             />
           )}
-        </div>
+        </div> */}
       </div>
 
       {isActive && <div className="">{children}</div>}

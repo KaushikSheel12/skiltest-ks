@@ -33,7 +33,7 @@ const QInstruction = () => {
 
 onClick={()=>{setShowQuiz(true)
 
-  setShowInstructions(true)
+  setShowInstructions(false)
    }}
 
  className="px-2  mb-0 py-2 w-[110px] h-9  grid place-content-center mx-auto  content-center  border rounded  text-black border-black bg-white hover:bg-black hover:text-white">Back to Test</button></div>
