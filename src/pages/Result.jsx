@@ -15,6 +15,7 @@ import { header } from "@/data/header";
 import { Container } from "../components/Container";
 import Mobileview from "../components/result/Mobileview";
 import ResultHeader from "@/components/result/ResultHeader";
+import StrengthWeaknes from "@/components/result/Strength&Weakness";
 
 
 
@@ -276,7 +277,7 @@ const Result = () => {
       </div>
 
 
-
+      <StrengthWeaknes/>
     {/* chapter section  */}
 
 
@@ -389,6 +390,8 @@ const Result = () => {
 
 {/* 
       Chapter mobile view */}
+
+
 
 <div className="md:hidden block">
    
