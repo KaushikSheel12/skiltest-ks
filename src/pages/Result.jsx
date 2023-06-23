@@ -16,10 +16,12 @@ import { Container } from "../components/Container";
 import Mobileview from "../components/result/Mobileview";
 import ResultHeader from "@/components/result/ResultHeader";
 import StrengthWeaknes from "@/components/result/Strength&Weakness";
+import { useRouter } from "next/router";
 
 
 
 const Result = () => {
+  const router=useRouter()
   return (
     <>
     <ResultHeader/>
@@ -472,7 +474,7 @@ const Result = () => {
 
 
 
-  <button className="flex md:hidden justify-center mx-auto w-[90%] h-9 px-4 py-2 mb-7  mt-2 rounded-md bg-yellow-400 hover:bg-yellow-300">Reattempt Test</button>
+  <button  className="flex md:hidden justify-center mx-auto w-[90%] h-9 px-4 py-2 mb-7  mt-2 rounded-md bg-yellow-400 hover:bg-yellow-300">Reattempt Test</button>
 
 
 

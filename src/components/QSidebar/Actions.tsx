@@ -90,7 +90,7 @@ export const Actions = () => {
                 </button>
 
                <Link href='/Result'>
-                <button className=" border  py-2 px-4 rounded mt-4 hover:bg-amber-300 bg-amber-400" >Submit</button>
+                <button className=" border  py-2 px-4 rounded mt-4 bg-[#2FD5C8] hover:bg-black text-black hover:text-white " >Submit</button>
                 </Link>
               </div>
 

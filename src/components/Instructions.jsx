@@ -181,13 +181,13 @@ const Instructions = ({ setIsActive }) => {
           </div>
 
           <div className="justify-center  flex gap-5 py-2 px-4 ml-10 ">
-            <button className="border  w-36 px-2 py-2 rounded hover:bg-amber-300 bg-amber-400 whitespace-nowrap ">
+            <button className="border  w-36 px-2 py-2 rounded bg-[#2FD5C8] hover:bg-black text-black hover:text-white  whitespace-nowrap ">
               Back to test
             </button>
             <button
               disabled={!isDisabled}
               onClick={NextButtonActive}
-              className="border w-36 px-6 py-2 rounded  hover:bg-amber-300 bg-amber-400"
+              className="border w-36 px-6 py-2 rounded  bg-[#2FD5C8] hover:bg-black text-black hover:text-white "
             >
               Next
             </button>

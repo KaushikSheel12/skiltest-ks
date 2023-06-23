@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 
 const ResultHeader = () => {
+  const router=useRouter()
   return (
    <>
      <div className="md:flex hidden top-0 py-2 fixed  px-3   w-full border justify-between overflow-hidden bg-white items-center">
@@ -34,7 +36,7 @@ className="w-[160px] md:w-[250px] h-[52px] relative inline-block -translate-x-4 
     
 
       <div className='flex w-[300px] h-auto gap-10 px-2 justify-around py-2'>
-    <button className='border hover:bg-yellow-300 bg-yellow-400 px-2 py-2 rounded-md'>Reattempt Test</button>
+    <button onClick={()=>router.push("/Test")} className='border bg-[#2FD5C8] hover:bg-black text-black hover:text-white  px-2 py-2 rounded-md'>Reattempt Test</button>
     <button className='border border-black px-2 py-1 rounded-md hover:bg-black hover:text-white'>Go to Tests</button>
 </div>
 

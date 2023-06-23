@@ -37,7 +37,7 @@ const Header = () => {
 
 
   return (
-    <div className="flex md:py-[10px] md:px-5 py-1 fixed  px-3 w-full border justify-between overflow-hidden bg-white items-center">
+    <div className="flex md:py-[10px] md:px-5 py-1 fixed w-full  border  px-3 top-0 justify-between overflow-hidden bg-white items-center">
         <div className="flex gap-10  ">
 
 

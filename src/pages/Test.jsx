@@ -23,6 +23,8 @@ const Test = () => {
 
   return (
   <>
+
+  <div className="h-screen">
   <Header/>
   
   {isActive  ?
@@ -30,6 +32,7 @@ const Test = () => {
 
   <Instructions setIsActive={setIsActive}/>
   }
+  </div>
 
 {/* <Allexams/> */}
 {/* 
@@ -44,6 +47,8 @@ const Test = () => {
 
 {/* <Result/> */}
 
+  
+ 
   </>
   )
 }
