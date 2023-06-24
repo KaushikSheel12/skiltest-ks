@@ -4,20 +4,19 @@ import { generalInstructions } from "@/data/generalInstructions";
 
 const Instructions = ({ setIsActive }) => {
   const [isDisabled, setIsDisabled] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-  function onCheck(e) {
-    const checked = e.target.checked;
-    if (checked) {
-      setIsDisabled(true);
-    }
-    if (!checked) {
-      setIsDisabled(false);
-    }
-  }
+  const toggleChecked = () => {
+    setIsChecked((prevChecked) => !prevChecked);
+    setIsDisabled(!isDisabled);
+  };
+
 
   const NextButtonActive = () => {
     setIsActive(true);
   };
+
+
 
   return (
     <>
@@ -168,14 +167,15 @@ const Instructions = ({ setIsActive }) => {
             </p>
           ))}
 
-          <div className="flex  items-center  md:mt-10 mt-0 shadow-xl md:shadow-none rounded-md">
+          <div   onClick={toggleChecked} className="flex  items-cente  md:mt-10 mt-0 shadow-xl md:shadow-none rounded-md">
             <input
               className="scale-[1.2] ml-6"
               type="checkbox"
-              onChange={onCheck}
+              checked={isChecked}
+              onChange={() => {}}
             />
 
-            <label className="py-1 px-4  font-normal leading-1 text-[15px]">
+            <label     className="py-1 px-4   font-normal leading-1 text-[15px]">
               {generalInstructions.terms.text}
             </label>
           </div>

@@ -16,7 +16,7 @@ const QInstruction = () => {
 <>
 
 <div  className="w-full   ">
-<div className=" col-span-3 borde p-0">
+<div className="  borde p-0">
 
     <p className='py-0 px-2 font-semibold  text-[#565151] text-[15px]'>1. Test will auto submit when the Time is up.</p>
     <p className='py-0 px-2 font-semibold  text-[#565151] text-[15px]'>2. The Test comprises of multiple choice questions (MCQ) with one or more correct answers.</p>
