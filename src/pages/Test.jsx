@@ -24,7 +24,7 @@ const Test = () => {
   return (
   <>
 
-  {/* <div className="h-screen">
+  <div className="h-screen">
   <Header/>
   
   {isActive  ?
@@ -32,12 +32,12 @@ const Test = () => {
 
   <Instructions setIsActive={setIsActive}/>
   }
-  </div> */}
+  </div>
 
 {/* <Allexams/> */}
-
+{/* 
 <Header/>
-<Pepars/> 
+<Pepars/>  */}
 
 
 
