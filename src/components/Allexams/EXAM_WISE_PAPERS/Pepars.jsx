@@ -49,7 +49,7 @@ const Pepars = () => {
 
   return (
    <>
-   <div className='md:w-[90%] md:mx-auto md:mt-20 mt-0 w-full h-full px-2 py-2'>
+   <div className='md:w-[90%] md:mx-auto md:mt-20 mt-[60px] w-full h-full px-2 py-2'>
     <h1 className='md:text-[27px] font-bold'>UP State Exams Practice Set Papers, Model Sample Papers</h1>
     <p className='text-gray-600 md:text-[14px] text-[12px]'> Start practicing with UP State  practice set papers free at College menter's Exam Prep. The UP State exams previous  year solved papers 2020/2019/2018/2017/2016 are available online with the  solutions and answers.</p>
    </div>
