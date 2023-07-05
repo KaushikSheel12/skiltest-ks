@@ -20,7 +20,7 @@ const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect
 
   return (
     <>
-      <div className="w-full    py-2 px-2">
+      <div className="w-full md:mt-10 h-auto    py-2 px-2">
         <div className=" col-span-3 p-2">
           <div className="flex justify-between">
             <QuizHeader

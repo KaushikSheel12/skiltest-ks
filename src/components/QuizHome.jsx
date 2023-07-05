@@ -140,7 +140,7 @@ const showQuiz=useZustand(state=>state.showQuiz)
   return (
     <>
       <div className="w-screen  grid h-28 grid-cols-1 md:grid-cols-4 gap-x-3 py-6 px-4 mt-12 ">
-        <div className="col-span-3  p-2 ">
+        <div className="col-span-3    p-2 ">
 
 
 
