@@ -44,7 +44,7 @@ const Quiz = ({
           </div>
 
           {question && (
-            <QuestionBox 
+            <QuestionBox
               question={question}
               handleAnswerSelect={handleAnswerSelect}
               selectedAnswers={selectedAnswers}

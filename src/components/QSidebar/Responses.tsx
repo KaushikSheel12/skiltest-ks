@@ -4,15 +4,11 @@ import { useZustand } from "@/zustand";
 import { useEffect } from "react";
 
 export const Responses = () => {
-  const questionIds = useZustand((state)=>state.questionIds)
+  const questionIds = useZustand((state) => state.questionIds);
 
-
-  
-
-
-  useEffect(()=>{
-    console.log( "check" ,  questionIds.length)
-  },[questionIds])
+  useEffect(() => {
+    // console.log( "check" ,  questionIds.length)
+  }, [questionIds]);
 
   return (
     <div className="flex items-center space-x-6  px-3 py-1 ">

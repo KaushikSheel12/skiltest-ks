@@ -30,7 +30,7 @@ const QuizHome = () => {
 
     setSelectedAnswers(newAnswers);
     addData(newAnswers);
-    console.log("zustend Data" , data)
+    console.log("zustend data", data);
     sessionStorage.setItem("selectedAnswers", JSON.stringify(newAnswers));
   }
 
