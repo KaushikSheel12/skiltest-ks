@@ -6,6 +6,7 @@ export const QuestionActions = ({
   handlePrevPage,
   totalPages,
   handleNextPage,
+  MarkForReview
 }) => {
   return (
     <div className="flex gap-5 w-full   md:w-[60%] h-auto md:justify-center justify-between mx-auto mt-[175px] fixed pr-14 md:pr-0">
@@ -26,7 +27,7 @@ export const QuestionActions = ({
       </button>
       <button
         className="bg-white-500 text-black border border-[black] rounded-md px-3 py-2 hover:bg-black hover:text-white hidden md:block whitespace-nowrap"
-        onClick={handlePrevPage}
+        onClick={MarkForReview}
         disabled={currentPage === 1}
       >
         Mark for Review later

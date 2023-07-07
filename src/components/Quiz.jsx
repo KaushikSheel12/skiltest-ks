@@ -9,7 +9,7 @@ import { QuestionBox } from "./QuestionBox";
 import { QuestionActions } from "./QuestionActions";
 import QSidebar from "./QSidebar/index";
 
-const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect ,handlePrevPage ,onQuestionClick ,handleNextPage, handleClearResponse,showInstructions,setShowInstructions}) => {
+const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect ,handlePrevPage ,onQuestionClick ,handleNextPage, handleClearResponse,showInstructions,setShowInstructions,MarkForReview}) => {
   const [star, showStar] = useState(true);
 
   const starClick = (el) => {
@@ -45,6 +45,7 @@ const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect
             handlePrevPage={handlePrevPage}
             totalPages={totalPages}
             handleNextPage={handleNextPage}
+            MarkForReview={MarkForReview}
           />
         </div>
 
