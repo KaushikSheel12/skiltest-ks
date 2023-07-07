@@ -9,20 +9,25 @@ const initialState = {
 };
 
 export const useZustand = create((set) => ({
-  data: initialState,
-  setData: (newData) => set(() => ({ data: newData })),
+  //  data: initialState,
+  //setData: (newData) => set(() => ({ data: newData })),
+
+  data: [],
+  addData: (item) => set((state) => ({ data: [...state.data, item] })),
 
   questionIds: [],
-
   addQuestion: (questionId) =>
-  set((state) => {
-    if (!state.questionIds.includes(questionId)) {
-      return {
-        questionIds: [...state.questionIds, questionId],
-      };
-    }
-    return null; // Return null if the ID already exists
-  }),
+    set((state) => {
+      if (!state.questionIds.includes(questionId)) {
+        return {
+          questionIds: [...state.questionIds, questionId],
+        };
+      }
+      return null; // Return null if the ID already exists
+    }),
+
+  selectedAnswers: [],
+  setSelectedAnswers: (newAnswers) => set({ selectedAnswers: newAnswers }),
 
   showInstructions: false,
   setShowInstructions: (showInstructions: unknown) => set({ showInstructions }),

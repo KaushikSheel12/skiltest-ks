@@ -3,13 +3,25 @@ import questions from "../data/questions";
 import styles from "../styles/Quiz.module.css";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { MdOutlineTimer } from "react-icons/Md";
-
 import { QuizHeader } from "./QuizHeader";
 import { QuestionBox } from "./QuestionBox";
 import { QuestionActions } from "./QuestionActions";
 import QSidebar from "./QSidebar/index";
 
-const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect ,handlePrevPage ,onQuestionClick ,handleNextPage, handleClearResponse,showInstructions,setShowInstructions,MarkForReview}) => {
+const Quiz = ({
+  question,
+  selectedAnswers,
+  currentPage,
+  time,
+  handleAnswerSelect,
+  handlePrevPage,
+  onQuestionClick,
+  handleNextPage,
+  handleClearResponse,
+  showInstructions,
+  setShowInstructions,
+  MarkForReview,
+}) => {
   const [star, showStar] = useState(true);
 
   const starClick = (el) => {
@@ -32,13 +44,13 @@ const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect
           </div>
 
           {question && (
-            <QuestionBox
+            <QuestionBox 
               question={question}
               handleAnswerSelect={handleAnswerSelect}
               selectedAnswers={selectedAnswers}
             />
           )}
-          
+
           <QuestionActions
             handleClearResponse={handleClearResponse}
             currentPage={currentPage}
@@ -48,7 +60,6 @@ const Quiz = ({question ,selectedAnswers ,currentPage , time, handleAnswerSelect
             MarkForReview={MarkForReview}
           />
         </div>
-
       </div>
     </>
   );
