@@ -6,7 +6,7 @@ export const QuestionActions = ({
   handlePrevPage,
   totalPages,
   handleNextPage,
-  MarkForReview
+  MarkForReview,
 }) => {
   return (
     <div className="flex gap-5 w-full   md:w-[60%] h-auto md:justify-center justify-between mx-auto mt-[175px] fixed pr-14 md:pr-0">

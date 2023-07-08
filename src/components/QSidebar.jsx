@@ -83,7 +83,6 @@ const QSidebar = ({ onQuestionClick }) => {
           })}
         </div> */}
       </Accordian>
-  
     </div>
   );
 };

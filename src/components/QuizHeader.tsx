@@ -7,7 +7,9 @@ export const QuizHeader = ({ currentPage, star, starClick, time }) => {
   return (
     <>
       <div className="flex items-center md:mt-0 -mt-4 space-x-3">
-        <h2 className="font-semibold  md:text-[16px] text-[14px]">Question {currentPage}</h2>
+        <h2 className="font-semibold  md:text-[16px] text-[14px]">
+          Question {currentPage}
+        </h2>
         <div className="flex space-x-2 items-center">
           <Image
             src="/icons/correct.svg"
@@ -29,7 +31,12 @@ export const QuizHeader = ({ currentPage, star, starClick, time }) => {
       </div>
       <div className="flex md:gap-2 md:px-0 px-0 md:mt-0 -mt-4 gap-2">
         <div>
-          <MdOutlineTimer className="w-[18px] md:w-auto" color="black" size={24} cursor="pointer" />
+          <MdOutlineTimer
+            className="w-[18px] md:w-auto"
+            color="black"
+            size={24}
+            cursor="pointer"
+          />
         </div>
 
         {/* <QuestionTimer /> */}

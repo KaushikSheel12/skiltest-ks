@@ -1,6 +1,3 @@
-
-
-
 import React, { useState, useEffect } from "react";
 
 const QuestionTimer = () => {
@@ -38,4 +35,3 @@ const QuestionTimer = () => {
 };
 
 export default QuestionTimer;
-
