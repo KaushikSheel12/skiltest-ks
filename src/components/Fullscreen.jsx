@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const FullScreenButton = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -31,7 +31,7 @@ const FullScreenButton = () => {
 
   return (
     <button onClick={handleFullScreen}>
-      {isFullScreen ? 'Exit Full Screen' : 'Go Full Screen'}
+      {isFullScreen ? "Exit Full Screen" : "Go Full Screen"}
     </button>
   );
 };

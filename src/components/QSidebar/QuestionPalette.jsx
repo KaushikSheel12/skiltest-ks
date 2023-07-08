@@ -28,11 +28,9 @@ export const QuestionPalette = () => {
           <Dot color={"orange"} />
           <p className="text-[14px]  text-[gray] px-1 py-1">Pending</p>
         </div>
-
       </div>
 
-
-    <Qfilter/>
+      <Qfilter />
     </>
   );
 };

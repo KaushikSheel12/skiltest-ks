@@ -25,7 +25,6 @@ const QSidebar = ({ onQuestionClick }) => {
       <Accordian title="testing">
         <Responses />
         <QuestionTabs onQuestionClick={onQuestionClick} isClicked={isClicked} />
-        
       </Accordian>
       <Actions />
     </div>

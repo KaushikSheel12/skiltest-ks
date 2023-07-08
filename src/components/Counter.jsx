@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlinePauseCircle, AiOutlinePlayCircle } from "react-icons/ai";
 
 const Counter = () => {
-  const [time, setTime] = useState(150); 
+  const [time, setTime] = useState(150);
   const [play, setPlay] = useState(true);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const Counter = () => {
       if (play && time > 0) {
         setTime((prevTime) => prevTime - 1);
       }
-    },  1000);
+    }, 1000);
 
     if (time === 0) {
       clearInterval(timer);

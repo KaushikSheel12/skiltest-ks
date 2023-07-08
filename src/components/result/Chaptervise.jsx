@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Chaptervise = () => {
-  return (
-    <div>Chaptervise</div>
-  )
-}
+  return <div>Chaptervise</div>;
+};
 
-export default Chaptervise
+export default Chaptervise;

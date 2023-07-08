@@ -11,12 +11,9 @@ const Instructions = ({ setIsActive }) => {
     setIsDisabled(!isDisabled);
   };
 
-
   const NextButtonActive = () => {
     setIsActive(true);
   };
-
-
 
   return (
     <>
@@ -41,7 +38,9 @@ const Instructions = ({ setIsActive }) => {
                 style={{ background: option.bg }}
                 className="md:w-8 md:h-8   rounded w-6 h-6"
               ></div>
-              <p  className="px-0 py-0 text-[#4a4242]   md:text-[16px] text-[14px]">{option.text}</p>
+              <p className="px-0 py-0 text-[#4a4242]   md:text-[16px] text-[14px]">
+                {option.text}
+              </p>
             </div>
           ))}
 
@@ -167,7 +166,10 @@ const Instructions = ({ setIsActive }) => {
             </p>
           ))}
 
-          <div   onClick={toggleChecked} className="flex  items-cente  md:mt-10 mt-0 shadow-xl md:shadow-none rounded-md">
+          <div
+            onClick={toggleChecked}
+            className="flex  items-cente  md:mt-10 mt-0 shadow-xl md:shadow-none rounded-md"
+          >
             <input
               className="scale-[1.2] ml-6"
               type="checkbox"
@@ -175,7 +177,7 @@ const Instructions = ({ setIsActive }) => {
               onChange={() => {}}
             />
 
-            <label     className="py-1 px-4   font-normal leading-1 text-[15px]">
+            <label className="py-1 px-4   font-normal leading-1 text-[15px]">
               {generalInstructions.terms.text}
             </label>
           </div>

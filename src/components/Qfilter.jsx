@@ -7,8 +7,6 @@ function Qfilter() {
 
   const handleFilterChange = (event) => {
     setSelectedOption(event.target.value);
-
-
   };
 
   //just for testing
@@ -25,16 +23,15 @@ function Qfilter() {
     return true; // If no filter selected, show all questions
   });
 
-
-  useEffect(()=>{
-  console.log( ">>>>",filteredQuestions)
-  },[selectedOption])
+  useEffect(() => {
+    console.log(">>>>", filteredQuestions);
+  }, [selectedOption]);
 
   return (
     <>
       <div className="w-full h-auto px-2 py-1 mt-1">
         <select
-          className= " custom-select  md:w-[60%] md:h-8   border-none text-center bg-[#2FD5C8] rounded-md hover:bg-black hover:text-white"
+          className=" custom-select  md:w-[60%] md:h-8   border-none text-center bg-[#2FD5C8] rounded-md hover:bg-black hover:text-white"
           value={selectedOption}
           onChange={handleFilterChange}
         >
@@ -45,9 +42,7 @@ function Qfilter() {
         </select>
       </div>
       {/* Render filtered questions here */}
-      <div>
-     
-      </div>
+      <div></div>
     </>
   );
 }

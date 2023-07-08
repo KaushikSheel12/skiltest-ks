@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const MyComponent = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -7,9 +7,9 @@ const MyComponent = () => {
     setIsChecked((prevChecked) => !prevChecked);
   };
 
-  console.log(isChecked)
+  console.log(isChecked);
   return (
-    <div className={ 'w-80 h-80 border border-red-800'} onClick={toggleChecked}>
+    <div className={"w-80 h-80 border border-red-800"} onClick={toggleChecked}>
       <input
         type="checkbox"
         id="myCheckbox"
