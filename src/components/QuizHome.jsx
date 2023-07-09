@@ -19,6 +19,9 @@ const QuizHome = () => {
   const questionIds = useZustand((state) => state.questionIds);
   const addData = useZustand((state) => state.addData);
   const data = useZustand((state) => state.data);
+  const currentQuestion=useZustand((state)=>state.currentQuestion)
+  const setQuestions=useZustand((state)=>state.setQuestions)
+  const questions=useZustand((state)=>state.questions)
 
   function handleAnswerSelect(questionId, optionIndex) {
     const updatedAnswers = selectedAnswers.filter(
@@ -80,8 +83,13 @@ const QuizHome = () => {
     handleRestart();
     if (currentPage < questions.length) {
       setCurrentPage(currentPage + 1);
+    
     }
+   const viewQuestion= questions.map(item=>item.id===currentQuestion.id?{...item,attempted:true}:item)
+   setQuestions(viewQuestion)
   };
+
+
 
   const handleClearResponse = () => {
     const currentIndex = selectedAnswers.findIndex(

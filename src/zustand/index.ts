@@ -1,3 +1,4 @@
+import questions from "@/data/questions";
 import { create } from "zustand";
 
 const initialState = {
@@ -28,7 +29,10 @@ export const useZustand = create((set) => ({
 
   selectedAnswers: [],
   setSelectedAnswers: (newAnswers) => set({ selectedAnswers: newAnswers }),
-
+questions:questions,
+setQuestions:(questions:[])=>set({questions}),
+currenQuestion:{},
+setCurrentQuestion:(currentQuestion:unknown)=>set({currentQuestion}),
   showInstructions: false,
   setShowInstructions: (showInstructions: unknown) => set({ showInstructions }),
   showAllQuestions: false,
