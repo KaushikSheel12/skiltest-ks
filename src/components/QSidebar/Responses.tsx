@@ -13,12 +13,6 @@ const unseenQuestions=data.filter(item=> item.attempted===false)
  
 
 
-useEffect(() => {
-  const storedAnswers = sessionStorage.getItem("selectedAnswers");
-
-    console.log("total Answers", storedAnswers.length )
-
-}, [data]);
 
 
 
