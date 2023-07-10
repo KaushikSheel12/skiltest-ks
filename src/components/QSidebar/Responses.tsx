@@ -2,14 +2,23 @@ import React from "react";
 import { Dot } from "../Dot";
 import { useZustand } from "@/zustand";
 import { useEffect } from "react";
+import { useState } from "react";
 export const Responses = () => {
   const questionIds = useZustand((state) => state.questionIds);
   const data = useZustand((state) => state.questions);
-
+  const [selectedAnswers, setSelectedAnswers] = useState([]);
 
 const viewedQuestions=data.filter(item=>item.attempted===true)
-const unseenQuestions=data.filter(item=>typeof item.attempted==="undefined")
+const unseenQuestions=data.filter(item=> item.attempted===false)
  
+
+
+useEffect(() => {
+  const storedAnswers = sessionStorage.getItem("selectedAnswers");
+
+    console.log("total Answers", storedAnswers.length )
+
+}, [data]);
 
 
 

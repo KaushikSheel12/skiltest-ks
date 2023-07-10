@@ -15,12 +15,8 @@ export const Actions = () => {
   const setShowAllQuestions = useZustand((state) => state.setShowAllQuestions);
   const setShowQuiz = useZustand((state) => state.setShowQuiz);
 
-
-  const viewedQuestions=data.filter(item=>item.attempted===true)
-  const unseenQuestions=data.filter(item=>typeof item.attempted==="undefined")
-
-
-
+  const viewedQuestions = data.filter((item) => item.attempted === true);
+  const unseenQuestions=data.filter(item=> item.attempted===false)
 
   return (
     <>
@@ -66,11 +62,17 @@ export const Actions = () => {
                       Quiz
                     </th>
                     <td className="px-6 py-4 text-[black] border">17</td>
-                    <td className="px-6 py-4 text-[black] border">{viewedQuestions.length}</td>
-                    <td className="px-6 py-4 text-[black] border">1</td>
+                    <td className="px-6 py-4 text-[black] border">
+                      {viewedQuestions.length}
+                    </td>
+                    <td className="px-6 py-4 text-[black] border">
+                      {unseenQuestions.length}
+                    </td>
 
-                    <td className="px-6 py-4 text-[black] border">{questionIds.length}</td>
-                    <td className="px-6 py-4 text-[black] ">1</td>
+                    <td className="px-6 py-4 text-[black] border">
+                      {questionIds.length}
+                    </td>
+                    <td className="px-6 py-4 text-[black] ">{unseenQuestions.length}</td>
                   </tr>
                 </tbody>
               </table>
