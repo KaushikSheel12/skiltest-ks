@@ -24,7 +24,7 @@ function Qfilter() {
   });
 
   useEffect(() => {
-    console.log(">>>>", filteredQuestions);
+ //   console.log(">>>>", filteredQuestions);
   }, [selectedOption]);
 
   return (

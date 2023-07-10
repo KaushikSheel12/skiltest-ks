@@ -4,6 +4,8 @@ import React, { useState } from "react";
 
 export const Actions = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const data = useZustand((state) => state.questions);
+  const questionIds = useZustand((state) => state.questionIds);
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
@@ -12,6 +14,13 @@ export const Actions = () => {
   const setShowInstructions = useZustand((state) => state.setShowInstructions);
   const setShowAllQuestions = useZustand((state) => state.setShowAllQuestions);
   const setShowQuiz = useZustand((state) => state.setShowQuiz);
+
+
+  const viewedQuestions=data.filter(item=>item.attempted===true)
+  const unseenQuestions=data.filter(item=>typeof item.attempted==="undefined")
+
+
+
 
   return (
     <>
@@ -57,10 +66,10 @@ export const Actions = () => {
                       Quiz
                     </th>
                     <td className="px-6 py-4 text-[black] border">17</td>
-                    <td className="px-6 py-4 text-[black] border">0</td>
+                    <td className="px-6 py-4 text-[black] border">{viewedQuestions.length}</td>
                     <td className="px-6 py-4 text-[black] border">1</td>
 
-                    <td className="px-6 py-4 text-[black] border">0</td>
+                    <td className="px-6 py-4 text-[black] border">{questionIds.length}</td>
                     <td className="px-6 py-4 text-[black] ">1</td>
                   </tr>
                 </tbody>
