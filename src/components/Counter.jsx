@@ -13,6 +13,7 @@ const Counter = () => {
     }, 1000);
 
     if (time === 0) {
+      
       clearInterval(timer);
     }
 
