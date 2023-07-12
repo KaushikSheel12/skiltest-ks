@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlinePauseCircle, AiOutlinePlayCircle } from "react-icons/ai";
 
+
 const Counter = () => {
   const [time, setTime] = useState(150);
   const [play, setPlay] = useState(true);
@@ -23,14 +24,15 @@ const Counter = () => {
   }, [play, time]);
 
   return (
-    <div className="md:flex hidden md:block">
-      <div className="py-0 px-2 mt-[2px]">
+    <div className="flex border h-auto w-auto border-red-500  md:gap-0 gap-1  ">
+      <div className="md:py-0 md:px-2 md:mt-[2px] ">
         {play ? (
           <AiOutlinePauseCircle
             onClick={() => setPlay(false)}
             color="teal"
             size={24}
             cursor="pointer"
+          className="w-14 md:w-auto"
           />
         ) : (
           <AiOutlinePlayCircle
@@ -38,10 +40,11 @@ const Counter = () => {
             color="teal"
             size={24}
             cursor="pointer"
+            className="w-14 md:w-auto"
           />
         )}
       </div>
-      <h1 className="font-bold">Time: 00:{time >= 0 ? time : 0}</h1>
+      <h1 className="font-bold md:mt-0 mt-1  md:font-normal md:text-[15px]  text-[12px] ">Time: 00:{time >= 0 ? time : 0}</h1>
     </div>
   );
 };

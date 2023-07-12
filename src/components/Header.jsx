@@ -33,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex md:py-[10px] md:px-5 py-1 fixed w-full  border  px-3 top-0 justify-between overflow-hidden bg-white items-center">
+    <div className="flex   border border-red-500     md:py-[10px] md:px-5 py-1 fixed w-full  border  px-3 top-0 justify-between overflow-hidden bg-white items-center">
       <div className="flex gap-10  ">
         <Link
           href="#"
@@ -44,11 +44,11 @@ const Header = () => {
             height={50}
             src="https://dev.collegementor.com/logo.svg?width=640&quality=75&format=webp"
             alt="logo"
-            className="object-contain w-full h-full absolute left-3"
+            className="object-contain w-full h-full absolute  hidden md:block  left-3"
           />
         </Link>
 
-        <h2 className="mt-3 text-[15px] flex font-semibold ">
+        <h2 className="mt-3  hidden  text-[15px] md:flex font-semibold ">
           UPSC Civil Services<span className="block md:hidden">....</span>
           <span className="hidden md:block">Prelims CSAT Full Test 4</span>{" "}
         </h2>

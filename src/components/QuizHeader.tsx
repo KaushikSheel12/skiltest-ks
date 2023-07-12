@@ -6,11 +6,11 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 export const QuizHeader = ({ currentPage, star, starClick, time }) => {
   return (
     <>
-      <div className="flex items-center md:mt-0 -mt-4 space-x-3">
+      <div className="flex   items-center md:mt-0 -mt-4 space-x-3">
         <h2 className="font-semibold  md:text-[16px] text-[14px]">
           Question {currentPage}
         </h2>
-        <div className="flex space-x-2 items-center">
+        <div className="flex space-x-2 items-center  ">
           <Image
             src="/icons/correct.svg"
             width={15}
