@@ -143,6 +143,7 @@ const Dailyquizhome = () => {
             <div className=" max-w-[800px] md:mt-4  md:h-40 rounded-md bg-slate-100  px-2 py-4 grid items-center justify-center ">
               <Image
                 alt="r"
+                
                 width={70}
                 className="md:ml-10"
                 height={60}
