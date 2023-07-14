@@ -12,6 +12,7 @@ import Pepars from "@/components/Allexams/EXAM_WISE_PAPERS/Pepars";
 import QuizHome from "@/components/QuizHome";
 import CarouselBox from "@/components/Allexams/testcarousel/CarouselBox";
 import { Carousel } from "@/components/Allexams/testcarousel/Carousel";
+import Dailyquizhome from "./dailyquizhome";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,9 +22,11 @@ const Test = () => {
   return (
     <>
       <div className="h-screen">
-        <Header />
+        {/* <Header /> */}
 
-        {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />}
+        {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
+
+        <Dailyquizhome/>
       </div>
 
       {/* <Allexams/> */}
