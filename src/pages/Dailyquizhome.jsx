@@ -28,7 +28,7 @@ const Dailyquizhome = () => {
               />
             </div>
 
-            <div className=" mt-4 flex justify-between ">
+            <div className=" mt-4   justify-between ">
               <div>
                 {DailyQuizeComment.map((el, index) => {
                   return (
@@ -81,7 +81,7 @@ const Dailyquizhome = () => {
                 Skills You will Acquire
               </h2>
 
-              <div className="flex gap-3  md:px-2  md:py-[2px] bg-white rounded-full  md:w-fit ">
+              <div className="flex flex-wrap  gap-3  md:px-2  md:py-[2px] bg-white rounded-full  md:w-fit ">
                 <Image
                   width={13}
                   height={13}
@@ -132,31 +132,24 @@ const Dailyquizhome = () => {
             </div>
           </div>
 
-
-
-
-          <div className="md:py-4">
+          <div className="md:py-4  ">
             <h2 className="font-bold  text-gray-500 md:text-[22px]">
-            Rate this Quiz
+              Rate this Quiz
             </h2>
 
             <div className=" max-w-[800px] md:mt-4  md:h-40 rounded-md bg-slate-100  px-2 py-4 grid items-center justify-center ">
               <Image
                 alt="r"
-                
                 width={70}
                 className="md:ml-10"
                 height={60}
                 src="https://seekify-public.s3.ap-south-1.amazonaws.com/resources/brainee/with_yarn.png"
               />
               <p className="  text-gray-500 md:text-[16px] top-4">
-              Login to rate the Quiz
+                Login to rate the Quiz
               </p>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </>
