@@ -16,7 +16,7 @@ const Dailyquizhome = () => {
   console.log(isActive);
   return (
     <>
-      <div className="w-full md:h-[520px]   md:bg-gray-200 ">
+      <div className="w-full md:h-[520px]  mt-10  md:bg-gray-200 ">
         <div className="max-w-[1200px] mx-auto     h-full flex-wrap   grid md:grid-cols-3 grid-cols-2   px-4 gap-4">
           <div className=" col-span-2 bg-white rounded-md  h-[220px]    md:h-[350px] ">
             <div className="w-full h-full relative  ">
@@ -58,8 +58,6 @@ const Dailyquizhome = () => {
               <div>social users</div>
             </div>
           </div>
-
-
 
           <div className="mt-[95px] md:mt-0 md:w-auto w-[355px] ">
             <h2 className="font-bold py-1  md:px-1 text-[20px]  md:text-[28px] text-gray-700 ">
@@ -153,9 +151,6 @@ const Dailyquizhome = () => {
             </div>
           </div>
         </div>
-
-
-        
       </div>
     </>
   );
