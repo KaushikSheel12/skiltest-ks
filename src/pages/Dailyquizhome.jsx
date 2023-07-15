@@ -14,6 +14,9 @@ const Dailyquizhome = () => {
   const [isActive, setIsActive] = useState(false);
 
   console.log(isActive);
+
+
+
   return (
     <>
       <div className="w-full md:h-[520px]  mt-10  md:bg-gray-200 ">
