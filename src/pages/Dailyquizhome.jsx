@@ -16,19 +16,19 @@ const Dailyquizhome = () => {
   console.log(isActive);
   return (
     <>
-      <div className="w-full md:h-[520px]  mt-16  bg-gray-200 ">
-        <div className="max-w-[1200px] mx-auto  h-full flex-wrap   grid grid-cols-3 md:py-4 md:px-4 gap-4">
-          <div className=" col-span-2 bg-white rounded-md    md:h-[350px] ">
-            <div className="md:w-full md:h-full relative ">
+      <div className="w-full md:h-[520px]   md:bg-gray-200 ">
+        <div className="max-w-[1200px] mx-auto     h-full flex-wrap   grid md:grid-cols-3 grid-cols-2   px-4 gap-4">
+          <div className=" col-span-2 bg-white rounded-md  h-[220px]    md:h-[350px] ">
+            <div className="w-full h-full relative  ">
               <Image
                 alt="abc"
                 fill
-                className="object-contain"
+                className="object-contain  "
                 src="https://seekify-public.s3.ap-south-1.amazonaws.com/seekify-file-image%252Fwebp-1676280337007-The%20Daily%20Quant%20Quiz.webp"
               />
             </div>
 
-            <div className=" mt-4 flex justify-between ">
+            <div className=" mt-2 flex justify-between ">
               <div>
                 {DailyQuizeComment.map((el, index) => {
                   return (
@@ -43,7 +43,7 @@ const Dailyquizhome = () => {
                   );
                 })}
                 {isActive && (
-                  <div className="flex">
+                  <div className="flex gap-2">
                     {Socialdata.map((el, index) => {
                       return (
                         <div key={index}>
@@ -55,15 +55,17 @@ const Dailyquizhome = () => {
                 )}
               </div>
 
-              <div>sbgsfgbsfbfbfb</div>
+              <div>social users</div>
             </div>
           </div>
 
-          <div className="">
-            <h2 className="font-bold  md:px-1  md:text-[28px] text-gray-600 ">
+
+
+          <div className="mt-[95px] md:mt-0 md:w-auto w-[355px] ">
+            <h2 className="font-bold py-1  md:px-1 text-[20px]  md:text-[28px] text-gray-700 ">
               The Daily Quant Quiz
             </h2>
-            <h4 className="font-bold  md:px-1  md:text-[16px] text-gray-600 ">
+            <h4 className="font-bold  md:px-1 text-[13px]  md:text-[16px] text-gray-700 ">
               This Quiz includes
             </h4>
 
@@ -77,11 +79,11 @@ const Dailyquizhome = () => {
               })}
             </div>
             <div className=" md:py-1   md:px-2">
-              <h2 className="font-bold md:py-1   md:text-[16px] text-gray-600">
+              <h2 className="font-bold md:py-1  text-[13px]  md:text-[16px] text-gray-700">
                 Skills You will Acquire
               </h2>
 
-              <div className="flex flex-wrap  gap-3  md:px-2  md:py-[2px] bg-white rounded-full  md:w-fit ">
+              <div className="flex flex-wrap  gap-3  py-2  md:px-2  md:py-[2px] md:bg-white rounded-full  w-fit ">
                 <Image
                   width={13}
                   height={13}
@@ -89,7 +91,7 @@ const Dailyquizhome = () => {
                   alt="network-icon"
                   src="https://seekify-public.s3.ap-south-1.amazonaws.com/resources/1666249268559-Group%208332.png"
                 />
-                <p className="text-gray-600 text-[13px] font-semibold  ">
+                <p className="text-gray-700 md:text-[13px] text-[11px]  font-semibold  ">
                   Quantitative Aptitude
                 </p>
               </div>
@@ -103,18 +105,18 @@ const Dailyquizhome = () => {
           </div>
         </div>
 
-        <div className=" max-w-[1200px] mx-auto  md:py-6 md:px-2 h-full ">
-          <h2 className="font-bold  text-gray-500 md:text-[22px]">
+        <div className=" max-w-[1200px] mx-auto  py-6 px-2 h-full ">
+          <h2 className="font-bold  text-gray-500 text-[17px]  md:text-[22px]">
             About This Quiz
           </h2>
-          <p className=" md:py-4  text-gray-700 md:text-[12px]c">
+          <p className=" md:py-4  text-gray-700 text-[12px] md:text-[15px] ">
             Brush up on your quantitative skills with the help of this daily
             quiz. Whether you're a beginner or an <br />
             experienced quant, there's something for everyone in this quiz.
           </p>
 
-          <div className="md:py-4">
-            <h2 className="font-bold  text-gray-500 md:text-[22px]">
+          <div className="py-4">
+            <h2 className="font-bold  text-gray-500 text-[17px]  md:text-[22px]">
               Your Rank
             </h2>
 
@@ -122,11 +124,11 @@ const Dailyquizhome = () => {
               <Image
                 alt="r"
                 width={60}
-                className="md:ml-48"
+                className="md:ml-48 w-10 md:w-14 ml-[140px] "
                 height={60}
                 src="https://seekify-public.s3.ap-south-1.amazonaws.com/resources/brainee/with_crown.png"
               />
-              <p className="  text-gray-500 md:text-[17px] top-4">
+              <p className="  text-gray-700 text-[12px]  md:text-[17px] top-4">
                 Take this quiz and rise above the ranks on our leaderboard
               </p>
             </div>
@@ -141,11 +143,11 @@ const Dailyquizhome = () => {
               <Image
                 alt="r"
                 width={70}
-                className="md:ml-10"
+                className="md:ml-10 w-12 md:w-16  ml-8 "
                 height={60}
                 src="https://seekify-public.s3.ap-south-1.amazonaws.com/resources/brainee/with_yarn.png"
               />
-              <p className="  text-gray-500 md:text-[16px] top-4">
+              <p className="  text-gray-700 text-[12px]  md:text-[17px] top-4">
                 Login to rate the Quiz
               </p>
             </div>
