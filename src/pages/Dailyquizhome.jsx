@@ -105,11 +105,11 @@ const Dailyquizhome = () => {
           </div>
         </div>
 
-        <div className=" max-w-[1200px] mx-auto  py-6 px-2 h-full ">
+        <div className=" max-w-[1200px] mx-auto  py-6 px-4 h-full ">
           <h2 className="font-bold  text-gray-500 text-[17px]  md:text-[22px]">
             About This Quiz
           </h2>
-          <p className=" md:py-4  text-gray-700 text-[12px] md:text-[15px] ">
+          <p className=" md:py-4  text-gray-700 text-[11px] md:text-[15px] ">
             Brush up on your quantitative skills with the help of this daily
             quiz. Whether you're a beginner or an <br />
             experienced quant, there's something for everyone in this quiz.
@@ -153,6 +153,9 @@ const Dailyquizhome = () => {
             </div>
           </div>
         </div>
+
+
+        
       </div>
     </>
   );
