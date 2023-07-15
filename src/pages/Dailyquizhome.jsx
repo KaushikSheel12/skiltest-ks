@@ -16,8 +16,8 @@ const Dailyquizhome = () => {
   console.log(isActive);
   return (
     <>
-      <div className="w-full md:h-[520px] mt-16  bg-gray-200 ">
-        <div className="max-w-[1200px] mx-auto  h-full   grid grid-cols-3 md:py-4 md:px-4 gap-4">
+      <div className="w-full md:h-[520px]  mt-16  bg-gray-200 ">
+        <div className="max-w-[1200px] mx-auto  h-full flex-wrap   grid grid-cols-3 md:py-4 md:px-4 gap-4">
           <div className=" col-span-2 bg-white rounded-md    md:h-[350px] ">
             <div className="md:w-full md:h-full relative ">
               <Image
@@ -28,7 +28,7 @@ const Dailyquizhome = () => {
               />
             </div>
 
-            <div className=" mt-4   justify-between ">
+            <div className=" mt-4 flex justify-between ">
               <div>
                 {DailyQuizeComment.map((el, index) => {
                   return (
