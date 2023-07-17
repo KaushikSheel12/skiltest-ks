@@ -14,6 +14,7 @@ import CarouselBox from "@/components/Allexams/testcarousel/CarouselBox";
 import { Carousel } from "@/components/Allexams/testcarousel/Carousel";
 import Dailyquizhome from "./dailyquizhome";
 import Pheader from "@/components/predictors/Pheader";
+import Predictors from "@/components/predictors/Predictors";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -26,7 +27,7 @@ const Test = () => {
         {/* <Header /> */}
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
-<Pheader/>
+<Predictors/>
         {/* <Dailyquizhome/> */}
       </div>
 
