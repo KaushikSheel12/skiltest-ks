@@ -23,7 +23,7 @@ const Test = () => {
 
   return (
     <>
-      <div className="h-screen">
+      <div className="">
         {/* <Header /> */}
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}

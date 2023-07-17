@@ -6,7 +6,7 @@ const Predictors = () => {
   return (
     <>
       <Pheader />
-      <div className="flex h-full bg-slate-50 mt-4  w-[80%] mx-auto py-2 px-2  gap-4  ">
+      <div className="flex h-full bg-slate-50  w-[80%] mx-auto py-2 px-2  gap-4  ">
         <div className="border border-red-500 h-6 w-1/3  text-center">
           FILTER'S
         </div>
@@ -23,10 +23,60 @@ const Predictors = () => {
           </h3>
 
 
-<div className="border border-black bg-white px-2 py-1  h-96">
+<div className="border border-black bg-white px-2 py-1 mt-4  h-96">
     <h4 className="text-[14px] text-[#3b5eb0] font-semibold">St Mary's Engineering College, Bhuvanagiri</h4>
     <p className="text-gray-500 py-1  text-[13px] ">Ownership: Private</p>
+
+    <div className=" border-t-2 border-b-2  border-gray-200 h-60 px-2 py-2 mt-4 "></div>
 </div>
+
+
+
+
+<div className="border border-black bg-white px-2 py-1 mt-4  h-96">
+    <h4 className="text-[14px] text-[#3b5eb0] font-semibold">St Mary's Engineering College, Bhuvanagiri</h4>
+    <p className="text-gray-500 py-1  text-[13px] ">Ownership: Private</p>
+
+    <div className=" border-t-2 border-b-2  border-gray-200 h-60 px-2 py-2 mt-4 "></div>
+</div>
+
+
+<div className="border border-black bg-white px-2 py-1 mt-4  h-96">
+    <h4 className="text-[14px] text-[#3b5eb0] font-semibold">St Mary's Engineering College, Bhuvanagiri</h4>
+    <p className="text-gray-500 py-1  text-[13px] ">Ownership: Private</p>
+
+    <div className=" border-t-2 border-b-2  border-gray-200 h-60 px-2 py-2 mt-4 "></div>
+</div>
+
+
+<div className="border border-black bg-white px-2 py-1 mt-4  h-96">
+    <h4 className="text-[14px] text-[#3b5eb0] font-semibold">St Mary's Engineering College, Bhuvanagiri</h4>
+    <p className="text-gray-500 py-1  text-[13px] ">Ownership: Private</p>
+
+    <div className=" border-t-2 border-b-2  border-gray-200 h-60 px-2 py-2 mt-4 "></div>
+</div>
+
+
+<div className="border border-black bg-white px-2 py-1 mt-4  h-96">
+    <h4 className="text-[14px] text-[#3b5eb0] font-semibold">St Mary's Engineering College, Bhuvanagiri</h4>
+    <p className="text-gray-500 py-1  text-[13px] ">Ownership: Private</p>
+
+    <div className=" border-t-2 border-b-2  border-gray-200 h-60 px-2 py-2 mt-4 "></div>
+</div>
+
+
+<div className="border border-black bg-white px-2 py-1 mt-4  h-96">
+    <h4 className="text-[14px] text-[#3b5eb0] font-semibold">St Mary's Engineering College, Bhuvanagiri</h4>
+    <p className="text-gray-500 py-1  text-[13px] ">Ownership: Private</p>
+
+    <div className=" border-t-2 border-b-2  border-gray-200 h-60 px-2 py-2 mt-4 "></div>
+</div>
+
+
+
+
+
+
 
         </div>
       </div>
