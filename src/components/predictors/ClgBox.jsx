@@ -4,7 +4,7 @@ import { TiTick } from 'react-icons/Ti'
 const ClgBox = () => {
   return (
     <>
-        <div className="md:w-[50%] w-[70%] md:h-[80%] border border-gray-400 md:py-0 md:mt-2 mt-4 md:p-0 p-4 md:rounded-none rounded-md  px-0">
+        <div className="md:w-[50%] w-[70%] md:h-[80%] border border-gray-400 md:py-0  mt-2  md:mt-4 md:p-0 p-4 md:rounded-none rounded-md  px-0">
             <div className="h-[65%] w-full bg-gray-200 ">
               <p className="text-[#3b5eb0] md:text-[15px] text-[12px]  px-2 py-0">
                 B.Teck Computer Science and Engineering
