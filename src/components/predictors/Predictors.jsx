@@ -7,7 +7,7 @@ const Predictors = () => {
   return (
     <>
       <Pheader />
-      <div className="md:hidden  border w-[90%] grid mx-auto mt-2 rounded-md  px-2 py-2  h-20 shadow-xl">
+      <div className="md:hidden    border w-[90%] grid mx-auto mt-2 rounded-md  px-2 py-2  h-20 shadow-xl">
         <p className="font-semibold text-md px-1 text-gray-700">
           Summary of Your Prediction
         </p>
@@ -23,11 +23,11 @@ const Predictors = () => {
         </div>
       </div>
 
-      <div className="flex h-full bg-slate-50 md:mt-0 mt-2  md:w-[80%] w-[90%]  mx-auto py-2 px-2  gap-4  ">
+      <div className="flex h-full md:bg-slate-50 md:mt-0 mt-2  md:w-[80%] w-[90%]  mx-auto py-2 px-2  gap-4  ">
         <div className="border md:block hidden border-red-500 h-6 w-1/3  text-center">
           FILTER'S
         </div>
-        <div className="border  h-full  py-2 px-2  md:w-[50%] w-[100%]   ">
+        <div className="md:border  h-full  py-2 px-2  md:w-[50%] w-[100%]   ">
           <div className="border flex justify-between items-center   md:border-green-500  h-10 w-full rounded-full    bg-[#d5f9d5]  mx-auto md:rounded-sm  py-0 px-2">
             <h2 className="md:text-[15px] text-[13px]">Get Personalised Report in PDF </h2>
             <div className="flex justify-center border text-sm cursor-pointer  text-white  bg-[#209120] px-2 py-[2px] md:w-20 w-16  md:h-7  h-6 rounded-full  items-center">
