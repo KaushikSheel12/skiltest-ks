@@ -18,7 +18,7 @@ const CareersHome = () => {
               deliver foods & enjoy. Happy foodie life
             </p>
           </div>
-          <div className=" md:w-96  w-[80%] ml-4  md:ml-0   bg-white rounded-md h-10  md:h-16 md:mt-16 mt-[372px]  md:right-[550px] absolute  md:py-1 px-1 flex gap-3 items-center ">
+          <div className=" md:w-96  w-[80%] ml-2  md:ml-0   bg-white rounded-md h-10  md:h-16 md:mt-16 mt-[372px]  md:right-[550px] absolute  md:py-1 px-1 flex gap-3 items-center ">
             <select className=" text-black md:text-xl text-sm h-10  text-center border-0   w-[70%]">
               <option value="">IIT Colleges</option>
               <option value="">None IT Colleges</option>
@@ -41,7 +41,7 @@ const CareersHome = () => {
 
       <Clg />
 
-      <div className="w-full flex py-2   px-2 h-10 gap-6  justify-center  mt-6  items-center  ">
+      <div className="w-full flex py-2    px-2 h-10 gap-6  justify-center  mt-6  items-center  ">
         <div className="bg-green-600 w-20 h-1"></div>
         <div className="text-green-600  font-semibold  text-[27px]">
           Our Restaurants Selection
