@@ -29,7 +29,9 @@ const Predictors = () => {
         </div>
         <div className="md:border  h-full  py-2 px-2  md:w-[50%] w-[100%]   ">
           <div className="border flex justify-between items-center   md:border-green-500  h-10 w-full rounded-full    bg-[#d5f9d5]  mx-auto md:rounded-sm  py-0 px-2">
-            <h2 className="md:text-[15px] text-[13px]">Get Personalised Report in PDF </h2>
+            <h2 className="md:text-[15px] text-[13px]">
+              Get Personalised Report in PDF{" "}
+            </h2>
             <div className="flex justify-center border text-sm cursor-pointer  text-white  bg-[#209120] px-2 py-[2px] md:w-20 w-16  md:h-7  h-6 rounded-full  items-center">
               <TiTick size={19} color="black" />
               Send

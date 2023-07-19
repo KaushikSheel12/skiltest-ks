@@ -9,7 +9,9 @@ const PredictorCard = () => {
         <h4 className="md:text-[14px] text-[12px]  text-[#3b5eb0] font-semibold">
           St Mary's Engineering College, Bhuvanagiri
         </h4>
-        <p className="text-gray-500 py-1  md:text-[13px] text-[11px] ">Ownership: Private</p>
+        <p className="text-gray-500 py-1  md:text-[13px] text-[11px] ">
+          Ownership: Private
+        </p>
 
         <div className=" border-t-2 border-b-2  border-gray-200 md:h-60 h-44 px-0  mt-4 ">
           <h3 className="md:text-sm text-[11px] font-semibold  text-gray-500">
@@ -23,12 +25,14 @@ const PredictorCard = () => {
           <ClgBox />
         </div>
 
-
         <div className="w-full flex gap-4 py-1 md:mt-4 mt-1  px-2  ">
-      <button className="border px-2 py-1 bg-gray-100 text-gray-700  text-[12px] rounded md:text-sm">View Cutofs </button>
-      <button className="border px-2 py-1 border-[orange] text-[orange] text-[12px]   md:text-sm rounded ">Brochre</button>
+          <button className="border px-2 py-1 bg-gray-100 text-gray-700  text-[12px] rounded md:text-sm">
+            View Cutofs{" "}
+          </button>
+          <button className="border px-2 py-1 border-[orange] text-[orange] text-[12px]   md:text-sm rounded ">
+            Brochre
+          </button>
         </div>
-       
       </div>
     </>
   );
