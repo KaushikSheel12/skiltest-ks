@@ -41,9 +41,9 @@ const CareersHome = () => {
 
       <Clg />
 
-      <div className="w-full flex py-2    px-2 h-10 gap-6  justify-center  mt-6  items-center  ">
-        <div className="bg-green-600 w-20 h-1"></div>
-        <div className="text-green-600  font-semibold  text-[27px]">
+      <div className="w-full flex py-2    px-2 h-10 gap-6  justify-center  md:mt-6  mt-[-12px] items-center  ">
+        <div className="bg-green-600 md:w-20 hidden  h-1"></div>
+        <div className="text-green-600  font-semibold  md:text-[27px] text-[28px]">
           Our Restaurants Selection
         </div>
       </div>
