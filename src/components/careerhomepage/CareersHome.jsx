@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Clg from "./careerimg/Clg";
-import ClgNamebox from "./careerimg/ClgNamebox";
+import Clg from "./Clg";
+import ClgNamebox from "./ClgNamebox";
 import ClgList from "./ClgList";
 
 const CareersHome = () => {
