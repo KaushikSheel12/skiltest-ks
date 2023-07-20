@@ -11,12 +11,13 @@ import Allexams from "@/components/Allexams/Allexams";
 import Pepars from "@/components/Allexams/EXAM_WISE_PAPERS/Pepars";
 import QuizHome from "@/components/QuizHome";
 import CarouselBox from "@/components/Allexams/testcarousel/CarouselBox";
-import { Carousel } from "@/components/Allexams/testcarousel/Carousel";
+
 import Dailyquizhome from "./dailyquizhome";
 import Pheader from "@/components/predictors/Pheader";
 import Predictors from "@/components/predictors/Predictors";
-import MyCarousel from "@/components/ MyCarousel";
+
 import CareersHome from "@/components/careerhomepage/CareersHome";
+import Carousel from "@/components/Crousel";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -31,7 +32,8 @@ const Test = () => {
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
 {/* <Predictors/> */}
 {/* <MyCarousel/> */}
-<CareersHome/>
+
+<Carousel/>
         {/* <Dailyquizhome/> */}
       </div>
 
