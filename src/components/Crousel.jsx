@@ -58,10 +58,8 @@ const Carousel = () => {
                     ? `text-[${enlargedTextSize}px]`
                     : `text-[${originalTextSize}px]`
                 } font-bold mb-4 ${
-                  index === currentImageIndex
-                    ? "text-blue-500"
-                    : "text-gray-500"
-                }`}
+                  index === currentImageIndex ? "text-black " : "text-gray-400"
+                }  font-semibold  `}
               >
                 {text}
               </h1>
@@ -69,17 +67,19 @@ const Carousel = () => {
           </div>
 
           <div className="w-64 h-64 p-6  mb-4 relative">
-            <Image
-              layout="fill"
-              objectFit="cover"
-              src={images[currentImageIndex]}
-              alt={`Image ${currentImageIndex + 1}`}
-              className="transition-transform  animate-pulse rounded-3xl  duration-500"
-              style={{
-                transform: `scale(${currentImageIndex === 0 ? 1.2 : 1})`,
-              }}
-              loading="eager" // Set the loading attribute to "lazy" for slow image loading animation
-            />
+            <div className="">
+              <Image
+                layout="fill"
+                objectFit="cover"
+                src={images[currentImageIndex]}
+                alt={`Image ${currentImageIndex + 1}`}
+                className="anim"
+                style={{
+                  transform: `scale(${currentImageIndex === 0 ? 1.2 : 1})`,
+                }}
+                loading="eager" // Set the loading attribute to "lazy" for slow image loading animation
+              />
+            </div>
           </div>
         </div>
       </div>
