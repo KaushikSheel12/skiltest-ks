@@ -26,17 +26,17 @@ const Test = () => {
 
   return (
     <>
-      <div className="">
+      <div className="h-full">
         {/* <Header /> */}
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
 {/* <Predictors/> */}
 {/* <MyCarousel/> */}
 
-<Carousel/>
+{/* <Carousel/> */}
         {/* <Dailyquizhome/> */}
       </div>
-
+<CareersHome/>
       {/* <Allexams/> */}
       {/* 
 <Header/>
