@@ -18,6 +18,7 @@ import Predictors from "@/components/predictors/Predictors";
 
 import CareersHome from "@/components/careerhomepage/CareersHome";
 import Carousel from "@/components/Crousel";
+import Phero from "@/components/pulsar/Phero";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -36,7 +37,8 @@ const Test = () => {
 {/* <Carousel/> */}
         {/* <Dailyquizhome/> */}
       </div>
-<CareersHome/>
+      <Phero/>
+{/* <CareersHome/> */}
       {/* <Allexams/> */}
       {/* 
 <Header/>
