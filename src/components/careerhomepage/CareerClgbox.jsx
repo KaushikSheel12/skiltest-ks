@@ -3,7 +3,7 @@ import React from "react";
 import ClgNamebox from "./ClgNamebox";
 
 const CareerClgbox = ({ ImgSrc }) => {
-  retur
+  return
    (
     <>
     
