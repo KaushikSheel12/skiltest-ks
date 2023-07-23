@@ -11,14 +11,12 @@ import Allexams from "@/components/Allexams/Allexams";
 import Pepars from "@/components/Allexams/EXAM_WISE_PAPERS/Pepars";
 import QuizHome from "@/components/QuizHome";
 import CarouselBox from "@/components/Allexams/testcarousel/CarouselBox";
-
-import Dailyquizhome from "./dailyquizhome";
 import Pheader from "@/components/predictors/Pheader";
 import Predictors from "@/components/predictors/Predictors";
-
 import CareersHome from "@/components/careerhomepage/CareersHome";
 import Carousel from "@/components/Crousel";
-import Phero from "@/components/pulsar/Phero";
+import Dailyquizhome from "./Dailyquizhome";
+import TopHeroSection from "@/components/pulser/TopHeroSection";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -31,18 +29,17 @@ const Test = () => {
         {/* <Header /> */}
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
-{/* <Predictors/> */}
-{/* <MyCarousel/> */}
+        {/* <Predictors/> */}
+        {/* <MyCarousel/> */}
 
-{/* <Carousel/> */}
-        {/* <Dailyquizhome/> */}
+        {/* <Carousel/> */}
+        {/* <Dailyquizhome /> */}
       </div>
-      <Phero/>
-{/* <CareersHome/> */}
       {/* <Allexams/> */}
-      {/* 
-<Header/>
-<Pepars/>  */}
+
+{/* <Header/> */}
+< TopHeroSection/>
+{/* <Pepars/>   */}
 
       {/* <Result/> */}
     </>
