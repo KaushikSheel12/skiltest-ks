@@ -141,7 +141,11 @@ const TopHeroSection = () => {
           </div>
         </div>
 
-        <Intro />
+        <Intro
+          toptext="INTRO"
+          headtext="Let's build your next big idea with Pulsar a Non Code Template"
+          paragraph="As easy as just double click and type to edit"
+        />
 
         <div className="w-fit h-fit    mx-auto  py-2 px-2 grid grid-cols-3  justify-between items-center  gap-3">
           {aboutBoxData.map((el, index) => {
@@ -155,6 +159,63 @@ const TopHeroSection = () => {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-[-30px]">
+          <Intro
+            toptext="OVERVIEW"
+            headtext="Welcome to Pulsar"
+            paragraph="An overview of Pulsar benefits"
+          />
+
+          <div className="  w-[1010px] mx-auto">
+            <div className="container-top flex gap-4">
+              <div className=" h-[330px] bg-[#e6fde6] flex-1 flex gap-6   rounded-[40px]">
+                <div className="imgdiv   w-[35%] mt-7  h-[300px] relative">
+                  <Image
+                    fill
+                    className="object-contain"
+                    alt="girlimg"
+                    src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d420209ae0560604b43_Grid-girl.png"
+                  />
+                </div>
+                <div className="txtdiv  w-[65%] h-full">
+                  <h1 className="font-bold text-[50px]  text-[#2f622f]  mt-20">
+                    97%
+                  </h1>
+                  <p className="font-bold text-[30px]  text-[#2f622f]  leading-9 ">
+                    Focus on what is more important to you and be more
+                    productive
+                  </p>
+                </div>
+              </div>
+
+              <div className="border bg-[#e6fde6]  h-[330px] w-[360px]   rounded-[40px] ">
+                <div className="w-fill h-36  relative">
+                  <Image
+                    src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d42e9439559ed4cb298_iMac-grid.png"
+                    fill
+                    alt="ledimg"
+                  />
+                </div>
+                <p className="font-semibold px-4 text-[#2f622f]">BENEFITS</p>
+                <p className="font-bold text-[30px] px-4  text-[#2f622f]  leading-9 ">
+                  With Pulsar you save time, money and stress
+                </p>
+                <div className="w-fit h-8 px-2 border cursor-pointer  text-[#235123] font-semibold  border-[#246824] rounded-full flex items-center ml-3 mt-4 hover:bg-[#176217] hover:text-white ">
+                  Read More
+                </div>
+              </div>
+            </div>
+            <div className="container-bottom flex gap-4 mt-3">
+              <div className="border border-black h-[300px] w-[360px]  rounded-[40px] ">
+                das
+              </div>
+              <div className="border border-black h-[300px] flex-1 rounded-[40px] ">
+                dsa
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
