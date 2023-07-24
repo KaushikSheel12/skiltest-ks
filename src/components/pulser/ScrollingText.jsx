@@ -10,7 +10,7 @@ const ScrollingText = () => {
         const scrollY = window.scrollY;
         const maxScrollY = document.body.scrollHeight - window.innerHeight;
         const percentageScrolled = (scrollY / maxScrollY) * 100;
-        const maxTranslate = 30; // Change this value to adjust the scrolling speed
+        const maxTranslate = 80; // Change this value to adjust the scrolling speed
 
         // Move the text horizontally based on the percentage scrolled
         const translateX = (percentageScrolled * maxTranslate) / 100;
