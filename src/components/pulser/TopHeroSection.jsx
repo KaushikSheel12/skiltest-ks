@@ -6,6 +6,7 @@ import { BsArrowDown } from "react-icons/Bs";
 import { aboutBoxData } from "./data/data";
 import AboutBox from "./AboutBox";
 import OverviewBox from "./OverviewBox";
+import BenefitBox from "./BenefitBox";
 
 const TopHeroSection = () => {
   return (
@@ -14,7 +15,7 @@ const TopHeroSection = () => {
         <div className="  py-1  bg-[#edfbed] h-[550px] relative">
           {/* Your page content here */}
 
-          <div className="  w-[90%] h-[550px] px-4 mx-auto py-1 relative  flex gap-2 justify-around items-center">
+          <div className="  w-[90%] h-[550px] px-4 mx-auto py-1 relative  flex-wrap  flex gap-2 justify-around items-center">
             <div className="w-[35%]  h-full py-2 px-2  ">
               <div className="w-fit h-fit px-2   uppercase   rounded-lg  border flex text-sm font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
                 Business
@@ -109,7 +110,7 @@ const TopHeroSection = () => {
           paragraph="As easy as just double click and type to edit"
         />
 
-        <div className="w-fit h-fit    mx-auto  py-2 px-2 grid grid-cols-3  justify-between items-center  gap-3">
+        <div className="w-fit h-fit    mx-auto  py-2 px-2 flex flex-wrap  justify-between items-center  gap-3">
           {aboutBoxData.map((el, index) => {
             return (
               <div key={index}>
@@ -138,6 +139,10 @@ const TopHeroSection = () => {
             paragraph="We bring ideas to life by combining years of"
           />
         </div>
+
+        <div className="border  border-gray-400  w-[1010px] h-[2px] mx-auto "></div>
+
+        <BenefitBox />
       </div>
 
       <div className=" w-full h-screen">
