@@ -20,11 +20,13 @@ const Allexams = () => {
           <p className="text-[white] font-semibold md:text-[23px] text-[17px]">
             The Most Comprehensive Preparation App for All Exams
           </p>
+    
 
           <div className="text-[white] md:mx-0 mx-auto rounded w-fit  text-sm bg-orange-800  font-semibold py-2 px-4 mt-4">
             <p>Trusted by 3 Crore+ Students</p>
           </div>
         </div>
+        
 
         <div className=" h-[450px] w-[450px]    hidden md:block ">
           <Image
