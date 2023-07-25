@@ -30,7 +30,6 @@ const ScrollingText = () => {
         className="text-[300px] whitespace-nowrap   text-center  font-bold text-teal-500 opacity-20  p-4 rounded"
       >
         <h1>Skillzen</h1>
- 
       </div>
     </div>
   );
