@@ -11,34 +11,37 @@ import BenefitBox from "./BenefitBox";
 const TopHeroSection = () => {
   return (
     <>
-      <div className="h-screen">
-        <div className="  py-1  bg-[#edfbed] h-[550px] relative">
+      <div className="h-full border border-red-500">
+        <div className="  py-1  bg-[#edfbed] md:h-[550px] h-full relative">
           {/* Your page content here */}
 
-          <div className="  w-[90%] h-[550px] px-4 mx-auto py-1 relative  flex-wrap  flex gap-2 justify-around items-center">
-            <div className="w-[35%]  h-full py-2 px-2  ">
-              <div className="w-fit h-fit px-2   uppercase   rounded-lg  border flex text-sm font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
+          <div className="  border border-green-900   w-full  md:h-[550px] h-[200px]  px-2  md:px-4 mx-auto py-1  md:flex   grid md:grid-cols-2 grid-cols-1 justify-around  items-center">
+
+            <div className="md:w-[35%] w-full  border border-red-500  h-full py-2 md:px-2 px-0 ">
+              <div className="w-fit h-fit px-2 md:mt-0 mt-4  uppercase   rounded-lg  border flex text-[13px]  md:text-sm font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
                 Business
               </div>
 
-              <h1 className="text-[60px] text-[#275527]  font-bold leading-[80px] ">
+              <h1 className="md:text-[60px] text-5xl   py-4 md:py-0  text-[#275527]  font-bold md:leading-[80px] leading-11  ">
                 Grow Your Business With Our Help
               </h1>
-              <p className="text-gray-500 text-[21px] px-2 py-2">
-                The ultimate Webflow template for professionals in the business
-                industry
-              </p>
-              <div className="relative w-[80%] h-9 px-2 py-2 mt-2  ">
+
+              <div className="relative  w-full  md:h-9 h-7  px-2 py-2 mt-2  ">
                 <Image
                   src="https://assets.website-files.com/647650ba58f7bcb914cadd85/648a05c579c011cf465ae0d8_Underline.png"
                   alt="abc"
                   fill
-                  className="object-fill"
+                  className="object-contain"
                 />
               </div>
+              <p className="text-gray-500 md:text-[21px] font-semibold  text-[17px]  px-2 py-2">
+                The ultimate Webflow template for professionals in the business
+                industry
+              </p>
+          
             </div>
 
-            <div className="w-[27%]  relative  h-full z-[2]">
+            <div className="md:w-[27%]  h-[500px]  w-[90%]  border border-red-500  mx-auto md:mx-0  md:block  relative  md:h-full z-[2]">
               <Image
                 src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d439191deb839cd5398_Guy-Tablet%20.png"
                 alt="professional-men"
@@ -46,11 +49,15 @@ const TopHeroSection = () => {
                 className="object-fill"
               />
             </div>
+
+
           </div>
 
-          <div className=" absolute w-full  flex justify-between  h-28  bg-[#dbf2db] bottom-0 -z-1">
-            <div className="w-[42%] h-full flex    ml-[180px]">
-              <div className="  w-[50%] h-full ">
+          <div className="  w-full  md:mt-0 mt-[680px]    flex justify-between border border-red-600   md:h-28 h-full  bg-[#dbf2db] bottom-0 -z-1">
+
+            <div className="md:w-[42%] w-full border border-red-500 grid md:grid-cols-2  grid-cols-1   md:ml-[180px]">
+
+              <div className="  w-full h-full ">
                 <div className="flex w-full h-full ">
                   <div className="img relative w-[50%] h-[138px] top-[-26px] ">
                     <Image
@@ -72,7 +79,7 @@ const TopHeroSection = () => {
                 </div>
               </div>
 
-              <div className=" w-[50%] h-full ">
+              <div className=" w-full h-full md:mt-0 mt-4">
                 <div className="flex w-full h-full ">
                   <div className="img relative w-[50%] h-[138px] top-[-26px] ">
                     <Image
@@ -83,7 +90,7 @@ const TopHeroSection = () => {
                     />
                   </div>
 
-                  <div className="txt w-[50%] h-full">
+                  <div className="txt w-[50%]   h-full">
                     <h3 className="font-bold text-md">Small Business</h3>
 
                     <p className="font-semibold text-sm text-gray-600 ">
@@ -95,13 +102,23 @@ const TopHeroSection = () => {
                   </div>
                 </div>
               </div>
+
+
             </div>
+
+
+
+
+
+
 
             <BsArrowDown
               size={45}
-              className="  h-20 mr-16 mt-20 bg-[#8ae48a] animate-bounce  rounded-full"
+              className=" md:block hidden  h-20 mr-16 mt-20 bg-[#8ae48a] animate-bounce  rounded-full"
             />
           </div>
+
+          
         </div>
 
         <Intro
