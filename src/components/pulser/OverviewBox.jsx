@@ -47,7 +47,7 @@ const OverviewBox = () => {
         </div>
 
 
-        <div className="container-bottom  grid md:grid-cols-3 grid-cols-1 gap-4 mt-6">
+        <div className="container-bottom  grid md:grid-cols-3 grid-cols-1 gap-4 mt-7">
           <div className="bg-[#e6fde6] h-[330px] md:w-[360px]  w-full rounded-[40px] ">
             <div className=" px-2  h-20  mt-8 w-[90%] mx-auto relative ">
               <Image
@@ -63,7 +63,7 @@ const OverviewBox = () => {
             </p>
           </div>
 
-          <div className="md:h-[330px] h-full   gap-6 md:col-span-2     bg-[#e6fde6]   rounded-[40px] ">
+          <div className="md:h-[330px] md:py-0 pt-4 md:pt-0   gap-6 md:col-span-2       bg-[#e6fde6]   rounded-[40px] ">
 
             <div className=" gap-3 w-full h-full  justify-center items-center md:flex    ">
               
@@ -78,7 +78,7 @@ const OverviewBox = () => {
                 </p>
               </div>
 
-              <div className="imgdiv  md:w-[38%] w-full  relative  md:mt-0  h-[345px] mb-5">
+              <div className="imgdiv  md:w-[38%] w-full  relative  md:mt-0  h-[355px] md:mb-5">
                 <Image
                   alt="smlimg"
                   fill
