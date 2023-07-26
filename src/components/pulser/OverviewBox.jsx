@@ -4,28 +4,36 @@ import React from "react";
 const OverviewBox = () => {
   return (
     <>
-      <div className="  w-[1010px] mx-auto">
-        <div className="container-top flex gap-4">
-          <div className=" h-[330px] bg-[#e6fde6] flex-1 flex gap-6   rounded-[40px]">
-            <div className="imgdiv   w-[35%] mt-7  h-[300px] relative">
+      <div className="  md:w-[1110px] mx-auto mt-10 md:px-0 px-4  border border-red-700  ">
+
+        <div className="container-top   border border-yellow-500   grid md:grid-cols-3 grid-cols-1  gap-4">
+
+          <div className=" md:h-[330px] h-full   bg-[#e6fde6] md:flex flex  flex-col-reverse  md:flex-row-reverse      gap-6 md:col-span-2    flex-1 border border-red-600  rounded-[40px]">
+            
+            <div className="imgdiv  border border-red-900  md:mt-0 mt-[-5px]  md:w-[35%] w-full   md:h-full  h-[300px] relative">
               <Image
                 fill
-                className="object-contain"
+                className="object-contain md:py-2 py-0 md:mt-2 mt-0 "
                 alt="girlimg"
                 src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d420209ae0560604b43_Grid-girl.png"
               />
             </div>
-            <div className="txtdiv  w-[65%] h-full">
-              <h1 className="font-bold text-[50px]  text-[#2f622f]  mt-20">
+
+            <div className="txtdiv  border border-red-400 w-full md:px-2 px-3  md:w-[65%] md:h-full h-38">
+              <h1 className="font-bold text-[50px]  text-[#2f622f]  mt-0  md:mt-20">
                 97%
               </h1>
-              <p className="font-bold text-[30px]  text-[#2f622f]  leading-9 ">
+              <p className="font-bold md:text-[30px] text-[27px]  text-[#2f622f]  leading-9 ">
                 Focus on what is more important to you and be more productive
               </p>
             </div>
+
+
           </div>
 
-          <div className="border bg-[#e6fde6]  h-[330px] w-[360px]   rounded-[40px] ">
+
+
+          <div className=" bg-[#e6fde6]  h-[330px] md:w-[360px] w-full  md:block mx-auto md:mt-0 mt-2  border border-green-600   rounded-[40px] ">
             <div className="w-fill h-36  relative">
               <Image
                 src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d42e9439559ed4cb298_iMac-grid.png"
@@ -41,7 +49,34 @@ const OverviewBox = () => {
               Read More
             </div>
           </div>
+
+
+
+
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div className="container-bottom flex gap-4 mt-6">
           <div className="bg-[#e6fde6] h-[330px] w-[360px]  rounded-[40px] ">
