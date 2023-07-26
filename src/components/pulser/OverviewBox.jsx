@@ -6,8 +6,8 @@ const OverviewBox = () => {
     <>
       <div className="  md:w-[1110px] mx-auto mt-10 md:px-0 px-4   ">
         <div className="container-top      grid md:grid-cols-3 grid-cols-1  gap-4">
-          <div className=" md:h-[330px] h-full   bg-[#e6fde6] md:flex flex  flex-col-reverse  md:flex-row-reverse      gap-6 md:col-span-2    flex-1 border border-red-600  rounded-[40px]">
-            <div className="imgdiv  border border-red-900  md:mt-0 mt-[-5px]  md:w-[35%] w-full   md:h-full  h-[300px] relative">
+          <div className=" md:h-[330px] h-full   bg-[#e6fde6] md:flex flex  flex-col-reverse  md:flex-row-reverse      gap-6 md:col-span-2    flex-1  rounded-[40px]">
+            <div className="imgdiv  md:mt-0 mt-[-5px]  md:w-[35%] w-full   md:h-full  h-[300px] relative">
               <Image
                 fill
                 className="object-contain md:py-2 py-0 md:mt-2 mt-0 "
@@ -16,7 +16,7 @@ const OverviewBox = () => {
               />
             </div>
 
-            <div className="txtdiv  border border-red-400 w-full md:px-2 px-3  md:w-[65%] md:h-full h-38">
+            <div className="txtdiv  w-full md:px-2 px-3  md:w-[65%] md:h-full h-38">
               <h1 className="font-bold text-[50px]  text-[#2f622f]  mt-0  md:mt-20">
                 97%
               </h1>
@@ -26,7 +26,7 @@ const OverviewBox = () => {
             </div>
           </div>
 
-          <div className=" bg-[#e6fde6]  h-[330px] md:w-[360px] w-full  md:block mx-auto md:mt-0 mt-2  border border-green-600   rounded-[40px] ">
+          <div className=" bg-[#e6fde6]  h-[330px] md:w-[360px] w-full  md:block mx-auto md:mt-0 mt-2    rounded-[40px] ">
             <div className="w-fill h-36  relative">
               <Image
                 src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d42e9439559ed4cb298_iMac-grid.png"
@@ -47,7 +47,7 @@ const OverviewBox = () => {
         </div>
 
 
-        <div className="container-bottom border border-red-500  grid md:grid-cols-3 grid-cols-1 gap-4 mt-6">
+        <div className="container-bottom  grid md:grid-cols-3 grid-cols-1 gap-4 mt-6">
           <div className="bg-[#e6fde6] h-[330px] md:w-[360px]  w-full rounded-[40px] ">
             <div className=" px-2  h-20  mt-8 w-[90%] mx-auto relative ">
               <Image
@@ -63,7 +63,7 @@ const OverviewBox = () => {
             </p>
           </div>
 
-          <div className="md:h-[330px] h-full   gap-6 md:col-span-2  border border-red-700    bg-[#e6fde6]   rounded-[40px] ">
+          <div className="md:h-[330px] h-full   gap-6 md:col-span-2     bg-[#e6fde6]   rounded-[40px] ">
 
             <div className=" gap-3 w-full h-full  justify-center items-center md:flex    ">
               

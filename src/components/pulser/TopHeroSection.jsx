@@ -11,12 +11,12 @@ import BenefitBox from "./BenefitBox";
 const TopHeroSection = () => {
   return (
     <>
-      <div className="h-full border border-red-500">
-        <div className="  py-1  bg-[#edfbed] md:h-[550px] h-full relative">
+      <div className="h-full">
+        <div className="  py-1  bg-[#edfbed] md:h-[570px] h-full relative">
           {/* Your page content here */}
 
-          <div className="  border border-green-900   w-full  md:h-[550px] h-[200px]  px-2  md:px-4 mx-auto py-1  md:flex   grid md:grid-cols-2 grid-cols-1 justify-around  items-center">
-            <div className="md:w-[35%] w-full  border border-red-500  h-full py-2 md:px-2 px-0 ">
+          <div className="     w-full  md:h-[550px] h-[200px]  px-2  md:px-4 mx-auto py-1  md:flex   grid md:grid-cols-2 grid-cols-1 justify-around  items-center">
+            <div className="md:w-[35%] w-full   h-full py-2 md:px-2 px-0 ">
               <div className="w-fit h-fit px-2 md:mt-0 mt-4  uppercase   rounded-lg  border flex text-[13px]  md:text-sm font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
                 Business
               </div>
@@ -39,7 +39,7 @@ const TopHeroSection = () => {
               </p>
             </div>
 
-            <div className="md:w-[27%]  h-[500px]  w-[90%]  border border-red-500  mx-auto md:mx-0  md:block  relative  md:h-full z-[2]">
+            <div className="md:w-[27%]  h-[500px]  w-[90%]   mx-auto md:mx-0  md:block  relative  md:h-full z-[2]">
               <Image
                 src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d439191deb839cd5398_Guy-Tablet%20.png"
                 alt="professional-men"
@@ -49,8 +49,8 @@ const TopHeroSection = () => {
             </div>
           </div>
 
-          <div className="  w-full  md:mt-0 mt-[680px]    flex justify-between border border-red-600   md:h-28 h-full  bg-[#dbf2db] bottom-0 -z-1">
-            <div className="md:w-[42%] w-full border border-red-500 grid md:grid-cols-2  grid-cols-1   md:ml-[180px]">
+          <div className="  w-full  md:mt-0 mt-[680px]    flex justify-between   md:h-28 h-full  bg-[#dbf2db] bottom-0 -z-1">
+            <div className="md:w-[42%] w-full grid md:grid-cols-2  grid-cols-1   md:ml-[180px]">
               <div className="  w-full h-full ">
                 <div className="flex w-full h-full ">
                   <div className="img relative w-[50%] h-[138px] top-[-26px] ">
@@ -143,7 +143,7 @@ const TopHeroSection = () => {
           />
         </div>
 
-        <div className="border  border-gray-400  w-[1010px] h-[2px] mx-auto "></div>
+        <div className="  w-[1010px] h-[2px] mx-auto "></div>
 
         <BenefitBox />
       </div>
