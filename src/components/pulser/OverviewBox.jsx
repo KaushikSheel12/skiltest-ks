@@ -41,11 +41,11 @@ const OverviewBox = () => {
                 alt="ledimg"
               />
             </div>
-            <p className="font-semibold px-4 text-[#2f622f]">BENEFITS</p>
-            <p className="font-bold text-[28px] px-4 py-2  text-[#2f622f]  leading-9 ">
+            <p className="font-semibold text-sm  px-4 text-[#2f622f]">BENEFITS</p>
+            <p className="font-bold md:text-[30px] text-[27px]  px-4 py-2  text-[#2f622f]  leading-9 ">
               With Skillzen you save time, money and stress
             </p>
-            <div className="w-fit h-8 px-2 border cursor-pointer  text-[#235123] font-semibold  border-[#246824] rounded-full flex items-center ml-4 mt-4 hover:bg-[#176217] hover:text-white ">
+            <div className="w-fit h-8 px-2 border text-sm cursor-pointer  text-[#235123] font-semibold  border-[#246824] rounded-full flex items-center ml-4 mt-4 hover:bg-[#176217] hover:text-white ">
               Read More
             </div>
           </div>
