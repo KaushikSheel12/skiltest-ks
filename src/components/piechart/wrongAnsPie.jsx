@@ -9,7 +9,7 @@ const WrongAnsPie = () => {
     labels: ["gray", "red"],
     datasets: [
       {
-        data: [910, 90],
+        data: [800, 300],
         backgroundColor: ["#EEEEEE", "#FF0000"],
         hoverBackgroundColor: ["#EEEEEE", "#FF0000"],
       },
