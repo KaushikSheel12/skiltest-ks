@@ -16,7 +16,7 @@ const OverviewBox = () => {
               />
             </div>
 
-            <div className="txtdiv  w-full md:px-2 px-3  md:w-[65%] md:h-full h-38">
+            <div className="txtdiv  w-full md:px-4 px-3  md:w-[65%] md:h-full h-38">
               <h1 className="font-bold text-[50px]  text-[#2f622f]  mt-0  md:mt-20">
                 97%
               </h1>
@@ -46,7 +46,6 @@ const OverviewBox = () => {
           </div>
         </div>
 
-
         <div className="container-bottom  grid md:grid-cols-3 grid-cols-1 gap-4 mt-7">
           <div className="bg-[#e6fde6] h-[330px] md:w-[360px]  w-full rounded-[40px] ">
             <div className=" px-2  h-20  mt-8 w-[90%] mx-auto relative ">
@@ -64,9 +63,7 @@ const OverviewBox = () => {
           </div>
 
           <div className="md:h-[330px] md:py-0 pt-4 md:pt-0   gap-6 md:col-span-2       bg-[#e6fde6]   rounded-[40px] ">
-
             <div className=" gap-3 w-full h-full  justify-center items-center md:flex    ">
-              
               <div className="txtdiv  px-4  md:w-[60%] w-full  md:h-full h-40">
                 <div className="w-fit h-8 px-4 border   text-[#235123] font-semibold  border-[#246824] rounded-full flex items-center md:ml-4 md:mt-[122px]   ">
                   Mobile

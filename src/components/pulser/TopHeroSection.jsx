@@ -52,7 +52,6 @@ const TopHeroSection = () => {
           <div className="  w-full  md:mt-0 mt-[680px]    flex justify-between   md:h-28 h-full  bg-[#dbf2db] bottom-0 -z-1">
             <div className="md:w-[42%] w-full grid md:grid-cols-2  grid-cols-1   md:ml-[180px]">
               <div className="  w-full h-full ">
-
                 <div className="flex w-full h-full px-2 ">
                   <div className="img relative w-[50%] h-[138px] top-[-26px] ">
                     <Image
