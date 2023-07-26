@@ -5,7 +5,7 @@ import { AiOutlineCalculator } from "react-icons/ai";
 const BenefitBox = () => {
   return (
     <>
-      <div className=" w-[1010px] mx-auto mt-32  h-[500px]   flex flex-wrap   border-red-600">
+      <div className=" w-[1010px] mx-auto mt-32  h-[500px]   flex flex-wrap   ">
         <div className="imgdiv  w-[50%]    h-full">
           <div className="border border-white mx-auto  w-[80%] relative  rounded-[40px] bg-[#edfbed]   h-full">
             <div className="w-[70%] px-2 py-2 relative  h-[372px]   mx-auto mt-[-70px] ">

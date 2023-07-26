@@ -127,10 +127,10 @@ const TopHeroSection = () => {
           paragraph="As easy as just double click and type to edit"
         />
 
-        <div className="w-fit h-fit    mx-auto  py-2 px-2 flex flex-wrap  justify-between items-center  gap-3">
+        <div className="w-fit h-fit   mx-auto  py-2 px-2 flex flex-wrap  justify-between items-center  gap-3">
           {aboutBoxData.map((el, index) => {
             return (
-              <div key={index}>
+              <div key={index} className=" md:block mx-auto">
                 <AboutBox
                   text={el.text}
                   paragraph={el.paragraph}
