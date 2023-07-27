@@ -4,7 +4,7 @@ import React from "react";
 const OverviewBox = () => {
   return (
     <>
-      <div className="  md:w-[1110px] mx-auto md:mt-20  mt-10 md:px-0 px-4    ">
+      <div className="  md:w-[1110px] mx-auto md:mt-20  mt-10 md:px-0 px-4     ">
         <div className="container-top      grid md:grid-cols-3 grid-cols-1  gap-4">
           <div className=" md:h-[330px] h-full   bg-[#e6fde6] md:flex flex  flex-col-reverse  md:flex-row-reverse      gap-6 md:col-span-2    flex-1  rounded-[40px]">
             <div className="imgdiv  md:mt-0 mt-[-5px]  md:w-[35%] w-full   md:h-full  h-[300px] relative">
