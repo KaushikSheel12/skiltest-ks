@@ -3,7 +3,7 @@ import React from "react";
 const Intro = ({ toptext, headtext, paragraph }) => {
   return (
     <>
-      <div className="md:w-[80%] w-full  mx-auto h-fit  flex justify-center    text-center  mt-[100px]   md:p-6 md:mt-32">
+      <div className="md:w-[80%] w-full  mx-auto h-fit  flex justify-center    text-center  mt-[100px]   md:p-6 md:mt-18">
         <div className=" md:w-[50%]  w-full   ">
           <div className="w-fit h-fit md:px-2 px-5  md:py-1 mx-auto  rounded-lg flex items-center md:text-sm text-[13px] font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
             {toptext}
