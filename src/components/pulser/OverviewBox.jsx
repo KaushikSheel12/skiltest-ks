@@ -23,6 +23,7 @@ const OverviewBox = () => {
               <p className="font-bold md:text-[30px] text-[27px]  text-[#2f622f]  leading-9 ">
                 Focus on what is more important to you and be more productive
               </p>
+              
             </div>
           </div>
 
