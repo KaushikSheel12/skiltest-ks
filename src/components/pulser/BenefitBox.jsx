@@ -36,7 +36,7 @@ const BenefitBox = () => {
           </div>
         </div>
 
-        <div className="txtdiv  md:w-[50%] w-[85%] mx-auto  md:px-0 px-2 mt-6 md:mt-12 md:h-full">
+        <div className="txtdiv  md:w-[50%] w-[85%] mx-auto  md:py-0 py-6  md:px-0 px-2 mt-6 md:mt-12 md:h-full">
           <div className="w-fit h-fit px-2 md:mt-28  uppercase   rounded-lg  border flex text-sm font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
             DESIGN
           </div>

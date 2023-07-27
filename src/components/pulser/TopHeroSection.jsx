@@ -11,10 +11,10 @@ import BenefitBox from "./BenefitBox";
 const TopHeroSection = () => {
   return (
     <>
-      <div className="h-full">
-        <div className="  py-1  bg-[#edfbed] md:h-[570px] h-full relative">
+      <div className="">
+        <div className="  py-1  bg-[#edfbed] md:h-[570px] h-full  relative">
           {/* Your page content here */}
-
+          <ScrollingText />
           <div className="     w-full  md:h-[550px] h-[200px]  px-2  md:px-4 mx-auto py-1  md:flex   grid md:grid-cols-2 grid-cols-1 justify-around  items-center">
             <div className="md:w-[35%] w-full   h-full py-2 md:px-2 px-0 ">
               <div className="w-fit h-fit px-2 md:mt-0 mt-4  uppercase   rounded-lg  border flex text-[13px]  md:text-sm font-semibold bg-[#68dd68] text-[#1e451e] leading-6  ">
@@ -39,7 +39,7 @@ const TopHeroSection = () => {
               </p>
             </div>
 
-            <div className="md:w-[27%]  h-[500px]  w-[90%]   mx-auto md:mx-0  md:block  relative  md:h-full z-[2]">
+            <div className="md:w-[25%]  h-[500px]   mt-[0px] md:mt-[-118px]  w-[90%]   mx-auto md:mx-0  md:block  relative  md:h-full z-[2]">
               <Image
                 src="https://assets.website-files.com/647650ba58f7bcb914cadd85/64768d439191deb839cd5398_Guy-Tablet%20.png"
                 alt="professional-men"
@@ -49,7 +49,7 @@ const TopHeroSection = () => {
             </div>
           </div>
 
-          <div className="  w-full  md:mt-0 mt-[680px]    flex justify-between   md:h-28 h-full  bg-[#dbf2db] bottom-0 -z-1">
+          <div className="  w-full  md:mt-[-63px]    mt-[680px]    flex justify-between     md:h-28 h-full  bg-[#dbf2db] bottom-0 -z-1">
             <div className="md:w-[42%] w-full grid md:grid-cols-2  grid-cols-1   md:ml-[180px]">
               <div className="  w-full h-full ">
                 <div className="flex w-full h-full px-2 ">
@@ -75,7 +75,7 @@ const TopHeroSection = () => {
 
               <div className=" w-full h-full md:mt-0 mt-4">
                 <div className="flex w-full h-full ">
-                  <div className="img relative w-[50%] h-[138px] top-[-26px] ">
+                  <div className="img relative w-[50%] h-[138px] top-[-26px]  ">
                     <Image
                       fill
                       alt="smallimg"
@@ -148,8 +148,8 @@ const TopHeroSection = () => {
         <BenefitBox />
       </div>
 
-      <div className=" w-full h-screen">
-        <ScrollingText />
+      <div className=" ">
+
       </div>
     </>
   );
