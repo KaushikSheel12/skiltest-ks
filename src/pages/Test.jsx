@@ -17,6 +17,7 @@ import CareersHome from "@/components/careerhomepage/CareersHome";
 import Carousel from "@/components/Crousel";
 import Dailyquizhome from "./Dailyquizhome";
 import TopHeroSection from "@/components/pulser/TopHeroSection";
+import Herosection from "@/components/bayswater/Herosection";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -38,7 +39,8 @@ const Test = () => {
       {/* <Allexams/> */}
 
 {/* <Header/> */}
-< TopHeroSection/>
+<Herosection/>
+{/* < TopHeroSection/> */}
 {/* <Pepars/>   */}
 
       {/* <Result/> */}
