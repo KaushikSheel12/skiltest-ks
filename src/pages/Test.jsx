@@ -31,7 +31,7 @@ const Test = () => {
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
         {/* <Predictors/> */}
-        {/* <MyCarousel/> */}
+      
 
         {/* <Carousel/> */}
         {/* <Dailyquizhome /> */}
