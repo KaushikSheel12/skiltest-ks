@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import { AutoScrollCards } from "./Scroll";
 
 const Herosection = () => {
   return (
     <>
-      <div className="md:w-[80%] w-full md:px-0 px-3  mx-auto  h-[500px] border md:flex  ">
+      <div className="md:w-[80%] w-full md:px-0 px-3  mx-auto  h-[500px]  md:flex  ">
         <div className="p-4 py-2 px-0">
           <h1 className="md:text-[94px] text-[45px] font-semibold text-[#080860e2] leading-[50px]  md:leading-[100px] ">
             How big is your world?
@@ -19,7 +20,7 @@ const Herosection = () => {
         </div>
 
         <div className="  md:w-[90%] w-full  md:h-full  h-[300px]  border border-red-500">
-          <div className="flex border border-green-500  w-full h-[50%] ">
+          <div className="flex   w-full h-[50%] ">
             <div className="border  border-green-300 w-full h-full "></div>
             <div className="border  border-green-300 w-full h-full relative ">
               <Image
@@ -43,6 +44,7 @@ const Herosection = () => {
           </div>
         </div>
       </div>
+      <AutoScrollCards />
     </>
   );
 };
