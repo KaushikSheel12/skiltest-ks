@@ -72,11 +72,13 @@ export const AutoScrollCards = () => {
         <GoArrowLeft
           onClick={() => scroll(-300)}
           size={50}
+          color="teal"
           className="border p-2 cursor-pointer  hover:shadow-md  hover:pr-4  rounded-full"
         />
         <GoArrowRight
           onClick={() => scroll(300)}
           size={50}
+          color="teal"
           className="border p-2 hover:shadow-md  cursor-pointer hover:pl-4  rounded-full"
         />
       </div>
