@@ -32,7 +32,7 @@ const Herosection = () => {
               />
 
             </div>
-            <div className="border   w-full h-full relative ">
+            <div className="   w-full h-full relative ">
               <Image
                 fill
                 alt="small-img"
@@ -42,8 +42,8 @@ const Herosection = () => {
 
             </div>
           </div>
-          <div className="flex border w-full h-[50%] ">
-            <div className="border  w-full   relative ">
+          <div className="flex  w-full h-[50%] ">
+            <div className="  w-full   relative ">
               <Image
                 fill
                 alt="small-img"
@@ -51,7 +51,7 @@ const Herosection = () => {
                 className="object-fill rounded-full hover:rounded-none  "
               />
             </div>
-            <div className="border  w-full h-full relative ">
+            <div className="  w-full h-full relative ">
 
             <Image
                 fill
