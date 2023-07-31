@@ -48,6 +48,12 @@ const Herosection = () => {
       </div>
       <AutoScrollCards />
 
+
+
+
+
+<div className="w-full h-fit py-20  bg-[#f8f7f2]">
+
       <div className="md:flex w-[90%]  md:w-[80%] h-[600px] md:px-2 py-2 md:mt-10 mx-auto   items-center gap-4 ">
         <div className="imgdiv  md:w-[50%] w-full  md:h-full h-[370px]  relative ">
           <Image
@@ -74,6 +80,19 @@ const Herosection = () => {
           </div>
         </div>
       </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
 
 
       <div className="  md:flex   mb-5  md:mt-20 justify-around items-center  mt-[330px]   w-[80%] md:h-[122px] h-fit  mx-auto">

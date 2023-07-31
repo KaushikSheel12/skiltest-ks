@@ -3,8 +3,8 @@ import React from "react";
 
 export const ScrollCard = ({ title, text }) => {
   return (
-    <div class="flex flex-col gap-2  h-fit  md:h-[350px] w-fit  bg-white  shadow-md snap-start transition-transform ease-linear delay-1000 ">
-      <div className="relative md:w-64 w-[337px] h-64  md:h-full overflow-hidden  grid place-content-center delay-1000">
+    <div class="flex flex-col gap-2  h-fit  md:h-[350px] w-fit   bg-white  shadow-md snap-start transition-transform ease-linear delay-1000 ">
+      <div className="relative md:w-80 w-[337px] h-64  md:h-full overflow-hidden  grid place-content-center delay-1000">
         <Image
           className="object-cover hover:scale-110 transition-all "
           fill

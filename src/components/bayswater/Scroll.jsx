@@ -17,7 +17,7 @@ export const AutoScrollCards = () => {
   };
 
   return (
-    <div className="px-6 relative  text-center md:w-[80%] w-full md:px-0   mx-auto py-10 mt-16">
+    <div className="px-6 relative  text-center  w-full md:px-0   mx-auto py-10 mt-16">
       <h1 className="md:text-[66px] text-[25px] whitespace-nowrap  font-semibold text-[#1c1c60]">
         Country destination
       </h1>
