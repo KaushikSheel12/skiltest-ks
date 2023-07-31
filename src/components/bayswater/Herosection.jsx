@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { AutoScrollCards } from "./Scroll";
+import Yearbox from "./Yearbox";
+import { pageData } from "./data/data";
 
 const Herosection = () => {
   return (
@@ -72,6 +74,26 @@ const Herosection = () => {
           </div>
         </div>
       </div>
+
+
+      <div className="flex  mb-5  md:mt-20 justify-around items-center   w-[80%] h-[122px] mx-auto">
+
+        {pageData.map((el,index)=>{
+
+          console.log("elImg" , el)
+          return (
+            <Yearbox key={index} text={el.text} imgUrl={el.img} ptag={el.ptag} />
+          )
+        })}
+
+        
+      </div>
+      
+
+    
+
+
+   
     </>
   );
 };
