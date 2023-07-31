@@ -7,7 +7,7 @@ import { pageData } from "./data/data";
 const Herosection = () => {
   return (
     <>
-      <div className="md:w-[80%] w-full md:px-0 px-3  mx-auto  h-[500px]  md:flex  ">
+      <div className="md:w-[80%] w-full md:px-0 px-3 mt-10   mx-auto  h-[500px]  md:flex  ">
         <div className="p-4 py-2 px-0">
           <h1 className="md:text-[94px] text-[45px] font-semibold text-[#080860e2] leading-[50px]  md:leading-[100px] ">
             How big is your world?
@@ -21,21 +21,29 @@ const Herosection = () => {
           </div>
         </div>
 
-        <div className="  md:w-[90%] w-full  md:h-full  h-[300px]  border border-red-500">
+        <div className="  md:w-[90%] w-full  md:h-full  h-[300px]   ">
           <div className="flex   w-full h-[50%] ">
-            <div className="border  border-green-300 w-full h-full "></div>
-            <div className="border  border-green-300 w-full h-full relative ">
+            <div className=" w-full h-full  relative">
+            <Image
+                fill
+                alt="small-img"
+                src="https://cdn.dribbble.com/users/707385/screenshots/4521894/11_9_2_still.gif?resize=400x0"
+                className="object-cover"
+              />
+
+            </div>
+            <div className="border   w-full h-full relative ">
               <Image
                 fill
                 alt="small-img"
                 src="https://images.doclify.net/bayswater-web/d/4ea58663-b658-4d0a-b655-19a317a8cc43.png?enlarge=0&format=webp&w=500"
                 className="object-cover"
               />
-              
+
             </div>
           </div>
           <div className="flex border w-full h-[50%] ">
-            <div className="border  border-green-300 w-full   relative ">
+            <div className="border  w-full   relative ">
               <Image
                 fill
                 alt="small-img"
@@ -43,7 +51,15 @@ const Herosection = () => {
                 className="object-fill rounded-full hover:rounded-none  "
               />
             </div>
-            <div className="border border-green-300 w-full h-full  "></div>
+            <div className="border  w-full h-full relative ">
+
+            <Image
+                fill
+                alt="small-img"
+                src="https://studio.uxpincdn.com/studio/wp-content/uploads/2016/06/12-Timeless-UI-Layouts.png.webp"
+                className="object-fill    "
+              />
+            </div>
           </div>
         </div>
       </div>
