@@ -31,6 +31,7 @@ const Herosection = () => {
                 src="https://images.doclify.net/bayswater-web/d/4ea58663-b658-4d0a-b655-19a317a8cc43.png?enlarge=0&format=webp&w=500"
                 className="object-cover"
               />
+              
             </div>
           </div>
           <div className="flex border w-full h-[50%] ">
