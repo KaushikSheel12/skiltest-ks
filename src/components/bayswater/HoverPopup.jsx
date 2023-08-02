@@ -39,9 +39,9 @@ const HoverBox = () => {
       {isBigBoxOpen && (
         <div className="bg-[#c0c0e5] absolute top-20 px-5 w-[90%] left-20 h-fit p-4 items-center z-10">
           <div className="flex justify-around">
-            <div className={`topbox bg-yellow-200 rounded-md w-[390px] ${hoveredSmallBox === 0 ? "h-[100px]" : "h-[200px]"}`} />
-            <div className={`topbox bg-yellow-200 rounded-md w-[390px] ${hoveredSmallBox === 1 ? "h-[100px]" : "h-[200px]"}`} />
-            <div className={`topbox bg-yellow-200 rounded-md w-[390px] ${hoveredSmallBox === 2 ? "h-[100px]" : "h-[200px]"}`} />
+            <div className={`topbox bg-yellow-200 rounded-md w-[390px] ${hoveredSmallBox === 0 ? "h-[100px]  " : "h-[200px]"}`} ></div>
+            <div className={`topbox bg-yellow-200 rounded-md w-[390px] ${hoveredSmallBox === 1 ? "h-[100px]" : "h-[200px]"}`} ></div>
+            <div className={`topbox bg-yellow-200 rounded-md w-[390px] ${hoveredSmallBox === 2 ? "h-[100px]" : "h-[200px]"}`} ></div>
           </div>
 
           <div className=" mt-3  flex justify-around">
@@ -67,14 +67,23 @@ const HoverBox = () => {
             {[0, 1, 2].map((index) => (
               <div
                 key={index}
-                className={`bottombox bg-yellow-200 p-4 rounded-md ${
+                className={`bottombox group  bg-yellow-200 p-4 rounded-md ${
                   hoveredBottomBox === index ? "h-[200px]" : "h-[100px]"
                 } w-[390px] transition-all ease-linear`}
                 onMouseEnter={() => handleBottomBoxHover(index)}
                 onMouseLeave={() => handleBottomBoxHover(-1)}
-              />
+              >
+                   <div className="flex gap-5 items-center justify-center">
+                  <SiReactquery size={35} color="red" />
+                  <h4 className="text-2xl font-semibold">Skilzen</h4>
+                </div>
+                <p className="hidden group-hover:block">We offer a truly unique experience at each of our 10 </p>
+
+                </div>
+              
             ))}
           </div>
+      
         </div>
       )}
     </div>
