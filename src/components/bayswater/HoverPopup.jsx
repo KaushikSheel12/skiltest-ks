@@ -57,9 +57,6 @@ const HoverBox = () => {
             ))}
           </div>
 
-
-
-
           <div className=" flex mt-4 justify-around">
             {[0, 1, 2].map((index) => (
               <div
@@ -78,7 +75,6 @@ const HoverBox = () => {
               </div>
             ))}
           </div>
-           
         </div>
       )}
     </div>
