@@ -35,3 +35,31 @@ body {
   display: none;
   /* Safari and Chrome */
 }
+
+
+/* styles/globals.css or any other CSS file */
+
+/* Show the popup when hovering the trigger */
+.hover-trigger:hover + .popup {
+  display: flex;
+}
+
+/* Additional styles for the popup container */
+.popup {
+  top: 80px; /* Adjust this value as per your requirement */
+  z-index: 1;
+}
+
+/* Additional styles for the box */
+.box {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.body{
+  background-color: cornsilk
+}
+
+.topbox {
+  transition: height 0.3s ease;
+}

@@ -3,11 +3,15 @@ import React from "react";
 import { AutoScrollCards } from "./Scroll";
 import Yearbox from "./Yearbox";
 import { pageData } from "./data/data";
+import HoverBox from "./HoverPopup";
 
 const Herosection = () => {
   return (
     <>
-      <div className="md:w-[80%] w-full md:px-0 px-3 mt-10   mx-auto  h-[500px]  md:flex  ">
+<HoverBox/>
+
+
+      <div className="md:w-[80%] w-full md:px-0 px-3 mt-10     mx-auto  h-[500px]  md:flex  ">
         <div className="p-4 py-2 px-0">
           <h1 className="md:text-[94px] text-[45px] font-semibold text-[#080860e2] leading-[50px]  md:leading-[100px] ">
             How big is your world?
