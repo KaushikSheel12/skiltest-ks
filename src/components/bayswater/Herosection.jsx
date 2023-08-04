@@ -98,7 +98,7 @@ const Herosection = () => {
         </div>
       </div>
 
-      <div className="  md:flex   mb-5  md:mt-20 justify-around items-center  mt-[330px]   w-[80%] md:h-[122px] h-fit  mx-auto">
+      <div className="  md:flex   mb-5  md:mt-20 justify-around items-center  mt-[260px]   w-[80%] md:h-[122px] h-fit  mx-auto">
         {pageData.map((el, index) => {
           console.log("elImg", el);
           return (

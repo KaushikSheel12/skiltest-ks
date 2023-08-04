@@ -5,7 +5,7 @@ const Yearbox = ({ text, imgUrl, ptag }) => {
   return (
     <>
     
-        <div className="md:w-fit w-[80%]  h-full  px-2 py-2  mx:mx-0 mx-auto  mb-5  md:mb-0 flex  items-center gap-4  ">
+        <div className="md:w-fit w-[80%]  h-full  px-2 py-2  mx:mx-0 mx-auto    md:mb-0 flex  items-center gap-4  ">
           <Image src={imgUrl} width={55} height={55} alt="smlimg" />
           <div>
             <h1 className="md:text-[38px] text-[32px] font-bold ">{text}</h1>

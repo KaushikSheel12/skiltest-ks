@@ -5,8 +5,8 @@ const Journey = () => {
   return (
     <>
       <div className="w-screen h-screen px-4 py-4 bg-[#101048] ">
-        <div className="flex gap-2   h-full">
-          <div className="  w-[35%] h-full grid grid-cols-2">
+        <div className="md:flex gap-2   h-full">
+          <div className=" w-full  md:w-[35%] md:h-full  grid md:grid-cols-2 grid-cols-1 ">
             {[...new Array(6)].map((el, index) => (
               <div key={index}>
                 <div className=" h-full w-full  relative">
