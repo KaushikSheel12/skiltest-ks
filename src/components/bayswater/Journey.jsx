@@ -21,6 +21,7 @@ const Journey = () => {
             ))}
           </div>
 
+
           <div className=" w-full  md:w-[60%]  h-full">
             <div className=" w-full md:w-[700px] mx-auto md:mt-[220px] h-fit ">
               <h1 className="font-semibold text-[40px] md:text-[70px] py-2 leading-10 md:leading-[70px] text-white ">
