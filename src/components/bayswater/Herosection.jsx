@@ -5,8 +5,10 @@ import Yearbox from "./Yearbox";
 import { pageData } from "./data/data";
 import HoverBox from "./HoverPopup";
 import Wantbe from "./Wantbe";
+import Journey from "./Journey";
 
 const Herosection = () => {
+
   return (
     <>
 <HoverBox/>
@@ -66,7 +68,7 @@ const Herosection = () => {
         </div>
       </div>
       <AutoScrollCards />
-
+ 
       <div className="w-full h-fit py-20    bg-[#f8f7f2]">
         <div className="md:flex w-[90%]  md:w-[80%] h-[600px] md:px-2 py-2 md:mt-10 mx-auto   items-center gap-4 ">
           <div className="imgdiv  md:w-[50%] w-full  md:h-full h-[370px]  relative ">
@@ -110,6 +112,7 @@ const Herosection = () => {
         })}
       </div>
      <Wantbe/>
+     <Journey/>
     </>
   );
 };
