@@ -6,7 +6,7 @@ const Journey = () => {
     <>
       <div className="w-screen md:h-screen h-full px-4 py-4 bg-[#101048] ">
         <div className="md:flex gap-2   h-full">
-          <div className=" w-full  md:w-[35%] md:h-full  grid md:grid-cols-2 grid-cols-1 ">
+          <div className=" w-full  md:w-[35%] md:h-full  grid grid-cols-2  ">
             {[...new Array(6)].map((el, index) => (
               <div key={index}>
                 <div className=" md:h-full w-full h-[200px] mb-8 md:mb-0 relative">
