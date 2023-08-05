@@ -108,7 +108,7 @@
     id : 15,
     personImageUrl: "https://backoffice.redsofa.com/media/z5ndf0cb/rs-stories-amsterdam-brigit-2022-web-3.jpg",
     personName: "justice ",
-    bgColor: "black"
+    bgColor: "pink"
   },
 
   {
