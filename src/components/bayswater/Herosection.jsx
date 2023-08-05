@@ -6,6 +6,7 @@ import { pageData } from "./data/data";
 import HoverBox from "./HoverPopup";
 import Wantbe from "./Wantbe";
 import Journey from "./Journey";
+import Story from "./Story/Story";
 
 const Herosection = () => {
 
@@ -113,6 +114,7 @@ const Herosection = () => {
       </div>
      <Wantbe/>
      <Journey/>
+     <Story/>
     </>
   );
 };
