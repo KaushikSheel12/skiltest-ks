@@ -17,8 +17,8 @@ const Story = () => {
   return (
     <>
       <div className="w-full h-full px-4 py-4 bg-slate-300 group " id="change">
-        <h1 className="px-2 py-2 ml-14 text-[64px]">All stories</h1>
-        <div className="grid grid-cols-11 px-4 w-[94%] gap-8  ml-6 mt-5  ">
+        <h1 className="px-2 py-2 md:ml-14 md:text-[64px] text-[32px]">All stories</h1>
+        <div className="md:grid md:grid-cols-11 grid grid-cols-1 px-4 md:w-[94%] w-full md:gap-8  md:ml-6 mt-5  ">
           {data.map((el, index) => {
             if (index % 2 === 0) {
               return (
@@ -26,7 +26,7 @@ const Story = () => {
                   key={index}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  className={`w-[125px] h-[160px] mb-5 ml-5 rounded-lg relative z-30   cursor-pointer ${
+                  className={`md:w-[125px] w-full md:h-[160px] h-[400px] mt-[-30px]  md:ml-5 rounded-lg relative z-30   cursor-pointer ${
                     hoveredIndex === index ? "zoom-in" : ""
                   }`}
                 >
@@ -37,7 +37,7 @@ const Story = () => {
                     className="object-fit   rounded-lg"
                   />
                   {hoveredIndex === index && (
-                    <div className="popup w-[125px] bg-slate-100 text-center text-black mt-20">
+                    <div className="popup md:w-[125px] w-full bg-slate-100 text-center text-black mt-20">
                       <span>{el.personName}</span>
                     </div>
                   )}
