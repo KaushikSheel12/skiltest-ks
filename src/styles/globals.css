@@ -79,7 +79,7 @@ border: 1px solid rgba(255, 255, 255, 0.24);
 
 .rotate{
   animation-name: rotateAnimation;
-  animation-duration: 76s;
+  animation-duration: 26s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }

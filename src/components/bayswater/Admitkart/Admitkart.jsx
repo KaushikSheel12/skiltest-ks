@@ -4,9 +4,9 @@ import React from "react";
 const Admitkart = () => {
   return (
     <>
-      <div className="w-full h-full border px-2 py-10 border-red-600">
-        <div className="w-[70%] h-full mx-auto border flex  px-2 py-10">
-          <div className="w-[50%] h-[480px] px-4 border">
+      <div className="w-full h-full  px-2 py-10 ">
+        <div className="w-[70%] h-full mx-auto  flex  px-2 py-10">
+          <div className="w-[50%] h-[480px] px-4 ">
             <h2 className=" text-[37px] text-[#390765e8] leading-[48px]  ">
               study abroad <br />
               with expert <br />
@@ -44,17 +44,17 @@ const Admitkart = () => {
 
 
        
-<div className="border  w-[500px] ml-[110px]  grid place-content-center ">
+<div className="  w-[500px] ml-[110px]  grid place-content-center ">
     <div className="relative w-full h-full z-20">
     <div className="w-[120px] h-[120px] rounded-full  absolute top-[68px] -left-[104px]">
         <div className="">
         <div className="w-full h-full rounded-full relative">
                     <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUhb79s2S2_ehx5GoHiMldcdzuGEMDggYCvm2-wzxA2H4q1zYPUFqMLVUYOmHHRtDLkI&usqp=CAU" alt="student" fill className="rounded-full object-cover"/>
-             <p className="w-[193px] left-7 p-1 bg-white border shadow-lg z-30 text-sm  px-4 -bottom-[363px] absolute rounded-lg whitespace-nowrap"><strong className="whitespace-nowrap">Arnav</strong> looking forward to <br /> join Oxfard University</p>
+             <p className="w-[193px] left-7 p-1 bg-white  shadow-lg z-30 text-sm  px-4 -bottom-[363px] absolute rounded-lg whitespace-nowrap"><strong className="whitespace-nowrap">Arnav</strong> looking forward to <br /> join Oxfard University</p>
         </div>
                
                 </div>
-                <div className="border w-fit h-fit px-5 py-1 bg-white text-black text-sm whitespace-nowrap rounded-lg mt-[-30px] absolute  ml-[-29px] "> <span className="font-semibold">Clark</span>  is an alumni from <br /> Oxford university</div>
+                <div className=" w-fit h-fit px-5 py-1 bg-white shadow-lg  text-black text-sm whitespace-nowrap rounded-lg mt-[-30px] absolute  ml-[-29px] "> <span className="font-semibold">Clark</span>  is an alumni from <br /> Oxford university</div>
 
             </div>
     </div>
