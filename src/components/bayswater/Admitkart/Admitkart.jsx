@@ -84,6 +84,7 @@ const Admitkart = () => {
                 </div>
               </div>
             </div>
+            
             <div className="md:w-[600px] w-[300px] h-[300px] md:h-[600px] rounded-full flex items-center border-yellow-800  absolute  border py-2 px-2 rotate md:right-[223px] md:top-[24px]">
               <div className="bg-red-700 rounded-full h-5 w-5 absolute -top-0 right-0 translate-x-[-205px] " />
             </div>
