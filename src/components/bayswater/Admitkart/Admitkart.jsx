@@ -77,14 +77,16 @@ const Admitkart = () => {
                     </p>
                   </div>
                 </div>
+                
                 <div className=" w-fit h-fit px-5 py-1 bg-white shadow-lg  text-black text-sm whitespace-nowrap rounded-lg mt-[-30px] absolute  ml-[-29px] ">
                   {" "}
                   <span className="font-semibold">Clark</span> is an alumni from{" "}
                   <br /> Oxford university
                 </div>
+
               </div>
             </div>
-            
+
             <div className="md:w-[600px] w-[300px] h-[300px] md:h-[600px] rounded-full flex items-center border-yellow-800  absolute  border py-2 px-2 rotate md:right-[223px] md:top-[24px]">
               <div className="bg-red-700 rounded-full h-5 w-5 absolute -top-0 right-0 translate-x-[-205px] " />
             </div>
