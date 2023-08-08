@@ -60,25 +60,25 @@ const Admitkart = () => {
             </div>
           </div>
 
-          <div className="  md:w-[500px] w-full md:ml-[110px]  grid place-content-center ">
+          <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px]  grid place-content-center ">
             <div className="relative w-full h-full z-20">
               <div className="w-[120px] h-[120px] rounded-full  absolute top-[68px] -left-[104px]">
                 <div className="">
-                  <div className="w-full h-full rounded-full relative">
+                  <div className="w-[131px] h-[131px] rounded-full relative ml-5">
                     <Image
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUhb79s2S2_ehx5GoHiMldcdzuGEMDggYCvm2-wzxA2H4q1zYPUFqMLVUYOmHHRtDLkI&usqp=CAU"
                       alt="student"
                       fill
                       className="rounded-full object-cover"
                     />
-                    <p className="w-[193px] left-7 p-1 bg-white  shadow-lg z-30 text-sm  px-4 -bottom-[363px] absolute rounded-lg whitespace-nowrap">
+                    <p className="w-[193px] left-[6rem] md:left-[5.5rem] p-1 bg-white  shadow-lg z-30 text-sm  px-4 -bottom-[138px] md:-bottom-[304px] absolute rounded-lg whitespace-nowrap">
                       <strong className="whitespace-nowrap">Arnav</strong>{" "}
                       looking forward to <br /> join Oxfard University
                     </p>
                   </div>
                 </div>
                 
-                <div className=" w-fit h-fit px-5 py-1 bg-white shadow-lg  text-black text-sm whitespace-nowrap rounded-lg mt-[-30px] absolute  ml-[-29px] ">
+                <div className=" w-fit h-fit px-5 py-1 bg-white shadow-lg  text-black text-sm whitespace-nowrap rounded-lg mt-[-30px] absolute  ml-[-0px] ">
                   {" "}
                   <span className="font-semibold">Clark</span> is an alumni from{" "}
                   <br /> Oxford university
@@ -87,12 +87,12 @@ const Admitkart = () => {
               </div>
             </div>
 
-            <div className="md:w-[600px] w-[300px] h-[300px] md:h-[600px] rounded-full flex items-center border-yellow-800  absolute  border py-2 px-2 rotate md:right-[223px] md:top-[24px]">
+            <div className="md:w-[600px] w-[400px] h-[400px] left-[77px] md:left-auto md:h-[600px]  rounded-full flex items-center border-yellow-800  absolute  border py-2 px-2 rotate md:right-[223px] top-[455px] md:top-[24px]">
               <div className="bg-red-700 rounded-full h-5 w-5 absolute -top-0 right-0 translate-x-[-205px] " />
             </div>
 
-            <div className=" md:px-8 md:py-8 border border-green-400 mx-auto rotate rounded-full w-[17em] h-[17em] md:w-[30em] md:h-[30em]">
-              <div className="w-5 h-5 bg-red-600 rounded-full absolute translate-x-[-75px]   right-[0px]"></div>
+            <div className=" md:px-8 md:py-8 border border-green-400 mx-auto rotate rounded-full mt-[-24px] ml-[9px] md:mt-[17px] md:ml-[37px] w-[19em] h-[19em] md:w-[30em] md:h-[30em]">
+              <div className="w-5 h-5 bg-red-600 rounded-full absolute translate-x-[-75px]   right-[17px]"></div>
             </div>
 
             <div className=" border  rounded-full absolute md:top-[120px] md:right-[300px]">
@@ -105,7 +105,7 @@ const Admitkart = () => {
                 />
               </div>
 
-              <div className="w-11 h-11 right-[321px] rounded-full   absolute top-[244px]">
+              <div className="w-11 h-11 md:right-[321px] rounded-full md:left-[69px] left-[31px] md:left-0  absolute top-[244px]">
                 <div className="w-full h-full rounded-full relative">
                   <Image
                     src="https://m.media-amazon.com/images/I/718gVU8ktKL._AC_UF894,1000_QL80_.jpg"
