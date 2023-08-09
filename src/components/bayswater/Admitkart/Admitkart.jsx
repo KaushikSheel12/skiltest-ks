@@ -77,22 +77,42 @@ const Admitkart = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className=" w-fit h-fit px-5 py-1 bg-white shadow-lg  text-black text-sm whitespace-nowrap rounded-lg mt-[-30px] absolute  ml-[-0px] ">
                   {" "}
                   <span className="font-semibold">Clark</span> is an alumni from{" "}
                   <br /> Oxford university
                 </div>
-
               </div>
             </div>
 
-            <div className="md:w-[600px] w-[400px] h-[400px] left-[77px] md:left-auto md:h-[600px]  rounded-full flex items-center border-yellow-800  absolute  border py-2 px-2 rotate md:right-[223px] top-[455px] md:top-[24px]">
-              <div className="bg-red-700 rounded-full h-5 w-5 absolute -top-0 right-0 translate-x-[-205px] " />
+            <div className="md:w-[600px] w-[400px] h-[400px] left-[77px] md:left-auto md:h-[600px]  rounded-full flex items-center border-[#390765e8] absolute  border py-2 px-2 rotate md:right-[217px] top-[455px] md:top-[38px]">
+              <div className=" rounded-full absolute -top-0 right-0 translate-x-[-195px] ">
+                <div className="w-7 h-7 relative rounded-full ">
+                  {" "}
+                  <Image
+                      src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-round-country-flag-united-kingdom-png-image_7670954.png"
+                      alt="student"
+                      fill
+                      className="rounded-full object-cover"
+                    />
+                </div>
+              </div>
             </div>
 
-            <div className=" md:px-8 md:py-8 border border-green-400 mx-auto rotate rounded-full mt-[-24px] ml-[9px] md:mt-[17px] md:ml-[37px] w-[19em] h-[19em] md:w-[30em] md:h-[30em]">
-              <div className="w-5 h-5 bg-red-600 rounded-full absolute translate-x-[-75px]   right-[17px]"></div>
+            <div className=" md:px-10 md:py-10 border border-[#390765e8] mx-auto rotate rounded-full mt-[-24px] ml-[9px] md:mt-[17px] md:ml-[37px] w-[19em] h-[19em] md:w-[30em] md:h-[30em]">
+              <div className="  rounded-full absolute translate-x-[-57px]   right-[17px]">
+
+              <div className="w-7 h-7 relative rounded-full ">
+                  {" "}
+                  <Image
+                      src="https://w0.peakpx.com/wallpaper/799/397/HD-wallpaper-flag-of-argentina-argentina-south-america-country-flag.jpg"
+                      alt="student"
+                      fill
+                      className="rounded-full object-cover"
+                    />
+                </div>
+              </div>
             </div>
 
             <div className=" border  rounded-full absolute md:top-[120px] md:right-[300px]">
