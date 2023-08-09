@@ -105,7 +105,7 @@ const Admitkart = () => {
                 />
               </div>
 
-              <div className="w-11 h-11 md:right-[321px] rounded-full md:left-[69px] left-[31px] md:left-0  absolute top-[244px]">
+              <div className="w-11 h-11 md:right-[400px] rounded-full  translate-x-[0px]  absolute top-[244px]">
                 <div className="w-full h-full rounded-full relative">
                   <Image
                     src="https://m.media-amazon.com/images/I/718gVU8ktKL._AC_UF894,1000_QL80_.jpg"
