@@ -19,6 +19,7 @@ import Dailyquizhome from "./Dailyquizhome";
 import TopHeroSection from "@/components/pulser/TopHeroSection";
 import Herosection from "@/components/bayswater/Herosection";
 import Admitkart from "@/components/bayswater/Admitkart/Admitkart";
+import Country from "@/components/bayswater/Admitkart/Country";
 
 
 const Test = () => {
@@ -42,8 +43,8 @@ const Test = () => {
 
 {/* <Header/> */}
 {/* <Herosection/> */}
-<Admitkart/>
-
+{/* <Admitkart/> */}
+  <Country/>
 {/* < TopHeroSection/> */}
 {/* <Pepars/>   */}
 
