@@ -4,7 +4,7 @@ import React from "react";
 const Admitkart = () => {
   return (
     <>
-      <div className="w-full h-full border border-red-700 overflow-hidden   md:px-2 md:py-10  ">
+      <div className="w-full h-full  overflow-hidden   md:px-2 md:py-10  ">
         <div className="md:w-[70%] w-full h-full mx-auto block  md:flex  md:px-2 py-10">
           <div className="md:w-[50%] w-full h-[480px] px-4 ">
             <h2 className=" md:text-[37px] text-[24px] text-[#390765e8] md:leading-[48px]  ">
@@ -63,7 +63,7 @@ const Admitkart = () => {
 
 
 
-          <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px] md:mt-0 mt-[-100px]  border border-red-900  grid place-content-center ">
+          <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px] md:mt-0 mt-[-100px]   grid place-content-center ">
             <div className="relative w-full h-full z-20">
               <div className="w-[120px] h-[120px] rounded-full  absolute top-[68px] -left-[104px]">
                 <div className="">
