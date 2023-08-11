@@ -4,7 +4,7 @@ import React from "react";
 const Admitkart = () => {
   return (
     <>
-      <div className="w-full h-full  md:px-2 md:py-10 ">
+      <div className="w-full h-full border border-red-700 overflow-hidden   md:px-2 md:py-10  ">
         <div className="md:w-[70%] w-full h-full mx-auto block  md:flex  md:px-2 py-10">
           <div className="md:w-[50%] w-full h-[480px] px-4 ">
             <h2 className=" md:text-[37px] text-[24px] text-[#390765e8] md:leading-[48px]  ">
@@ -60,7 +60,9 @@ const Admitkart = () => {
             </div>
           </div>
 
-          <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px]  grid place-content-center ">
+
+
+          <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px] md:mt-0 mt-[-100px]  border border-red-900  grid place-content-center ">
             <div className="relative w-full h-full z-20">
               <div className="w-[120px] h-[120px] rounded-full  absolute top-[68px] -left-[104px]">
                 <div className="">
@@ -71,7 +73,7 @@ const Admitkart = () => {
                       fill
                       className="rounded-full object-cover"
                     />
-                    <p className="w-[193px] left-[6rem] md:left-[5.5rem] p-1 bg-white  shadow-lg z-30 text-sm  px-4 -bottom-[138px] md:-bottom-[304px] absolute rounded-lg whitespace-nowrap">
+                    <p className="w-[193px] left-[6rem] md:left-[5.5rem] p-1 bg-white  shadow-lg z-30 text-sm md:mb-0 mb-7   px-4 -bottom-[138px] md:-bottom-[304px] absolute rounded-lg whitespace-nowrap">
                       <strong className="whitespace-nowrap">Arnav</strong>{" "}
                       looking forward to <br /> join Oxfard University
                     </p>
@@ -86,13 +88,13 @@ const Admitkart = () => {
               </div>
             </div>
 
-            <div className="md:w-[600px] w-[400px] h-[400px] left-[77px] md:left-auto md:h-[600px]  rounded-full flex items-center border-[#390765e8] absolute  border py-2 px-2 rotate md:right-[217px] top-[455px] md:top-[38px]">
-              <div className=" rounded-full absolute -top-0 right-0 translate-x-[-195px] ">
+            <div className="md:w-[600px]  md:h-[600px]   w-[400px] h-[400px] left-[77px] md:left-auto md:h-[600px   rounded-full flex items-center border-[#390765e8]  absolute  border py-2 px-2 rotate md:right-[217px] top-[345px] md:top-[38px]">
+              <div className=" rounded-full absolute -top-0 right-0 md:translate-x-[-195px] translate-x-[-255px] ">
                 <div className="w-7 h-7 relative rounded-full ">
                   {" "}
                   <Image
                       src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-round-country-flag-united-kingdom-png-image_7670954.png"
-                      alt="student"
+                      alt="england-flag"
                       fill
                       className="rounded-full object-cover"
                     />
@@ -107,7 +109,7 @@ const Admitkart = () => {
                   {" "}
                   <Image
                       src="https://w0.peakpx.com/wallpaper/799/397/HD-wallpaper-flag-of-argentina-argentina-south-america-country-flag.jpg"
-                      alt="student"
+                      alt="middle-flag"
                       fill
                       className="rounded-full object-cover"
                     />
@@ -125,7 +127,7 @@ const Admitkart = () => {
                 />
               </div>
 
-              <div className="w-11 h-11 md:right-[400px] rounded-full  translate-x-[0px]  absolute top-[244px]">
+              <div className="md:w-11 md:h-11 w-7 h-7 md:right-[400px] rounded-full  translate-x-[0px]  absolute  right-[180px] top-[215px] md:top-[244px]">
                 <div className="w-full h-full rounded-full relative">
                   <Image
                     src="https://m.media-amazon.com/images/I/718gVU8ktKL._AC_UF894,1000_QL80_.jpg"
@@ -137,6 +139,10 @@ const Admitkart = () => {
               </div>
             </div>
           </div>
+
+
+
+
         </div>
       </div>
     </>

@@ -43,8 +43,8 @@ const Test = () => {
 
 {/* <Header/> */}
 {/* <Herosection/> */}
-{/* <Admitkart/> */}
-  <Country/>
+<Admitkart/>
+  {/* <Country/> */}
 {/* < TopHeroSection/> */}
 {/* <Pepars/>   */}
 
