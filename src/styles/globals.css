@@ -97,3 +97,7 @@ border: 1px solid rgba(255, 255, 255, 0.24);
   to {
   }
 }
+
+.border-dashed {
+  border-style: dashed;
+}
