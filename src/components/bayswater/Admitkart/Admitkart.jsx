@@ -62,6 +62,7 @@ const Admitkart = () => {
 
 
 
+
           <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px] md:mt-0 mt-[-100px]  border border-red-900  grid place-content-center ">
             <div className="relative w-full h-full z-20">
               <div className="w-[120px] h-[120px] rounded-full  absolute top-[68px] -left-[104px]">
