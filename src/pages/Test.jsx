@@ -21,6 +21,7 @@ import Herosection from "@/components/bayswater/Herosection";
 import Admitkart from "@/components/bayswater/Admitkart/Admitkart";
 import Country from "@/components/bayswater/Admitkart/Country";
 import Videoplayer from "@/components/skillex/Videoplayer";
+import Watchandgrow from "@/components/Watchandgrow/Watchandgrow";
 
 
 const Test = () => {
@@ -45,7 +46,8 @@ const Test = () => {
 {/* <Header/> */}
 {/* <Herosection/> */}
 {/* <Admitkart/> */}
-<Videoplayer/>
+{/* <Videoplayer/> */}
+<Watchandgrow/>
   {/* <Country/> */}
 {/* < TopHeroSection/> */}
 {/* <Pepars/>   */}
