@@ -26,12 +26,14 @@ const Watchandgrow = () => {
         cards.forEach((c, i) => {
           c.classList.remove("expand-card");
           c.classList.add("card");
+
         });
 
         cards[0].classList.add("expand-card");
         cards[0].classList.remove("card");
       });
     });
+
     ()=>{
       cards.forEach((card,index)=>{
         card.removeEventListener("mouseenter",()=>{})
@@ -44,8 +46,10 @@ const Watchandgrow = () => {
   return (
     <>
       <div className="w-full">
+
         <div className="w-[80%] h-[300px]  mx-auto  px-8 ">
           <div className="flex justify-between items-center py-8">
+            
             <div className="w-[30%] ">
               <h1 className="md:text-[74px] leading-[80px]">
                 Watch. <br />
