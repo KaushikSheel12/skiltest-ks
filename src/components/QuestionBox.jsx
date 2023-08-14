@@ -7,24 +7,32 @@ export const QuestionBox = ({
   handleAnswerSelect,
   selectedAnswers,
 }) => {
- const setQuestion=useZustand(state=>state.setQuestions)
- const questions=useZustand(state=>state.questions)
- const setCurrentQuestion=useZustand(state=>state.setCurrentQuestion)
-//  const handleViewed=(el)=>{
-//   const   viewQuestion=questions.map(item=>item.id===el.id?{...item,attempted:true}:item)
-//  setQuestions(viewQuestion)
-//   }
- 
-useEffect(()=>{
-setCurrentQuestion(question)
-})
+  const setQuestion = useZustand((state) => state.setQuestions);
+  const questions = useZustand((state) => state.questions);
+  const setCurrentQuestion = useZustand((state) => state.setCurrentQuestion);
+  const setSelectedAnswers = useZustand((state) => state.setSelectedAnswers);
+
+  useEffect(() => {
+    setCurrentQuestion(question);
+  }, [question]);
 
 
+
+  
+
+  const handleOptionClick = (questionId, optionIndex) => {
+    handleAnswerSelect(questionId, optionIndex); // Call the parent handler
+    const updatedSelectedAnswers = selectedAnswers.map((selectedAnswer) =>
+      selectedAnswer.questionId === questionId
+        ? { ...selectedAnswer, optionIndex }
+        : selectedAnswer
+    );
+    setSelectedAnswers(updatedSelectedAnswers);
+  };
 
   return (
     <div key={question.id} className="mt-4 w-full">
       <p className="font-normal text-gray-700 mb-3">{question.question}</p>
-
       <div className="w-full">
         {question.options.map((option, index) => {
           const isSelected = selectedAnswers.some(
@@ -41,7 +49,7 @@ setCurrentQuestion(question)
                 className={`${styles.option} ${
                   isSelected ? styles.highlighted : ""
                 }`}
-                onClick={() => handleAnswerSelect(question.id, index)}
+                onClick={() => handleOptionClick(question.id, index)}
               >
                 <p>{option}</p>
               </div>

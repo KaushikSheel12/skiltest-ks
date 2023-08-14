@@ -10,9 +10,6 @@ const initialState = {
 };
 
 export const useZustand = create((set) => ({
-  //  data: initialState,
-  //setData: (newData) => set(() => ({ data: newData })),
-
   data: [],
   addData: (item) => set((state) => ({ data: [...state.data, item] })),
 
@@ -29,14 +26,19 @@ export const useZustand = create((set) => ({
 
   selectedAnswers: [],
   setSelectedAnswers: (newAnswers) => set({ selectedAnswers: newAnswers }),
-questions:questions,
-setQuestions:(questions:[])=>set({questions}),
-currenQuestion:{},
-setCurrentQuestion:(currentQuestion:unknown)=>set({currentQuestion}),
+
+  questions: questions,
+  setQuestions: (newQuestions) => set({ questions: newQuestions }),
+
+  currentQuestion: {},
+  setCurrentQuestion: (currentQuestion) => set({ currentQuestion }),
+
   showInstructions: false,
-  setShowInstructions: (showInstructions: unknown) => set({ showInstructions }),
+  setShowInstructions: (showInstructions) => set({ showInstructions }),
+
   showAllQuestions: false,
-  setShowAllQuestions: (showAllQuestions: unknown) => set({ showAllQuestions }),
+  setShowAllQuestions: (showAllQuestions) => set({ showAllQuestions }),
+
   showQuiz: true,
-  setShowQuiz: (showQuiz: unknown) => set({ showQuiz }),
+  setShowQuiz: (showQuiz) => set({ showQuiz }),
 }));

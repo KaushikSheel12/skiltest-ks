@@ -32,9 +32,9 @@ const Test = () => {
   return (
     <>
       <div className="h-full">
-        {/* <Header /> */}
+        <Header />
 
-        {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
+        {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />}
         {/* <Predictors/> */}
       
 
@@ -47,7 +47,7 @@ const Test = () => {
 {/* <Herosection/> */}
 {/* <Admitkart/> */}
 {/* <Videoplayer/> */}
-<Watchandgrow/>
+{/* <Watchandgrow/> */}
   {/* <Country/> */}
 {/* < TopHeroSection/> */}
 {/* <Pepars/>   */}
