@@ -23,17 +23,21 @@ const Result = () => {
   return (
     <>
       <ResultHeader />
+
       <Container>
+
         <div className="w-full   md:mt-20  mt-[5px] ">
           <h1 className="font-semibold text-start text-[19px] ">
             Overall Performance Analysis
           </h1>
+
 
           <div className="hidden md:grid md:grid-cols-5 lg:grid-cols-8 grid-cols-4 mt-5 border ">
             <div className="  text-left px-2  full h-16">
               <p className="font-semibold md:text-center text-left text-green-600 text-sm md:text-lg ">
                 0/30
               </p>
+
 
               <div className="flex md:justify-center gap-1 py-2">
                 <div className="flex items-center ">
@@ -43,6 +47,7 @@ const Result = () => {
                 <p className="font-semibold md:text-center text-lefttext-gray-600 text-xs md:text-lg lg:text-[14px]">
                   Right
                 </p>{" "}
+                
               </div>
             </div>
 
