@@ -22,6 +22,7 @@ import Admitkart from "@/components/bayswater/Admitkart/Admitkart";
 import Country from "@/components/bayswater/Admitkart/Country";
 import Videoplayer from "@/components/skillex/Videoplayer";
 import Watchandgrow from "@/components/Watchandgrow/Watchandgrow";
+import Universities from "@/components/universities/Universities";
 
 
 const Test = () => {
@@ -34,7 +35,7 @@ const Test = () => {
       <div className="h-full">
         <Header />
 
-        {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />}
+        {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
         {/* <Predictors/> */}
       
 
@@ -42,7 +43,7 @@ const Test = () => {
         {/* <Dailyquizhome /> */}
       </div>
       {/* <Allexams/> */}
-
+<Universities/>
 {/* <Header/> */}
 {/* <Herosection/> */}
 {/* <Admitkart/> */}
