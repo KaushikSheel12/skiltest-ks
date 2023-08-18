@@ -23,6 +23,7 @@ import Country from "@/components/bayswater/Admitkart/Country";
 import Videoplayer from "@/components/skillex/Videoplayer";
 import Watchandgrow from "@/components/Watchandgrow/Watchandgrow";
 import Universities from "@/components/universities/Universities";
+import Amber from "@/components/abmerblog/Amber";
 
 
 const Test = () => {
@@ -43,7 +44,7 @@ const Test = () => {
         {/* <Dailyquizhome /> */}
       </div>
       {/* <Allexams/> */}
-<Universities/>
+
 {/* <Header/> */}
 {/* <Herosection/> */}
 {/* <Admitkart/> */}
@@ -54,6 +55,12 @@ const Test = () => {
 {/* <Pepars/>   */}
 
       {/* <Result/> */}
+
+
+      {/* <Universities/> */}
+
+
+      <Amber/>
     </>
   );
 };
