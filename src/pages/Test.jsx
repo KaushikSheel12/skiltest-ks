@@ -24,6 +24,7 @@ import Videoplayer from "@/components/skillex/Videoplayer";
 import Watchandgrow from "@/components/Watchandgrow/Watchandgrow";
 import Universities from "@/components/universities/Universities";
 import Amber from "@/components/abmerblog/Amber";
+import Asprogress from "@/components/abmerblog/Asprogress";
 
 
 const Test = () => {
@@ -60,7 +61,8 @@ const Test = () => {
       {/* <Universities/> */}
 
 
-      <Amber/>
+      {/* <Amber/> */}
+      <Asprogress/>
     </>
   );
 };

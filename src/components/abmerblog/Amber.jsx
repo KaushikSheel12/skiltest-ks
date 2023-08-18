@@ -17,7 +17,7 @@ const Amber = () => {
     {Position.map((el,index)=>{
         return (
             <div key={index}>
-                    <div className='md:w-[220px] w-full h-fit md:h-[135px] mb-6  text-left py-2 px-6 bg-gray-100 rounded-lg'>
+                    <div className='md:w-[220px] w-full h-fit md:h-[135px] mb-6 mx-auto  text-left py-2 px-6 bg-gray-100 rounded-lg'>
         <div>
             <div className="flex justify-between items-center">
 
