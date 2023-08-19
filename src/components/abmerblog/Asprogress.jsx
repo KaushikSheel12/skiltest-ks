@@ -109,7 +109,7 @@ const Asprogress = () => {
           <BsStar size={57} color="white" className="md:w-12 w-8" />
 
           <div className="mt-4 ml-2 md:text-[23px]  text-sm">
-            <h2 lassName="md:py-3 py-1">Director of Engineering</h2>
+            <h2 className="md:py-3 py-1">Director of Engineering</h2>
             <h2>100K +</h2>
             <div
               style={{ clipPath: "polygon(100% 100%, 67.8% 46%, 100% 0%)" }}
@@ -126,8 +126,6 @@ const Asprogress = () => {
           </h2>
         </div>
       </div>
-
-  
     </>
   );
 };
