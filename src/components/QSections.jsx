@@ -20,9 +20,12 @@ const QSections = () => {
           </div>
 
           <div>
+
             <h2 className="mt-[25px] px-2 py-2 font-semibold text-[18px] ">
+              
               Question Paper
             </h2>
+
             {questions.map((el) => {
               return (
                 <div key={el.id} className=" mt-[-7px] py-2 px-2 mb-5">

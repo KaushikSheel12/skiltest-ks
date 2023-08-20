@@ -66,6 +66,7 @@ const Watchandgrow = () => {
             </div>
             <div className=" h-[590px] flex space-x-10">
               {[...Array(3)].map((_, index) => (
+                
                 <div
                   
                   key={index}

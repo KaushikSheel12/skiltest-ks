@@ -10,14 +10,15 @@ const Newcountry = () => {
 
   return (
     <>
-      <div className="md:w-[90%] w-full px-2 py-2 h-full  mt-20 flex gap-2  justify-between items-center mx-auto">
-        <div className="border bg-green-600 w-[27%] h-screen  text-center grid place-content-center">
+      <div className="md:w-[90%] w-full px-2 py-2 h-full  mt-20  block md:flex gap-2  justify-between items-center mx-auto">
+
+        <div className="border bg-teal-600 w-[27%] h-screen  text-center grid place-content-center">
           <div className="text-center transform -rotate-90 ">
             <h1 className="text-[52px] text-white font-semibold">Highlights</h1>
           </div>
         </div>
 
-        <div className="grid grid-cols-2  w-full h-full   px-2 py-2">
+        <div className="grid md:grid-cols-2 grid-cols-1  w-full h-full   px-2 py-2">
           <div className="  border-gray-600 border-r-2 text-center relative">
             <div className=" py-8">
               <Countrycart
@@ -28,7 +29,6 @@ const Newcountry = () => {
               />
               <div className="w-[300px] h-[2px] absolute  right-12 mt-4 bg-gray-600"></div>
             </div>
-
 
             <div className="py-8">
               <Countrycart
@@ -53,7 +53,6 @@ const Newcountry = () => {
 
           <div className="grid place-content-center">
             <div className=" ">
-
               <div className="py-8 relative">
                 <Countrycart
                   contryno={"2.3M"}

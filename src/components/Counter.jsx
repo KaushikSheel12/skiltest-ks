@@ -15,8 +15,10 @@ const Counter = () => {
 
     if (time === 0) {
       
+      
       clearInterval(timer);
     }
+
 
     return () => {
       clearInterval(timer);

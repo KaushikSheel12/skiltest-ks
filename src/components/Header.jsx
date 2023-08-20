@@ -30,6 +30,7 @@ const Header = () => {
     }
 
     setIsFullScreen(!isFullScreen);
+    
   };
 
   return (
