@@ -93,6 +93,7 @@ const Admitkart = () => {
               <div className=" rounded-full absolute -top-0 right-0 md:translate-x-[-195px] translate-x-[-255px] ">
                 <div className="w-7 h-7 relative rounded-full ">
                   {" "}
+                  
                   <Image
                       src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-round-country-flag-united-kingdom-png-image_7670954.png"
                       alt="england-flag"
@@ -134,6 +135,7 @@ const Admitkart = () => {
                     src="https://m.media-amazon.com/images/I/718gVU8ktKL._AC_UF894,1000_QL80_.jpg"
                     fill
                     alt="indian-flag"
+
                     className="rounded-full"
                   />
                 </div>

@@ -40,7 +40,9 @@ const QuizHome = () => {
   const MarkForReview = () => {
     addQuestion(currentPage);
     handleRestart();
+
     if (currentPage < questions.length) {
+
       setCurrentPage(currentPage + 1);
     }
   };
@@ -67,6 +69,7 @@ const QuizHome = () => {
   const handleQuestionClick = (questionId) => {
     handleRestart();
     const questionIndex = questions.findIndex(
+
       (question) => question.id === questionId
     );
     setCurrentPage(questionIndex + 1);
@@ -82,6 +85,7 @@ const QuizHome = () => {
   const handleNextPage = () => {
     handleRestart();
     if (currentPage < questions.length) {
+
       setCurrentPage(currentPage + 1);
     }
     const viewQuestion = questions.map((item) =>
@@ -96,6 +100,7 @@ const QuizHome = () => {
     );
     if (currentIndex !== -1) {
       const updatedAnswers = [...selectedAnswers];
+
       updatedAnswers.splice(currentIndex, 1);
       setSelectedAnswers(updatedAnswers);
       addData(updatedAnswers);
@@ -105,6 +110,7 @@ const QuizHome = () => {
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
+
       setCurrentPage(currentPage - 1);
     }
   };
@@ -125,8 +131,10 @@ const QuizHome = () => {
               selectedAnswers={selectedAnswers}
               handlePrevPage={handlePrevPage}
               onQuestionClick={handleQuestionClick}
+
               handleClearResponse={handleClearResponse}
               handleNextPage={handleNextPage}
+
               MarkForReview={MarkForReview}
             />
           )}
@@ -134,6 +142,7 @@ const QuizHome = () => {
         </div>
 
         <div className="w-full sticky top-10 hidden md:block h-fit">
+          
           <QSidebar onQuestionClick={handleQuestionClick} />
         </div>
       </div>

@@ -43,6 +43,7 @@ const QInstruction = () => {
           <div className="border w-full mt-96 py-2 sticky bottom-0 bg-white h-fit">
             <button
               onClick={() => {
+                
                 setShowQuiz(true);
 
                 setShowInstructions(false);

@@ -92,6 +92,7 @@ const Videoplayer = () => {
                     Fully committed to the <br /> success company
                   </p>
                 </div>
+                
               </div>
             </div>
 

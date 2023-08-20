@@ -21,10 +21,12 @@ const Quiz = ({
   showInstructions,
   setShowInstructions,
   MarkForReview,
+
 }) => {
   const [star, showStar] = useState(true);
 
   const starClick = (el) => {
+
     showStar(!star);
   };
 
@@ -39,6 +41,7 @@ const Quiz = ({
               currentPage={currentPage}
               star={star}
               time={time}
+
               starClick={starClick}
             />
           </div>
@@ -47,6 +50,7 @@ const Quiz = ({
             <QuestionBox
               question={question}
               handleAnswerSelect={handleAnswerSelect}
+
               selectedAnswers={selectedAnswers}
             />
           )}
@@ -56,7 +60,9 @@ const Quiz = ({
             currentPage={currentPage}
             handlePrevPage={handlePrevPage}
             totalPages={totalPages}
+
             handleNextPage={handleNextPage}
+            
             MarkForReview={MarkForReview}
           />
         </div>
