@@ -67,6 +67,8 @@ const Linkedin = () => {
 
 <div className=" w-full h-full  mt-[-5px] md:mt-10 relative">
 
+
+
     <div className=" mx-auto h-[200px] md:w-[800px] w-full  items-center ">
 
                 <div className="md:flex items-center  w-fit h-fit gap-[40px] mx-auto ">
@@ -74,6 +76,7 @@ const Linkedin = () => {
 
         <div className="">
         <p className="md:text-md text-[15px] z-10  md:mt-7 relative text-gray-600">LinkedIn Live streams have <br /> jumped 89% since March 2020</p>
+        
      <div className="md:w-[350px] w-full z-10 relative md:mt-4 mt-5 md:h-5 h-2 bg-orange-500"></div>
         </div>
         </div>
