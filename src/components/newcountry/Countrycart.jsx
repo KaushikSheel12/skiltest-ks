@@ -6,8 +6,8 @@ const Countrycart = ({imgSrc , text ,heading ,contryno}) => {
   <>
 
 <div>
-            <div className="flex items-center w-full  h-fit px-4   justify-around mx-auto mt-4 ">
-              <div className="w-[200px]  h-[130px] relative">
+            <div className="flex items-center w-full  h-fit px-4   justify-around mx-auto md:mt-4 ">
+              <div className="md:w-[200px] w-[170px] h-[75px]  md:h-[130px] relative">
                 <Image
                   src={imgSrc}
                   fill
@@ -16,13 +16,13 @@ const Countrycart = ({imgSrc , text ,heading ,contryno}) => {
                 />
               </div>
 
-              <div className="font-bold text-[32px] text-center  w-[50%] leading-9">
+              <div className="font-bold md:text-[32px] text-[20px] text-center  w-[50%] leading-7 md:leading-9">
              
                 <h1> {contryno}<br />{heading}</h1>
               </div>
             </div>
 
-            <p className="px-8  md:text-lg text-md text-gray-700  leading-10">
+            <p className="md:px-8  px-4 md:text-lg text-sm text-gray-700 leading-5 md:py-0 py-2  md:leading-10">
              {text}
             </p>
   

@@ -12,15 +12,15 @@ const Newcountry = () => {
     <>
       <div className="md:w-[90%] w-full px-2 py-2 h-full  mt-20  block md:flex gap-2  justify-between items-center mx-auto">
 
-        <div className="border bg-teal-600 w-[27%] h-screen  text-center grid place-content-center">
-          <div className="text-center transform -rotate-90 ">
-            <h1 className="text-[52px] text-white font-semibold">Highlights</h1>
+        <div className="border bg-teal-600 md:w-[27%] w-full md:h-screen  text-center md:grid place-content-center">
+          <div className="text-center transform md:-rotate-90 ">
+            <h1 className="md:text-[52px] text-[23px] text-white font-semibold">Highlights</h1>
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 grid-cols-1  w-full h-full   px-2 py-2">
-          <div className="  border-gray-600 border-r-2 text-center relative">
-            <div className=" py-8">
+          <div className="  border-gray-600 md:border-r-2 text-center relative">
+            <div className="  py-4 md:py-8">
               <Countrycart
                 contryno={"28"}
                 heading="Countries"
@@ -30,7 +30,7 @@ const Newcountry = () => {
               <div className="w-[300px] h-[2px] absolute  right-12 mt-4 bg-gray-600"></div>
             </div>
 
-            <div className="py-8">
+            <div className=" py-4 md:py-8">
               <Countrycart
                 contryno={"11,530"}
                 heading="Stores Worldwide"
@@ -40,7 +40,7 @@ const Newcountry = () => {
               <div className="w-[300px] h-[2px] absolute  right-12 mt-4 bg-gray-600"></div>
             </div>
 
-            <div className="py-8">
+            <div className=" py-4 md:py-8">
               <Countrycart
                 contryno={"48M"}
                 heading="Total Revenue"
@@ -53,17 +53,17 @@ const Newcountry = () => {
 
           <div className="grid place-content-center">
             <div className=" ">
-              <div className="py-8 relative">
+              <div className=" py-4 md:py-8 relative">
                 <Countrycart
                   contryno={"2.3M"}
                   heading="Assocites"
                   imgSrc="https://img.freepik.com/premium-vector/group-men-suits-with-white-background_793499-42.jpg"
                   text={dummyText}
                 />
-                <div className="w-[300px] h-[2px] absolute  left-8 mt-20 bg-gray-600"></div>
+                <div className="w-[300px] h-[2px] absolute  left-4 md:left-8 md:mt-20 mt-10 bg-gray-600"></div>
               </div>
 
-              <div className="mt-40 relative">
+              <div className="md:mt-40 mt-[50px] relative">
                 <Countrycart
                   contryno={"5M"}
                   heading="Monthly Website Visitors"
