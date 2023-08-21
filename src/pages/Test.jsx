@@ -26,6 +26,7 @@ import Universities from "@/components/universities/Universities";
 import Amber from "@/components/abmerblog/Amber";
 import Asprogress from "@/components/abmerblog/Asprogress";
 import Newcountry from "@/components/newcountry/ Newcountry";
+import Linkedin from "@/components/linkedin/Linkedin";
 
 
 const Test = () => {
@@ -64,7 +65,8 @@ const Test = () => {
 
       {/* <Amber/> */}
       {/* <Asprogress/> */}
-     <Newcountry/>
+     {/* <Newcountry/> */}
+     <Linkedin/>
     </>
   );
 };
