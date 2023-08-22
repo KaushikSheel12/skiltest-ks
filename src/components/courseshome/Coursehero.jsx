@@ -6,18 +6,18 @@ const Coursehero = () => {
   return (
     <>
       <div className="md:w-[70%] md:h-[250px]  mx-auto px-4 py-4 flex relative gap-5 items-center justify-between">
-        <div className="w-[50%] h-full border-l-4 border-[#184132]">
+        <div className="w-fit h-full border-l-4 border-[#184132]">
           <h1 className="px-4 py-4 text-[50px] font-semibold leading-[60px] text-gray-700">
             {" "}
             TURNING VISIONS <br /> INTO REALITY
           </h1>
           <div className="w-[200px]   h-[4px]  bg-[#184132]"></div>
         </div>
-        <div className="w-[50%] flex items-center  mr-[59px]  justify-between h-[170px] ">
+        <div className="w-[50%] flex items-center  mr-[30px]  justify-between h-[170px] ">
           <div className="w-[50%] px-2 py-2 flex relative items-center gap-5 h-[170px] border-[#184132] border-r-4    border-b-[3px] ">
             <div className="w-[300px] h-1 bg-[#184132] absolute top-0 right-[-100px] "></div>
 
-            <div className="w-[90px] h-[90px] relative ml-9   ">
+            <div className="w-[90px] h-[90px] relative    ">
               <Image
                 src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644fb94eb0874f0ac6fea560_design.svg"
                 alt="img"
@@ -31,7 +31,7 @@ const Coursehero = () => {
             </div>
           </div>
 
-          <div className="w-[50%] px-4 py-2 flex  items-center gap-5 h-[170px] border-[#184132]   ">
+          <div className="w-[54%] px-4 py-2 flex   items-center gap-5 h-[170px] border-[#184132]   ">
             <div className="w-[90px] h-[90px] relative  ">
               <Image
                 src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644fb94d642592b496270797_sustainability.svg"
