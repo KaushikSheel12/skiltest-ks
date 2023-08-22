@@ -27,6 +27,8 @@ import Amber from "@/components/abmerblog/Amber";
 import Asprogress from "@/components/abmerblog/Asprogress";
 import Newcountry from "@/components/newcountry/ Newcountry";
 import Linkedin from "@/components/linkedin/Linkedin";
+import CheckTemp from "@/components/CheckTemp";
+import Coursehero from "@/components/courseshome/Coursehero";
 
 
 const Test = () => {
@@ -37,7 +39,7 @@ const Test = () => {
   return (
     <>
       <div className="h-full">
-        <Header />
+        {/* <Header /> */}
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
         {/* <Predictors/> */}
@@ -52,8 +54,8 @@ const Test = () => {
 {/* <Herosection/> */}
 {/* <Admitkart/> */}
 {/* <Videoplayer/> */}
-{/* <Watchandgrow/> */}
-  {/* <Country/> */}
+{/* <Watchandgrow/>
+  <Country/> */}
 {/* < TopHeroSection/> */}
 {/* <Pepars/>   */}
 
@@ -63,10 +65,14 @@ const Test = () => {
       {/* <Universities/> */}
 
 
+{/* <CheckTemp/> */}
+
+<Coursehero/>
+
       {/* <Amber/> */}
       {/* <Asprogress/> */}
      {/* <Newcountry/> */}
-     <Linkedin/>
+     {/* <Linkedin/> */}
     </>
   );
 };
