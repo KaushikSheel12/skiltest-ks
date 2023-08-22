@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
+import CaboutBox from './CaboutBox'
+import { AboutData } from './data/data'
+
 const CoursAbout = () => {
   return (
   <>
@@ -33,6 +36,26 @@ Architecture is the intersection of art and science.
 
         </div> 
 
+        {AboutData.map((el,index)=>{
+          return (
+            <div key={index}> 
+            <CaboutBox  imgUrl={el.url} title={el.title}/>
+            </div>
+          )
+        })}
+
+
+
+
+
+
+     
+
+
+
+
+  
+          
 
 
 
