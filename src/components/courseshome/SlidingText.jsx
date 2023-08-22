@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import Relation from "./Relation";
+import CoursAbout from "./CoursAbout";
 
 const SlidingText = () => {
   return (
     <>
-      <div className="w-[70%] mx-auto mt-20 h-20 border border-[#184132] relative">
+      <div className="w-[70%] mx-auto mt-20 h-20  border border-[#184132] relative">
         <div className="slider-container text-center">
           <div className="slider-text text-[40px]">
             Skilzen Technology Hydrabad www.skilzen.com
@@ -25,7 +27,7 @@ const SlidingText = () => {
 
        
 
-       <div className="w-[70%] mx-auto mt-[95px] h-[90px] border border-[#184132] px-4 py-2 flex items-center justify-between ">
+       <div className="w-[70%] mx-auto mt-[95px] h-[90px]  border-4 border-[#184132] px-4 py-2 flex items-center justify-between ">
         <h1 className="font-semibold text-gray-700 text-[33px]"> REALIZATIONS</h1>
 
         <div className="flex items-center gap-5">
@@ -35,7 +37,8 @@ const SlidingText = () => {
     </div>
         </div>
        </div>
-
+  <Relation/>
+  <CoursAbout/>
     </>
   );
 };
