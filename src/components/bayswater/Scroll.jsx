@@ -2,6 +2,11 @@ import React, { useRef, useState } from "react";
 import { ScrollCard } from "./ScrollCard";
 import { BiSolidRightArrowAlt } from "react-icons/bi";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+
+
+
+
+
 export const AutoScrollCards = () => {
   const [left, setLeft] = useState(false);
   const [right, setRight] = useState(true);

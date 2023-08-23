@@ -4,7 +4,7 @@ import Image from 'next/image'
 const RelationBox = ({imgUrl , text}) => {
   return (
   <>
-     <div className="w-[295px] h-[270px] mx-auto relative px-4 mb-2  py-4 border border-black  ">
+     <div className="md:w-[295px] w-full h-[270px] mx-auto relative px-4 mb-2  py-4 border border-black  ">
             <h2 className='text-[19px] font-semibold text-gray-700 '>{text}</h2>
             <div className="flex items-center   absolute bottom-[2px] gap-[73px]  ">
                 <p className='text-gray-400 text-[23px] mt-[90px]'>interior</p>

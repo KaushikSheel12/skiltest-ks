@@ -27,9 +27,7 @@ import Amber from "@/components/abmerblog/Amber";
 import Asprogress from "@/components/abmerblog/Asprogress";
 import Newcountry from "@/components/newcountry/ Newcountry";
 import Linkedin from "@/components/linkedin/Linkedin";
-import CheckTemp from "@/components/CheckTemp";
 import Coursehero from "@/components/courseshome/Coursehero";
-
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -43,36 +41,30 @@ const Test = () => {
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
         {/* <Predictors/> */}
-      
 
         {/* <Carousel/> */}
         {/* <Dailyquizhome /> */}
       </div>
       {/* <Allexams/> */}
 
-{/* <Header/> */}
-{/* <Herosection/> */}
-{/* <Admitkart/> */}
-{/* <Videoplayer/> */}
-{/* <Watchandgrow/>
-  <Country/> */}
-{/* < TopHeroSection/> */}
-{/* <Pepars/>   */}
+      {/* <Header/> */}
+      {/* <Herosection/> */}
+      {/* <Admitkart/> */}
+      {/* <Videoplayer/> */}
+      {/* <Watchandgrow /> */}
+      {/* <Country/>  */}
+      {/* < TopHeroSection/> */}
+      {/* <Pepars/>   */}
 
       {/* <Result/> */}
 
-
       {/* <Universities/> */}
-
-
-{/* <CheckTemp/> */}
-
-<Coursehero/>
 
       {/* <Amber/> */}
       {/* <Asprogress/> */}
-     {/* <Newcountry/> */}
-     {/* <Linkedin/> */}
+      {/* <Newcountry/> */}
+      {/* <Linkedin/> */}
+      <Coursehero />
     </>
   );
 };
