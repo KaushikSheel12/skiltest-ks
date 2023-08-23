@@ -7,12 +7,12 @@ import { AboutData } from './data/data'
 const CoursAbout = () => {
   return (
   <>
-     <div className="md:w-[70%] w-full mx-auto mt-[50px] h-[90px]  border-4 border-[#184132] px-4 py-2 flex items-center justify-between ">
-        <h1 className="font-semibold text-gray-700 text-[33px]"> ABOUT</h1>
+     <div className="md:w-[70%] w-[85%] mx-auto mt-[40px] md:mt-[95px] md:h-[90px]   h-fit border-4 border-[#184132] px-4 py-2 md:flex items-center justify-between ">
+        <h1 className="font-semibold text-gray-700  text-[25px] md:text-[33px]"> ABOUT</h1>
 
         <div className="flex items-center gap-5">
-    <h3 className="font-semibold text-gray-700 text-[17px]">Architects with a passion for exceptional design.</h3>
-    <div className="relative w-[90px] h-[90px] ">
+    <h3 className="font-semibold text-gray-700 text-sm leading-[17px] md:text-[17px]">Architects with a passion for exceptional design.</h3>
+    <div className="relative w-[90px] h-[90px] hidden md:block ">
         <Image src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644faf4b54f3ddf6d169c129_module-title-img-p-500.png " alt="img" fill className="object-contain" />
     </div>
         </div>

@@ -24,6 +24,7 @@ const Coursehero = () => {
               <Image
                 src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644fb94eb0874f0ac6fea560_design.svg"
                 alt="img"
+                
                 fill
                 className="object-contain"
               />

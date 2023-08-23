@@ -9,7 +9,7 @@ const SlidingText = () => {
       <div className="md:w-[70%] w-[85%] mx-auto  mt-[100px] md:mt-40 h-12 md:h-20   border border-[#184132] relative">
         <div className="slider-container text-center">
           <div className="slider-text text-[20px] mt-2 md:text-[40px]">
-            Skilzen Technology Hydrabad www.skilzen.com
+            Skilzen Technology Hydrabad www.skilzen.com 
           </div>
         </div>
         <div className="absolute top-[-160px] left-36">
