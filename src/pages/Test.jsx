@@ -28,6 +28,8 @@ import Asprogress from "@/components/abmerblog/Asprogress";
 import Newcountry from "@/components/newcountry/ Newcountry";
 import Linkedin from "@/components/linkedin/Linkedin";
 import Coursehero from "@/components/courseshome/Coursehero";
+import Dreamjob from "@/components/courseshome/Dreamjob";
+import Ourpromise from "@/components/careerhomepage/Ourpromise";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -64,7 +66,9 @@ const Test = () => {
       {/* <Asprogress/> */}
       {/* <Newcountry/> */}
       {/* <Linkedin/> */}
-      <Coursehero />
+      {/* <Coursehero /> */}
+      {/* <Dreamjob/> */}
+      <Ourpromise/>
     </>
   );
 };
