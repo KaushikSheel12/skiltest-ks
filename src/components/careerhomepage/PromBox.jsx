@@ -4,7 +4,7 @@ import React from 'react'
 const PromBox = ({imgUrl , imgTxt ,  heading  ,para }) => {
   return (
   <>
-      <div className='imgbox w-[300px]  relative h-[400px]  px-2 py-2 group'>
+      <div className='imgbox w-[300px]  relative h-[400px] md:mb-0 mb-2 px-2 py-2 group'>
             <Image  src={imgUrl} alt="student-img" fill className='object-cover'/>
 
            
