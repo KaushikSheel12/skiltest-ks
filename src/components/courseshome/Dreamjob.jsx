@@ -6,11 +6,11 @@ import {CiLocationOn} from "react-icons/ci"
 const Dreamjob = () => {
   return (
  <>
- <div className='w-full px-2 py-2 flex justify-between'>
+ <div className='w-full h-screen px-2 py-2 flex border justify-around'>
    
- <div className="  border border-red-400 ">
+ <div className=" w-[50%]  h-[600px] grid place-content-center border border-red-400 ">
 
-<h1 className='text-[48px] font-semibold leading-[1.4]'>Let&apos;s find your <br /> dream <span className='text-[#5B4BDA]'>job</span> with <span className='text-[#5B4BDA]'>PW Skills</span></h1>
+<h1 className='text-[48px] font-semibold leading-[1.4]'>Let&apos;s find your <br /> dream <span className='text-[#5B4BDA]'>University</span> with <span className='text-[#5B4BDA]'>CM</span></h1>
 <div className="flex h-[56px] justify-between items-center w-[663px] border border-black rounded-md py-1 p-2 mt-10">
     <div className="w-full flex  px-2  space-x-2">
         <AiOutlineSearch size={22}/>
