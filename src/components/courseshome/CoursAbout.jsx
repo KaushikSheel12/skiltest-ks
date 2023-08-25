@@ -3,11 +3,12 @@ import React from 'react'
 
 import CaboutBox from './CaboutBox'
 import { AboutData } from './data/data'
+import WhatisNext from './WhatisNext'
 
 const CoursAbout = () => {
   return (
   <>
-     <div className="md:w-[70%] w-[85%] mx-auto mt-[40px] md:mt-[95px] md:h-[90px]   h-fit border-4 border-[#184132] px-4 py-2 md:flex items-center justify-between ">
+     {/* <div className="md:w-[70%] w-[85%] mx-auto mt-[40px] md:mt-[95px] md:h-[90px]   h-fit border-4 border-[#184132] px-4 py-2 md:flex items-center justify-between ">
         <h1 className="font-semibold text-gray-700  text-[25px] md:text-[33px]"> ABOUT</h1>
 
         <div className="flex items-center gap-5">
@@ -16,7 +17,8 @@ const CoursAbout = () => {
         <Image src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644faf4b54f3ddf6d169c129_module-title-img-p-500.png " alt="img" fill className="object-contain" />
     </div>
         </div>
-       </div>
+       </div> */}
+       <WhatisNext/>
 
 
        <div className="md:w-[70%] w-full mx-auto mt-10 grid md:grid-cols-3 grid-cols-1  h-full  py-2">
@@ -39,7 +41,7 @@ Architecture is the intersection of art and science.
         {AboutData.map((el,index)=>{
           return (
             <div key={index}> 
-            <CaboutBox  imgUrl={el.url} title={el.title}/>
+            <CaboutBox  imgUrl={el.url} title={el.title} para={el.para}/>
             </div>
           )
         })}

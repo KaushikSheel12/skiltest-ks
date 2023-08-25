@@ -59,8 +59,8 @@ const Test = () => {
       {/* <Pepars/>   */}
 
       {/* <Result/> */}
-
-      {/* <Universities/> */}
+{/* 
+      <Universities/> */}
 
       {/* <Amber/> */}
       {/* <Asprogress/> */}

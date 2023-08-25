@@ -1,26 +1,65 @@
+import computers from "../images/computers.jpeg"
+import doctors from "../images/doctors.jpeg"
+import building from "../images/building.jpeg"
+import laptoptyping from "../images/laptoptyping.jpeg"
+import low from "../images/low.jpeg"
+import media from "../images/media.jpeg"
+import readinggirl from "../images/readinggirl.jpeg"
+import  comp1 from "../images/comp1.jpeg"
+import pentinggirl from "../images/pentinggirl.jpeg"
+import scope from "../images/scope.jpeg"
+import media2 from "../images/media2.jpeg"
+import art1 from "../images/art1.jpeg"
 export const ImgData = [
-   { "title": "ZEN DWELLING", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b815fc7d89119fbcf10c4d_11-p-500.jpg" },
-   { "title": "ARTISTIC HIDEAWAY", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b816788c674db0faa80114_10-p-500.jpg" },
-   { "title": "RUSTIC RETREAT", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b81691ca450090231921d6_9-p-500.jpg" },
-   { "title": "COASTAL RETREAT", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/6460d840dea363a679591234_8-p-500.jpg" },
-   { "title": "ELEMENTAL ABODE", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b816d7df3ee923132a61c3_7-p-500.jpg" },
-   { "title": "ENCHANTED HIDEAWAY", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b81708dee28addede0bd19_6-p-500.jpg" },
-   { "title": "TRANQUIL ABODE", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b817114f367e899af10f8b_5-p-500.jpg" },
-   { "title": "HARMONIOUS DWELLING", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b81740490a3c78c4784db7_4-p-500.jpg" },
-   { "title": "SERENE RETREAT", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b8174614dec87fead74925_3-p-500.jpg" },
-   { "title": "VIBRANT OASIS", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b8177bdee28addede151af_2-p-500.jpg" },
-   { "title": "FLOATING SANCTUARY", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b8178493a4eedcc0ce7bff_1-p-500.jpg" },
-   { "title": "SUSTAINABILITY", "url": "https://uploads-ssl.webflow.com/64524e853b3fe4e7462f9d4c/64b817da734341007a82d143_12-p-500.jpg" },
+   { "title": "B.Tech (Computer Science)", "url": computers ,"course" : "Engeeniring"},
+   { "title": "(BHM) Bachelor of Hotel Management ", "url": "https://itm.edu/img/itmihm/itm-hotel-management-courses.webp" ,"course" : "Hospitality"},
+   { "title": "MBBS (Bachelor of Medicine and Bachelor of Surgery)", "url": doctors ,"course" : "Medicine"},
+   { "title": "B.Arch (Bachelor of Architecture)", "url": building ,"course" : "Architecture"},
+   { "title": "MBA (Master of Business Administration)", "url": laptoptyping,"course" : "Management" },
+   { "title": "BCA (Bachelor of Computer Applications)", "url": "https://downloads.mlacw.edu.in/filer_public/55/a1/55a178f7-f973-43bd-8d1a-be3b206dfdd1/2022-02-22t06_56_18_900_a_2.jpg" ,"course" : "Science"},
+   { "title": "MCA (Master of Computer Applications)", "url": comp1,"course" : "Science" },
+   { "title": "LLB (Bachelor of Laws)", "url": low,"course" : "LAW" },
+   { "title": "Fashion Design", "url": "https://media.istockphoto.com/id/544667458/photo/fashion-designer.jpg?s=612x612&w=0&k=20&c=KES4TcdnjdRuidR3CJkklW4LYGSPyhApzLwMk6OnyFM=" ,"course" : "Design"},
+   { "title": "Interior Design", "url": "https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2021/06/10131120/interior-wall-design.jpg","course" : "Design" },
+   { "title": "Web Designing", "url": "https://media.istockphoto.com/id/1305999733/photo/web-design-desktop.jpg?s=170667a&w=0&k=20&c=nmKdejMot8zLEk_xqPc3CCmY8ZtnwdJZFl2DIBppUQc=","course" : "UI/UX" },
+   { "title": "Mass Communication", "url":media,"course" : " Arts Stream"},
+   { "title": "Journalism", "url": "https://t4.ftcdn.net/jpg/03/34/54/43/360_F_334544399_Ntmfbt9DYfB4jA3E5aa9x3ffR5ZioKl1.jpg","course" : "BA (Hons)" },
 
+   { "title": "Teaching", "url": "https://img.freepik.com/free-photo/portrait-female-teacher-holding-notepad-green_140725-149620.jpg?w=2000","course" : "Arts Stream" },
+   { "title": "Nursing", "url":scope ,"course" : "Medical"},
+   { "title": "Tourism and Travel Management", "url":  "https://5.imimg.com/data5/GJ/GX/GLADMIN-3278065/travel-management-system.png","course" : "Hospitality"},
+ 
+  
 ]
 
+
+
+// Media Mass communication
+//     * "Explore Our Media, Mass Communication & Journalism Courses.
+// * Arts, Humanities and Social Sciences:
+//     * "Explore Our Arts, Humanities & Social Sciences Courses."
+// * Sciences:
+//     * "Discover Our Science Course Offerings."
+// * Commerce:
+//     * "Unveiling Commerce Courses for Your Future."
+// * Computer Application and IT:
+//     * "Engage with Computer Application & IT Course Selection."
+// * Pharmacy:
+//     * "Experience Our Comprehensive Pharmacy Courses."
+// * Education:
+//     * "Enhance Your Skills with Our Education Courses."
+// * Hospitality and Tourism:
+//     * "Enroll in Hospitality & Tourism Course Experiences."
+
+
+
 export const AboutData = [
-   { "title": "TOWERS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad654393e457ee103558_about_icons_03.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "MUSEUMS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad651d4c64277a51e526_about_icons_06.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "HOUSES", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad654393e435af103559_about_icons_15.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "HOSPITALS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad65a20709600f82e11b_about_icons_11.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "FLATS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad65a79e9d8161433137_about_icons_19.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "SHOPPINGS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad653e05a66a127658cb_about_icons_22.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "TOWERS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad654393e457ee103558_about_icons_03.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
-   { "title": "TOWERS", url: "https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/6453ad654393e457ee103558_about_icons_03.png", para: "Our towering structures redefine skylines and leave a lasting impression." },
+   { "title": "Media Mass communication", url: "https://img.freepik.com/free-vector/hands-holding-microphones_1284-51360.jpg?size=626&ext=jpg", para: "Explore Our Media, Mass Communication & Journalism Courses." },
+   { "title": "Arts, Humanities and Social Sciences", url: "https://png.pngtree.com/png-vector/20230415/ourmid/pngtree-social-science-flat-icon-vector-png-image_6707222.png", para: "Explore Our Arts, Humanities & Social Sciences Courses." },
+   { "title": "Sciences", url: "https://static.vecteezy.com/system/resources/previews/021/598/712/original/school-boy-student-in-scientist-uniform-free-png.png", para: "Discover Our Science Course Offerings." },
+   { "title": "Commerce", url: "https://freepngimg.com/save/14062-ecommerce-png-file/638x431", para: "Unveiling Commerce Courses for Your Future." },
+   { "title": "Computer Application and IT", url: "https://www.transparentpng.com/thumb/computer/6o4Q2H-png-windows-desktop-set-software-game-coding-.png", para: "Engage with Computer Application & IT Course Selection." },
+   { "title": "Pharmacy", url: "https://static.vecteezy.com/system/resources/previews/022/923/884/original/pastel-color-medicine-pills-pills-flying-up-out-of-tablet-capsule-3d-rendering-pharmacy-concept-drugs-awareness-free-png.png", para: "Experience Our Comprehensive Pharmacy Courses." },
+   { "title": "Education", url: "https://www.freeiconspng.com/thumbs/education-png/education-png-3.png", para: "Enhance Your Skills with Our Education Courses." },
+   { "title": "Hospitality and Tourism", url: "https://cdn-icons-png.flaticon.com/512/5526/5526225.png", para: "Enroll in Hospitality & Tourism Course Experiences." },
 ]

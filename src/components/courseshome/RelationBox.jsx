@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const RelationBox = ({ imgUrl, text }) => {
+const RelationBox = ({ imgUrl, text ,course}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [colorfull , setColorfull] = useState(false);
 
@@ -30,7 +30,7 @@ const RelationBox = ({ imgUrl, text }) => {
     onMouseEnter={handleHover}
     onMouseLeave={handleMouseLeave}
     
-    className="md:w-[295px] w-[85%] h-[270px] mx-auto relative px-4 mb-10 md:mb-2 mt-10 py-4 border md:border-black">
+    className="md:w-[295px]  w-[85%] h-[270px] mx-auto relative  px-4 mb-10 md:mb-2 mt-10 py-4 border md:border-black">
       <div className="w-full h-16 border md:hidden absolute inset-0 top-[-55px] border-t-2 border-black border-l-2 border-r-2 text-center grid place-content-center font-semibold">
         {text}
       </div>
@@ -39,20 +39,23 @@ const RelationBox = ({ imgUrl, text }) => {
         {text}
       </h2>
 
-      <div className="md:flex items-center absolute bottom-[2px] gap-[73px]">
-        <p className="text-gray-400 md:block hidden text-[23px] mt-[90px]">
-          interior
+      <div className="md:flex w-full  items-center left-0 mx-auto px-2 justify-between absolute bottom-[2px] ">
+        <div>
+        <p className="text-gray-500 md:block font-semibold hidden text-[17px] mt-[90px]">
+         {course}
         </p>
+        </div>
+      
 
         <div
   
-          className="relative w-[350px] h-[250px] hidden md:block mx-auto md:w-[130px] md:h-[130px]"
+          className="relative w-[350px]  h-[250px] hidden md:block  md:w-[130px] md:h-[130px]"
         >
           <Image
             src={imgUrl}
             alt="img"
             fill
-            className="myimg object-contain"
+            className="myimg object-cover"
             style={imageStyle}
           />
         </div>
@@ -68,8 +71,8 @@ const RelationBox = ({ imgUrl, text }) => {
       </div>
 
       {isHovered && (
-        <div class="popup w-[120px] h-[120px] cursor-pointer rounded-full border bg-black hover:grid place-content-center text-center absolute inset-0 top-[100px] left-[90px] text-sm text-white font-semibold flex justify-center items-center">
-          VIEW PROJECT
+        <div class="popup w-[120px] h-[120px] cursor-pointer rounded-full border bg-black hover:grid place-content-center text-center absolute inset-0 top-[100px] left-[90px] text-lg text-white font-semibold flex justify-center items-center">
+          VIEW  <br /> COURSE
         </div>
       )}
     </div>
