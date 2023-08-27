@@ -30,8 +30,7 @@ const Coursehero = () => {
               />
             </div>
             <div>
-              {/* <h1 className="font-bold md:py-0 py-4 md:mt-0 mt-[-7px] text-lg md:text-2xl">DSIGN</h1>
-              <h4 className="md:text-lg text-sm mt-[-20px] md:mt-[-4px]">Innovative Concepts</h4> */}
+         
             </div>
           </div>
 
@@ -45,8 +44,7 @@ const Coursehero = () => {
               />
             </div>
             <div>
-              {/* <h1 className="font-bold md:mt-0 mt-2 text-lg md:text-2xl">SUSTAINABILITY</h1>
-              <h4 className="md:text-lg text-sm mt-[-4px]">Green Building</h4> */}
+            
             </div>
           </div>
         </div>

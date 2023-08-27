@@ -7,7 +7,8 @@ import { BiDonateHeart, BiSolidChip } from "react-icons/bi";
 import { GiBoltBomb, GiChameleonGlyph, GiElectricalResistance, GiExplosiveMaterials, GiHealthPotion, GiRingedPlanet, GiTreeGrowth } from "react-icons/gi";
 import { IoMdNuclear } from "react-icons/io";
 
-export const Position =[ 
+export const Position =
+[ 
 
     {
         "logo" : <IoMdNuclear size={36} color='orange'/>,

@@ -66,7 +66,7 @@ const Test = () => {
       {/* <Asprogress/> */}
       {/* <Newcountry/> */}
       {/* <Linkedin/> */}
-      <Coursehero />
+      {/* <Coursehero /> */}
       {/* <Dreamjob/> */}
       {/* <Ourpromise/> */}
     </>

@@ -10,6 +10,8 @@ import pentinggirl from "../images/pentinggirl.jpeg"
 import scope from "../images/scope.jpeg"
 import media2 from "../images/media2.jpeg"
 import art1 from "../images/art1.jpeg"
+
+
 export const ImgData = [
    { "title": "B.Tech (Computer Science)", "url": computers ,"course" : "Engeeniring"},
    { "title": "(BHM) Bachelor of Hotel Management ", "url": "https://itm.edu/img/itmihm/itm-hotel-management-courses.webp" ,"course" : "Hospitality"},
@@ -32,24 +34,6 @@ export const ImgData = [
   
 ]
 
-
-
-// Media Mass communication
-//     * "Explore Our Media, Mass Communication & Journalism Courses.
-// * Arts, Humanities and Social Sciences:
-//     * "Explore Our Arts, Humanities & Social Sciences Courses."
-// * Sciences:
-//     * "Discover Our Science Course Offerings."
-// * Commerce:
-//     * "Unveiling Commerce Courses for Your Future."
-// * Computer Application and IT:
-//     * "Engage with Computer Application & IT Course Selection."
-// * Pharmacy:
-//     * "Experience Our Comprehensive Pharmacy Courses."
-// * Education:
-//     * "Enhance Your Skills with Our Education Courses."
-// * Hospitality and Tourism:
-//     * "Enroll in Hospitality & Tourism Course Experiences."
 
 
 

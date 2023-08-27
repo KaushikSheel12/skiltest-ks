@@ -33,6 +33,7 @@ const Asprogress = () => {
               className="md:h-[60px] h-[30px] w-[55px] md:w-[140px] bg-gray-800 absolute right-[217px] md:right-[448px] top-[15px] md:top-[25px]"
             />
           </div>
+
           <RiPencilRuler2Line size={65} className="md:w-12 w-6" />
         </div>
 
@@ -70,6 +71,7 @@ const Asprogress = () => {
                 className="md:h-[60px] h-[30px] w-[55px] md:w-[140px] bg-pink-600 absolute right-[217px] md:right-[448px] top-[15px] md:top-[25px]"
               />
             </div>
+
             <AiOutlineCodeSandbox
               size={57}
               color="white"
@@ -96,6 +98,7 @@ const Asprogress = () => {
             <h4 className=" absolute   md:text-[22px] text-sm   font-semibold left-[265px] md:left-[600px] text-gray-800 md:mt-2 whitespace-nowrap">
               + 64 months
             </h4>
+
             <div
               style={{ clipPath: "polygon(37.6% 49.3%, 0% 100%, 0% 0%)" }}
               className="md:h-[60px] h-[30px] md:w-20 w-[50px] bg-blue-500 absolute md:left-[448px] left-[217px] right-[117px] md:right-[448px] top-[15px] md:top-[25px]"
@@ -105,10 +108,13 @@ const Asprogress = () => {
           <div className="md:w-[10px] w-2 h-2 md:h-[10px] absolute top-[170px]  md:top-[307px] left-[-3px]  md:left-[-4px] rounded-full bg-teal-400 mx-auto"></div>
         </div>
 
+
         <div className="md:w-[450px] w-[220px] h-[90px] md:h-[160px] md:block flex items-center  gap-6 justify-between border absolute md:left-[820px] left-[155px]  top-[610px] md:top-[1000px]  text-left text-[23px] text-white px-4 py-4 bg-yellow-500">
           <BsStar size={57} color="white" className="md:w-12 w-8" />
 
+
           <div className="mt-4 ml-2 md:text-[23px]  text-sm">
+            
             <h2 className="md:py-3 py-1">Director of Engineering</h2>
             <h2>100K +</h2>
             <div
