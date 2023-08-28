@@ -9,6 +9,7 @@ const Chooseclg = () => {
           Why Choose College mentor's Exam Prep?
         </h2>
 
+
         <div className="flex flex-wrap items-center gap-5 w-full h-full  justify-center">
           <div className=" w-72 h-full item-center text-center font-semibold px-2 py-2">
             <div className="ml-16">
@@ -22,6 +23,7 @@ const Chooseclg = () => {
             <h2 className="px-2 py-1  text-xl text-orange-600">
               Online Classroom Program
             </h2>
+
             <h3 className="">by Top Faculty</h3>
           </div>
 
@@ -37,6 +39,7 @@ const Chooseclg = () => {
             <h2 className="px-2 py-1  text-xl text-orange-600">
               Online Classroom Program
             </h2>
+            
             <h3 className="">by Top Faculty</h3>
           </div>
 

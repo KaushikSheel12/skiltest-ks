@@ -118,6 +118,9 @@ const Asprogress = () => {
             <h2 className="md:py-3 py-1">Director of Engineering</h2>
             <h2>100K +</h2>
             <div
+
+
+
               style={{ clipPath: "polygon(100% 100%, 67.8% 46%, 100% 0%)" }}
               className="md:h-[60px] h-[30px] w-[55px] md:w-[140px] bg-yellow-500 absolute right-[217px] md:right-[448px] top-[31px] md:top-[50px]"
             />

@@ -15,6 +15,7 @@ const Header = () => {
       } else if (document.documentElement.webkitRequestFullscreen) {
         document.documentElement.webkitRequestFullscreen();
       } else if (document.documentElement.msRequestFullscreen) {
+
         document.documentElement.msRequestFullscreen();
       }
     } else {
@@ -38,6 +39,7 @@ const Header = () => {
       <div className="flex gap-10  ">
         <Link
           href="#"
+          
           className="w-[160px] md:w-[250px] h-[52px] relative inline-block -translate-x-4 cursor-pointer "
         >
           <Image
