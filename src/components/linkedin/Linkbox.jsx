@@ -12,9 +12,11 @@ const Linkbox = ({imgUrl , text , pTag}) => {
                 fill
                 className="object-cover  rounded-full"
               />
+
             </div>
             <h1 className="md:text-[30px] text-[15px] font-semibold whitespace-nowrap text-gray-600 ">
              {text}
+             
             </h1>
             <p className="text-gray-500   md:text-lg text-[12px] md:mt-[-8px] ">{pTag}</p>
           </div>
