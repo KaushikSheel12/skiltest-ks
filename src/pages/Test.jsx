@@ -30,6 +30,7 @@ import Linkedin from "@/components/linkedin/Linkedin";
 import Coursehero from "@/components/courseshome/Coursehero";
 import Dreamjob from "@/components/courseshome/Dreamjob";
 import Ourpromise from "@/components/careerhomepage/Ourpromise";
+import Answerd from "@/components/dashboard/Answerd";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -69,6 +70,7 @@ const Test = () => {
       {/* <Coursehero /> */}
       {/* <Dreamjob/> */}
       {/* <Ourpromise/> */}
+      <Answerd/>
     </>
   );
 };
