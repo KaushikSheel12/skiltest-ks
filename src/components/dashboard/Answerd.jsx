@@ -5,13 +5,14 @@ import { FaFacebookF, FaGooglePlusG, FaPencilAlt } from "react-icons/Fa";
 import { FiUsers } from "react-icons/Fi";
 import { MdDelete, MdReportProblem } from "react-icons/Md";
 import { AiTwotoneStar } from "react-icons/ai";
-import { BiSolidMessageMinus } from "react-icons/bi";
+import { BiSolidMessage, BiSolidMessageMinus } from "react-icons/bi";
 import { GiShare } from "react-icons/gi";
+import Canswers from "./Canswers";
 
 const Answerd = () => {
   return (
     <>
-      <div className="w-[70%] mx-auto px-10 py-2 border border-b-2 h-20 flex justify-between items-center">
+      <div className="w-[70%] bg-red-400 mx-auto px-10 py-2 border   border-b-2 h-20 flex justify-between items-center">
         <div>
           {" "}
           <div className="flex items-center">
@@ -33,7 +34,7 @@ const Answerd = () => {
             <div className="w-[140px] h-[50px] border bg-green-700 text-white   text-lg grid place-content-center ">
               Answered
             </div>
-            <div className="w-[70px] h-[50px] border grid place-content-center text-lg text-gray-500 font-semibold ">
+            <div className="w-[70px]  h-[50px] border grid place-content-center text-lg text-gray-500 font-semibold ">
               &lt;
             </div>
 
@@ -46,8 +47,8 @@ const Answerd = () => {
           </div>
         </div>
       </div>
-      <div className="w-[70%] relative h-20  mx-auto ">
-        <div className="px-10 ml-20    w-[90%]">
+      <div className="w-[70%] relative h-full   mx-auto ">
+        <div className="px-10 ml-20  h-full   w-[90%]">
           {" "}
           <div className="flex gap-7    mt-4">
             {" "}
@@ -108,7 +109,7 @@ const Answerd = () => {
             </div>
           </div>
           <div className="w-full h-[2px] bg-gray-300 mt-10"></div>
-          <div className="w-full h-20 flex items-center justify-between  px-5   mt-4">
+          <div className="w-full h-[85px] flex items-center justify-between border-b-2 border  px-5   ">
             <div className="flex  items-center gap-4  ">
               <div className="w-fit px-4 py-0 h-fit border-0 text-[17px]  border-r-2 text-gray-700 bg-white rounded-sm   items-center gap-3 flex ">
                 <FaPencilAlt size={20} /> <p>Edit</p>
@@ -121,7 +122,7 @@ const Answerd = () => {
               </div>
             </div>
 
-            <div className="flex  items-center gap-2 ">
+            <div className="flex  items-center gap-2  ">
               <div className="w-fit px-4  h-fit text-gray-700 bg-white    text-[17px]  items-center gap-3 flex ">
                 <GiShare size={25} /> <p>Share</p>
               </div>
@@ -133,8 +134,67 @@ const Answerd = () => {
               <div className="w-fit px-2 py-[10px] h-fit text-white bg-[#63a4ff] rounded-sm   items-center gap-3 flex ">
                 <BsTwitter />{" "}
               </div>
-              <div className="w-fit px-2 py-[10px] h-fit text-white bg-red-500 rounded-sm   items-center gap-3 flex ">
+              <div className="w-fit px-2 py-2 h-fit text-white bg-red-500 rounded-sm   items-center gap-3 flex ">
                 <FaGooglePlusG />{" "}
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[85px]  relative   bg-gray-100 00">
+            <div className="text-gray-400 text-[19px] absolute left-8 bottom-8 font-semibold">
+              Answers <span className="text-black"> 19</span>{" "}
+            </div>
+            <div className="flex absolute right-10 bottom-0 bg-white text-gray-600 ">
+              <div className="w-[90px] h-[45px] grid place-content-center border">
+                Votes
+              </div>
+              <div className="w-[90px] h-[45px] grid place-content-center border">
+                Oldest
+              </div>
+              <div className="w-[90px] h-[45px] grid place-content-center border">
+                Recent
+              </div>
+            </div>
+          </div>
+          <Canswers />
+          <Canswers />
+          <Canswers />
+          <div className="w-full h-16 mt-10 border-black border grid place-content-center  font bold cursor-pointer text-gray-600 text-lg">
+            Load More 16 Answers{" "}
+          </div>
+          <div className="w-full  py-4 px-2  mt-10 h-[400px] relative ">
+            <div className="w-[80%] border border-gray-500 h-44  absolute right-0">
+              <div className="w-fit px-4  h-fit text-gray-500 bg-white   py-4  text-[17px]  items-center gap-3 flex ">
+                <BiSolidMessage size={20} /> <p>Want to leave n answer!</p>
+              </div>
+            </div>
+            <div className="w-[80%]    bottom-[120px] absolute right-0 h-20  flex justify-between px-6 items-center">
+              <div className="flex items-center gap-3">
+                {" "}
+                <input type="checkbox" className="w-4 h-4" />{" "}
+                <p className="text-gray-600">
+                  Subcribe to the Email Notification
+                </p>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-[90px] h-[40px] border  grid place-content-center text-gray-600 font-bold ">
+                  Cancel
+                </div>
+                <div className="w-[90px] h-[40px] border  grid place-content-center bg-blue-600 text-white  font-bold ">
+                  Submit
+                </div>
+              </div>
+            </div>
+
+            <div className="w-[40px] h-[40px] rounded-full border absolute top-5 left-[140px]">
+              {" "}
+              <div className="w-full h-full relative">
+                <Image
+                  src="https://cdn2.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP39.jpg"
+                  alt="profile-pic"
+                  fill
+                  className="object-contain rounded-full"
+                />
               </div>
             </div>
           </div>

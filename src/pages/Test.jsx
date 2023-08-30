@@ -31,11 +31,19 @@ import Coursehero from "@/components/courseshome/Coursehero";
 import Dreamjob from "@/components/courseshome/Dreamjob";
 import Ourpromise from "@/components/careerhomepage/Ourpromise";
 import Answerd from "@/components/dashboard/Answerd";
+import MyCrouselthree from "@/components/3dcrousel/Crousel";
+
+
+
+
+
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
 
   const { instructionPage, setinstructionPage } = useContext(MyContext);
+
+
 
   return (
     <>
@@ -70,7 +78,11 @@ const Test = () => {
       {/* <Coursehero /> */}
       {/* <Dreamjob/> */}
       {/* <Ourpromise/> */}
-      <Answerd/>
+      {/* <Answerd/> */}
+
+    < MyCrouselthree/>
+
+ 
     </>
   );
 };
