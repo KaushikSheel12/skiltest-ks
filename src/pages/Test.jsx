@@ -31,7 +31,8 @@ import Coursehero from "@/components/courseshome/Coursehero";
 import Dreamjob from "@/components/courseshome/Dreamjob";
 import Ourpromise from "@/components/careerhomepage/Ourpromise";
 import Answerd from "@/components/dashboard/Answerd";
-import MyCrouselthree from "@/components/3dcrousel/Crousel";
+
+
 
 
 
@@ -42,6 +43,9 @@ const Test = () => {
   const [isActive, setIsActive] = useState(false);
 
   const { instructionPage, setinstructionPage } = useContext(MyContext);
+
+
+
 
 
 
@@ -60,27 +64,25 @@ const Test = () => {
 
       {/* <Header/> */}
       {/* <Herosection/> */}
-      {/* <Admitkart/> */}
-      {/* <Videoplayer/> */}
+
+      <Videoplayer/>
       {/* <Watchandgrow /> */}
       {/* <Country/>  */}
       {/* < TopHeroSection/> */}
       {/* <Pepars/>   */}
 
       {/* <Result/> */}
-{/* 
-      <Universities/> */}
-
-      {/* <Amber/> */}
-      {/* <Asprogress/> */}
-      {/* <Newcountry/> */}
-      {/* <Linkedin/> */}
+ 
+      {/* <Universities/>  */}
+       {/* <Amber/>  */}
+      {/* <Asprogress/>  */}
+       {/* <Newcountry/>  */}
+       {/* <Linkedin/>  */}
       {/* <Coursehero /> */}
       {/* <Dreamjob/> */}
       {/* <Ourpromise/> */}
       {/* <Answerd/> */}
 
-    < MyCrouselthree/>
 
  
     </>

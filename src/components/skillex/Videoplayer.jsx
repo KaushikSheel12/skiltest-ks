@@ -16,6 +16,7 @@ const Videoplayer = () => {
                 need for a job that <br />
                 is in demand.
               </h1>
+              
             </div>
 
             <div className=" md:w-[550px] w-full md:mr-24 md:mt-0 mt-4 h-full md:px-4">
