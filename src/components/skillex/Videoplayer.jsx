@@ -16,7 +16,7 @@ const Videoplayer = () => {
                 need for a job that <br />
                 is in demand.
               </h1>
-              
+
             </div>
 
             <div className=" md:w-[550px] w-full md:mr-24 md:mt-0 mt-4 h-full md:px-4">
@@ -24,6 +24,7 @@ const Videoplayer = () => {
                 The modern labor market dictates its own terms. Today, to be a
                 competitive specialist requires more than professional skills.
               </p>
+              
 
               <div className=" md:h-[100px] h-24   items-center px-6  justify-between md:w-full hidden md:flex z-10 bg-[#71d971] mt-5">
                 <div className=" border-0 border-r-2  border-r-black pr-[1.75rem]  h-[47px]  w-fit justify-between items-center gap-5 px-3  flex">
