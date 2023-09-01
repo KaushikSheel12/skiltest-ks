@@ -48,6 +48,10 @@ const Videoplayer = () => {
 
 
 
+
+
+
+
           <div className="md:flex    justify-between items-center">
             <div className="flex mt-14  items-center">
               <div className="w-[60px] h-[270px] md:h-[350px] items-center md:ml-20 md:mt-10 mt-4 flex flex-col justify-around">
