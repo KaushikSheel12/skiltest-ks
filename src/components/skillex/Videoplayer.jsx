@@ -62,10 +62,6 @@ const Videoplayer = () => {
                   className="border rounded-full p-[11px]"
                 />
 
-
-
-                
-
                 <div className="h-14  border-dashed  border-[1px] border-black"></div>
                 <AiOutlineThunderbolt
                   size={50}
