@@ -46,6 +46,8 @@ const Videoplayer = () => {
             </div>
           </div>
 
+
+
           <div className="md:flex    justify-between items-center">
             <div className="flex mt-14  items-center">
               <div className="w-[60px] h-[270px] md:h-[350px] items-center md:ml-20 md:mt-10 mt-4 flex flex-col justify-around">
@@ -59,6 +61,10 @@ const Videoplayer = () => {
                   size={50}
                   className="border rounded-full p-[11px]"
                 />
+
+
+
+                
 
                 <div className="h-14  border-dashed  border-[1px] border-black"></div>
                 <AiOutlineThunderbolt
