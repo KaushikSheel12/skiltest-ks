@@ -31,6 +31,7 @@ import Coursehero from "@/components/courseshome/Coursehero";
 import Dreamjob from "@/components/courseshome/Dreamjob";
 import Ourpromise from "@/components/careerhomepage/Ourpromise";
 import Answerd from "@/components/dashboard/Answerd";
+import Questions from "@/components/IslamicQA/Questions";
 
 
 
@@ -65,7 +66,9 @@ const Test = () => {
       {/* <Header/> */}
       {/* <Herosection/> */}
 
-      <Videoplayer/>
+
+
+      {/* <Videoplayer/> */}
       {/* <Watchandgrow /> */}
       {/* <Country/>  */}
       {/* < TopHeroSection/> */}
@@ -83,6 +86,8 @@ const Test = () => {
       {/* <Ourpromise/> */}
       {/* <Answerd/> */}
 
+
+<Questions/>
 
  
     </>
