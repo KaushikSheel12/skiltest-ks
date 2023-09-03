@@ -19,6 +19,7 @@ const Questions = () => {
                   date="18 September 2021"
                 />
               </div>
+              
             );
           })}
         </div>
