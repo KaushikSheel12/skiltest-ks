@@ -32,6 +32,7 @@ import Dreamjob from "@/components/courseshome/Dreamjob";
 import Ourpromise from "@/components/careerhomepage/Ourpromise";
 import Answerd from "@/components/dashboard/Answerd";
 import Questions from "@/components/IslamicQA/Questions";
+import Mhome from "@/components/youvisit/Mhome";
 
 
 
@@ -87,9 +88,9 @@ const Test = () => {
       {/* <Answerd/> */}
 
 
-<Questions/>
+{/* <Questions/> */}
 
- 
+ <Mhome/>
     </>
   );
 };
