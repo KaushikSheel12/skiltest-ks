@@ -33,6 +33,7 @@ import Ourpromise from "@/components/careerhomepage/Ourpromise";
 import Answerd from "@/components/dashboard/Answerd";
 import Questions from "@/components/IslamicQA/Questions";
 import Mhome from "@/components/youvisit/Mhome";
+import Clgmain from "@/components/clgduniya/Clgmain";
 
 
 
@@ -90,7 +91,8 @@ const Test = () => {
 
 {/* <Questions/> */}
 
- <Mhome/>
+ {/* <Mhome/> */}
+ <Clgmain/>
     </>
   );
 };
