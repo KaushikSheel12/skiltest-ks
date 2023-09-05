@@ -6,13 +6,13 @@ const Mhome = () => {
   return (
     <>
       <div className="w-full bg-[#f4f4e6] text-center h-full border">
-        <h1 className="font-semibold text-[37px]">
+        <h1 className="font-semibold text-[25px] md:text-[37px]">
           Find the right college for you
         </h1>
-        <p className="text-[19px]">
+        <p className="md:text-[19px] text-[14px]">
           Distance should not limit your college options
         </p>
-        <div className="w-[410px] px-2 py-2 h-[53px] bg-white mx-auto mt-4 border  items-center  flex justify-between ">
+        <div className="md:w-[410px] w-full px-2 py-2 h-[53px] bg-white mx-auto mt-4 border  items-center  flex justify-between ">
           <div>
             <input
               type="text"
@@ -26,7 +26,7 @@ const Mhome = () => {
           </div>
         </div>
 
-        <div className="w-[80%] mx-auto border h-full grid grid-cols-3 mt-10  px-2 py-2">
+        <div className="md:w-[80%] w-full mx-auto border h-full grid grid-cols-1 md:grid-cols-3 mt-10  px-2 py-2">
           {universityData.map((el, index) => {
             return (
               <div key={index}>
