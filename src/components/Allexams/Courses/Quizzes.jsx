@@ -16,6 +16,9 @@ const Quizzes = () => {
               </p>
             </div>
 
+
+
+
             <div className="flex gap-2 items-center px-2 py-1">
               <div className="h-4 w-4   rounded-full flex items-center border bg-orange-600">
                 <TiTick color="white" size={22} />{" "}
