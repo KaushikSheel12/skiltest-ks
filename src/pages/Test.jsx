@@ -52,6 +52,7 @@ const Test = () => {
 
 
 
+  
   return (
     <>
       <div className="h-full">
@@ -92,7 +93,8 @@ const Test = () => {
 {/* <Questions/> */}
 
  {/* <Mhome/> */}
- <Clgmain/>
+ <Predictors/>
+ {/* <Clgmain/> */}
     </>
   );
 };
