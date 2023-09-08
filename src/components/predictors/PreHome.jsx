@@ -7,6 +7,7 @@ const PreHome = () => {
     <h1 className='text-[33px] font-semibold'>COLLEGE PREDICTOR 2023</h1>
     <p className='text-[21px]  '>Analyze the past and predict your future!</p>
   </div>
+
   
   </>
   )
