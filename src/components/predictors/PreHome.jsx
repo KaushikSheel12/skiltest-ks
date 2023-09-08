@@ -9,7 +9,8 @@ const PreHome = () => {
   </div>
 
 
-  
+
+
   </>
   )
 }
