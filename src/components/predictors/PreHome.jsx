@@ -8,6 +8,7 @@ const PreHome = () => {
     <p className='text-[21px]  '>Analyze the past and predict your future!</p>
   </div>
 
+
   
   </>
   )
