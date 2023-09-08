@@ -34,6 +34,7 @@ import Answerd from "@/components/dashboard/Answerd";
 import Questions from "@/components/IslamicQA/Questions";
 import Mhome from "@/components/youvisit/Mhome";
 import Clgmain from "@/components/clgduniya/Clgmain";
+import PreHome from "@/components/predictors/PreHome";
 
 
 
@@ -91,9 +92,11 @@ const Test = () => {
 {/* <Questions/> */}
 
  {/* <Mhome/> */}
- <Predictors/>
+ {/* <Predictors/> */}
  {/* <Clgmain/> */}
+ <PreHome/>
     </>
+
   );
 };
 
