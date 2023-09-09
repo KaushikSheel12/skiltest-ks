@@ -23,6 +23,7 @@ const PreHome = () => {
                   fill
                 />
               </div>
+              
               <h4 className="text-[18px] leading-6 ">
                 Predict your Admission Chances
               </h4>
