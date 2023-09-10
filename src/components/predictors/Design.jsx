@@ -8,7 +8,7 @@ const Design = () => {
   return (
     <>
       <>
-        <div className=" md:w-[70%] w-full  mx-auto  bg-[#f4f4e9]  md:mt-28  md:h-[500px] h-full  border    md:flex    ">
+        <div className=" md:w-[70%] w-full  mx-auto  bg-[#f4f4e9]  md:mt-[130px] md:h-[500px] h-full  border    md:flex    ">
           <div className="imgdiv  md:w-[50%] mt-5   w-full  h-full">
             <div className=" mx-auto  md:w-[70%] border   w-[85%] relative  mt-20 rounded-[40px] bg-blue-100 md:py-0 py-4   md:h-[440px]">
               <div className="md:w-[70%]   px-2 md:py-2 relative  h-[352px]  mx-auto md:mt-[-70px]   ">
