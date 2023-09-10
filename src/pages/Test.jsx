@@ -37,21 +37,10 @@ import Clgmain from "@/components/clgduniya/Clgmain";
 import PreHome from "@/components/predictors/PreHome";
 import BenefitBox from "@/components/pulser/BenefitBox";
 
-
-
-
-
-
-
-
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
 
   const { instructionPage, setinstructionPage } = useContext(MyContext);
-
-
-
-
 
   return (
     <>
@@ -69,8 +58,6 @@ const Test = () => {
       {/* <Header/> */}
       {/* <Herosection/> */}
 
-
-
       {/* <Videoplayer/> */}
       {/* <Watchandgrow /> */}
       {/* <Country/>  */}
@@ -78,27 +65,25 @@ const Test = () => {
       {/* <Pepars/>   */}
 
       {/* <Result/> */}
- 
+
       {/* <Universities/>  */}
-       {/* <Amber/>  */}
+      {/* <Amber/>  */}
       {/* <Asprogress/>  */}
-       {/* <Newcountry/>  */}
-       {/* <Linkedin/>  */}
+      {/* <Newcountry/>  */}
+      {/* <Linkedin/>  */}
       {/* <Coursehero /> */}
       {/* <Dreamjob/> */}
       {/* <Ourpromise/> */}
       {/* <Answerd/> */}
 
+      {/* <Questions/> */}
 
-{/* <Questions/> */}
+      {/* <Mhome/> */}
+      {/* <Predictors/> */}
+      {/* <Clgmain/> */}
 
- {/* <Mhome/> */}
- {/* <Predictors/> */}
- {/* <Clgmain/> */}
-
- <PreHome/>
+      <PreHome />
     </>
-
   );
 };
 

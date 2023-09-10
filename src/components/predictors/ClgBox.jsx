@@ -13,33 +13,28 @@ const ClgBox = () => {
             Seats <span className="text-gray-400">240</span>{" "}
           </p>
 
-
           <div className="h-[35%] w-full text-center">
-          <div className="flex justify-center  items-center mx-auto px-2 py-0-1 ">
-            <TiTick size={19} color="black" className="md:w-6 w-4" />
-            <p className="text-[green] md:text-sm text-[12px]">Good Chances</p>
+            <div className="flex justify-center  items-center mx-auto px-2 py-0-1 ">
+              <TiTick size={19} color="black" className="md:w-6 w-4" />
+              <p className="text-[green] md:text-sm text-[12px]">
+                Good Chances
+              </p>
+            </div>
+            <p className="md:text-[12px] text-[11px] py-1  text-[gray]">
+              Last year's Cut-off State Rank 77445
+            </p>
           </div>
-          <p className="md:text-[12px] text-[11px] py-1  text-[gray]">
-            Last year's Cut-off State Rank 77445
-          </p>
         </div>
 
-
+        <div className="  text-sm text-center border">
+          <p>2022 Cut off Rank : 12345 </p>
+          <div className="w-full h-[1px] bg-gray-400"></div>
+          <p>2021 Cut off Rank : 12345</p>
+          <div className="w-full h-[1px] bg-gray-400"></div>
+          <p>2020 Cut off Rank : 12345</p>
+          <div className="w-full h-[1px] bg-gray-400"></div>
+          <p>2019 Cut off Rank : 12345</p>
         </div>
-
-     
-      <div className="  text-sm text-center border">
-        <p>2022 Cut off Rank : 12345 </p>
-      <div className="w-full h-[1px] bg-gray-400"></div>
-        <p>2021 Cut off Rank : 12345</p>
-        <div className="w-full h-[1px] bg-gray-400"></div>
-        <p>2020 Cut off Rank : 12345</p>
-        <div className="w-full h-[1px] bg-gray-400"></div>
-        <p>2019 Cut off Rank : 12345</p>
-      </div>
-
-     {/* <div className="w-full h-[2px] bg-gray-400 mt-[44px]"></div> */}
-    
       </div>
     </>
   );
