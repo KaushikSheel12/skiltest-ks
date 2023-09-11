@@ -5,7 +5,7 @@ import Pheadercard from "./PheaderCard";
 const Pheader = () => {
   return (
     <>
-      <div className="w-full md:block hidden  py-1 px-2 h-[70px]">
+      <div className="w-full md:block hidden  mt-5 py-1 px-2 h-[70px]">
         <div className="w-[80%] h-full  border  mx-auto flex justify-around px-2 py-2 items-center  ">
           <p className="text-gray-500  text-sm ">Summary of Your Prediction</p>
 

@@ -36,6 +36,8 @@ import Mhome from "@/components/youvisit/Mhome";
 import Clgmain from "@/components/clgduniya/Clgmain";
 import PreHome from "@/components/predictors/PreHome";
 import BenefitBox from "@/components/pulser/BenefitBox";
+import HomeCart from "@/components/predictors/HomeCart";
+import PredictorCard from "@/components/predictors/PredictorCard";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -81,8 +83,12 @@ const Test = () => {
       {/* <Mhome/> */}
       {/* <Predictors/> */}
       {/* <Clgmain/> */}
-
+       
+    
+      <Pheader/>
       <PreHome />
+
+   <Predictors/>
     </>
   );
 };
