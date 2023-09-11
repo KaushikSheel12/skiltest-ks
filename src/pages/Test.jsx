@@ -83,12 +83,11 @@ const Test = () => {
       {/* <Mhome/> */}
       {/* <Predictors/> */}
       {/* <Clgmain/> */}
-       
-    
-      <Pheader/>
+
+      <Pheader />
       <PreHome />
 
-   <Predictors/>
+      <Predictors />
     </>
   );
 };
