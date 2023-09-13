@@ -75,8 +75,8 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="md:mt-20 border-gray-400 md:w-[70%] mx-auto w-full md:border-b-2">
-        <h2 className="text-center text-[27px] hidden md:flex md:py-4">
+      <div className="md:mt-20 border-gray-400 md:w-[70%]  mx-auto w-full md:border-b-2">
+        <h2 className="text-center text-[27px] hidden md:block md:py-4">
           Select the stream for which you want to use College Predictor
         </h2>
 
@@ -133,7 +133,9 @@ const Navigation = () => {
             </ul>
           </div>
         </div>
-      <p className="text-gray-400 text-sm py-2 md:px-0 px-2 md:text-lg font-semibold">National Level Exams</p>
+        <p className="text-gray-400 text-sm py-2 md:px-0 px-2 md:text-lg font-semibold">
+          National Level Exams
+        </p>
       </div>
       <div className="box  mt-2 md:hidden   md:w-[70%] w-full h-full  px-2 py-2 gap-3 mx-auto grid-cols-1 grid md:grid-cols-3">
         {renderSelectedComponent()}

@@ -1,10 +1,13 @@
+import PreForm from '@/pages/PreForm'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+
 
 const Topexambox = () => {
   return (
   <>
-    <div className="md:w-[410px] w-full h-fit pb-2 shadow-md  mb-4 ">
+    <div className="md:w-[410px] w-full h-fit pb-2 shadow-md  bg-white rounded-md  mx-auto mb-4 ">
           <div className="flex gap-3 items-center w-full h-[65px] md:px-2  ">
             <div className="w-[50px] h-[50px]  relative">
               <Image
@@ -41,7 +44,9 @@ const Topexambox = () => {
             <p className="text-[14px] text-gray-500  border-r-2 pr-2">
               Pratice Test
             </p>
-            <p className="text-[14px] cursor-pointer text-orange-400">Predict Now</p>
+            <Link href={"/PreForm"}>
+            <p  className="text-[14px] cursor-pointer text-orange-400">Predict Now</p>
+            </Link>
           </div>
         </div>
   </>

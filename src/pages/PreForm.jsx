@@ -1,9 +1,46 @@
+import Topexambox from "@/components/predictors/Topexambox";
 import React from "react";
+import { TiTick } from "react-icons/Ti";
 
 const PreForm = () => {
   return (
     <>
-      <div className="mt-20  w-full md:w-[490px] h-fit px-4 py-6 rounded-md shadow-2xl  mx-auto">
+      <div className="w-full md:h-[400px] h-full text-white border border-red-40 py-2 bg-blue-900 text-center grid place-content-center">
+        <div className="md:w-[80%] w-full px-2  mx-auto">
+          <h1 className="md:text-[30px] text-[18px]  md:py-0 py-2 font-semibold">
+            CAT College Predictor - IIM & Non-IIM MBA Call Predictor
+          </h1>
+
+          <div className="flex items-center gap-2 py-4">
+            <TiTick
+              size={19}
+              color="white"
+              className="md:w-6 w-4  md:mt-[-16px]"
+            />
+            <p className="text-sm">
+              Know Your Chances for getting Calls from IIMs & other Top MBA
+              Colleges through CAT Percentile, based on your category, academic
+              profile, work-ex & CAT result
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <TiTick size={19} color="white" className="md:w-6 w-4" />
+            <p className="text-sm">
+              Get to know the College-wise Eligibility & Required Cut-off
+              Percentiles / Scores for your Interview Calling Chances
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <TiTick size={19} color="white" className="md:w-6 w-4" />
+            <p className="text-sm ">
+              70,000+ management aspirants used Careers360 College Predictors
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="md:mt-20  w-full md:w-[490px] h-fit px-4 py-6 rounded-md shadow-2xl  mx-auto">
         <h4 className="text-center font-semibold text-sm md:text-md">
           Enter Center Seat Allocation Board (CSAB) Details
         </h4>
@@ -55,6 +92,17 @@ const PreForm = () => {
 
         <div className="w-fit h-fit px-4 py-3 border  text-md text-white mt-5 mx-auto cursor-pointer rounded-md bg-orange-600 grid place-content-center">
           Predict My Colleges
+        </div>
+      </div>
+
+      <div className="w-full bg-gray-400  md:mt-5  px-2 py-2 h-fit">
+        <h1 className="text-center text-[22px]">
+          Other MBA College Predictors
+        </h1>
+        <div className="md:w-[70%] h-full mx-auto py-4  grid md:grid-cols-3 grid-cols-1 ">
+          <Topexambox />
+          <Topexambox />
+          <Topexambox />
         </div>
       </div>
     </>
