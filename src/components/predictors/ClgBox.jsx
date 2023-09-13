@@ -4,8 +4,8 @@ import { TiTick } from "react-icons/Ti";
 const ClgBox = () => {
   return (
     <>
-      <div className="md:w-[50%] w-[70%] border-red-600 md:h-[80%] border md:py-0  mt-2  md:mt-4 md:p-0 p-4 md:rounded-none rounded-md  px-0">
-        <div className="h-[48%] w-full bg-gray-200 ">
+      <div className="md:w-[50%] w-[70%]  md:h-[80%] py-2  rounded-lg shadow-md md:py-0 mx-auto ro  mt-2  md:mt-4 md:p-0   ">
+        <div className="h-[48%] w-full bg-gray-200 rounded-t-md ">
           <p className="text-[#3b5eb0] md:text-[15px] text-[12px]  px-2 py-0">
             B.Teck Computer Science and Engineering
           </p>
@@ -26,7 +26,7 @@ const ClgBox = () => {
           </div>
         </div>
 
-        <div className="  text-sm text-center border">
+        <div className="  text-gray-500 text-sm text-center mt-2">
           <p>2022 Cut off Rank : 12345 </p>
           <div className="w-full h-[1px] bg-gray-400"></div>
           <p>2021 Cut off Rank : 12345</p>

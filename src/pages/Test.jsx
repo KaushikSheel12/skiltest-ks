@@ -82,13 +82,13 @@ const Test = () => {
       {/* <Questions/> */}
 
       {/* <Mhome/> */}
-      {/* <Predictors/> */}
       {/* <Clgmain/> */}
 
       {/* <Pheader /> */}
 
 
       <PreHome />
+      <Predictors/>
 {/* 
       <Predictors /> */}
     </>
