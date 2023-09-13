@@ -11,6 +11,34 @@ import Designcomp from "./Navcomp/Designcomp";
 const Navigation = () => {
   const [activeTag, setActiveTag] = useState(null);
   const [activeComponent, setActiveComponent] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("Engineering");
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
+  const renderSelectedComponent = () => {
+    switch (selectedOption) {
+      case "Engineering":
+        return <Engineering />;
+      case "Medicine":
+        return <Medicine />;
+      case "Management":
+        return <Management />;
+      case "Law":
+        return <Law />;
+      case "Pharmacy":
+        return <Pharmacy />;
+      case "Design":
+        return <Designcomp />;
+      case "IT":
+        return <ITcomp />;
+      case "Hospitality":
+        return <Hospitality />;
+      default:
+        return null;
+    }
+  };
 
   const handleTagClick = (index) => {
     setActiveTag(index);
@@ -47,32 +75,36 @@ const Navigation = () => {
 
   return (
     <>
-
-
-
-
-      <div className="md:mt-20 border-gray-400 md:w-[70%] mx-auto w-full border-b-2">
+      <div className="md:mt-20 border-gray-400 md:w-[70%] mx-auto w-full md:border-b-2">
         <h2 className="text-center text-[27px] hidden md:flex md:py-4">
           Select the stream for which you want to use College Predictor
         </h2>
-     
 
-        <div className="w-full md:hidden  mt-4  px-2 py-1">
-          <p className="text-md text-gray-500">Please Select Your Stream</p>
-          <select className="w-full text-center text-sm mt-4 px-2">
-            <option value="Engineering">Engineering</option>
-            <option value="Medicine">Medicine</option>
-            <option value="Management">Management</option>
-            <option value="Law">Law</option>
-            <option value="Pharmacy">Pharmacy</option>
-            <option value="Design">Design</option>
-            <option value="IT">IT</option>
-            <option value="Hospitality">Hospitality</option>
+        <div className="w-full md:hidden mt-2 px-2 py-1">
+          <p className="text-md text-gray-500 px-2">
+            Please Select Your Stream
+          </p>
+          <select
+            className="w-full text-center text-md mt-4 px-2"
+            value={selectedOption}
+            onChange={handleOptionChange}
+          >
+            {[
+              "Engineering",
+              "Medicine",
+              "Management",
+              "Law",
+              "Pharmacy",
+              "Design",
+              "IT",
+              "Hospitality",
+            ].map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
           </select>
         </div>
-      
-        
-
 
         <div className="container mx-auto hidden  md:flex items-center justify-between md:p-1">
           <div className="md:w-3/5 md:mx-auto">
@@ -103,7 +135,11 @@ const Navigation = () => {
         </div>
       </div>
 
-      <div className="box h-full mt-2  w-full mx-auto border ">
+      <div className="box h-full mt-2  md:hidden w-full mx-auto border ">
+        {renderSelectedComponent()}
+      </div>
+
+      <div className="box h-full mt-2    md:block hidden w-full mx-auto border ">
         {activeComponent}
       </div>
     </>
