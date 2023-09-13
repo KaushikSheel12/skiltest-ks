@@ -41,7 +41,7 @@ const Topexambox = () => {
             <p className="text-[14px] text-gray-500  border-r-2 pr-2">
               Pratice Test
             </p>
-            <p className="text-[14px] text-orange-400">Predict Now</p>
+            <p className="text-[14px] cursor-pointer text-orange-400">Predict Now</p>
           </div>
         </div>
   </>

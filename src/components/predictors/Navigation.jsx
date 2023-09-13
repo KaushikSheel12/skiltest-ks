@@ -10,7 +10,7 @@ import Designcomp from "./Navcomp/Designcomp";
 
 const Navigation = () => {
   const [activeTag, setActiveTag] = useState(null);
-  const [activeComponent, setActiveComponent] = useState(null);
+  const [activeComponent, setActiveComponent] = useState(<Engineering />);
   const [selectedOption, setSelectedOption] = useState("Engineering");
 
   const handleOptionChange = (event) => {
@@ -81,7 +81,7 @@ const Navigation = () => {
         </h2>
 
         <div className="w-full md:hidden mt-2 px-2 py-1">
-          <p className="text-md text-gray-500 px-2">
+          <p className="text-md  font-semibold text-gray-400 ">
             Please Select Your Stream
           </p>
           <select
@@ -122,7 +122,7 @@ const Navigation = () => {
                 <li key={index} className="cursor-pointer">
                   <p
                     className={` border px-2 rounded-md text-white bg-teal-400${
-                      index === activeTag ? "text-white  bg-blue-900" : ""
+                      index === activeTag ? "text-white  mt-1 bg-blue-900" : ""
                     }`}
                     onClick={() => handleTagClick(index)}
                   >
@@ -133,13 +133,13 @@ const Navigation = () => {
             </ul>
           </div>
         </div>
+      <p className="text-gray-400 text-sm py-2 px-2 md:text-lg font-semibold">National Level Exams</p>
       </div>
-
-      <div className="box h-full mt-2  md:hidden w-full mx-auto border ">
+      <div className="box  mt-2 md:hidden  border md:w-[70%] w-full h-full  px-2 py-2 gap-3 mx-auto grid-cols-1 grid md:grid-cols-3">
         {renderSelectedComponent()}
       </div>
 
-      <div className="box h-full mt-2    md:block hidden w-full mx-auto border ">
+      <div className="box  mt-2 hidden w-full mx-auto border md:w-[70%]  h-full  px-2 py-2 gap-3 grid-cols-1 md:grid md:grid-cols-3">
         {activeComponent}
       </div>
     </>

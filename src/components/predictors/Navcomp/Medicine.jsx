@@ -1,8 +1,15 @@
 import React from 'react'
+import Topexambox from '../Topexambox'
 
 const Medicine = () => {
   return (
-    <div>Medicine</div>
+    <>
+    <Topexambox/>
+    <Topexambox/>  
+    <Topexambox/>
+    <Topexambox/>
+    <Topexambox/>
+    </>
   )
 }
 

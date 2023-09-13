@@ -1,8 +1,12 @@
 import React from 'react'
+import Topexambox from '../Topexambox'
 
 const Law = () => {
   return (
-    <div>Law</div>
+    <>
+    <Topexambox/>
+    <Topexambox/>
+    </>
   )
 }
 

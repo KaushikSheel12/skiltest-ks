@@ -1,8 +1,17 @@
 import React from 'react'
+import Topexambox from '../Topexambox'
 
 const ITcomp = () => {
   return (
-    <div>ITcomp</div>
+    <>
+    <Topexambox/>
+    <Topexambox/>
+    <Topexambox/>
+    <Topexambox/>
+    <Topexambox/>
+    <Topexambox/>
+    <Topexambox/>
+    </>
   )
 }
 

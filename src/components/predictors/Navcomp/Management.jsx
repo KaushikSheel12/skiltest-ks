@@ -1,8 +1,11 @@
 import React from 'react'
+import Topexambox from '../Topexambox'
 
 const Management = () => {
   return (
-    <div>Management</div>
+    <>
+    <Topexambox/>
+    </>
   )
 }
 

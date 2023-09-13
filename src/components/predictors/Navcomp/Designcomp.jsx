@@ -1,10 +1,15 @@
 import React from 'react'
-import Clgmain from '../Clgmain'
+
+import Topexambox from '../Topexambox'
 
 const Designcomp = () => {
   return (
   <>
-  <Clgmain/>
+  <Topexambox/>
+  <Topexambox/>
+  <Topexambox/>
+  <Topexambox/>
+  <Topexambox/>
   </>
   )
 }
