@@ -33,11 +33,12 @@ import Ourpromise from "@/components/careerhomepage/Ourpromise";
 import Answerd from "@/components/dashboard/Answerd";
 import Questions from "@/components/IslamicQA/Questions";
 import Mhome from "@/components/youvisit/Mhome";
-import Clgmain from "@/components/clgduniya/Clgmain";
+import Clgmain from "@/components/predictors/Clgmain";
 import PreHome from "@/components/predictors/PreHome";
 import BenefitBox from "@/components/pulser/BenefitBox";
 import HomeCart from "@/components/predictors/HomeCart";
 import PredictorCard from "@/components/predictors/PredictorCard";
+import Navigation from "@/components/predictors/Navigation";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -84,10 +85,12 @@ const Test = () => {
       {/* <Predictors/> */}
       {/* <Clgmain/> */}
 
-      <Pheader />
-      <PreHome />
+      {/* <Pheader /> */}
 
-      <Predictors />
+
+      <PreHome />
+{/* 
+      <Predictors /> */}
     </>
   );
 };

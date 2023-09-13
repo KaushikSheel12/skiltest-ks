@@ -4,6 +4,7 @@ import React from "react";
 import { AiOutlineCalculator } from "react-icons/ai";
 import { Homepageimg } from "./data/data";
 import PreForm from "./PreForm";
+import Navigation from "./Navigation";
 
 const Design = () => {
   return (
@@ -44,7 +45,10 @@ const Design = () => {
           </div>
         </div>
       </>
-      <PreForm />
+      {/* <PreForm /> */}
+
+
+      <Navigation/>
     </>
   );
 };
