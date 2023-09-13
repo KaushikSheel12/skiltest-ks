@@ -133,13 +133,13 @@ const Navigation = () => {
             </ul>
           </div>
         </div>
-      <p className="text-gray-400 text-sm py-2 px-2 md:text-lg font-semibold">National Level Exams</p>
+      <p className="text-gray-400 text-sm py-2 md:px-0 px-2 md:text-lg font-semibold">National Level Exams</p>
       </div>
-      <div className="box  mt-2 md:hidden  border md:w-[70%] w-full h-full  px-2 py-2 gap-3 mx-auto grid-cols-1 grid md:grid-cols-3">
+      <div className="box  mt-2 md:hidden   md:w-[70%] w-full h-full  px-2 py-2 gap-3 mx-auto grid-cols-1 grid md:grid-cols-3">
         {renderSelectedComponent()}
       </div>
 
-      <div className="box  mt-2 hidden w-full mx-auto border md:w-[70%]  h-full  px-2 py-2 gap-3 grid-cols-1 md:grid md:grid-cols-3">
+      <div className="box  mt-2 hidden w-full mx-auto  md:w-[70%]  h-full  px-2 py-2 gap-3 grid-cols-1 md:grid md:grid-cols-3">
         {activeComponent}
       </div>
     </>
