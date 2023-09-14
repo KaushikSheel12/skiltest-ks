@@ -16,9 +16,24 @@ const PreHome = () => {
         </p>
 
         <div className="md:flex justify-between md:mt-0 mt-2  w-full px-2 py-2 md:w-[70%] mx-auto right-[270px]  md:absolute bottom-[-120px] items-center ">
-          <HomeCart />
-          <HomeCart />
-          <HomeCart />
+          <HomeCart
+            title="Predict your Admission Chances"
+            paragraph1="Get to know college admission chances based on your Rank, Home
+                State, Caste, etc"
+            paragraph2="Know previous year's round wise course cutoff"
+          />
+          <HomeCart
+            title="Predict your Admission Chances"
+            paragraph1="Get to know college admission chances based on your Rank, Home
+                State, Caste, etc"
+            paragraph2="Know previous year's round wise course cutoff"
+          />
+          <HomeCart
+            title="Predict your Admission Chances"
+            paragraph1="Get to know college admission chances based on your Rank, Home
+                State, Caste, etc"
+            paragraph2="Know previous year's round wise course cutoff"
+          />
         </div>
       </div>
       <Design />
