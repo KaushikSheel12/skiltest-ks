@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
 import { AiOutlineCalculator } from "react-icons/ai";
-import { Homepageimg } from "./data/data";
 import PreForm from "../../pages/PreForm";
 import Navigation from "./Navigation";
 
