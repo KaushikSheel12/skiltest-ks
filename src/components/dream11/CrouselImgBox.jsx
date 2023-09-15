@@ -5,7 +5,13 @@ const CrouselImgBox = ({ ImgUrl }) => {
   return (
     <>
       <div className="md:w-[150px] w-[80%] md:h-[100px] h-[100px] mx-auto relative  border rounded-2xl">
-        <Image fill alt="" src={ImgUrl} className="object-contain" />
+        <Image
+          src={ImgUrl}
+          fill
+          className="object-contain"
+          loading="lazy"
+          alt="Dream11 Winners"
+        />
       </div>
     </>
   );
