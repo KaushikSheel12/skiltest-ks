@@ -40,7 +40,7 @@ import HomeCart from "@/components/predictors/HomeCart";
 import PredictorCard from "@/components/predictors/PredictorCard";
 import Navigation from "@/components/predictors/Navigation";
 import { Recentreviews } from "@/components/Trustpilot/Recentreviews";
-
+import Dreamhero from "@/components/dream11/Dreamhero";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -54,47 +54,36 @@ const Test = () => {
 
         {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
         {/* <Predictors/> */}
-
+        {/* <Result /> */}
         {/* <Carousel/> */}
         {/* <Dailyquizhome /> */}
       </div>
-      {/* <Allexams/> */}
-
-      {/* <Header/> */}
-      {/* <Herosection/> */}
-
-      {/* <Videoplayer/> */}
+      {/* <Allexams /> */}
+      {/* <Herosection /> */}
+      {/* <Videoplayer /> */}
       {/* <Watchandgrow /> */}
-      {/* <Country/>  */}
-      {/* < TopHeroSection/> */}
-      {/* <Pepars/>   */}
-
-      {/* <Result/> */}
-
-      {/* <Universities/>  */}
-      {/* <Amber/>  */}
-      {/* <Asprogress/>  */}
-      {/* <Newcountry/>  */}
-      {/* <Linkedin/>  */}
+      {/* <Country /> */}
+      {/* <TopHeroSection /> */}
+      {/* <Pepars /> */}
+      {/* <Universities /> */}
+      {/* <Amber /> */}
+      {/* <Asprogress /> */}
+      {/* <Newcountry /> */}
+      {/* <Linkedin /> */}
       {/* <Coursehero /> */}
-      {/* <Dreamjob/> */}
-      {/* <Ourpromise/> */}
-      {/* <Answerd/> */}
-
-      {/* <Questions/> */}
-
-      {/* <Mhome/> */}
-      {/* <Clgmain/> */}
-
+      {/* <Dreamjob /> */}
+      {/* <Ourpromise /> */}
+      {/* <Answerd /> */}
+      {/* <Questions /> */}
+      {/* <Mhome /> */}
+      {/* <Clgmain /> */}
       {/* <Pheader /> */}
+      {/* <PreHome /> */}
+      {/* <Predictors /> */}
+      {/* <Predictors /> */}
+      {/* <Recentreviews /> */}
 
-      {/* <PreHome />
-      <Predictors/> */}
-      {/* 
-      <Predictors /> */}
-
-
-      <Recentreviews/>
+      <Dreamhero />
     </>
   );
 };
