@@ -39,7 +39,8 @@ import BenefitBox from "@/components/pulser/BenefitBox";
 import HomeCart from "@/components/predictors/HomeCart";
 import PredictorCard from "@/components/predictors/PredictorCard";
 import Navigation from "@/components/predictors/Navigation";
-import Recentreviews from "@/components/Trustpilot/Recentreviews";
+import { Recentreviews } from "@/components/Trustpilot/Recentreviews";
+
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
