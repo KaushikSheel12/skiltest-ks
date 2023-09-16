@@ -90,7 +90,6 @@ const PreForm = () => {
           Predict My Colleges
         </div>
       </div>
-
       <div className="w-full bg-gray-400  md:mt-5  px-2 py-2 h-fit">
         <h1 className="text-center text-[22px]">
           Other MBA College Predictors
