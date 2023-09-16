@@ -48,7 +48,19 @@ const PreForm = () => {
         <p className="text-[13px] text-gray-500 mt-5">Enter Your Rank</p>
         <input type="number" className="w-full h-8 border" />
 
-        <p className="text-[13px] text-gray-500 mt-5">Reservation category</p>
+        <p className="text-[13px] text-gray-500 mt-3">Gender</p>
+        <div className="flex  py-0 items-center gap-5">
+          <label>
+            <input type="radio" name="gender" value="male" checked="true" />{" "}
+            Male
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="femal" checked="" /> Female
+          </label>
+        </div>
+
+        <p className="text-[13px] text-gray-500 mt-3">Reservation category</p>
         <div className="custom-select">
           <select className="w-full h-8 border">
             <option value="adada">-- Select --</option>
@@ -74,15 +86,6 @@ const PreForm = () => {
             <option value="adada">Minority Religion Seats</option>
             <option value="adada">Open / BC / SC / ST </option>
             <option value="adada">Special Reservation Seats</option>
-          </select>
-        </div>
-
-        <p className="text-[13px] text-gray-500 mt-5">Gender</p>
-        <div className="custom-select">
-          <select className="w-full h-8 border">
-            <option value="adada">-- Select --</option>
-            <option value="adada">Female</option>
-            <option value="adada">Male</option>
           </select>
         </div>
 
