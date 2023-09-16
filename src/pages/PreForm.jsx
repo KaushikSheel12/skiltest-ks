@@ -45,14 +45,10 @@ const PreForm = () => {
           Enter Center Seat Allocation Board (CSAB) Details
         </h4>
 
-        <p className="text-[13px] text-gray-500 mt-5">
-          Enter AP EAMCET Engineering Overall Rank
-        </p>
+        <p className="text-[13px] text-gray-500 mt-5">Enter Your Rank</p>
         <input type="number" className="w-full h-8 border" />
 
-        <p className="text-[13px] text-gray-500 mt-5">
-          Local / Non-Local Status
-        </p>
+        <p className="text-[13px] text-gray-500 mt-5">Reservation category</p>
         <div className="custom-select">
           <select className="w-full h-8 border">
             <option value="adada">-- Select --</option>

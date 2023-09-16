@@ -26,7 +26,7 @@ const Counter = () => {
   }, [play, time]);
 
   return (
-    <div className="flex border h-auto w-auto border-red-500  md:gap-0 gap-1  ">
+    <div className="flex  h-auto w-auto   md:gap-0 gap-1  ">
       <div className="md:py-0 md:px-2 md:mt-[2px] ">
         {play ? (
           <AiOutlinePauseCircle

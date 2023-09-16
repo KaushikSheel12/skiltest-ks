@@ -41,6 +41,7 @@ import PredictorCard from "@/components/predictors/PredictorCard";
 import Navigation from "@/components/predictors/Navigation";
 import { Recentreviews } from "@/components/Trustpilot/Recentreviews";
 import Dreamhero from "@/components/dream11/Dreamhero";
+import SpeakForUs from "@/components/Allexams/SpeakForUs";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -52,7 +53,7 @@ const Test = () => {
       <div className="h-full">
         {/* <Header /> */}
 
-        {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />} */}
+        {/* {isActive ? <QuizHome /> : <Instructions setIsActive={setIsActive} />}  */}
         {/* <Predictors/> */}
         {/* <Result /> */}
         {/* <Carousel/> */}
@@ -78,12 +79,12 @@ const Test = () => {
       {/* <Mhome /> */}
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
-      {/* <PreHome /> */}
+      <PreHome />
       {/* <Predictors /> */}
       {/* <Predictors /> */}
       {/* <Recentreviews /> */}
-
-      <Dreamhero />
+{/* <Admitkart/> */}
+      {/* <Dreamhero /> */}
     </>
   );
 };
