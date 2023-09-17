@@ -60,9 +60,6 @@ const Admitkart = () => {
             </div>
           </div>
 
-
-
-
           <div className="  md:w-[500px] w-fullm ml-[154px] md:ml-[110px] md:mt-0 mt-[-100px]   grid place-content-center ">
             <div className="relative w-full h-full z-20">
               <div className="w-[120px] h-[120px] rounded-full  absolute top-[68px] -left-[104px]">
@@ -93,28 +90,26 @@ const Admitkart = () => {
               <div className=" rounded-full absolute -top-0 right-0 md:translate-x-[-195px] translate-x-[-255px] ">
                 <div className="w-7 h-7 relative rounded-full ">
                   {" "}
-                  
                   <Image
-                      src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-round-country-flag-united-kingdom-png-image_7670954.png"
-                      alt="england-flag"
-                      fill
-                      className="rounded-full object-cover"
-                    />
+                    src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-round-country-flag-united-kingdom-png-image_7670954.png"
+                    alt="england-flag"
+                    fill
+                    className="rounded-full object-cover"
+                  />
                 </div>
               </div>
             </div>
 
             <div className=" md:px-10 md:py-10 border border-[#390765e8] mx-auto rotate rounded-full mt-[-24px] ml-[9px] md:mt-[17px] md:ml-[37px] w-[19em] h-[19em] md:w-[30em] md:h-[30em]">
               <div className="  rounded-full absolute translate-x-[-57px]   right-[17px]">
-
-              <div className="w-7 h-7 relative rounded-full ">
+                <div className="w-7 h-7 relative rounded-full ">
                   {" "}
                   <Image
-                      src="https://w0.peakpx.com/wallpaper/799/397/HD-wallpaper-flag-of-argentina-argentina-south-america-country-flag.jpg"
-                      alt="middle-flag"
-                      fill
-                      className="rounded-full object-cover"
-                    />
+                    src="https://w0.peakpx.com/wallpaper/799/397/HD-wallpaper-flag-of-argentina-argentina-south-america-country-flag.jpg"
+                    alt="middle-flag"
+                    fill
+                    className="rounded-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -135,17 +130,12 @@ const Admitkart = () => {
                     src="https://m.media-amazon.com/images/I/718gVU8ktKL._AC_UF894,1000_QL80_.jpg"
                     fill
                     alt="indian-flag"
-
                     className="rounded-full"
                   />
                 </div>
               </div>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </>

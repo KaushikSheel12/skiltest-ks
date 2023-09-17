@@ -121,8 +121,8 @@ const Navigation = () => {
               ].map((tag, index) => (
                 <li key={index} className="cursor-pointer">
                   <p
-                    className={` border px-2 rounded-md text-white bg-teal-400${
-                      index === activeTag ? "text-white  mt-1 bg-blue-900" : ""
+                    className={`   pb-3  ${
+                      index === activeTag ? " border-b-2 border-blue-500 border-t-0 border-l-0  border-r-0  " : ""
                     }`}
                     onClick={() => handleTagClick(index)}
                   >

@@ -79,11 +79,11 @@ const Test = () => {
       {/* <Mhome /> */}
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
-      <PreHome />
+      {/* <PreHome /> */}
       {/* <Predictors /> */}
       {/* <Predictors /> */}
       {/* <Recentreviews /> */}
-{/* <Admitkart/> */}
+      <Admitkart />
       {/* <Dreamhero /> */}
     </>
   );
