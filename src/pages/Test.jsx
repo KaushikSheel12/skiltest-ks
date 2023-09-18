@@ -72,7 +72,7 @@ const Test = () => {
       {/* <Newcountry /> */}
       {/* <Linkedin /> */}
       {/* <Coursehero /> */}
-      {/* <Dreamjob /> */}
+      <Dreamjob />
       {/* <Ourpromise /> */}
       {/* <Answerd /> */}
       {/* <Questions /> */}
@@ -81,9 +81,8 @@ const Test = () => {
       {/* <Pheader /> */}
       {/* <PreHome /> */}
       {/* <Predictors /> */}
-      {/* <Predictors /> */}
       {/* <Recentreviews /> */}
-      <Admitkart />
+      {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
     </>
   );
