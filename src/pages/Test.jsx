@@ -42,6 +42,7 @@ import Navigation from "@/components/predictors/Navigation";
 import { Recentreviews } from "@/components/Trustpilot/Recentreviews";
 import Dreamhero from "@/components/dream11/Dreamhero";
 import SpeakForUs from "@/components/Allexams/SpeakForUs";
+import Rhero from "@/components/revolt/Rhero";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -72,7 +73,7 @@ const Test = () => {
       {/* <Newcountry /> */}
       {/* <Linkedin /> */}
       {/* <Coursehero /> */}
-      <Dreamjob />
+      {/* <Dreamjob /> */}
       {/* <Ourpromise /> */}
       {/* <Answerd /> */}
       {/* <Questions /> */}
@@ -84,6 +85,7 @@ const Test = () => {
       {/* <Recentreviews /> */}
       {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
+      <Rhero/>
     </>
   );
 };
