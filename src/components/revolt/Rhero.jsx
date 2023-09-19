@@ -19,6 +19,7 @@ const Rhero = () => {
   const scaleFactor = 1 + scrollY * 0.0002;
   const opacity = 1 - scrollY * 0.001;
 
+  
   return (
     <>
       <div className="w-full h-[750px] hidden md:flex overflow-hidden">
