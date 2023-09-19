@@ -44,6 +44,7 @@ import Dreamhero from "@/components/dream11/Dreamhero";
 import SpeakForUs from "@/components/Allexams/SpeakForUs";
 import Rhero from "@/components/revolt/Rhero";
 import Vcall from "@/components/revolt/Vcall";
+import Remp from "@/components/revolt/Remp";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -87,8 +88,8 @@ const Test = () => {
       {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
       {/* <Rhero/> */}
-
-      <Vcall/>
+      {/* <Vcall /> */}
+      <Remp/>
     </>
   );
 };
