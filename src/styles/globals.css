@@ -171,3 +171,75 @@ body {
   height: 20px; /* Adjust the height */
   font-size: 15px; /* Adjust the font size if needed */
 }
+
+@keyframes slowSkew {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(12deg);
+  }
+}
+
+.slow-skew {
+  animation: slowSkew 1s ease-in-out forwards;
+}
+
+.draw-animation line {
+  stroke-dasharray: 300; /* Length of dashes and gaps */
+  stroke-dashoffset: 300; /* Offset to hide the line initially */
+  animation: draw 2s linear forwards, dotted 3s linear forwards 2s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+@keyframes dotted {
+  from {
+    stroke-dasharray: 300; /* Initial dash array */
+  }
+  to {
+    stroke-dasharray: 5; /* Final dash array (dotted) */
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s forwards;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgslide {
+  /* background: url(https://mono.co/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fsrc%2Fassets%2Fimages%2Fbank-icons-collage.4a6f14c023e28fb8fefaaea228220462.png&w=750&q=75); */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow 10s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -200%;
+  }
+}

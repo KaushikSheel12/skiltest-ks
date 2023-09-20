@@ -91,7 +91,7 @@ const Test = () => {
       {/* <Rhero/> */}
       {/* <Vcall /> */}
       {/* <Remp/> */}
-      <MonoHero/>
+      <MonoHero />
     </>
   );
 };
