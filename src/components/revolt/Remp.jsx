@@ -4,20 +4,19 @@ import { useEffect } from "react";
 
 const Remp = () => {
   const [childDivScale, setChildDivScale] = useState(1);
-  const [mrginTop , setmarginTop] = useState(1)
+  const [mrginTop, setmarginTop] = useState(1);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const mtScroll = window.scrollY;
 
-      const newMtScroll = 1 + mtScroll * 2
+      const newMtScroll = 1 + mtScroll * 2;
 
-      setmarginTop(Math.max(newMtScroll, 0,1))
+      setmarginTop(Math.max(newMtScroll, 0, 1));
 
-
-      const newScale = 1 - scrollY / 400; // Example: 400 is the scrolling threshold
-      setChildDivScale(Math.max(newScale, 0.1)); // Ensure a minimum scale
+      const newScale = 1 - scrollY / 400;
+      setChildDivScale(Math.max(newScale, 0.1));
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,29 +26,19 @@ const Remp = () => {
     };
   }, []);
 
-
-
-
-
-
-
-  console.log(childDivScale );
-  console.log("mt" , mrginTop)
+  console.log(childDivScale);
+  console.log("mt", mrginTop);
   return (
     <>
       <div className="w-screen h-screen bg-[#504836] pt-[120px] overflow-hidden">
-        <div className="child flex item-center justify-between w-[90%] relative mx-auto"
-        
-        
-        
-        >
+        <div className="child flex item-center justify-between w-[90%] relative mx-auto">
           <div
             className="w-[400px] h-[310px] px-2 py-2 relative  rounded-[30px]"
             style={{
               transform: `scale(${childDivScale})`,
               opacity: childDivScale,
-              marginTop : mrginTop,
-              marginLeft : mrginTop
+              marginTop: mrginTop,
+              marginLeft: mrginTop,
             }}
           >
             <Image
@@ -87,11 +76,11 @@ const Remp = () => {
           <div
             className="w-[400px] h-[310px] px-2 py-2 relative  rounded-[30px]"
             style={{
-                transform: `scale(${childDivScale})`,
-                opacity: childDivScale,
-                marginTop : mrginTop,
-                marginRight : mrginTop
-              }}
+              transform: `scale(${childDivScale})`,
+              opacity: childDivScale,
+              marginTop: mrginTop,
+              marginRight: mrginTop,
+            }}
           >
             <Image
               src="https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/64adc5832ad32465eb858c59_Homepage_Hero_01_33.webp"
@@ -107,11 +96,11 @@ const Remp = () => {
           <div
             className="w-[400px] h-[410px] px-2 py-2 relative  rounded-[30px]"
             style={{
-                transform: `scale(${childDivScale})`,
-                opacity: childDivScale,
-                marginBottom : mrginTop,
-                marginLeft : mrginTop
-              }}
+              transform: `scale(${childDivScale})`,
+              opacity: childDivScale,
+              //  marginBottom: mrginTop,
+              marginLeft: mrginTop * 2,
+            }}
           >
             <Image
               src="https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/64adc64449434c5dc98b0e8e_Homepage_Hero_02_25.webp"
@@ -138,13 +127,13 @@ const Remp = () => {
             </div>
           </div>
           <div
-            className="w-[400px] h-[410px] px-2 py-2 relative  rounded-[30px]"
+            className="w-[400px] h-[410px] px-2 py-2 relative   rounded-[30px]"
             style={{
-                transform: `scale(${childDivScale})`,
-                opacity: childDivScale,
-                marginBottom : mrginTop,
-                marginRight : mrginTop
-              }}
+              transform: `scale(${childDivScale})`,
+              opacity: childDivScale,
+              //   marginginTop: `-${mrginTop*34}`,
+              marginRight: mrginTop * 2,
+            }}
           >
             <Image
               src="https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/64adc64449434c5dc98b0e8e_Homepage_Hero_02_25.webp"
