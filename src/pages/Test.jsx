@@ -45,6 +45,7 @@ import SpeakForUs from "@/components/Allexams/SpeakForUs";
 import Rhero from "@/components/revolt/Rhero";
 import Vcall from "@/components/revolt/Vcall";
 import Remp from "@/components/revolt/Remp";
+import MonoHero from "@/components/revolt/MonoHero";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -89,7 +90,8 @@ const Test = () => {
       {/* <Dreamhero /> */}
       {/* <Rhero/> */}
       {/* <Vcall /> */}
-      <Remp/>
+      {/* <Remp/> */}
+      <MonoHero/>
     </>
   );
 };
