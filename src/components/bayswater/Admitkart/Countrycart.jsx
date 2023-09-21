@@ -11,8 +11,6 @@ const Countrycart = () => {
         
         <Image src="https://i.insider.com/649b13386eb0a800194d589a?width=700"  alt="img" fill className='object-fill   rounded-t-[22px]  '/>
     </div>
-
-
         <div className='flex items-center h-7 md:h-16 md:w-[300px] w-[170px]   mx-auto md:flex  rounded-b-[22px] border justify-center gap-2 md:gap-5'>
 
             <div className="md:w-[43px] w-[22px] h-[22px] md:h-[43px] overflow-hidden relative rounded-full border">
