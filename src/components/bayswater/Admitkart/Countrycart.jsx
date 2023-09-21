@@ -6,7 +6,6 @@ import Image from "next/image";
 const Countrycart = () => {
   return (
    <>
-
        <div className='md:w-[300px] w-[170px] h-[140px] md:h-[240px] border relative  rounded-t-[22px] mx-auto md:block  mt-4' > 
         <Image src="https://i.insider.com/649b13386eb0a800194d589a?width=700"  alt="img" fill className='object-fill   rounded-t-[22px]  '/>
     </div>
