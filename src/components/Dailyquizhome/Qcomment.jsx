@@ -12,6 +12,7 @@ const Qcomment = ({ imgSrc, title }) => {
           alt="cmnt"
           src={imgSrc}
         />
+        
         <p className="font-bold cursor-pointer mt-1 md:mt-0  hover:text-purple-700  md:px-1  text-[10px]  md:text-[11px] text-black ">
           {title}
         </p>

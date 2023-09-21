@@ -38,6 +38,7 @@ const Updates = () => {
             </div>
           </div>
 
+
           <div className="border  w-80 h-fi rounded px-2 py-2">
             <h2 className="px-1 font-semibold text-[19px] py-2">
               Notifications

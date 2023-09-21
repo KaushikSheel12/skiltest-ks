@@ -18,6 +18,7 @@ const Admitkart = () => {
 
 
 
+
             <div>
               <div className="flex md:w-fit w-full md:px-2 bg-[#f3e3fd] rounded-2xl md:h-24 h-20 items-center   mt-4  justify-center md:py-6 md:mt-10">
                 <div className="border-r-2 border-white px-2 md:px-5 h-fit  ">
