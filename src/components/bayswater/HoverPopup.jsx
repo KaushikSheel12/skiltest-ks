@@ -15,6 +15,11 @@ const HoverBox = () => {
     setIsBigBoxOpen(false);
   };
 
+
+
+  
+
+
   return (
     <div
       className="nav border w-full text-lg h-20 px-2 py-2 flex justify-around items-center  relative"
