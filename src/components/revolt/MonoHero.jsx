@@ -54,11 +54,11 @@ const MonoHero = () => {
                 showimg ? "bg-orange-400" : "bg-teal-400"
               } shadow-lg grid place-content-center z-20 mt-32 rounded-lg`}
             >
-              <h1 className=" font-bold text-2xl animate-bounce">Skilzen</h1>
+              <h1 className=" font-bold text-2xl animate-bounce">Shivam</h1>
             </div>
             <div className="w-full h-[250px] md:h-[420px]  py-2 slow-skew bg-gray-300 backdrop-blur-sm bg-opacity-50 z-10 shadow-lg grid place-content-center  mt-12 rounded-lg">
               <h1 className=" font-bold md:text-2xl md:ml-28 text-sm  ">
-                Skilzen
+Dubey
               </h1>
             </div>
             <div className="slideshow w-full h-[250px] md:h-[420px]  py-2 slow-skew mt-[-15px] shadow-lg rounded-lg border-0  ">

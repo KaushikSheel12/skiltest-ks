@@ -86,7 +86,7 @@ const Test = () => {
       {/* <PreHome /> */}
       {/* <Predictors /> */}
       {/* <Recentreviews /> */}
-      {/* <Admitkart /> */}
+      <Admitkart />
       {/* <Dreamhero /> */}
       {/* <Rhero/> */}
       {/* <Vcall /> */}
