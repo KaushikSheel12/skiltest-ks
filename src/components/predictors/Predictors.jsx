@@ -2,6 +2,7 @@ import React from "react";
 import Pheader from "./Pheader";
 import { TiTick } from "react-icons/Ti";
 import PredictorCard from "./PredictorCard";
+import { Filter } from "./filters/Filter";
 
 const Predictors = () => {
   return (
@@ -24,8 +25,8 @@ const Predictors = () => {
       </div>
 
       <div className="flex h-full md:bg-slate-50 md:mt-0 mt-2  md:w-[80%] w-[90%]  mx-auto py-2 px-2  gap-4  ">
-        <div className="border md:block hidden border-red-500 h-6 w-1/3  text-center">
-          FILTER'S
+        <div className="border md:block hidden md:w-[400px]  w-fit h-fit ">
+          <Filter />
         </div>
         <div className="md:border  h-full  py-2 px-2  md:w-[50%] w-[100%]   ">
           <div className="border flex justify-between items-center   md:border-green-500  h-10 w-full rounded-full    bg-[#d5f9d5]  mx-auto md:rounded-sm  py-0 px-2">

@@ -84,14 +84,14 @@ const Test = () => {
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
       {/* <PreHome /> */}
-      {/* <Predictors /> */}
+      <Predictors />
       {/* <Recentreviews /> */}
-      <Admitkart />
+      {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
       {/* <Rhero/> */}
       {/* <Vcall /> */}
       {/* <Remp/> */}
-      <MonoHero />
+      {/* <MonoHero /> */}
     </>
   );
 };
