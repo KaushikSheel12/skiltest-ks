@@ -46,6 +46,7 @@ import Rhero from "@/components/revolt/Rhero";
 import Vcall from "@/components/revolt/Vcall";
 import Remp from "@/components/revolt/Remp";
 import MonoHero from "@/components/revolt/MonoHero";
+import { Scholar } from "@/components/LeapScholar/Scholar";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -84,7 +85,7 @@ const Test = () => {
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
       {/* <PreHome /> */}
-      <Predictors />
+      {/* <Predictors /> */}
       {/* <Recentreviews /> */}
       {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
@@ -92,6 +93,7 @@ const Test = () => {
       {/* <Vcall /> */}
       {/* <Remp/> */}
       {/* <MonoHero /> */}
+      <Scholar/>
     </>
   );
 };
