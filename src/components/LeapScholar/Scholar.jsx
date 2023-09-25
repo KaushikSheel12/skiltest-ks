@@ -5,6 +5,7 @@ import { ChooseContry } from "./Scomponents/ChooseContry";
 import { Preferred } from "./Scomponents/Preferred";
 import { Education } from "./Scomponents/Education";
 import { Duolingostatus } from "./Scomponents/Duolingostatus";
+import { NameEmail } from "./Scomponents/NameEmail";
 
 export const Scholar = () => {
   const CompoNents = [
@@ -12,6 +13,7 @@ export const Scholar = () => {
     <Preferred />,
     <Education />,
     <Duolingostatus />,
+    <NameEmail/>
   ];
 
   const [activeComponentIndex, setActiveComponentIndex] = useState(0);
@@ -28,10 +30,11 @@ export const Scholar = () => {
     }
   };
 
-  
+  const isLastComponent = activeComponentIndex === CompoNents.length - 1;
+
   return (
     <>
-      <div className="w-full md:h-[700px] h-full px-2 py-2">
+      <div className="w-full md:h-[700px] h-full  px-2 py-2">
         <ProgressBar progress={(activeComponentIndex + 1) * 25} />
         <div className=" text-[17px] w-[60%] mx-auto py-2 mt-4    ">
           <div
@@ -46,13 +49,19 @@ export const Scholar = () => {
           {CompoNents[activeComponentIndex]}
         </div>
         <div className=" text-[17px] w-[60%] mx-auto py-2 mt-4    ">
-          <div
-            onClick={handleNextClick}
-            className="flex items-center gap-1 w-fit h-fit border bg-blue-500 px-10 py-2 text-white rounded-md  mx-auto cursor-pointer"
-          >
-            <p>Next</p>
-            <AiOutlineArrowRight size={25} />
-          </div>
+          {isLastComponent ? (
+            <p className="bg-green-500 text-white text-center  shadow-lg cursor-pointer rounded-md w-fit mx-auto px-7 py-1 ">
+              Complete
+            </p>
+          ) : (
+            <div
+              onClick={handleNextClick}
+              className="flex items-center gap-1 w-fit h-fit border bg-blue-500 px-10 py-2 text-white rounded-md  shadow-lg mx-auto cursor-pointer"
+            >
+              <p>Next</p>
+              <AiOutlineArrowRight size={25} />
+            </div>
+          )}
         </div>
       </div>
     </>
