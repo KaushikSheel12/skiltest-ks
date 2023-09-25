@@ -28,6 +28,7 @@ export const Scholar = () => {
     }
   };
 
+  
   return (
     <>
       <div className="w-full md:h-[700px] h-full px-2 py-2">
