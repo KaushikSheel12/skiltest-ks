@@ -6,6 +6,7 @@ import { Preferred } from "./Scomponents/Preferred";
 import { Education } from "./Scomponents/Education";
 import { Duolingostatus } from "./Scomponents/Duolingostatus";
 import { NameEmail } from "./Scomponents/NameEmail";
+import Image from "next/image";
 
 export const Scholar = () => {
   const CompoNents = [
@@ -34,7 +35,7 @@ export const Scholar = () => {
 
   return (
     <>
-      <div className="w-full md:h-[700px] h-full  px-2 py-2">
+      <div className="w-full md:h-[700px] h-full relative px-2 py-2">
         <ProgressBar progress={(activeComponentIndex + 1) * 20} />
         <div className=" md:text-[17px] text-md w-full md:w-[60%] mx-auto py-2 mt-4    ">
           <div
@@ -64,6 +65,17 @@ export const Scholar = () => {
           )}
         </div>
       </div>
+
+      {/* <div className="absolute w-full bottom-0">
+        <div className="w-full hidden  h-[270px]    relative">
+          <Image
+            fill
+            src="https://leapscholar.com/_next/image?url=https%3A%2F%2Fd14lg9nzq1d3lc.cloudfront.net%2Ftapri%2Ftapri_assets%2Fform%2Fform_bg.png&w=3840&q=75"
+            alt="buttom img"
+            className="object-contain"
+          />
+        </div>
+      </div> */}
     </>
   );
 };
