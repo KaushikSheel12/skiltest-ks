@@ -36,19 +36,19 @@ export const Scholar = () => {
     <>
       <div className="w-full md:h-[700px] h-full  px-2 py-2">
         <ProgressBar progress={(activeComponentIndex + 1) * 25} />
-        <div className=" text-[17px] w-[60%] mx-auto py-2 mt-4    ">
+        <div className=" md:text-[17px] text-md w-full md:w-[60%] mx-auto py-2 mt-4    ">
           <div
             onClick={handleBackClick}
-            className="flex items-center gap-1 w-fit h-fit border bg-blue-500 px-8 py-2 text-white rounded-md  cursor-pointer"
+            className="flex items-center gap-1 w-fit  h-fit border bg-blue-500 px-3 md:px-8 md:py-2 py-1 text-white rounded-md  cursor-pointer"
           >
-            <AiOutlineArrowLeft size={25} />
+            <AiOutlineArrowLeft  className="md:w-7 w-6" />
             <p>Back</p>
           </div>
         </div>
-        <div className="w-[600px] px-2 h-fit mx-auto  mt-10">
+        <div className="md:w-[600px] w-full px-2 h-fit mx-auto  mt-10">
           {CompoNents[activeComponentIndex]}
         </div>
-        <div className=" text-[17px] w-[60%] mx-auto py-2 mt-4    ">
+        <div className="md:text-[17px] text-md w-full md:w-[60%] mx-auto py-5 md:mt-8     ">
           {isLastComponent ? (
             <p className="bg-green-500 text-white text-center  shadow-lg cursor-pointer rounded-md w-fit mx-auto px-7 py-1 ">
               Complete
@@ -56,10 +56,10 @@ export const Scholar = () => {
           ) : (
             <div
               onClick={handleNextClick}
-              className="flex items-center gap-1 w-fit h-fit border bg-blue-500 px-10 py-2 text-white rounded-md  shadow-lg mx-auto cursor-pointer"
+              className="flex items-center gap-1 w-fit h-fit border bg-blue-500 px-6 md:px-10 py-2 text-white rounded-md  shadow-lg mx-auto cursor-pointer"
             >
               <p>Next</p>
-              <AiOutlineArrowRight size={25} />
+              <AiOutlineArrowRight className="md:w-7 w-7" />
             </div>
           )}
         </div>

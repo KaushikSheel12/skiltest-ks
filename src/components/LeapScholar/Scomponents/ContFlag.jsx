@@ -4,7 +4,7 @@ import React from "react";
 export const ContFlag = ({ ImgSrc, name }) => {
   return (
     <>
-      <div className="w-[190px] h-[100px] border-2 py-2 rounded-md grid place-content-center cursor-pointer">
+      <div className="md:w-[190px] w-full h-[80px] md:h-[100px] border-2 py-2 rounded-md grid place-content-center cursor-pointer">
         <Image
           src={ImgSrc}
           alt="country-flg"
