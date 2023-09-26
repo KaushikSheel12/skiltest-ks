@@ -3,7 +3,7 @@ import React from "react";
 export const Education = () => {
   return (
     <>
-      <h1 className="text-center  md:mt-0  mt-[-25px]  font-semibold text-[20px] md:text-[24px]">
+      <h1 className="text-center  md:mt-0  mt-[-22px]  font-semibold text-[20px] md:text-[24px]">
         What's your highest level of education?
       </h1>
 
