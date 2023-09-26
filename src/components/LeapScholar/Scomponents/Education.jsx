@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Education = () => {
+  const degreeData = [
+    { name: "10th Standard" },
+    { name: "12th Standard" },
+    { name: "Bachelor's Degree" },
+    { name: "Master's Degree" },
+    { name: "MBBS / MD" },
+    //passport
+    { name: "Yes" },
+    { name: "Appied" },
+    { name: "No" },
+  ];
+
+  const [selectedDigre, setSelectedYear] = useState(null);
+  const [selectPassport, setPassport] = useState(null);
+
+  const handleDigreeClick = (Degree) => {
+    // console.log("name ", Degree);
+    setSelectedYear(Degree);
+  };
+
+  const handlePassportClick = (Degree) => {
+    // console.log("name ", Degree);
+    setPassport(Degree);
+  };
+
   return (
     <>
       <h1 className="text-center  md:mt-0  mt-[-22px]  font-semibold text-[20px] md:text-[24px]">
@@ -8,11 +33,17 @@ export const Education = () => {
       </h1>
 
       <div className="w-full flex flex-wrap justify-around md:gap-5 gap-3 py-4 md:py-0  md:mt-6">
-        <Degree Degree="10th Standard" />
-        <Degree Degree="12th Standard" />
-        <Degree Degree="Bachelor's Degree" />
-        <Degree Degree="Master's Degree" />
-        <Degree Degree="MBBS / MD" />
+        {degreeData?.slice(0, 5).map((el, index) => {
+          return (
+            <Degree
+              key={index}
+              bgColor={selectedDigre === el.name ? "blue-200" : ""}
+              borderColor={selectedDigre === el.name ? "blue-500" : ""}
+              Degree={el.name}
+              onClick={handleDigreeClick}
+            />
+          );
+        })}
       </div>
 
       <h1 className="text-center  md:mt-6  font-semibold text-[20px] md:text-[24px] py-2">
@@ -30,9 +61,17 @@ export const Education = () => {
       </h1>
 
       <div className="w-full flex flex-wrap justify-around md:gap-4  py- md:py-0 gap-3 md:mt-4">
-        <Degree Degree="Yes" />
-        <Degree Degree="Applied" />
-        <Degree Degree="No" />
+        {degreeData?.slice(5, degreeData.length).map((el, index) => {
+          return (
+            <Degree
+              key={index}
+              bgColor={selectPassport === el.name ? "blue-200" : ""}
+              borderColor={selectPassport === el.name ? "blue-500" : ""}
+              Degree={el.name}
+              onClick={handlePassportClick}
+            />
+          );
+        })}
       </div>
 
       <h1 className="text-center   font-semibold text-[20px] md:text-[24px]  md:py-5 py-2">
@@ -54,9 +93,12 @@ export const Education = () => {
   );
 };
 
-const Degree = ({ Degree }) => {
+const Degree = ({ Degree, onClick, borderColor, bgColor }) => {
   return (
-    <div className="md:w-[180px] w-[130px] h-[60px]  rounded-md grid place-content-center text-center text-sm md:text-[16px] border cursor-pointer shadow-md">
+    <div
+      className={`md:w-[180px] w-[130px] h-[60px]   border-${borderColor} bg-${bgColor}  rounded-md grid place-content-center text-center text-sm md:text-[16px] border cursor-pointer shadow-md`}
+      onClick={() => onClick(Degree)}
+    >
       {Degree}
     </div>
   );

@@ -13,7 +13,7 @@ export const Scholar = () => {
     <Preferred />,
     <Education />,
     <Duolingostatus />,
-    <NameEmail/>
+    <NameEmail />,
   ];
 
   const [activeComponentIndex, setActiveComponentIndex] = useState(0);
@@ -35,13 +35,13 @@ export const Scholar = () => {
   return (
     <>
       <div className="w-full md:h-[700px] h-full  px-2 py-2">
-        <ProgressBar progress={(activeComponentIndex + 1) * 25} />
+        <ProgressBar progress={(activeComponentIndex + 1) * 20} />
         <div className=" md:text-[17px] text-md w-full md:w-[60%] mx-auto py-2 mt-4    ">
           <div
             onClick={handleBackClick}
             className="flex items-center gap-1 w-fit  h-fit border bg-blue-500 px-3 md:px-8 md:py-2 py-1 text-white rounded-md  cursor-pointer"
           >
-            <AiOutlineArrowLeft  className="md:w-7 w-6" />
+            <AiOutlineArrowLeft className="md:w-7 w-6" />
             <p>Back</p>
           </div>
         </div>
