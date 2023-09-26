@@ -49,7 +49,7 @@ export const ChooseContry = () => {
                 ImgSrc={el.img}
                 name={el.name}
                 bgColor={selectedCountry === el.name ? "blue-200" : ""}
-                borderColor={selectedCountry === el.name ? "blue-500" : "red"}
+                borderColor={selectedCountry === el.name ? "blue-500" : ""}
                 onClick={() => handleCountryClick(el.name)}
               />
             );

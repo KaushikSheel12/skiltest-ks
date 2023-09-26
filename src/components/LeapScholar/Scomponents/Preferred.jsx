@@ -59,7 +59,7 @@ export const Preferred = () => {
             <Year
               key={index}
               bgColor={selectDiploma === el.year ? "blue-200" : ""}
-              borderColor={selectDiploma === el.year ? "blue-500" : "red"}
+              borderColor={selectDiploma === el.year ? "blue-500" : ""}
               year={el.year}
               onClick={handleDiplomaClick}
             />
