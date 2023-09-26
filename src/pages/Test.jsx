@@ -47,6 +47,7 @@ import Vcall from "@/components/revolt/Vcall";
 import Remp from "@/components/revolt/Remp";
 import MonoHero from "@/components/revolt/MonoHero";
 import { Scholar } from "@/components/LeapScholar/Scholar";
+import { NewPredictorBox } from "@/components/predictors/NewComp";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -89,11 +90,12 @@ const Test = () => {
       {/* <Recentreviews /> */}
       {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
-      {/* <Rhero/> */}
+      {/* <Rhero /> */}
       {/* <Vcall /> */}
-      {/* <Remp/> */}
-      {/* <MonoHero /> */}
-      <Scholar/>
+      {/* <Remp /> */}
+     {/* <MonoHero /> */}
+      {/* <Scholar/> */}
+      <NewPredictorBox/>
     </>
   );
 };
