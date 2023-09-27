@@ -11,6 +11,7 @@ const PreForm = () => {
             CAT College Predictor - IIM & Non-IIM MBA Call Predictor
           </h1>
 
+
           <div className="flex items-center gap-2 py-4">
             <TiTick
               size={19}
