@@ -17,6 +17,7 @@ const Dailyquizhome = () => {
 
 
 
+
   return (
     <>
       <div className="w-full md:h-[520px]  mt-10  md:bg-gray-200 ">
