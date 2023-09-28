@@ -4,6 +4,7 @@ import { TiTick } from "react-icons/Ti";
 const Quizzes = () => {
   return (
     <>
+
       <div>
         <div className="flex col-span-2 gap-4  justify-around items-center md:h-auto h-36 flex-wrap">
           <div className="md:w-fit w-80">
