@@ -14,8 +14,7 @@ const headerTexts = [
   "IIT Colleges",
   "Skilzen Technology",
   // Add more header texts here
-];
-
+]
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [textSize, setTextSize] = useState(true); // Renamed state variable for clarity
