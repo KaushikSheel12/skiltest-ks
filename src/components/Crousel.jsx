@@ -8,6 +8,7 @@ const images = [
   // Add more image URLs here
 ];
 
+
 const headerTexts = [
   "College Engeenring",
   "IIT Colleges",
