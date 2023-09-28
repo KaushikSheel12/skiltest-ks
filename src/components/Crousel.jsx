@@ -32,6 +32,7 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, []);
 
+
   useEffect(() => {
     // Reset the text size back to the original value after the transition
     const timeout = setTimeout(() => {
