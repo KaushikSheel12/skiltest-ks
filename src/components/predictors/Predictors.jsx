@@ -51,7 +51,7 @@ const Predictors = () => {
           <PredictorCard />
           <PredictorCard />
         </div>
-        <div className=" absolute right-16  bottom-16">
+        <div className=" absolute  bottom-1 md:right-0 right-3  md:bottom-16">
 
         <Pagination/>
         </div>
