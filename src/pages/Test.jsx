@@ -86,7 +86,7 @@ const Test = () => {
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
       {/* <PreHome /> */}
-      {/* <Predictors /> */}
+      <Predictors />
       {/* <Recentreviews /> */}
       {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
@@ -95,7 +95,7 @@ const Test = () => {
       {/* <Remp /> */}
      {/* <MonoHero /> */}
       {/* <Scholar/> */}
-      <NewPredictorBox/>
+      {/* <NewPredictorBox/> */}
     </>
   );
 };

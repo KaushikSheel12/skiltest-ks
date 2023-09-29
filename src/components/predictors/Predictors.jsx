@@ -3,12 +3,13 @@ import Pheader from "./Pheader";
 import { TiTick } from "react-icons/Ti";
 import PredictorCard from "./PredictorCard";
 import { Filter } from "./filters/Filter";
+import { Pagination } from "./Pagination";
 
 const Predictors = () => {
   return (
     <>
       <Pheader />
-      <div className="md:hidden    border w-[90%] grid mx-auto mt-2 rounded-md  px-2 py-2  h-20 shadow-xl">
+      <div className="md:hidden    border w-[90%] grid mx-auto mt-2 rounded-md  px-2 py-2  h-20  shadow-xl">
         <p className="font-semibold text-md px-1 text-gray-700">
           Summary of Your Prediction
         </p>
@@ -24,7 +25,7 @@ const Predictors = () => {
         </div>
       </div>
 
-      <div className="flex h-full md:bg-slate-50 md:mt-0 mt-2  md:w-[80%] w-[90%]  mx-auto py-2 px-2  gap-4  ">
+      <div className="flex h-full md:bg-slate-50 md:mt-0 mt-2  md:w-[80%] w-[90%]  mx-auto py-2 px-2  gap-4  relative  ">
         <div className="border md:block hidden md:w-[400px]  w-fit h-fit ">
           <Filter />
         </div>
@@ -50,6 +51,11 @@ const Predictors = () => {
           <PredictorCard />
           <PredictorCard />
         </div>
+        <div className=" absolute right-16  bottom-16">
+
+        <Pagination/>
+        </div>
+
       </div>
     </>
   );
