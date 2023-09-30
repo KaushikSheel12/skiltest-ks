@@ -27,6 +27,7 @@ const CoursAbout = () => {
           </div>
         </div>
 
+
         {AboutData.map((el, index) => {
           return (
             <div key={index}>
