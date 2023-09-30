@@ -9,6 +9,7 @@ const Dreamjob = () => {
 
   return (
     <>
+
     
       <div className="w-full h-[500px] px-2 py-2 md:flex  justify-around">
         <div className=" md:w-[50%] w-full h-full  md:mt-[0px] mt-[-80px]  md:h-[600px] grid place-content-center ">
