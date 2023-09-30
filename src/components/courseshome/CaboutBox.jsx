@@ -9,8 +9,6 @@ const CaboutBox = ({imgUrl , title , para}) => {
           <div className='relative w-[150px] h-[150px] ml-5 '>
         <Image src={imgUrl} alt="img" fill className='object-contain'/>
           </div>
-
-
           <div>
            <h1 className='font-semibold leading-7 md:py-4 text-[25px]'>{title}</h1>
            <p className='text-[16px] text-gray-700 leading-[18px]'>{para}</p>
