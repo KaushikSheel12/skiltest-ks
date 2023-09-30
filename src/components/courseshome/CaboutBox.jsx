@@ -14,6 +14,7 @@ const CaboutBox = ({imgUrl , title , para}) => {
            <p className='text-[16px] text-gray-700 leading-[18px]'>{para}</p>
           </div>
      
+     
              </div> 
  </>
   )
