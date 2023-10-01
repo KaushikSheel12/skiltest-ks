@@ -9,10 +9,6 @@ const CoursAbout = () => {
   return (
     <>
       <WhatisNext />
-
-
-
-
       <div className="md:w-[70%] w-full mx-auto mt-10 grid md:grid-cols-3 grid-cols-1  h-full  py-2">
         <div className="md:w-[400px] w-full h-[265px] mx-auto relative px-4 mb-2 text-center  z-[-10px]  py-4   ">
           <Image
@@ -27,7 +23,6 @@ const CoursAbout = () => {
             Architecture is the intersection of art and science.
           </div>
         </div>
-
         {AboutData.map((el, index) => {
           return (
             <div key={index}>
