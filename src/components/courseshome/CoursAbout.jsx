@@ -23,14 +23,10 @@ const CoursAbout = () => {
           <h2 className="absolute inset-0 flex justify-center items-center text-white bg-black bg-opacity-30 text-[20px]">
             CRAFTED ENVIRONMENTS
           </h2>
-
           <div className="w-[90%] h-10 border rounded-md absolute text-sm font-semibold inset-0 grid whitespace-nowrap  left-[20px] top-[150px] items-center text-white bg-black bg-opacity-30 text-[20px] ">
             Architecture is the intersection of art and science.
           </div>
         </div>
-
-
-
 
         {AboutData.map((el, index) => {
           return (
