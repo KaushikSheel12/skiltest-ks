@@ -23,7 +23,6 @@ function Qfilter() {
     return true; // If no filter selected, show all questions
   });
 
-  
   useEffect(() => {
  //   console.log(">>>>", filteredQuestions);
   }, [selectedOption]);
