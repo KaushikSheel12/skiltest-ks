@@ -16,7 +16,7 @@ const MonoHero = () => {
   return (
     <>
       <div className="md:w-[80%] w-full mx-auto py-2 px-2 md:h-[700px] h-full  flex flex-col-reverse  md:flex-row">
-        <div className="md:w-[50%] w-full mt-6 md:mt-0 h-full px-2 py-2  grid place-content-center">
+        <div className="md:w-[50%]  w-full mt-6 md:mt-0 h-full px-2 py-2  grid place-content-center">
           <div>
             <h1 className="md:text-[87px] text-[36px] font-semibold leading-[1]   md:px-8">
               Reliably access bank accounts
@@ -46,12 +46,10 @@ const MonoHero = () => {
           </div>
         </div>
 
-
         <div className=" w-full md:w-[600px] relative h-full md:ml-20   md:px-0   mx-auto">
           <div className="space-x-[-40px] flex justify-center md:px-0 px-2 w-full h-full items-center mx-auto">
             {/* <div></div> */}
             <div
-
               className={`w-full  h-[250px] md:h-[420px]  py-2  slow-skew  ${
                 showimg ? "bg-orange-400" : "bg-teal-400"
               } shadow-lg grid place-content-center z-20 mt-32 rounded-lg`}
@@ -65,7 +63,6 @@ const MonoHero = () => {
             </div>
             <div className="slideshow w-full h-[250px] md:h-[420px]  py-2 slow-skew mt-[-15px] shadow-lg rounded-lg border-0  ">
               <div className="imgslide h-full w-full ">
-
                 {showimg && (
                   <Image
                     src="https://mono.co/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fsrc%2Fassets%2Fimages%2Fbank-icons-collage.4a6f14c023e28fb8fefaaea228220462.png&w=750&q=75"
@@ -82,7 +79,6 @@ const MonoHero = () => {
                   className=" object-cover duration-300 animate-slide-in md:invisible"
                 />
               </div>
-              
             </div>
           </div>
 

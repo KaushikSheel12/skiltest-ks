@@ -45,9 +45,10 @@ import SpeakForUs from "@/components/Allexams/SpeakForUs";
 import Rhero from "@/components/revolt/Rhero";
 import Vcall from "@/components/revolt/Vcall";
 import Remp from "@/components/revolt/Remp";
-import MonoHero from "@/components/revolt/MonoHero";
+import MonoHero from "@/components/xcars/MonoHero";
 import { Scholar } from "@/components/LeapScholar/Scholar";
 import { NewPredictorBox } from "@/components/predictors/NewComp";
+import { Xlanding } from "@/components/xcars/Xlanding";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -86,7 +87,7 @@ const Test = () => {
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
       {/* <PreHome /> */}
-      <Predictors />
+      {/* <Predictors /> */}
       {/* <Recentreviews /> */}
       {/* <Admitkart /> */}
       {/* <Dreamhero /> */}
@@ -96,6 +97,7 @@ const Test = () => {
      {/* <MonoHero /> */}
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
+      <Xlanding/>
     </>
   );
 };
