@@ -16,7 +16,9 @@ const Header = () => {
         document.documentElement.webkitRequestFullscreen();
       } else if (document.documentElement.msRequestFullscreen) {
 
-        document.documentElement.msRequestFullscreen();
+       
+
+ document.documentElement.msRequestFullscreen();
       }
     } else {
       if (document.exitFullscreen) {
