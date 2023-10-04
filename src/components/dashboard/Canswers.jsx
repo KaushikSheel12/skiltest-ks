@@ -8,6 +8,8 @@ import { GiShare } from "react-icons/gi";
 const Canswers = () => {
   return (
     <>
+
+
     
       <div className="w-full relative h-full  mt-[60px] mx-auto ">
         <div className="px-14 ml-20    w-full ">
