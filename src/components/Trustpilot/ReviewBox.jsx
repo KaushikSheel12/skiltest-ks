@@ -9,7 +9,8 @@ const ReviewBox = ({ Rating, comment }) => {
         <div className="flex items-center gap-5 w-fit h-fit">
           <div className="w-[50px] h-[50px] rounded-full relative ">
             <Image
-              src="https://yt3.ggpht.com/IjJBZco3tUaneTduhIHRoBkkQbsKYsQ1ieFcKNqmKnBP4yyYXMrehfiVTSZbkWufLeGLFu17N10=s88-c-k-c0x00ffffff-no-rj"
+          
+    src="https://yt3.ggpht.com/IjJBZco3tUaneTduhIHRoBkkQbsKYsQ1ieFcKNqmKnBP4yyYXMrehfiVTSZbkWufLeGLFu17N10=s88-c-k-c0x00ffffff-no-rj"
               fill
               alt="propic"
               className="object-contain rounded-full"
