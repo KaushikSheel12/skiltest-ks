@@ -12,7 +12,8 @@ const CoursAbout = () => {
       <div className="md:w-[70%] w-full mx-auto mt-10 grid md:grid-cols-3 grid-cols-1  h-full  py-2">
         <div className="md:w-[400px] w-full h-[265px] mx-auto relative px-4 mb-2 text-center  z-[-10px]  py-4   ">
           <Image
-            src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644faf4ba9dbd97ee2fb24a2_Crafted-Environments.jpg"
+           
+ src="https://uploads-ssl.webflow.com/644fad3d02297941c3f293f2/644faf4ba9dbd97ee2fb24a2_Crafted-Environments.jpg"
             fill
             className="object-contain"
           />
