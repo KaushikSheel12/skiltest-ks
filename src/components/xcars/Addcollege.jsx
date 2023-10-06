@@ -1,5 +1,5 @@
+import Image from "next/image";
 import React, { useState } from "react";
-import { BsPlusCircle } from "react-icons/Bs";
 import { RiCloseLine } from "react-icons/Ri";
 
 const Addcollege = () => {
@@ -10,7 +10,7 @@ const Addcollege = () => {
   };
 
   return (
-    <div className="w-[230px] h-[200px] border px-2 py-2  mx-auto relative bg-gray-100">
+    <div className="md:w-[230px] w-[300px] md:mb-0 mb-4 h-[200px] border px-2 py-2  mx-auto relative bg-gray-100">
       {showAddclg && (
         <RiCloseLine
           onClick={handleClick}
@@ -19,16 +19,25 @@ const Addcollege = () => {
         />
       )}
 
-      <div className="w-full h-full grid place-content-center">
+      <div className="w-full h-full">
         {!showAddclg && (
-          <div className=" cursor-pointer">
-            <BsPlusCircle onClick={handleClick} size={55} className="mx-auto" />
+          <div
+            onClick={handleClick}
+            className=" cursor-pointer  absolute bottom-6 md:right-14  right-24 "
+          >
+            <Image
+              src="https://cdn-icons-gif.flaticon.com/12035/12035104.gif"
+              className="rounded-full ml-6"
+              alt="college-logo"
+              width={40}
+              height={40}
+            />
             <span className="py-1 text-gray-400"> Add College</span>
           </div>
         )}
 
         {showAddclg && (
-          <div className="ml-1 mt-3">
+          <div className="ml-1  absolute bottom-4">
             <select className="w-[200px] border  h-8 mb-2 rounded-md">
               <option value="">abc</option>
               <option value="">abc</option>

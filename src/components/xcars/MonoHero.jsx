@@ -15,7 +15,7 @@ const MonoHero = () => {
 
   return (
     <>
-      <div className="md:w-[80%] w-full mx-auto py-2 px-2 md:h-[700px] h-full  flex flex-col-reverse  md:flex-row">
+      <div className="md:w-[80%] w-full mx-auto py-2 px-2 md:h-[700px] h-full  flex flex-col-reverse  overflow-hidden md:flex-row">
         <div className="md:w-[50%]  w-full mt-6 md:mt-0 h-full px-2 py-2  grid place-content-center">
           <div>
             <h1 className="md:text-[87px] text-[36px] font-semibold leading-[1]   md:px-8">
