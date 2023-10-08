@@ -4,7 +4,7 @@ import React from "react";
 export const CollegeVscard = ({
   clgoneTitle,
   clgtwoTitle,
-  para1,
+  para1, 
   para2,
   imgOne,
   imgTwo,
