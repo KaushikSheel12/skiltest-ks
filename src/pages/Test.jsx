@@ -49,6 +49,7 @@ import MonoHero from "@/components/xcars/MonoHero";
 import { Scholar } from "@/components/LeapScholar/Scholar";
 import { NewPredictorBox } from "@/components/predictors/NewComp";
 import { Xlanding } from "@/components/xcars/Xlanding";
+import { MyImage } from "@/components/apple/MyImage";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -94,10 +95,11 @@ const Test = () => {
       {/* <Rhero /> */}
       {/* <Vcall /> */}
       {/* <Remp /> */}
-      <MonoHero />
+      {/* <MonoHero /> */}
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
       {/* <Xlanding /> */}
+      <MyImage />
     </>
   );
 };
