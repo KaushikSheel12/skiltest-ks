@@ -50,6 +50,7 @@ import { Scholar } from "@/components/LeapScholar/Scholar";
 import { NewPredictorBox } from "@/components/predictors/NewComp";
 import { Xlanding } from "@/components/xcars/Xlanding";
 import { MyImage } from "@/components/apple/MyImage";
+import { MyHeroX } from "@/components/airpano/MyHeroX";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -81,10 +82,10 @@ const Test = () => {
       {/* <Linkedin /> */}
       {/* <Coursehero /> */}
       {/* <Dreamjob /> */}
-      {/* <Ourpromise /> */}
+       {/* <Ourpromise /> */}
       {/* <Answerd /> */}
       {/* <Questions /> */}
-      {/* <Mhome /> */}
+
       {/* <Clgmain /> */}
       {/* <Pheader /> */}
       {/* <PreHome /> */}
@@ -99,7 +100,8 @@ const Test = () => {
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
       {/* <Xlanding /> */}
-      <MyImage />
+     <MyHeroX/>
+     <Mhome />
     </>
   );
 };
