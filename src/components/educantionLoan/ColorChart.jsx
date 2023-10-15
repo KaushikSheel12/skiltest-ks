@@ -12,6 +12,7 @@ export const ColorChart = ({ rangeValue }) => {
         hoverBackgroundColor: ["#00FF7F", "#CCFFFF"],
       },
     ],
+    
   };
 
   return <Pie data={data} />;
