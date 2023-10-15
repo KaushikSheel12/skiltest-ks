@@ -40,8 +40,6 @@ const Result = () => {
                 0/30
               </p>
 
-
-
               <div className="flex md:justify-center gap-1 py-2">
                 <div className="flex items-center ">
                   {" "}
