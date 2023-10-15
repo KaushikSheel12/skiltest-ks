@@ -43,7 +43,9 @@ export const MyHeroX = () => {
 
   return (
     <>
+
       <div className="w-full md:h-[450px]  h-[200px] md:px-0 mt-[-25px]  relative ">
+        
         <div className=" md:w-[600px] w-[80%]   md:h-[400px] h-[100px] absolute  z-10 grid place-content-center top-32  px-4  md:translate-x-[-50%] md:translate-y-[-50%] md:top-1/2  md:left-1/2 left-12">
           <div className="flex w-full md:h-[45px] h-[35px] items-center  absolute rounded-lg  md:bottom-2  bottom-0  ">
             <input

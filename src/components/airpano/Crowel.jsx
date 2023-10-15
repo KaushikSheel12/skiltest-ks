@@ -4,5 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
 export const AirCarousel = ({ children, settings }) => {
+  
   return <Slider {...settings}>{children}</Slider>;
 };
