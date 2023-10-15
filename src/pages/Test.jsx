@@ -51,6 +51,8 @@ import { NewPredictorBox } from "@/components/predictors/NewComp";
 import { Xlanding } from "@/components/xcars/Xlanding";
 import { MyImage } from "@/components/apple/MyImage";
 import { MyHeroX } from "@/components/airpano/MyHeroX";
+import { InputLine } from "@/components/educantionLoan/InputLine";
+
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -100,8 +102,9 @@ const Test = () => {
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
       {/* <Xlanding /> */}
-     <MyHeroX/>
-     <Mhome />
+     {/* <MyHeroX/> */}
+     {/* <Mhome /> */}
+     <InputLine/>
     </>
   );
 };
