@@ -9,7 +9,7 @@ export const InputLine = () => {
   const [courseduration, setCourseduration] = useState(0);
   const [grasvalue, setGrasValue] = useState(0);
 
-  const rangeValue = sliderValue;
+  const rangeValue = sliderValue +intrestvalue + duration + courseduration  + grasvalue;
 
   return (
     <>
@@ -19,15 +19,17 @@ export const InputLine = () => {
             heading="Loan Amount"
             sliderValue={sliderValue}
             mark="&#x20B9;"
+           lastValue={100}
             setSliderValue={setAmountValue}
             handleSliderChange={(e) => setAmountValue(e.target.value)}
           />
 
 
-          <InputBox
+          <InputBoxgrasvalue
             heading="Interest (p.a)"
             mark="&#x25;"
             sliderValue={intrestvalue}
+           lastValue={17}
             setSliderValue={setIntrestValue}
             handleSliderChange={(e) => setIntrestValue(e.target.value)}
           />
@@ -36,6 +38,7 @@ export const InputLine = () => {
             heading="Loan Duration"
             mark="Years"
             sliderValue={duration}
+            lastValue={15}
             setSliderValue={setIntrestValue}
             handleSliderChange={(e) => setDuration(e.target.value)}
           />
@@ -44,6 +47,7 @@ export const InputLine = () => {
             heading="Course Duration"
             mark="Months"
             sliderValue={courseduration}
+            lastValue={48}
             setSliderValue={setIntrestValue}
             handleSliderChange={(e) => setCourseduration(e.target.value)}
           />
@@ -52,6 +56,7 @@ export const InputLine = () => {
             heading="Grace Period"
             mark="Months"
             sliderValue={grasvalue}
+            lastValue={12}
             setSliderValue={setGrasValue}
             handleSliderChange={(e) => setGrasValue(e.target.value)}
           />
