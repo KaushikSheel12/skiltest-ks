@@ -2,14 +2,37 @@ import React, { useState } from "react";
 import InputBox from "./InputBox";
 import { ColorChart } from "./ColorChart";
 
+function calculateInterest(principal, rate, time) {
+  rate = rate / 100;
+  let interest = principal * rate * time;
+  let totalAmount = principal + interest;
+
+  return {
+    interest: interest,
+    totalAmount: totalAmount,
+  };
+}
+
 export const InputLine = () => {
   const [sliderValue, setAmountValue] = useState(0);
   const [intrestvalue, setIntrestValue] = useState(0);
   const [duration, setDuration] = useState(0);
   const [courseduration, setCourseduration] = useState(0);
   const [grasvalue, setGrasValue] = useState(0);
+  const [result, setResult] = useState(null);
 
-  const rangeValue = sliderValue +intrestvalue + duration + courseduration  + grasvalue;
+  const handleCalculate = () => {
+    const { interest, totalAmount } = calculateInterest(
+      sliderValue,
+      intrestvalue,
+      duration
+    );
+    setResult({ interest, totalAmount });
+  };
+
+  let rangeValue = calculateInterest(sliderValue, intrestvalue, duration);
+
+  console.log("Hiii", rangeValue);
 
   return (
     <>
@@ -19,17 +42,16 @@ export const InputLine = () => {
             heading="Loan Amount"
             sliderValue={sliderValue}
             mark="&#x20B9;"
-           lastValue={100}
+            lastValue={100}
             setSliderValue={setAmountValue}
             handleSliderChange={(e) => setAmountValue(e.target.value)}
           />
 
-
-          <InputBoxgrasvalue
+          <InputBox
             heading="Interest (p.a)"
             mark="&#x25;"
             sliderValue={intrestvalue}
-           lastValue={17}
+            lastValue={17}
             setSliderValue={setIntrestValue}
             handleSliderChange={(e) => setIntrestValue(e.target.value)}
           />
@@ -39,7 +61,7 @@ export const InputLine = () => {
             mark="Years"
             sliderValue={duration}
             lastValue={15}
-            setSliderValue={setIntrestValue}
+            setSliderValue={setDuration}
             handleSliderChange={(e) => setDuration(e.target.value)}
           />
 
@@ -48,7 +70,7 @@ export const InputLine = () => {
             mark="Months"
             sliderValue={courseduration}
             lastValue={48}
-            setSliderValue={setIntrestValue}
+            setSliderValue={setCourseduration}
             handleSliderChange={(e) => setCourseduration(e.target.value)}
           />
 
@@ -61,14 +83,32 @@ export const InputLine = () => {
             handleSliderChange={(e) => setGrasValue(e.target.value)}
           />
 
-          <p className="text-[15px] leading-5  text-gray-700">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={handleCalculate}
+          >
+            Calculate
+          </button>
+
+          {result && (
+            <div className="mt-3">
+              <p className="text-gray-500">
+                Interest: {Math.round(result.interest)}
+              </p>
+              <p className="text-gray-500">
+                Total Amount: {Math.round(result.totalAmount)}
+              </p>
+            </div>
+          )}
+
+          <p className="text-[15px] leading-5  mt-2 text-gray-700">
             The displayed EMI amount is approximate & is subject to change based
             on various factors.
           </p>
         </div>
 
         <div className="w-[370px] p-5  shadow-lg h-[420px]    rounded-lg ">
-          <ColorChart rangeValue={rangeValue} />
+          <ColorChart rangeValue={rangeValue.interest} />
 
           <div className="flex mt-3 justify-around  items-center gap-2 w-[80%] mx-auto  ">
             <div className="w-5 h-2 bg-[#3EB489]"></div>
