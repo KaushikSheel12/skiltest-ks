@@ -42,7 +42,7 @@ export const InputLine = () => {
             heading="Loan Amount"
             sliderValue={sliderValue}
             mark="&#x20B9;"
-            lastValue={100}
+            lastValue={10000}
             setSliderValue={setAmountValue}
             handleSliderChange={(e) => setAmountValue(e.target.value)}
           />
