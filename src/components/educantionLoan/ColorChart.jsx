@@ -13,6 +13,7 @@ export const ColorChart = ({ rangeValue }) => {
       },
     ],
     
+    
   };
 
   return <Pie data={data} />;

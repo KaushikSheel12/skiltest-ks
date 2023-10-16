@@ -23,6 +23,7 @@ export const InputLine = () => {
             handleSliderChange={(e) => setAmountValue(e.target.value)}
           />
 
+
           <InputBox
             heading="Interest (p.a)"
             mark="&#x25;"

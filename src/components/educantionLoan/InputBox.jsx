@@ -16,6 +16,7 @@ const InputBox = ({ heading, mark, sliderValue, handleSliderChange }) => {
         type="range"
         className="progress w-full border  text-white shadow-[rgba(0, 0, 0, 0.25) 0px 3px 8px;]"
         value={sliderValue}
+        
         onChange={handleSliderChange}
       />
     </div>
