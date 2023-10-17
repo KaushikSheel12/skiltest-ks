@@ -14,7 +14,9 @@ module.exports = {
           "gray-gradient":"linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%)",
           lightgreen: "#2FD5C8",
       },
-      
+      boxShadow:{
+        "card-shadow":"3px 6px 30px rgba(0,0,0,.15)"
+      }
     },
   },
   plugins: [

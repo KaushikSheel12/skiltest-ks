@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-const InputBox = ({ heading, mark, sliderValue,lastValue, handleSliderChange }) => {
+const InputBox = ({
+  heading,
+  mark,
+  sliderValue,
+  lastValue,
+  handleSliderChange,
+}) => {
   return (
     <div className="mb-7">
       <div className="flex item-center  justify-between py-1 w-full h-fit">
@@ -14,7 +20,7 @@ const InputBox = ({ heading, mark, sliderValue,lastValue, handleSliderChange }) 
       </div>
       <input
         type="range"
-        className="progress w-full border  text-white shadow-[rgba(0, 0, 0, 0.25) 0px 3px 8px;]"
+        className="progress w-full border h-[6px]  text-white shadow-[rgba(0, 0, 0, 0.25) 0px 3px 8px;]"
         value={sliderValue}
         min={0}
         max={lastValue}

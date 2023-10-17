@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InputBox from "./InputBox";
 import { ColorChart } from "./ColorChart";
-
+import { CalcuHero } from "./CalcuHero";
+import { TbCoinRupee } from "react-icons/tb";
+import { AmountDetailsCard } from "./AmountDetailsCard";
+import { FiPercent } from "react-icons/Fi";
 function calculateInterest(principal, rate, time) {
   rate = rate / 100;
   let interest = principal * rate * time;
@@ -30,14 +33,19 @@ export const InputLine = () => {
     setResult({ interest, totalAmount });
   };
 
+  useEffect(() => {
+    handleCalculate();
+  }, [sliderValue, intrestvalue, duration]);
+
   let rangeValue = calculateInterest(sliderValue, intrestvalue, duration);
 
-  console.log("Hiii", rangeValue);
+  console.log("Carr", result);
 
   return (
     <>
-      <div className="w-[90%] h-full px-2 py-2 flex  gap-5 mx-auto items-center justify-around">
-        <div className="w-[500px] rounded-lg h-fit border px-5 py-14 shadow-lg">
+      <CalcuHero />
+      <div className="md:w-[90%] w-full h-full py-2 md:flex md:justify-around gap-10 mx-auto relative">
+        <div className="md:w-[430px] w-[90%] mx-auto rounded-lg h-fit  mt-[-80px]  px-5 py-10  z-10 bg-white shadow-card-shadow">
           <InputBox
             heading="Loan Amount"
             sliderValue={sliderValue}
@@ -82,40 +90,51 @@ export const InputLine = () => {
             setSliderValue={setGrasValue}
             handleSliderChange={(e) => setGrasValue(e.target.value)}
           />
-
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={handleCalculate}
-          >
-            Calculate
-          </button>
-
-          {result && (
-            <div className="mt-3">
-              <p className="text-gray-500">
-                Interest: {Math.round(result.interest)}
-              </p>
-              <p className="text-gray-500">
-                Total Amount: {Math.round(result.totalAmount)}
-              </p>
-            </div>
-          )}
-
-          <p className="text-[15px] leading-5  mt-2 text-gray-700">
-            The displayed EMI amount is approximate & is subject to change based
-            on various factors.
-          </p>
         </div>
 
-        <div className="w-[370px] p-5  shadow-lg h-[420px]    rounded-lg ">
-          <ColorChart rangeValue={rangeValue.interest} />
+        <div className="md:w-fit  w-[90%] mx-auto  flex items-center md:h-[420px] h-fit md:py-0 py-10  md:gap-10    rounded-lg ">
+          <div className="w-fit h-fit md:gap-7 gap-7 mx-auto  grid grid-cols-2">
+            <AmountDetailsCard
+              amountType="Monthly EMI"
+              money={sliderValue}
+              logo={<TbCoinRupee size={35} color="green" />}
+              border
+            />
+            <AmountDetailsCard
+              amountType="Pricipal Amount"
+              money={Math.round(rangeValue.interest)}
+              logo={<TbCoinRupee size={35} color="green" />}
+            />
+            <AmountDetailsCard
+              amountType="Total Interest"
+              money={Math.round(result?.interest)}
+              border
+              logo={<FiPercent size={35} color="green" />}
+            />
+            <AmountDetailsCard
+              amountType="Total Amount"
+              money={Math.round(result?.totalAmount)}
+              logo={<TbCoinRupee size={35} color="green" />}
+            />
 
-          <div className="flex mt-3 justify-around  items-center gap-2 w-[80%] mx-auto  ">
-            <div className="w-5 h-2 bg-[#3EB489]"></div>
-            <p className="text-[10px] ">Interest &#x20B9;</p>
+            <button className="md:w-[170px] w-[145px] py-2 font-semibold bg-black text-white rounded-lg  ">
+              Apply Now
+            </button>
+            <button className="md:w-[170px] w-[145px]  py-2 shadow-card-shadow  rounded-lg  font-semibold ">
+              Check Eligibiliy
+            </button>
+          </div>
 
-            <div className="w-5 h-2 bg-[#A0D6B4]"></div>
-            <p className="text-[10px] ">Loan Amount &#x20B9;</p>
+          <div className=" py-2 px-2 md:block hidden shadow-lg">
+            <ColorChart rangeValue={rangeValue.interest} />
+
+            <div className="flex mt-3 justify-around  items-center gap-2 w-[80%] mx-auto  ">
+              <div className="w-5 h-2 bg-[#3EB489]"></div>
+              <p className="text-[10px] ">Interest &#x20B9;</p>
+
+              <div className="w-5 h-2 bg-[#A0D6B4]"></div>
+              <p className="text-[10px] ">Loan Amount &#x20B9;</p>
+            </div>
           </div>
         </div>
       </div>

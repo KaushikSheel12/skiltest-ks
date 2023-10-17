@@ -8,7 +8,7 @@ export const ColorChart = ({ rangeValue }) => {
     datasets: [
       {
         data: [rangeValue, 200],
-        backgroundColor: ["#3EB489", "#A0D6B4"],
+        backgroundColor: ["#6EB077", "#A0D6B4"],
         hoverBackgroundColor: ["#00FF7F", "#CCFFFF"],
       },
     ],
