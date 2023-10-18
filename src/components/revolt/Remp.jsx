@@ -28,7 +28,7 @@ const Remp = () => {
 
   return (
     <>
-      <div className="w-screen h-fit md:h-screen bg-[#504836] pt-[120px] overflow-hidden">
+      <div className="w-screen h-[400px] md:h-screen bg-[#504836] pt-[120px] md:overflow-hidden">
         <div className="md:w-[500px]  z-[50px]  md:right-[465px] w-full mx-auto  md:mt-0 mt-[-70px] text-white px-2   py-4 text-center h-fit ">
           <h1 className="font-semibold text-[32px] md:text-[40px]">
             Spending made smarter
