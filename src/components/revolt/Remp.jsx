@@ -26,14 +26,35 @@ const Remp = () => {
     };
   }, []);
 
-  console.log(childDivScale);
-  console.log("mt", mrginTop);
   return (
     <>
       <div className="w-screen h-fit md:h-screen bg-[#504836] pt-[120px] overflow-hidden">
-        <div className="child md:flex item-center justify-between w-full md:w-[90%] relative mx-auto">
+        <div className="md:w-[500px]  z-[50px]  md:right-[465px] w-full mx-auto  md:mt-0 mt-[-70px] text-white px-2   py-4 text-center h-fit ">
+          <h1 className="font-semibold text-[32px] md:text-[40px]">
+            Spending made smarter
+          </h1>
+          <p className="md:text-[17px] md:px-12  py-2 md:py-4 md:leading-7 leading-5  text-[15px]">
+            Easy-to-use cards, spend limits, approval flows, vendor payments,
+            and more—plus an average savings of 3.5%.
+          </p>
+          <div className="md:w-[380px] w-full md:px-2 py-2 h-[50px] md:h-[62px] bg-white mx-auto mt-4 border rounded-sm  md:rounded-md z-10  items-center  md:flex  justify-between">
+            <div>
+              <input
+                type="text"
+                className="w-full text-gray-700 border-none  text-center"
+                placeholder="What's your work email?"
+              />
+            </div>
+
+            <div className="md:w-fit w-full md:px-4 h-fit py-3 md:py-4 md:mt-0 mt-7 bg-yellow-300 text--white rounded-sm md:rounded-lg  text-black grid place-content-center cursor-pointer ">
+              Get Started
+            </div>
+          </div>
+        </div>
+
+        <div className="child md:flex item-center mt-[-270px] justify-between w-full md:w-[90%] relative mx-auto">
           <div
-            className="w-[400px] h-[310px] px-2 py-2 relative hidden md:flex  rounded-[30px]"
+            className="w-[350px] h-[290px] px-2 py-2 relative hidden md:flex  rounded-[30px]"
             style={{
               transform: `scale(${childDivScale})`,
               opacity: childDivScale,
@@ -50,31 +71,8 @@ const Remp = () => {
             />
           </div>
 
-          <div className="md:w-[660px] md:absolute z-10  md:right-[465px] w-full mx-auto  md:mt-0 mt-[-70px] text-white px-2   py-4 text-center h-fit ">
-            <h1 className="font-semibold text-[32px] md:text-[60px]">
-              Spending made smarter
-            </h1>
-            <p className="md:text-[20px] md:px-12  py-3 md:py-4 md:leading-7 leading-5  text-[15px]">
-              Easy-to-use cards, spend limits, approval flows, vendor payments,
-              and more—plus an average savings of 3.5%.
-            </p>
-            <div className="md:w-[450px] w-full md:px-2 py-2 h-[50px] md:h-[62px] bg-white mx-auto mt-4 border rounded-sm  md:rounded-md   items-center  md:flex  justify-between">
-              <div>
-                <input
-                  type="text"
-                  className="w-full text-gray-700 border-none  text-center"
-                  placeholder="What's your work email?"
-                />
-              </div>
-
-              <div className="md:w-fit w-full md:px-4 h-fit py-3 md:py-4 md:mt-0 mt-7 bg-yellow-300 text--white rounded-sm md:rounded-lg  text-black grid place-content-center cursor-pointer ">
-                Get Started
-              </div>
-            </div>
-          </div>
-
           <div
-            className="w-[400px] h-[310px] px-2 py-2 relative hidden md:flex   rounded-[30px]"
+            className="w-[350px] h-[290px] px-2 py-2 relative hidden md:flex   rounded-[30px]"
             style={{
               transform: `scale(${childDivScale})`,
               opacity: childDivScale,
@@ -92,9 +90,9 @@ const Remp = () => {
           </div>
         </div>
 
-        <div className="flex mt-28 item-center justify-around w-[90%] mx-auto">
+        <div className="flex mt-24 item-center justify-around w-[90%] mx-auto">
           <div
-            className="w-[400px] h-[410px] px-2 py-2 relative hidden md:flex   rounded-[30px]"
+            className="w-[350px] h-[350px] px-2 py-2 relative hidden md:flex   rounded-[30px]"
             style={{
               transform: `scale(${childDivScale})`,
               opacity: childDivScale,
@@ -111,23 +109,23 @@ const Remp = () => {
             />
           </div>
           <div
-            className="w-[400px] text-[75px] hidden  md:block   h-fit px-2 py-2"
+            className="w-[350px] text-[75px] hidden  md:block   h-fit px-2 py-2"
             style={{
               transform: `scale(${childDivScale})`,
               opacity: childDivScale,
             }}
           >
-            <div className="text-[75px] w-fit h-fit px-2    bg-white text-gray-500 rounded-md mx-auto">
+            <div className="text-[65px] w-fit h-fit px-2    bg-white text-gray-500 rounded-md mx-auto">
               {" "}
               $63.23
             </div>
-            <div className="text-[75px] w-fit h-fit px-2  bg-yellow-300 text-gray-800 mt-2 rounded-3xl  mx-auto">
+            <div className="text-[65px] w-fit h-fit px-2  bg-yellow-300 text-gray-800 mt-2 rounded-3xl  mx-auto">
               {" "}
               $8,973
             </div>
           </div>
           <div
-            className="w-[400px] h-[410px] px-2 py-2 relative hidden md:flex    rounded-[30px]"
+            className="w-[350px] h-[350px] px-2 py-2 relative hidden md:flex    rounded-[30px]"
             style={{
               transform: `scale(${childDivScale})`,
               opacity: childDivScale,

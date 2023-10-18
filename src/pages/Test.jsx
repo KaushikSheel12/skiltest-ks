@@ -98,14 +98,14 @@ const Test = () => {
       {/* <Dreamhero /> */}
       {/* <Rhero /> */}
       {/* <Vcall /> */}
-      {/* <Remp /> */}
+      <Remp />
       {/* <MonoHero /> */}
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
       {/* <Xlanding /> */}
      {/* <MyHeroX/> */}
      {/* <Mhome /> */}
-     <InputLine/>
+     {/* <InputLine/> */}
     </>
   );
 };
