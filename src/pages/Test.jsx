@@ -52,6 +52,7 @@ import { Xlanding } from "@/components/xcars/Xlanding";
 import { MyImage } from "@/components/apple/MyImage";
 import { MyHeroX } from "@/components/airpano/MyHeroX";
 import { InputLine } from "@/components/educantionLoan/InputLine";
+import { EligibilityForm } from "@/components/educantionLoan/EligibilityForm";
 
 
 
@@ -98,7 +99,7 @@ const Test = () => {
       {/* <Dreamhero /> */}
       {/* <Rhero /> */}
       {/* <Vcall /> */}
-      <Remp />
+      {/* <Remp /> */}
       {/* <MonoHero /> */}
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
@@ -106,6 +107,7 @@ const Test = () => {
      {/* <MyHeroX/> */}
      {/* <Mhome /> */}
      {/* <InputLine/> */}
+     <EligibilityForm/>
     </>
   );
 };

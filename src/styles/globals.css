@@ -276,3 +276,7 @@ input[type="range"] {
 
 
  
+.para:before {
+  content: "\2022"; /* Unicode character for a bullet point */
+  margin-right: 8px; /* Add some space between the dot and the text */
+}
