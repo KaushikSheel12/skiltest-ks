@@ -10,10 +10,7 @@ const Questions = () => {
         <div className="text-center">
           <h1 className="font-bold text-[25px] md:text-[35px]">New Answers of Question </h1>
         </div>
-
-
-
-        <div className="grid md:grid-cols-3 grid-cols-1 mt-5 md:mt-10">
+    <div className="grid md:grid-cols-3 grid-cols-1 mt-5 md:mt-10">
           {[...new Array(15)].map((el, index) => {
             return (
               <div key={index}>
