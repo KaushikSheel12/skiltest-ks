@@ -5,6 +5,7 @@ import { Apps } from "./Apps";
 import { UiCard } from "./UiCard";
 import { FontCard } from "./FontCard";
 import { elements } from "chart.js";
+import Image from "next/image";
 
 export const CreativeHome = () => {
   const fontBoxImg = [
@@ -19,9 +20,7 @@ export const CreativeHome = () => {
   return (
     <div className="w-full h-screen relative flex items-center px-6 py-1 ] ">
       <div className="w-[240px] h-full  fixed  left-6 top-6 ">
-
         <SidebarHome />
-
       </div>
       <div className="w-[60%]  h-full  absolute right-[270px] px-2 ">
         <Toptitle />
@@ -79,11 +78,27 @@ export const CreativeHome = () => {
           </div>
         </div>
 
-
-
-
-
-
+        <div className="w-full h-[250px] border border-gray-600   shadow-lg mt-5 rounded-md  flex   items-center ">
+          <div className="w-[70%] h-full px-14  grid place-content-center">
+            <h3 className="text-[28px] ">Join the newsletter</h3>
+            <p className="text-[16px] text-gray-500">
+              Receive an email when tools are added! Discover the future nugget
+              of design in advance! No spam, we promise
+            </p>
+            <div className="flex items-center w-[309px] border-gray-500 border rounded-lg px-3 gap-3  h-fit mt-3 ">
+              <input type="email" placeholder="Enter your email" />
+              <div className="px-4 bg-gray-200 rounded-lg py-1">Subscribe</div>
+            </div>
+          </div>
+          <div className="w-[35%] h-[250px] relative">
+            <Image
+              src="https://framerusercontent.com/images/vF1ErqZTpfGoJaHHEr6nGNcccYM.png"
+              alt="img"
+              fill
+              className="object-cove rounded-md"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
