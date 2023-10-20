@@ -53,8 +53,9 @@ import { MyImage } from "@/components/apple/MyImage";
 import { MyHeroX } from "@/components/airpano/MyHeroX";
 import { InputLine } from "@/components/educantionLoan/InputLine";
 import { EligibilityForm } from "@/components/educantionLoan/EligibilityForm";
-
-
+import Calculator from "@/components/emicalculater/calculateEMI";
+import { CreativeHome } from "@/components/kreativetools/CreativeHome";
+import { SidebarHome } from "@/components/kreativetools/sidebar/SidebarHome";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -86,7 +87,7 @@ const Test = () => {
       {/* <Linkedin /> */}
       {/* <Coursehero /> */}
       {/* <Dreamjob /> */}
-       {/* <Ourpromise /> */}
+      {/* <Ourpromise /> */}
       {/* <Answerd /> */}
       {/* <Questions /> */}
 
@@ -104,10 +105,12 @@ const Test = () => {
       {/* <Scholar/> */}
       {/* <NewPredictorBox/> */}
       {/* <Xlanding /> */}
-     {/* <MyHeroX/> */}
-     {/* <Mhome /> */}
-     {/* <InputLine/> */}
-     <EligibilityForm/>
+      {/* <MyHeroX/> */}
+      {/* <Mhome /> */}
+      {/* <InputLine/> */}
+      {/* <EligibilityForm/> */}
+      {/* <Calculator/> */}
+      <CreativeHome/>
     </>
   );
 };
