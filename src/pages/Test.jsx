@@ -108,9 +108,9 @@ const Test = () => {
       {/* <MyHeroX/> */}
       {/* <Mhome /> */}
       {/* <InputLine/> */}
-      {/* <EligibilityForm/> */}
+      <EligibilityForm/>
       {/* <Calculator/> */}
-      <CreativeHome/>
+      {/* <CreativeHome/> */}
     </>
   );
 };

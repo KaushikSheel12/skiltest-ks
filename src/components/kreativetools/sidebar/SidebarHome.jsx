@@ -6,7 +6,7 @@ import { MdOutlineColorLens, MdSlowMotionVideo } from "react-icons/Md";
 import { AiOutlineAlibaba } from "react-icons/ai";
 
 export const SidebarHome = () => {
-  const GraphicTitles = ["Color", "Font", " Mockp"];
+  const GraphicTitles = ["Color", "Font","Mockup"];
   const WebdesignTitles = ["UI Kit", "Icon", "No Code"];
   const MotionTitle = ["Script & Plugin", "Sound Design"];
   const VideoeditingTitle = ["Footage", "Music& Sound"];
@@ -14,7 +14,7 @@ export const SidebarHome = () => {
     <>
       <Profile icon={<MdOutlineColorLens size={20} />} title="Graphic Design" />
       <div className="pl-12 ">
-        <ProfileLable label={GraphicTitles} />
+        <ProfileLable  label={GraphicTitles} />
       </div>
       <Profile icon={<TbWorldBolt size={20} />} title="Web Design" />
       <div className="pl-12 ">

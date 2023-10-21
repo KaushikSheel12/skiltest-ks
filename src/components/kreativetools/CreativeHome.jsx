@@ -6,6 +6,7 @@ import { UiCard } from "./UiCard";
 import { FontCard } from "./FontCard";
 import { elements } from "chart.js";
 import Image from "next/image";
+import { BsArrowUpRight } from "react-icons/Bs";
 
 export const CreativeHome = () => {
   const fontBoxImg = [
@@ -25,7 +26,7 @@ export const CreativeHome = () => {
       <div className="w-[60%]  h-full  absolute right-[270px] px-2 ">
         <Toptitle />
 
-        <div className="w-full h-fit mt-7 ">
+        <div id="Apps" className="w-full h-fit mt-7 ">
           <h2 className="text-[26px] font-semibold">Apps</h2>
           <div className="grid grid-cols-2 gap-3 mt-4">
             <Apps
@@ -47,7 +48,7 @@ export const CreativeHome = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit mt-7  ">
+        <div id="Color" className="w-full h-fit mt-7  ">
           <h2 className="text-[26px]  font-semibold">Color</h2>
 
           <div className="grid grid-cols-3 gap-3 mt-4">
@@ -60,7 +61,7 @@ export const CreativeHome = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit mt-7  ">
+        <div id="Font" className="w-full h-fit mt-7  ">
           <h2 className="text-[26px]  font-semibold">Font</h2>
           <div className="grid grid-cols-3 gap-3 mt-4">
             {fontBoxImg?.map((el, index) => {
@@ -69,12 +70,69 @@ export const CreativeHome = () => {
           </div>
         </div>
 
-        <div className="w-full h-fit mt-7  ">
+        <div  id="Mockup" className="w-full h-fit mt-7  ">
           <h2 className="text-[26px]  font-semibold">Mockup</h2>
           <div className="grid grid-cols-3 gap-3 mt-4">
             {fontBoxImg?.map((el, index) => {
               return <FontCard key={index} img={el} />;
             })}
+
+
+
+
+
+<div className="w-fit h-fit border-2 border-gray-400 hidden px-3 py-2 shadow-lg mb-3  relative rounded-lg ">
+      <div className="w-full h-fit ">
+        <div className="w-[320px] h-[200px] relative bg-red-600 cursor-pointer rounded-md  ">
+          <Image
+            src="https://framerusercontent.com/images/1DWkcLk5VUmAbyaI0gRgD5mlCo.png?scale-down-to=512"
+            fill
+            alt="img"
+            className="object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex items-center justify-between py-1 gap-3">
+          <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[4px] rounded-md  shadow-lg ">
+            <p className="">Craftwork</p>
+          </div>
+          <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[2px] rounded-md  flex items-center gap-2 shadow-lg ">
+            <p>Free & Paid</p>
+            <BsArrowUpRight />
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div className="w-fit h-fit border-2 border-gray-400 hidden px-3 py-2 shadow-lg mb-3  relative rounded-lg ">
+      <div className="w-full h-fit ">
+        <div className="w-[320px] h-[200px] relative bg-red-600 cursor-pointer rounded-md  ">
+          <Image
+            src="https://framerusercontent.com/images/1DWkcLk5VUmAbyaI0gRgD5mlCo.png?scale-down-to=512"
+            fill
+            alt="img"
+            className="object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex items-center justify-between py-1 gap-3">
+          <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[4px] rounded-md  shadow-lg ">
+            <p className="">Craftwork</p>
+          </div>
+          <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[2px] rounded-md  flex items-center gap-2 shadow-lg ">
+            <p>Free & Paid</p>
+            <BsArrowUpRight />
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+
+
+
+
+
           </div>
         </div>
 

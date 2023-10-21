@@ -52,7 +52,7 @@ const Calculator = () => {
             calculateEMI();
           }}
         />
-        <span>{ate}</span>
+
       </div>
       <div>
         <label>Time (in years)</label>
