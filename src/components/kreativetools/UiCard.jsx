@@ -4,7 +4,7 @@ import { BsArrowUpRight, BsDisc } from "react-icons/Bs";
 
 export const UiCard = () => {
   return (
-    <div className="w-fit h-fit border border-gray-400 px-3 py-2 shadow-lg mb-3  relative rounded-lg ">
+    <div className="w-fit h-fit border border-gray-400 px-3 py-2 shadow-lg  relative rounded-lg ">
       <Image
         src="https://uploads-ssl.webflow.com/63dd728b7a35e255d81a6759/64f0bc9589b585a2fa3645e3_g0OlyO_rusDEne46o4EjzQmlBV85g688OUJvs1kf584.webp"
         width={60}

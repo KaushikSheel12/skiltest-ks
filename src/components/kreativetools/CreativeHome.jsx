@@ -64,9 +64,9 @@ export const CreativeHome = () => {
         <div id="Font" className="w-full h-fit mt-7  ">
           <h2 className="text-[26px]  font-semibold">Font</h2>
           <div className="grid grid-cols-3 gap-3 mt-4">
-            {fontBoxImg?.map((el, index) => {
-              return <FontCard key={index} img={el} />;
-            })}
+            {fontBoxImg?.map((el, index) => 
+            <FontCard key={index} img={el} />
+            )}
           </div>
         </div>
 
