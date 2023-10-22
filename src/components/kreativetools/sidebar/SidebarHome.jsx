@@ -6,30 +6,42 @@ import { MdOutlineColorLens, MdSlowMotionVideo } from "react-icons/Md";
 import { AiOutlineAlibaba } from "react-icons/ai";
 
 export const SidebarHome = () => {
-  const GraphicTitles = ["Color", "Font","Mockup"];
-  const WebdesignTitles = ["UI Kit", "Icon", "No Code"];
-  const MotionTitle = ["Script & Plugin", "Sound Design"];
-  const VideoeditingTitle = ["Footage", "Music& Sound"];
+  
+
+const sidebarlink=[
+  {
+    icon:<TbWorldBolt/>,
+    title:"Graphic Design",
+    href:"/graphic-design",
+    links:["Color","Font","Mockup"]
+  },
+  {
+    icon:<TbWorldBolt/>,
+    title:"Web Design",
+    href:"/web-design",
+    links:["UI-Kit", "Icon", "No-Code"]
+  },
+  {
+    icon:<TbWorldBolt/>,
+    title:"Motion Design",
+    href:"/motion-design",
+    links:["Script & Plugin", "Sound Design"]
+  },{
+    icon:<TbWorldBolt/>,
+    title:"Video Editing",
+    href:"/video-editing",
+    links:["Footage", "Music& Sound"]
+  }
+]
+
   return (
     <>
-      <Profile icon={<MdOutlineColorLens size={20} />} title="Graphic Design" />
-      <div className="pl-12 ">
-        <ProfileLable  label={GraphicTitles} />
+{sidebarlink.map(({title,href,links,icon})=>
+  <div className="">
+        <ProfileLable title={title} href={href}  links={links} icon={icon} />
       </div>
-      <Profile icon={<TbWorldBolt size={20} />} title="Web Design" />
-      <div className="pl-12 ">
-        <ProfileLable label={WebdesignTitles} />
-      </div>
-
-      <Profile icon={<AiOutlineAlibaba size={20} />} title="Motion Design" />
-      <div className="pl-12 ">
-        <ProfileLable label={MotionTitle} />
-      </div>
-
-      <Profile icon={<MdSlowMotionVideo size={20} />} title="Video Editing" />
-      <div className="pl-12 ">
-        <ProfileLable label={VideoeditingTitle} />
-      </div>
+)}
+     
     </>
   );
 };

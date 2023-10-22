@@ -110,7 +110,7 @@ const Test = () => {
       {/* <InputLine/> */}
       {/* <EligibilityForm/> */}
       {/* <Calculator/> */}
-      {/* <CreativeHome/> */}
+      <CreativeHome/>
     </>
   );
 };
