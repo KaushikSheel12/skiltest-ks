@@ -14,7 +14,7 @@ const VideoEditing = () => {
       <div className="w-[240px] h-full  md:block   hidden fixed   left-6 top-6 ">
         <SidebarHome />
       </div>
-      <div className="md:w-[70%] w-full  h-full pl-2  ml-[230px] px-2 ">
+      <div className="md:w-[70%] w-full  h-full pl-2  md:ml-[230px] px-2 ">
         <Toptitle
           heading="Video Editing"
           paraGraph="Find your next favorite video editing tool here"
