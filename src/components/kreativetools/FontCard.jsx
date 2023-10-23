@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/Bs";
 
-export const FontCard = ({img}) => {
+export const FontCard = ({ img }) => {
   return (
     <div className="md:w-fit w-full h-fit border-2 border-gray-400 px-3 py-2 shadow-lg mb-1  relative rounded-lg ">
       <div className="w-full h-fit ">
@@ -25,6 +25,6 @@ export const FontCard = ({img}) => {
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   );
 };
