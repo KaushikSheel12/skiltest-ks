@@ -76,7 +76,7 @@ const Test = () => {
       {/* <Allexams /> */}
       {/* <Herosection /> */}
       {/* <Videoplayer /> */}
-        <Dreamjob />
+      {/* <Dreamjob /> */}
       {/* <Watchandgrow /> */}
       {/* <Country /> */}
       {/* <TopHeroSection /> */}
@@ -86,8 +86,8 @@ const Test = () => {
       {/* <Asprogress /> */}
       {/* <Newcountry /> */}
       {/* <Linkedin /> */}
-       {/* <Coursehero /> */}
-    
+      {/* <Coursehero /> */}
+
       {/* <Ourpromise /> */}
       {/* <Answerd /> */}
       {/* <Questions /> */}
@@ -111,7 +111,7 @@ const Test = () => {
       {/* <InputLine/> */}
       {/* <EligibilityForm/> */}
       {/* <Calculator/> */}
-      {/* <CreativeHome/> */}
+      <CreativeHome />
     </>
   );
 };

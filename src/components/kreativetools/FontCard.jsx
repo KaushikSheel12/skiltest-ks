@@ -4,9 +4,9 @@ import { BsArrowUpRight } from "react-icons/Bs";
 
 export const FontCard = ({img}) => {
   return (
-    <div className="w-fit h-fit border-2 border-gray-400 px-3 py-2 shadow-lg mb-3  relative rounded-lg ">
+    <div className="md:w-fit w-full h-fit border-2 border-gray-400 px-3 py-2 shadow-lg mb-1  relative rounded-lg ">
       <div className="w-full h-fit ">
-        <div className="w-[320px] h-[200px] relative bg-red-600 cursor-pointer rounded-md  ">
+        <div className="md:w-[240px] w-full md:h-[150px] h-[200px] relative  cursor-pointer rounded-md  ">
           <Image
             src={img}
             fill
@@ -15,7 +15,7 @@ export const FontCard = ({img}) => {
             loading="lazy"
           />
         </div>
-        <div className="flex items-center justify-between py-1 gap-3">
+        <div className="flex items-center justify-between py-1 mt-2 ">
           <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[4px] rounded-md  shadow-lg ">
             <p className="">Craftwork</p>
           </div>

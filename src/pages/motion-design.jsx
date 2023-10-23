@@ -8,7 +8,7 @@ import { BsArrowUpRight } from "react-icons/Bs";
 import Image from "next/image";
 import { fontBoxImg } from "@/data/frontBoxImg";
 
-const WebDesignHome = () => {
+const MotionDesign = () => {
   return (
     <div className="w-full h-screen relative flex items-center px-6 py-1 ] ">
       <div className="w-[240px] h-full  fixed  left-6 top-6 ">
@@ -16,8 +16,8 @@ const WebDesignHome = () => {
       </div>
       <div className="w-[60%]  h-full  absolute right-[270px] px-2 ">
         <Toptitle
-          heading="Web Design"
-          paraGraph="Find your next favorite web design tool here"
+          heading="Motion Design"
+          paraGraph="Find your next favorite motion design tool here"
         />
 
         <div id="Apps" className="w-full h-fit mt-7 ">
@@ -42,8 +42,8 @@ const WebDesignHome = () => {
           </div>
         </div>
 
-        <div id="UI-Kit" className="w-full h-fit mt-7  ">
-          <h2 className="text-[26px]  font-semibold">UI Kit</h2>
+        <div id="Script-Plugin" className="w-full h-fit mt-7  ">
+          <h2 className="text-[26px]  font-semibold">Script & Plugin</h2>
 
           <div className="grid grid-cols-3 gap-3 mt-4">
             <UiCard />
@@ -55,8 +55,8 @@ const WebDesignHome = () => {
           </div>
         </div>
 
-        <div id="Icon" className="w-full h-fit mt-7  ">
-          <h2 className="text-[26px]  font-semibold">Icon</h2>
+        <div id="Sound-Design" className="w-full h-fit mt-7  ">
+          <h2 className="text-[26px]  font-semibold">Sound Design</h2>
           <div className="grid grid-cols-3 gap-3 mt-4">
             {fontBoxImg?.map((el, index) => (
               <FontCard key={index} img={el} />
@@ -64,60 +64,6 @@ const WebDesignHome = () => {
           </div>
         </div>
 
-        <div id="No-Code" className="w-full h-fit mt-7  ">
-          <h2 className="text-[26px]  font-semibold"> No Code</h2>
-          <div className="grid grid-cols-3 gap-3 mt-4">
-            {fontBoxImg?.map((el, index) => {
-              return <FontCard key={index} img={el} />;
-            })}
-
-            <div className="w-fit h-fit border-2 border-gray-400 hidden px-3 py-2 shadow-lg mb-3  relative rounded-lg ">
-              <div className="w-full h-fit ">
-                <div className="w-[320px] h-[200px] relative bg-red-600 cursor-pointer rounded-md  ">
-                  <Image
-                    src="https://framerusercontent.com/images/1DWkcLk5VUmAbyaI0gRgD5mlCo.png?scale-down-to=512"
-                    fill
-                    alt="img"
-                    className="object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="flex items-center justify-between py-1 gap-3">
-                  <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[4px] rounded-md  shadow-lg ">
-                    <p className="">Craftwork</p>
-                  </div>
-                  <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[2px] rounded-md  flex items-center gap-2 shadow-lg ">
-                    <p>Free & Paid</p>
-                    <BsArrowUpRight />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-fit h-fit border-2 border-gray-400 hidden px-3 py-2 shadow-lg mb-3  relative rounded-lg ">
-              <div className="w-full h-fit ">
-                <div className="w-[320px] h-[200px] relative bg-red-600 cursor-pointer rounded-md  ">
-                  <Image
-                    src="https://framerusercontent.com/images/1DWkcLk5VUmAbyaI0gRgD5mlCo.png?scale-down-to=512"
-                    fill
-                    alt="img"
-                    className="object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="flex items-center justify-between py-1 gap-3">
-                  <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[4px] rounded-md  shadow-lg ">
-                    <p className="">Craftwork</p>
-                  </div>
-                  <div className="w-fit border border-gray-400 h-fit px-2 cursor-pointer py-[2px] rounded-md  flex items-center gap-2 shadow-lg ">
-                    <p>Free & Paid</p>
-                    <BsArrowUpRight />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className="w-full h-[250px] border border-gray-600   shadow-lg mt-5 rounded-md  flex   items-center ">
           <div className="w-[70%] h-full px-14  grid place-content-center">
@@ -145,4 +91,4 @@ const WebDesignHome = () => {
   );
 };
 
-export default WebDesignHome;
+export default MotionDesign
