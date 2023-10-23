@@ -37,6 +37,7 @@ export const SidebarHome = () => {
 
   return (
     <>
+    <h1 className="font-bold border-b-[1px] border-[#727272] md:px-2 w-[100px] md:w-[180px] text-[20px] md:text-[28px]">Resource</h1>
       {sidebarlink.map(({ title, href, links, icon }) => (
         <div onClick={() => setIsToggel(false)} className="">
           <ProfileLable title={title} href={href} links={links} icon={icon} />

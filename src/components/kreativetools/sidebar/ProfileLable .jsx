@@ -5,7 +5,7 @@ export const ProfileLable = ({ href, links, title, icon }) => {
   const handleSelect = (el) => {};
 
   return (
-    <div className="">
+    <div className="mt-[-4px]">
       <Link
         href={href}
         className=" relative flex items-center gap-3 capitalize rounded-md py-4 font-medium text-black  cursor-pointer duration-300 ease-in-out  "
