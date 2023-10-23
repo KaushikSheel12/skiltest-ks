@@ -3,8 +3,11 @@ import { ProfileLable } from "./ProfileLable ";
 import { TbWorldBolt } from "react-icons/tb";
 import { MdOutlineColorLens, MdSlowMotionVideo } from "react-icons/Md";
 import { AiOutlineAlibaba } from "react-icons/ai";
+import useToggleStore from "@/zustand";
 
 export const SidebarHome = () => {
+  const { isToggel, setIsToggel } = useToggleStore();
+
   const sidebarlink = [
     {
       icon: <TbWorldBolt />,
@@ -35,7 +38,7 @@ export const SidebarHome = () => {
   return (
     <>
       {sidebarlink.map(({ title, href, links, icon }) => (
-        <div className="">
+        <div onClick={() => setIsToggel(false)} className="">
           <ProfileLable title={title} href={href} links={links} icon={icon} />
         </div>
       ))}

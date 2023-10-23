@@ -42,3 +42,12 @@ export const useZustand = create((set) => ({
   showQuiz: true,
   setShowQuiz: (showQuiz) => set({ showQuiz }),
 }));
+
+//for Resorses
+
+const useToggleStore = create((set) => ({
+  isToggel: false,
+  setIsToggel: (value: any) => set({ isToggel: value }),
+}));
+
+export default useToggleStore;

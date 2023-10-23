@@ -4,14 +4,24 @@ import { UiCard } from "@/components/kreativetools/UiCard";
 import { SidebarHome } from "@/components/kreativetools/sidebar/SidebarHome";
 import { Toptitle } from "@/components/kreativetools/sidebar/Toptitle";
 import { fontBoxImg } from "@/data/frontBoxImg";
-import React from "react";
-import { BsArrowUpRight } from "react-icons/Bs";
+import React, { useState } from "react";
+import { BsArrowUpRight, BsMenuDown, BsDoorClosed } from "react-icons/Bs";
 import Image from "next/image";
 
+import { ResourceNev } from "@/components/kreativetools/ResourceNav";
+import useToggleStore from "@/zustand";
+
 const GraphicDesign = () => {
+  const { isToggel } = useToggleStore();
+
   return (
-    <div className="w-full h-screen relative flex items-center px-2 md:px-6 py-1 ] ">
-      <div className="w-[240px] h-full  md:block   hidden fixed   left-6 top-6 ">
+    <div className="w-full h-screen relative flex items-center  md:px-6 py-1 ] ">
+      <ResourceNev />
+      <div
+        className={`md:w-[240px] w-full h-full  md:block  fixed z-10  md:left-6 md:top-6 ${
+          isToggel ? "block self-center bg-blue-100" : "hidden"
+        } `}
+      >
         <SidebarHome />
       </div>
       <div className="md:w-[70%] w-full  h-full pl-2 md:ml-[230px] px-2 ">

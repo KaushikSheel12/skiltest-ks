@@ -7,11 +7,19 @@ import { fontBoxImg } from "@/data/frontBoxImg";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/Bs";
 import Image from "next/image";
+import useToggleStore from "@/zustand";
+import { ResourceNev } from "@/components/kreativetools/ResourceNav";
 
 const WebDesignHome = () => {
+  const { isToggel } = useToggleStore();
   return (
     <div className="w-full h-screen relative flex items-center px-2 md:px-6 py-1 ] ">
-      <div className="w-[240px] h-full  md:block   hidden fixed   left-6 top-6 ">
+      <ResourceNev />
+      <div
+        className={`md:w-[240px] w-full h-full  md:block  fixed z-10  md:left-6 md:top-6 ${
+          isToggel ? "block self-center bg-blue-100" : "hidden"
+        } `}
+      >
         <SidebarHome />
       </div>
       <div className="md:w-[70%] w-full  h-full pl-2 md:ml-[230px] px-2 ">
