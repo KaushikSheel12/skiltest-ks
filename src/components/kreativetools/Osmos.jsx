@@ -82,7 +82,7 @@ export const Osmos = () => {
           <p className="text-[24px] leading-8 py-3 ">
             Let us connect you with them as soon <br /> as next week
           </p>
-          <button className="mx-auto px-8 mt-4 bg-black text-yellow-300 text-[18px]  rounded-2xl ">
+          <button className="mx-auto px-8 mt-4 bg-black text-yellow-300 text-[18px] cursor-pointer  rounded-2xl ">
             Apply to join
           </button>
         </div>
