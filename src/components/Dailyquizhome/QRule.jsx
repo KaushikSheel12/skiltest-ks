@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
+
 export const QRule = ({ imgSrc, title }) => {
   return (
     <div className="flex gap-2 md:px-2   py-1">
