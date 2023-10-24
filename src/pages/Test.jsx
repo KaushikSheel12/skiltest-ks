@@ -56,6 +56,7 @@ import { EligibilityForm } from "@/components/educantionLoan/EligibilityForm";
 import Calculator from "@/components/emicalculater/calculateEMI";
 import { CreativeHome } from "@/components/kreativetools/CreativeHome";
 import { SidebarHome } from "@/components/kreativetools/sidebar/SidebarHome";
+import { Osmos } from "@/components/kreativetools/Osmos";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -111,7 +112,8 @@ const Test = () => {
       {/* <InputLine/> */}
       {/* <EligibilityForm/> */}
       {/* <Calculator/> */}
-      <CreativeHome />
+      {/* <CreativeHome /> */}
+      <Osmos/>
     </>
   );
 };
