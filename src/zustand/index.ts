@@ -44,7 +44,6 @@ export const useZustand = create((set) => ({
 }));
 
 //for Resorses
-
 const useToggleStore = create((set) => ({
   isToggel: false,
   setIsToggel: (value: any) => set({ isToggel: value }),
