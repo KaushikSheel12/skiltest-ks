@@ -57,6 +57,7 @@ import Calculator from "@/components/emicalculater/calculateEMI";
 import { CreativeHome } from "@/components/kreativetools/CreativeHome";
 import { SidebarHome } from "@/components/kreativetools/sidebar/SidebarHome";
 import { Osmos } from "@/components/kreativetools/Osmos";
+import { Globe } from "@/components/kreativetools/Globe";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -113,7 +114,8 @@ const Test = () => {
       {/* <EligibilityForm/> */}
       {/* <Calculator/> */}
       {/* <CreativeHome /> */}
-      <Osmos/>
+      {/* <Osmos/> */}
+      <Globe/>
     </>
   );
 };
