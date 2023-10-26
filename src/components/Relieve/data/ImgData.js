@@ -1,0 +1,4 @@
+export const PlateformImages = ["https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F6ea064a7-e924-4c31-9e2a-5667f1339e3b.jpg&w=3840&q=75",
+    "https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1690275727%2Fitem-images%2F776eee8a-5936-4fa0-863e-042e34737b28.jpg&w=3840&q=75",
+    "https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1690273997%2Fitem-images%2Fa525a029-ecd9-44a2-b9c4-0e75cb37dc91.jpg&w=3840&q=75",
+    "https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1690274490%2Fitem-images%2Fe80169b2-08a1-46a2-834f-15ee3745d6f9.jpg&w=3840&q=75"]
