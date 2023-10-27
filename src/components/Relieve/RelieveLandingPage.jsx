@@ -3,7 +3,10 @@ import React from "react";
 import { useState } from "react";
 import { BsArrowRight } from "react-icons/Bs";
 import { PlatformBox } from "./PlatformBox";
-import { PlateformImages } from "./data/ImgData";
+import { BoxData, PlateformImages } from "./data/ImgData";
+import { MethodBox } from "./MethodBox";
+import TextChange from "./TextChange";
+import { SolutionsBox } from "./SolutionsBox";
 
 export const RelieveLandingPage = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,6 +16,7 @@ export const RelieveLandingPage = () => {
   const handleSelect = (index) => {
     setActiveTab(index);
   };
+
   return (
     <>
       <div className="w-full h-[730px] relative ">
@@ -60,10 +64,11 @@ export const RelieveLandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-[85%] h-fit py-4 border border-red-700 mx-auto">
+      <div className="w-[85%] h-fit py-4  mx-auto">
         <h1 className="text-[30px] text-green-900">
           Available now on the platform
         </h1>
+
         <div className="flex mt-4 items-center gap-6">
           {Platforms?.map((el, index) => {
             return (
@@ -98,7 +103,8 @@ export const RelieveLandingPage = () => {
               </p>
             </div>
             <div className="w-fit h-fit px-4 py-2 cursor-pointer bg-green-900 text-white flex items-center gap-2  rounded-md ">
-              <p>Start now</p> <BsArrowRight color="white" />
+              <p className="whitespace-nowrap">Start now</p>{" "}
+              <BsArrowRight color="white" />
             </div>
           </div>
         </div>
@@ -111,9 +117,9 @@ export const RelieveLandingPage = () => {
           loading="lazy"
           className="object-cover"
         />
-        <div className=" absolute top-28  left-[130px] w-[85%] h-fit">
+        <div className=" absolute top-16 left-[130px] w-[85%] h-fit">
           <p className="text-[16px] text-white ">OUR MISSION</p>
-          <h1 className="text-[60px]  text-white">
+          <h1 className="text-[60px]  leading-[80px] text-white">
             Every year,
             <span className="border-b-2">
               45 million items of furniture are sent to landfill in Europe
@@ -125,7 +131,7 @@ export const RelieveLandingPage = () => {
               reducing costs to the environment and your business.
             </span>
           </h1>
-          <div className="flex mt-20 items-center justify-between w-full h-fit">
+          <div className="flex mt-10 items-center justify-between w-full h-fit">
             <p className="text-[20px] text-white">
               Does this mission speak to you? Or have project in mind
             </p>
@@ -151,8 +157,9 @@ export const RelieveLandingPage = () => {
                 carbon emissions… as well as costs
               </p>
             </div>
-            <div className="w-[200px] h-fit px-2 py-2 cursor-pointer bg-green-900 text-white flex items-center justify-around rounded-md ">
-              <p>Read more</p> <BsArrowRight color="white" />
+            <div className="w-[200px] h-fit px-4 py-2 cursor-pointer bg-green-900 text-white flex items-center justify-around rounded-md ">
+              <p className="whitespace-nowrap">Read more</p>{" "}
+              <BsArrowRight color="white" />
             </div>
           </div>
         </div>
@@ -160,30 +167,10 @@ export const RelieveLandingPage = () => {
         <h1 className="text-[50px] mt-20 text-green-900">
           Furnishing Solutions
         </h1>
-        <div className=" grid grid-cols-4 mt-3 gap-3">
+        <div className=" grid grid-cols-4 mt-3 gap-x-3">
           {PlateformImages?.map((el, index) => {
             return (
-              <div className="w-[350px] h-fit">
-                <div className="w-full h-[435px]  rounded-md relative ">
-                  <Image
-                    src="https://www.relievefurniture.com/_next/image?url=%2Fstatic%2Fimages%2Fv3%2Fconsultations.jpg&w=828&q=75"
-                    alt="img"
-                    fill
-                    className="object-cover rounded-md"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="w-full h-[150px] ">
-                  <div className="w-[140px] mt-5 h-[1px] bg-black"></div>
-                  <h2 className="ml-16">1.</h2>
-                  <h1 className="text-[30px] text-green-900">Consultations</h1>
-                  <p className="text-[18px] text-[#777474]">
-                    Get help from a qualified member of the Relieve team to
-                    design and plan any office space with items we have in stock
-                    and arriving soon.
-                  </p>
-                </div>
-              </div>
+        <SolutionsBox key={index}/>
             );
           })}
         </div>
@@ -200,8 +187,84 @@ export const RelieveLandingPage = () => {
                 carbon emissions… as well as costs
               </p>
             </div>
-            <div className="w-[200px] h-fit px-2 py-2 cursor-pointer bg-green-900 text-white flex items-center justify-around rounded-md ">
-              <p>Read more</p> <BsArrowRight color="white" />
+            <div className="w-[200px] h-fit px-4 py-2 cursor-pointer bg-green-900 text-white flex items-center justify-around rounded-md ">
+              <p className="whitespace-nowrap">Read more</p>{" "}
+              <BsArrowRight color="white" />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-20">
+          <h1 className="text-[50px] text-green-900 ">
+            Our green removal methods
+          </h1>
+          <div className="grid grid-cols-4 gap-3 mt-4 w-full h-fit">
+            {BoxData?.map((el, index) => {
+              return (
+                <MethodBox
+                  key={index}
+                  icon={el.icon}
+                  detail={el.detail}
+                  work={el.work}
+                />
+              );
+            })}
+          </div>
+        </div>
+
+        <TextChange />
+
+        <div className="mt-20">
+          <h1 className="text-[34px] text-green-900">Active campaigns</h1>
+          <div className="w-full gap-7 mt-4 grid grid-cols-2">
+            <div className="w-full h-fit">
+              <div className="w-full h-[470px] relative rounded-sm">
+                <Image
+                  src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695384895%2Fbuyback-banners%2Fb6038cd5-2fbf-4076-91cb-b2bc71d1bf01.webp&w=1920&q=75"
+                  alt="img"
+                  fill
+                  loading="lazy"
+                  className="object-cover rounded-sm"
+                />
+              </div>
+              <div className="flex mt-4 items-center gap-4">
+                <div className="w-[50px] h-[50px]  relative rounded-full">
+                  <Image
+                    src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1690900938%2Fcompany-logo%2F9c8934f5-719c-4af9-bebc-4347ecdfc725.png&w=128&q=75"
+                    alt="img"
+                    fill
+                    loading="lazy"
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-[20px] text-green-900">
+                  Relivele Showroom{" "}
+                </h3>
+              </div>
+            </div>
+
+            <div className="w-full h-fit">
+              <div className="w-full h-[470px] relative rounded-sm">
+                <Image
+                  src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1696511682%2Fbuyback-banners%2F562988ae-7405-4d89-8850-f11d38db4e4d.png&w=1920&q=75"
+                  alt="img"
+                  fill
+                  loading="lazy"
+                  className="object-cover rounded-sm"
+                />
+              </div>
+              <div className="flex mt-4 items-center gap-4">
+                <div className="w-[50px] h-[50px]  relative rounded-full">
+                  <Image
+                    src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1696511495%2Fcompany-logo%2Fa071e84a-5388-402c-813a-6d39cdf614d4.png&w=128&q=75"
+                    alt="img"
+                    fill
+                    loading="lazy"
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-[20px] text-green-900">ING </h3>
+              </div>
             </div>
           </div>
         </div>
