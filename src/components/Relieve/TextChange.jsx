@@ -35,15 +35,15 @@ const TextChange = () => {
   };
 
   return (
-    <div className="w-full mt-20 h-[400px]  items-center gap-5 flex justify-around">
+    <div className="w-full mt-10 md:mt-20 md:h-[400px] h-[300px] relative  items-center gap-5 flex justify-around">
       <div
         onClick={handlePrevClick}
-        className="w-[200px] h-fit px-2 py-2 cursor-pointer border border-gray-400  flex items-center justify-around rounded-md "
+        className="md:w-[200px] w-fit absolute gap-2 left-1 bottom-1 h-fit px-4 md:px-2 py-2 cursor-pointer border border-gray-400  flex items-center justify-around rounded-md "
       >
         <BsArrowLeft color="black" /> <p>Prev</p>
       </div>
       <div className="w-full text-center h-fit ">
-        <p className="text-[38px] leading-[50px] text-green-900">
+        <p className="md:text-[38px] text-[19px] leading-[25px] transition-all ease-linear     md:leading-[50px] text-green-900">
           {Names[text].text}
         </p>
         <div className=" mt-10  mx-auto w-[200px]  h-fit">
@@ -56,12 +56,14 @@ const TextChange = () => {
             />
           </div>
           <div className="w-[100px] h-[1px] bg-black mx-auto  "></div>
-          <p className="text-[12px] text-green-900">{Names[text].paratext}</p>
+          <p className="md:text-[12px] text-[10px] text-green-900">
+            {Names[text].paratext}
+          </p>
         </div>
       </div>
       <div
         onClick={handleNextClick}
-        className="w-[200px] h-fit px-2 py-2 cursor-pointer border border-gray-400 flex items-center justify-around rounded-md "
+        className="md:w-[200px] gap-2 w-fit absolute bottom-1 right-0 h-fit px-4 md:px-2 py-2 cursor-pointer border border-gray-400 flex items-center justify-around rounded-md "
       >
         <p>Next</p> <BsArrowRight color="black" />
       </div>

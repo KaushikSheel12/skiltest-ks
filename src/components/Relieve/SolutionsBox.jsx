@@ -1,26 +1,23 @@
 import Image from "next/image";
 import React from "react";
 
-export const SolutionsBox = () => {
+export const SolutionsBox = ({ img, work, description }) => {
   return (
     <div className="w-full h-fit">
-      <div className="w-full h-[435px]  rounded-md relative ">
+      <div className="w-full md:h-[435px]  h-[230px] rounded-md relative ">
         <Image
-          src="https://www.relievefurniture.com/_next/image?url=%2Fstatic%2Fimages%2Fv3%2Fconsultations.jpg&w=828&q=75"
+          src={img}
           alt="img"
           fill
           className="object-cover rounded-md"
           loading="lazy"
         />
       </div>
-      <div className="w-full h-[150px] ">
-        <div className="w-[140px] mt-5 h-[1px] bg-black"></div>
-        <h2 className="ml-16">1.</h2>
-        <h1 className="text-[30px] text-green-900">Consultations</h1>
-        <p className="text-[18px] text-[#777474]">
-          Get help from a qualified member of the Relieve team to design and
-          plan any office space with items we have in stock and arriving soon.
-        </p>
+      <div className="w-full h-fit md:h-[150px] ">
+        <div className="md:w-[140px]  w-[110px] mt-5 h-[1px] bg-black"></div>
+        <h2 className="md:ml-16 ml-12 md:text-[14px] text-[13px]">1.</h2>
+        <h1 className="md:text-[30px] text-[16px] text-green-900">{work}</h1>
+        <p className="md:text-[18px] text-[12px] text-[#777474]">{description}</p>
       </div>
     </div>
   );
