@@ -59,6 +59,7 @@ import { SidebarHome } from "@/components/kreativetools/sidebar/SidebarHome";
 import { Osmos } from "@/components/kreativetools/Osmos";
 import { Globe } from "@/components/kreativetools/Globe";
 import { RelieveLandingPage } from "@/components/Relieve/RelieveLandingPage";
+import { CheckoutPage } from "@/components/Relieve/checkoutPage/CheckoutPage";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -117,7 +118,8 @@ const Test = () => {
       {/* <CreativeHome /> */}
       {/* <Osmos/> */}
       {/* <Globe/> */}
-      <RelieveLandingPage />
+      {/* <RelieveLandingPage /> */}
+      <CheckoutPage/>
     </>
   );
 };

@@ -26,6 +26,7 @@ export const RelieveLandingPage = () => {
           fill
           className="object-cover"
           loading="lazy"
+          
         />
         <div className="md:w-[610px] w-[95%] px-8 py-8  bg-white rounded-2xl absolute bottom-10 md:bottom-16 left-[10px] md:left-[140px] h-fit md:h-[420px] mx-auto z-10 ">
           <div className="flex items-center absolute left-0 md:-top-16  -top-10">
