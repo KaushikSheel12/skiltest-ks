@@ -21,7 +21,7 @@ export const CheckBox = () => {
   };
 
   return (
-    <div className="md:w-full w-full sticky md:mt-[300px]  h-fit md:h-[500px] border border-red-700 rounded-md  ">
+    <div className="md:w-full w-full sticky md:mt-[300px]  h-fit md:h-[500px] rounded-md  ">
       <div className="w-full h-14 px-4 bg-[#C3FF52] flex justify-between items-center ">
         <div>
           <p className="text-[12px] text-green-900">YOUR IMPACT</p>
@@ -37,7 +37,7 @@ export const CheckBox = () => {
 
       <div className="flex   items-center gap-1">
         <LuEuro className="md:w-[45px]  md:h-[45px] h-7 w-7" />
-        <h3 className="md:text-[46px] text-[26px]  ">150</h3>
+        <h3 className="md:text-[46px] text-[26px] md:mt-0 mt-3  ">150</h3>
         <p className="md:text-[10px] text-[8px]  -mt-5 text-gray-500">EX VAT</p>
       </div>
 
