@@ -7,12 +7,12 @@ import { SpecificationBox } from "./SpecificationBox";
 export const CheckoutPage = () => {
   return (
     <div className="md:w-[85%] mx-auto w-full h-full px-2 py-2 border flex  gap-5">
-      <div className="md:w-[80%] h-full border border-red-500">
+      <div className="md:w-[80%] w-full h-full border border-red-500">
         <h1 className="md:text-[45px] text-green-900">
           HAY Orange and white chairs
         </h1>
-        <div className="flex mt-5 border-b-2 pb-5 gap-4">
-          <div className="w-[485px]  cursor-pointer h-[550px] relative rounded-sm">
+        <div className="md:flex mt-5 border-b-2 pb-5 gap-4">
+          <div className="md:w-[485px]  w-[100%]  cursor-pointer h-[550px] relative rounded-sm">
             <Image
               src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F6ea064a7-e924-4c31-9e2a-5667f1339e3b.jpg&w=828&q=75"
               alt="product-img"
@@ -20,7 +20,7 @@ export const CheckoutPage = () => {
               className="object-cover rounded-sm"
             />
           </div>
-          <div className="w-[265px]  cursor-pointer h-[310px] relative rounded-sm">
+          <div className="w-[265px] md:block hidden cursor-pointer h-[310px] relative rounded-sm">
             <Image
               src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F63205f78-d2a7-4f55-b3ea-d9841a62e2e4.jpg&w=828&q=75"
               alt="img"
@@ -28,7 +28,7 @@ export const CheckoutPage = () => {
               className="object-cover rounded-sm"
             />
           </div>
-          <div className="w-[265px] cursor-pointer h-[310px] relative rounded-sm">
+          <div className="w-[265px] md:block hidden cursor-pointer h-[310px] relative rounded-sm">
             <Image
               src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F59874a18-f21d-4c1c-8278-80153e38ed70.jpg&w=828&q=75"
               alt="img"
@@ -45,7 +45,7 @@ export const CheckoutPage = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-4 mt-7  gap-2">
+        <div className=" grid grid-cols-2 md:grid-cols-4 mt-7  gap-2">
           {[...new Array(4)].map((el, index) => {
             return <SpecificationBox key={index} />;
           })}
@@ -73,10 +73,9 @@ export const CheckoutPage = () => {
         </div>
       </div>
 
-    <div className="w-[30%] h-screen border border-red-500">
-    <CheckBox />
-    </div>
-
+      <div className="w-[30%] md:block hidden h-screen border border-red-500">
+        <CheckBox />
+      </div>
     </div>
   );
 };
