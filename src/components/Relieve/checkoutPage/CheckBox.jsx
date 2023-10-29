@@ -21,7 +21,7 @@ export const CheckBox = () => {
   };
 
   return (
-    <div className="md:w-full sticky mt-[300px]  h-[500px] border border-red-700 rounded-md  ">
+    <div className="md:w-full w-full sticky md:mt-[300px]  h-fit md:h-[500px] border border-red-700 rounded-md  ">
       <div className="w-full h-14 px-4 bg-[#C3FF52] flex justify-between items-center ">
         <div>
           <p className="text-[12px] text-green-900">YOUR IMPACT</p>
@@ -36,7 +36,7 @@ export const CheckBox = () => {
       </div>
 
       <div className="flex   items-center gap-1">
-        <LuEuro className="md:w-[45px] md:h-[45px] h-7 w-7" />
+        <LuEuro className="md:w-[45px]  md:h-[45px] h-7 w-7" />
         <h3 className="md:text-[46px] text-[26px]  ">150</h3>
         <p className="md:text-[10px] text-[8px]  -mt-5 text-gray-500">EX VAT</p>
       </div>
@@ -67,10 +67,10 @@ export const CheckBox = () => {
         </button>
       </div>
 
-      <div className="w-fit px-8 py-2 mt-4 bg-green-400 text-green-900 rounded-sm text-[18px]  text-center cursor-pointer">
+      <div className="md:w-fit w-full px-8 py-2 mt-4 bg-green-400 text-green-900 rounded-sm text-[18px]  text-center cursor-pointer">
         Signup to purchase
       </div>
-      <div className="mt-10">
+      <div className="mt-10 md:block hidden">
         <p className="text-[12px]">DIMENSIONS</p>
         <div className="flex items-center border-b-[1px]  py-2 justify-between">
           <p className="text-[16px] text-green-900">Height</p>
