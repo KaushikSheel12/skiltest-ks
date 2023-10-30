@@ -12,7 +12,19 @@ export const RelieveLandingPage = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const Platforms = ["CHAIRS", "OFFICE CHAIRS", "DESKS", "TABLES", "STORAGE"];
-
+  const NavbarItems = [
+    "All",
+    "Desks",
+    "Office chais",
+    "Chairs",
+    "Armchairs and Couhes",
+    "Stroge",
+    "Tables",
+    "Meeting tabes",
+    "Lighting",
+    "Office Accoessoris",
+    "Miscellaneouse",
+  ];
   const handleSelect = (index) => {
     setActiveTab(index);
   };
@@ -20,13 +32,24 @@ export const RelieveLandingPage = () => {
   return (
     <>
       <div className="w-full px-4 md:h-[730px] h-[550px] relative ">
+        <div className="w-full flex justify-around items-center px-2 h-10 absolute z-10 left-0 top-0 ">
+          {NavbarItems?.map((el, index) => {
+            return (
+              <p
+                className="cursor-pointer font-semibold text-green-900"
+                key={index}
+              >
+                {el}
+              </p>
+            );
+          })}
+        </div>
         <Image
           src="https://www.relievefurniture.com/_next/image?url=%2Fstatic%2Fimages%2Fv3%2Fremove.jpg&w=3840&q=75"
           alt="bg-img"
           fill
           className="object-cover"
           loading="lazy"
-          
         />
         <div className="md:w-[610px] w-[95%] px-8 py-8  bg-white rounded-2xl absolute bottom-10 md:bottom-16 left-[10px] md:left-[140px] h-fit md:h-[420px] mx-auto z-10 ">
           <div className="flex items-center absolute left-0 md:-top-16  -top-10">
