@@ -13,19 +13,6 @@ export const RelieveLandingPage = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const Platforms = ["CHAIRS", "OFFICE CHAIRS", "DESKS", "TABLES", "STORAGE"];
-  const NavbarItems = [
-    "All",
-    "Desks",
-    "Office chais",
-    "Chairs",
-    "Armchairs and Couhes",
-    "Stroge",
-    "Tables",
-    "Meeting tabes",
-    "Lighting",
-    "Office Accoessoris",
-    "Miscellaneouse",
-  ];
 
   const ShowOnHover = [
     "All",
@@ -40,6 +27,52 @@ export const RelieveLandingPage = () => {
     "Office Accoessoris",
     "Miscellaneouse",
   ];
+  const NavbarItems = [
+    {
+      title: "All",
+      content: "shivam",
+    },
+    {
+      title: "Desks",
+      content: "kaushik",
+    },
+    {
+      title: "Office chais",
+      content: "ankit",
+    },
+    {
+      title: "Desks",
+      content: "kaushik",
+    },
+    {
+      title: "Armchairs and Couches",
+      content: "raghu",
+    },
+    {
+      title: "Storage",
+      content: "shivam",
+    },
+    {
+      title: "Tables",
+      content: "shivam",
+    },
+    {
+      title: "Meeting tabes",
+      content: "shivam",
+    },
+    {
+      title: "Lighting",
+      content: "shivam",
+    },
+    {
+      title: "Office accessories",
+      content: "shivam",
+    },
+    {
+      title: "Miscallaneous",
+      content: "shivam",
+    },
+  ];
 
   const handleSelect = (index) => {
     setActiveTab(index);
@@ -53,21 +86,23 @@ export const RelieveLandingPage = () => {
     setShowDropdown(false);
   };
 
-
-
-  
   return (
     <>
       <div className="w-full px-4 md:h-[730px] h-[550px] relative ">
         <div className="w-full flex justify-around items-center px-2 h-10 absolute z-10 left-0 top-0 ">
-          {NavbarItems?.map((el, index) => {
+          {NavbarItems?.map(({ content, title }, index) => {
             return (
-              <p
-                className="cursor-pointer hover:text-red-600 text-green-900 font-semibold "
-                key={index}
-              >
-                {el}
-              </p>
+              <div className="relative group">
+                <p
+                  className="cursor-pointer hover:text-red-600 text-green-900 font-semibold "
+                  key={index}
+                >
+                  {title}
+                </p>
+                <p className="absolute -bottom-4 hidden group-hover:block ">
+                  {content}
+                </p>
+              </div>
             );
           })}
         </div>
