@@ -10,6 +10,7 @@ import { SolutionsBox } from "./SolutionsBox";
 
 export const RelieveLandingPage = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const Platforms = ["CHAIRS", "OFFICE CHAIRS", "DESKS", "TABLES", "STORAGE"];
   const NavbarItems = [
@@ -25,10 +26,36 @@ export const RelieveLandingPage = () => {
     "Office Accoessoris",
     "Miscellaneouse",
   ];
+
+  const ShowOnHover = [
+    "All",
+    "Desks",
+    "Office chais",
+    "Chairs",
+    "Armchairs and Couhes",
+    "Stroge",
+    "Tables",
+    "Meeting tabes",
+    "Lighting",
+    "Office Accoessoris",
+    "Miscellaneouse",
+  ];
+
   const handleSelect = (index) => {
     setActiveTab(index);
   };
 
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
+
+
+
+  
   return (
     <>
       <div className="w-full px-4 md:h-[730px] h-[550px] relative ">
@@ -36,7 +63,7 @@ export const RelieveLandingPage = () => {
           {NavbarItems?.map((el, index) => {
             return (
               <p
-                className="cursor-pointer font-semibold text-green-900"
+                className="cursor-pointer hover:text-red-600 text-green-900 font-semibold "
                 key={index}
               >
                 {el}
