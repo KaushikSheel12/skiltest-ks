@@ -118,8 +118,8 @@ const Test = () => {
       {/* <CreativeHome /> */}
       {/* <Osmos/> */}
       {/* <Globe/> */}
-      {/* <RelieveLandingPage /> */}
-      <CheckoutPage />
+      <RelieveLandingPage />
+      {/* <CheckoutPage /> */}
     </>
   );
 };
