@@ -77,14 +77,14 @@ const Test = () => {
         {/* <Carousel/> */}
         {/* <Dailyquizhome /> */}
       </div>
-      <Allexams />
+      {/* <Allexams /> */}
       {/* <Herosection /> */}
       {/* <Videoplayer /> */}
       {/* <Dreamjob /> */}
       {/* <Watchandgrow /> */}
       {/* <Country /> */}
       {/* <TopHeroSection /> */}
-      <Pepars />
+      {/* <Pepars /> */}
       {/* <Universities /> */}
       {/* <Amber /> */}
       {/* <Asprogress /> */}
