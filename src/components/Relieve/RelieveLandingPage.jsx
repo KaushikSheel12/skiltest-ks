@@ -14,63 +14,50 @@ export const RelieveLandingPage = () => {
 
   const Platforms = ["CHAIRS", "OFFICE CHAIRS", "DESKS", "TABLES", "STORAGE"];
 
-  const ShowOnHover = [
-    "All",
-    "Desks",
-    "Office chais",
-    "Chairs",
-    "Armchairs and Couhes",
-    "Stroge",
-    "Tables",
-    "Meeting tabes",
-    "Lighting",
-    "Office Accoessoris",
-    "Miscellaneouse",
-  ];
   const NavbarItems = [
     {
       title: "All",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Desks",
-      content: "kaushik",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Office chais",
-      content: "ankit",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Desks",
-      content: "kaushik",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Armchairs and Couches",
-      content: "raghu",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Storage",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Tables",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Meeting tabes",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Lighting",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Office accessories",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
     {
       title: "Miscallaneous",
-      content: "shivam",
+      content: ["shviam", "dubey"],
     },
   ];
 
@@ -94,14 +81,16 @@ export const RelieveLandingPage = () => {
             return (
               <div className="relative group">
                 <p
-                  className="cursor-pointer hover:text-red-600 text-green-900 font-semibold "
+                  className="cursor-pointer text-green-900 font-semibold "
                   key={index}
                 >
                   {title}
                 </p>
-                <p className="absolute -bottom-4 hidden group-hover:block ">
-                  {content}
-                </p>
+                <div className="absolute  px-1 py-1 rounded-sm text-center bg-white h-fit hidden group-hover:block ">
+                  {content.map((text, i) => (
+                    <p key={i}>{text}</p>
+                  ))}
+                </div>
               </div>
             );
           })}
