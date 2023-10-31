@@ -76,7 +76,7 @@ export const RelieveLandingPage = () => {
   return (
     <>
       <div className="w-full px-4 md:h-[730px] h-[550px] relative ">
-        <div className="w-full flex justify-around items-center px-2 h-10 md:block hidden absolute z-10 left-0 top-0 ">
+        <div className="w-full md:flex justify-around items-center px-2 h-10  hidden absolute z-10 left-0 top-0 ">
           {NavbarItems?.map(({ content, title }, index) => {
             return (
               <div className="relative group">
