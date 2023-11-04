@@ -9,7 +9,6 @@ const Peparcard = () => {
           <BsBookHalf size={20} />
         </div>
 
-
         <div className="mt-1">
           <h2 className="font-semibold py-1 text-gray-600 md:text-[15px] text-[13px]">
             UPPCS 2020 CSAT Paper
@@ -19,8 +18,6 @@ const Peparcard = () => {
             <p>3 Attempts</p>
           </div>
         </div>
-
-
         <div className="hidden md:flex px-2 py-1 md:mt-2 text-gray-600 justify-between">
           <p>
             <span
