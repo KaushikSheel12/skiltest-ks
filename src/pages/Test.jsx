@@ -119,7 +119,7 @@ const Test = () => {
       {/* <Osmos/> */}
       {/* <Globe/> */}
       <RelieveLandingPage />
-      {/* <CheckoutPage /> */}
+      <CheckoutPage />
     </>
   );
 };
