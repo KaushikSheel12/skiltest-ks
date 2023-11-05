@@ -13,10 +13,12 @@ function CarouselBox() {
         <div className="w-full md:h-28  rounded-t-md border  bg-gray-gradient p-2">
           <h2 className="md:text-[22px]">Test Series For JEE Main</h2>
 
+
           <h3 className="text-gray-700 font-normal md:text[10px] md:mt-10  mx:py-2">
             3 Year Course
           </h3>
         </div>
+
 
         <div className="w-full h-20  py-2">
           <div className="flex gap-2 items-center px-2 ">
