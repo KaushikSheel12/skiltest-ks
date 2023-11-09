@@ -60,6 +60,7 @@ import { Osmos } from "@/components/kreativetools/Osmos";
 import { Globe } from "@/components/kreativetools/Globe";
 import { RelieveLandingPage } from "@/components/Relieve/RelieveLandingPage";
 import { CheckoutPage } from "@/components/Relieve/checkoutPage/CheckoutPage";
+import { Loanone } from "@/components/loan/Loanone";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -118,8 +119,9 @@ const Test = () => {
       {/* <CreativeHome /> */}
       {/* <Osmos/> */}
       {/* <Globe/> */}
-      <RelieveLandingPage />
-      <CheckoutPage />
+      {/* <RelieveLandingPage />
+      <CheckoutPage /> */}
+      <Loanone/>
     </>
   );
 };
