@@ -61,6 +61,7 @@ import { Globe } from "@/components/kreativetools/Globe";
 import { RelieveLandingPage } from "@/components/Relieve/RelieveLandingPage";
 import { CheckoutPage } from "@/components/Relieve/checkoutPage/CheckoutPage";
 import { Loanone } from "@/components/loan/Loanone";
+import { Loantwo } from "@/components/loan/Loantwo";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -121,7 +122,8 @@ const Test = () => {
       {/* <Globe/> */}
       {/* <RelieveLandingPage />
       <CheckoutPage /> */}
-      <Loanone/>
+      {/* <Loanone/> */}
+      <Loantwo />
     </>
   );
 };
