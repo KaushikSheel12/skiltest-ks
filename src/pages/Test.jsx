@@ -62,6 +62,7 @@ import { RelieveLandingPage } from "@/components/Relieve/RelieveLandingPage";
 import { CheckoutPage } from "@/components/Relieve/checkoutPage/CheckoutPage";
 import { Loanone } from "@/components/loan/Loanone";
 import { Loantwo } from "@/components/loan/Loantwo";
+import { Loanthree } from "@/components/loan/Loanthree";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -123,7 +124,8 @@ const Test = () => {
       {/* <RelieveLandingPage />
       <CheckoutPage /> */}
       {/* <Loanone/> */}
-      <Loantwo />
+      {/* <Loantwo /> */}
+      <Loanthree />
     </>
   );
 };
