@@ -477,6 +477,98 @@ export const Loanthree = () => {
           documents to submit based on your profile and the loan you've applied
           for to speed up the process.
         </p>
+
+
+
+
+
+        <div className="mt-10 px-2 md:px-20 relative w-full flex items-center text-white rounded-md bg-[black]  h-[150px] md:h-[350px]  ">
+          <div className="w-full md:py-4  py-2 rounded-md h-full">
+            <h2 className="md:text-[36px] text-[20px] leading-6 md:leading-[47px]">
+              Looking For Faster And Streamlined Process?
+            </h2>
+            <div className="flex md:mt-5 mt-2 items-center gap-3">
+              <div className="w-fit h-fit md:text-[17px] whitespace-nowrap text-[10px] md:px-3 px-1 py-[2px] border rounded-md">
+                100% Transparency
+              </div>
+              <div className="w-fit h-fit md:text-[17px] whitespace-nowrap text-[10px] md:px-3 px-1 py-[2px] border rounded-md">
+                100% Free
+              </div>
+            </div>
+            <p className="md:text-[16px] md:block hidden text-[12px] md:leading-5 md:mt-5">
+              Our education loan counsellors will stay by your side every step
+              of the way and recommend the best partner and guide you through
+              the loan applying and sanctioning process.
+            </p>
+            <div className="w-fit h-fit md:mt-6 mt-2 px-3  md:px-7 md:text-[17px] text-[10px] whitespace-nowrap  py-1 md:py-2 cursor-pointer bg-[green] rounded-md text-white">
+              Contect Our Expert For Free &gt;
+            </div>
+          </div>
+          <div className="w-full relative rounded-md  h-full">
+            <Image
+              className="object-contain"
+              fill
+              src="https://di2vt7hcm6vs0.cloudfront.net/v2/illustrations/scholar-girl.png"
+              alt="img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <h2 className="md:text-[24px] font-semibold text-[16px]  mt-5">Documents Required for an Abroad Education Loan By HDFC Credila</h2>
+
+        <p className="md:text-[17px] md:block hidden text-[12px] md:leading-5 md:mt-5">Once you meet the HDFC Credila education loan eligibility; below are the documents required for HDFC Education Loan</p>
+
+
+
+
+        <div className="w-full  mt-5 flex items-center gap-2 ">
+          <div className="w-[20%] md:block hidden bg-[#E8E8E9] md:h-[510px]  h-full">
+            {" "}
+            <p className="text-center py-2 font-semibold">Type</p>{" "}
+            <p className="px-2 py-4 bg-slate-100">
+            Identity Details
+            </p>
+            <p className="px-2 py-4 bg-slate-100">Academic Documents</p>
+            <p className="px-2 py-4 bg-slate-100">Financial Documents</p>
+            <p className="px-2 py-4 bg-slate-100">Income Proof of Co-Applicant</p>
+          </div>
+          <div className="md:w-[80%] w-full bg-[#E8E8E9]  h-full">
+            <p className="text-center py-2 font-semibold">Documents Required</p>
+            <p className="px-2 py-4 bg-slate-100">
+            1. Permanent Account Number (PAN) Card
+2. Voter’s ID Card
+3. Passport
+4. Driving License
+5. Aadhaar Card
+            </p>
+            <p className="px-2 py-4 bg-slate-100">1. Marksheet/Certificate of 12th Exam
+2. Marksheet/Certificate of Subsequent Years of Education e.g. BE, BCom, BSc, etc.
+3. Marksheet of Any Entrance Exam Taken e.g. CAT, CET, GRE, GMAT, IELTS, TOEFL, etc. (If applicable)
+4. Scholarship Documents (if applicable)</p>
+            <p className="px-2 py-2 bg-slate-100">
+            1. (If more than one bank account, provide copies of all)
+2. Make sure to include the bank statements of the Bank Account where Salary or Business professional receipts are credited every month
+            </p>
+            <p className="px-2 py-4 bg-slate-100">A) For Salaried Employees (All the following)</p>
+            <p className="px-2 py-4 bg-slate-100 ">
+            1. The most recent three salary slips or salary certificate on employer letterhead
+2. Employer Form 16 from the last two years or Income Tax Returns from the previous two years
+3. Any Other Income Proof Not Included in the Above Documents
+            </p>
+            <p className="px-2 py-4 bg-slate-100 ">
+            B) If you are self-employed or a professional (All the following)
+            </p>
+            <p className="px-2 py-4 bg-slate-100 ">
+            1. Income Tax Returns for the Previous Two Years
+2. CA-Certified Financial Statements or Provisional Financial Statements for the Previous Two Years (any one of the following, Lease Deed, Utility Bill, Title Deed, etc.)
+3. Any Other Income Proof Not Included in the Above Documents
+            </p>
+          </div>
+        </div>
+
+
+
       </div>
     </>
   );
