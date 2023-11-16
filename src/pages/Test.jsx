@@ -63,6 +63,7 @@ import { CheckoutPage } from "@/components/Relieve/checkoutPage/CheckoutPage";
 import { Loanone } from "@/components/loan/Loanone";
 import { Loantwo } from "@/components/loan/Loantwo";
 import { Loanthree } from "@/components/loan/Loanthree";
+import { Myhome } from "@/components/mytest/Myhome";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -121,11 +122,12 @@ const Test = () => {
       {/* <CreativeHome /> */}
       {/* <Osmos/> */}
       {/* <Globe/> */}
-      {/* <RelieveLandingPage />
-      <CheckoutPage /> */}
+     {/* <RelieveLandingPage /> */}
+      {/* <CheckoutPage /> */}
       {/* <Loanone/> */}
       {/* <Loantwo /> */}
-      <Loanthree />
+      {/* <Loanthree /> */}
+      <Myhome/>
     </>
   );
 };
