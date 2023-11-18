@@ -7,6 +7,7 @@ const Updates = () => {
 
   return (
     <>
+    
       <div className="mt-2">
         <h1 className="text-center font-semibold text-2xl py-4  px-2">
           Latest Updates & Notifications
@@ -28,7 +29,7 @@ const Updates = () => {
                         color="orange"
                         size={45}
                       />
-                      
+
                       <p className="font-semibold cursor-pointer  hover:text-orange-600 ">
                         {admitelemet}
                       </p>
