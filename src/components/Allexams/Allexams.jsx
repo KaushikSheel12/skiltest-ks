@@ -15,6 +15,7 @@ const Allexams = () => {
         className=" w-full bg-orange-600  md:mt-[70px] mt-[60px] flex gap-0 
    border md:h-[326px] h-[270px] md:text-left text-center justify-around"
       >
+        
         <div className="md:px-8 md:py-8 px-4 py-4  ">
           <h1 className="text-[white] font-semibold md:text-[45px] text-[35px]      leading-[1.3]">
             College mentor's Exam Prep

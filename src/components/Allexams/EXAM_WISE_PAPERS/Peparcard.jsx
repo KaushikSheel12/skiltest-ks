@@ -14,6 +14,7 @@ const Peparcard = () => {
             UPPCS 2020 CSAT Paper
           </h2>
 
+
           <div className=" md:hidden flex px-2 py-1 md:mt-2 text-gray-600 gap-2 text-[10px] -mt-2">
             <p>3 Attempts</p>
           </div>

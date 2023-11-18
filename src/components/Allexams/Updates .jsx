@@ -28,6 +28,7 @@ const Updates = () => {
                         color="orange"
                         size={45}
                       />
+                      
                       <p className="font-semibold cursor-pointer  hover:text-orange-600 ">
                         {admitelemet}
                       </p>
