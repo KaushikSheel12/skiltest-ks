@@ -122,12 +122,12 @@ const Test = () => {
       {/* <CreativeHome /> */}
       {/* <Osmos/> */}
       {/* <Globe/> */}
-     {/* <RelieveLandingPage /> */}
-      {/* <CheckoutPage /> */}
+      {/* <RelieveLandingPage /> */}
+      <CheckoutPage />
       {/* <Loanone/> */}
       {/* <Loantwo /> */}
       {/* <Loanthree /> */}
-      <Myhome/>
+      {/* <Myhome /> */}
     </>
   );
 };

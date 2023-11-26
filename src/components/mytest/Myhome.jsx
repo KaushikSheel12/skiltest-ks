@@ -48,20 +48,23 @@ export const Myhome = () => {
       </div>
 
       <h2 className="mt-4 md:text-[30px] md:px-0 px-2 text-[15px] font-semibold text-gray-700">
-       Contect us 
+        Contect us
       </h2>
       <div className="w-full md:h-[4px] h-[2px]  bg-gray-400"></div>
 
-
       <div className="md:w-[500px] px-4 py-4 mx-auto h-fit rounded-md border mt-10">
-        <input className="w-full mt-3 border px-2" placeholder="Your full name"/>
-        <input className="w-full mt-3 border px-2" placeholder="Your age"/>
-        <input className="w-full mt-3 border px-2" placeholder="Your mobile"/>
-        <input className="w-full mt-3 border px-2" placeholder="Your city "/>
-        <input className="w-full mt-3 border px-2" placeholder="Your state"/>
-        
-        <button className=" w-full mt-4 bg-green-500 px-4 py-2  border hover:text-white hover:bg-gray-500 rounded-md">Submit</button>
-        
+        <input
+          className="w-full mt-3 border px-2"
+          placeholder="Your full name"
+        />
+        <input className="w-full mt-3 border px-2" placeholder="Your age" />
+        <input className="w-full mt-3 border px-2" placeholder="Your mobile" />
+        <input className="w-full mt-3 border px-2" placeholder="Your city " />
+        <input className="w-full mt-3 border px-2" placeholder="Your state" />
+
+        <button className=" w-full mt-4 bg-green-500 px-4 py-2  border hover:text-white hover:bg-gray-500 rounded-md">
+          Submit
+        </button>
       </div>
     </div>
   );
