@@ -15,6 +15,7 @@ export const MyImage = () => {
     return () => clearInterval(interval); // Clean up the interval on component unmount
   }, [imageNumber]);
 
+  
   return (
     <>
       <div className="w-screen h-screen mx-auto relative">

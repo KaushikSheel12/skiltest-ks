@@ -10,7 +10,7 @@ export const CheckoutPage = () => {
   return (
     <>
       <div className="md:w-[85%] mx-auto w-full h-full px-2 py-2 border md:flex  gap-5">
-        <div className="md:w-[80%] w-full h-full ">
+        <div className="md:w-full w-full h-full ">
           <h1 className="md:text-[45px] text-[25px] text-green-900">
             HAY Orange and white chairs
           </h1>

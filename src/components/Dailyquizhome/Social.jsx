@@ -15,6 +15,7 @@ const Social = ({ imgUrl, title }) => {
         <p className="font-bold cursor-pointer   md:px-1  text-[8px]  md:text-[11px] text-gray-600 ">
           {title}
         </p>
+        
       </div>
     </>
   );
