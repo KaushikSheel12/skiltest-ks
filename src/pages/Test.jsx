@@ -64,6 +64,7 @@ import { Loanone } from "@/components/loan/Loanone";
 import { Loantwo } from "@/components/loan/Loantwo";
 import { Loanthree } from "@/components/loan/Loanthree";
 import { Myhome } from "@/components/mytest/Myhome";
+import { DummyProgress } from "@/components/abmerblog/Dummyprogress";
 
 const Test = () => {
   const [isActive, setIsActive] = useState(false);
@@ -81,9 +82,9 @@ const Test = () => {
         {/* <Carousel/> */}
         {/* <Dailyquizhome /> */}
       </div>
-      {/* <Allexams /> */}
-      {/* <Herosection /> */}
-      {/* <Videoplayer /> */}
+      {/* <Allexams />
+      <Herosection />
+      <Videoplayer /> */}
       {/* <Dreamjob /> */}
       {/* <Watchandgrow /> */}
       {/* <Country /> */}
@@ -91,43 +92,47 @@ const Test = () => {
       {/* <Pepars /> */}
       {/* <Universities /> */}
       {/* <Amber /> */}
-      {/* <Asprogress /> */}
-      {/* <Newcountry /> */}
-      {/* <Linkedin /> */}
-      {/* <Coursehero /> */}
+      {/* 
+      <Newcountry />
+      <Linkedin />
+      <Coursehero />
 
-      {/* <Ourpromise /> */}
-      {/* <Answerd /> */}
-      {/* <Questions /> */}
+      <Ourpromise />
+      <Answerd />
+      <Questions />
 
-      {/* <Clgmain /> */}
-      {/* <Pheader /> */}
-      {/* <PreHome /> */}
-      {/* <Predictors /> */}
-      {/* <Recentreviews /> */}
-      {/* <Admitkart /> */}
-      {/* <Dreamhero /> */}
-      {/* <Rhero /> */}
-      {/* <Vcall /> */}
-      {/* <Remp /> */}
-      {/* <MonoHero /> */}
-      {/* <Scholar/> */}
-      {/* <NewPredictorBox/> */}
-      {/* <Xlanding /> */}
-      {/* <MyHeroX/> */}
-      {/* <Mhome /> */}
-      {/* <InputLine/> */}
-      {/* <EligibilityForm/> */}
-      {/* <Calculator/> */}
-      {/* <CreativeHome /> */}
-      {/* <Osmos/> */}
-      {/* <Globe/> */}
-      {/* <RelieveLandingPage /> */}
+      <Clgmain />
+      <Pheader />
+      <PreHome />
+      <Predictors />
+      <Recentreviews />
+      <Admitkart />
+      <Dreamhero />
+      <Rhero />
+      <Vcall /> 
+      {/* <Remp />
+      <MonoHero />
+      <Scholar/>
+      <NewPredictorBox/>
+      <Xlanding />
+      <MyHeroX/>
+      <Mhome />
+      <InputLine/>
+      <EligibilityForm/> */}
+      {/* <Calculator/>
+      <CreativeHome />
+      <Osmos/>
+      <Globe/>
+      <RelieveLandingPage />
       <CheckoutPage />
-      {/* <Loanone/> */}
-      {/* <Loantwo /> */}
-      {/* <Loanthree /> */}
-      {/* <Myhome /> */}
+      <Loanone/>
+      <Loantwo />
+      <Loanthree />
+      <Myhome /> */}
+      <Asprogress />
+
+
+      {/* <DummyProgress/> */}
     </>
   );
 };
