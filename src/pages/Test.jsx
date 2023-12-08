@@ -92,7 +92,7 @@ const Test = () => {
       {/* <Pepars /> */}
       {/* <Universities /> */}
       {/* <Amber /> */}
-      {/* 
+    
       <Newcountry />
       <Linkedin />
       <Coursehero />
@@ -110,7 +110,7 @@ const Test = () => {
       <Dreamhero />
       <Rhero />
       <Vcall /> 
-      {/* <Remp />
+       <Remp />
       <MonoHero />
       <Scholar/>
       <NewPredictorBox/>
@@ -118,8 +118,7 @@ const Test = () => {
       <MyHeroX/>
       <Mhome />
       <InputLine/>
-      <EligibilityForm/> */}
-      {/* <Calculator/>
+ <Calculator/>
       <CreativeHome />
       <Osmos/>
       <Globe/>
@@ -128,7 +127,7 @@ const Test = () => {
       <Loanone/>
       <Loantwo />
       <Loanthree />
-      <Myhome /> */}
+      <Myhome /> 
       <Asprogress />
 
 
