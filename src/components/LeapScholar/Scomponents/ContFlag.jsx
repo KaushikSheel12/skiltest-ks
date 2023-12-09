@@ -15,6 +15,7 @@ export const ContFlag = ({ ImgSrc, name, bgColor, borderColor, onClick }) => {
           height={40}
           className="mt-2 mx-auto"
         />
+
         <p className="text-[16px]  mt-2 ">{name}</p>
       </div>
     </>
