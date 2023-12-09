@@ -25,6 +25,7 @@ export const Scholar = () => {
     }
   };
 
+
   const handleBackClick = () => {
     if (activeComponentIndex > 0) {
       setActiveComponentIndex(activeComponentIndex - 1);
